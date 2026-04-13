@@ -1,0 +1,18 @@
+[tool]
+name = "thinkbench"
+version = "0.1.0"
+
+[tool.vllm]
+api_key = "sofia-token-j7y6qXDOTJ6grLvo"
+endpoint = "http://10.17.1.57:8978"
+model = "Qwen/Qwen3.5-4B"
+
+[tool.collection]
+default_temperature = 0.7
+default_runs = 3
+max_concurrent = 5
+
+[tool.parsing]
+parser_model = "Qwen/Qwen3.5-4B"
+confidence_threshold = 0.7
+local_window = 5
