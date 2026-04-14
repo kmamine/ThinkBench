@@ -21,7 +21,7 @@ class ThinkingEffort(str, Enum):
 
     @property
     def tokens(self) -> int:
-        """Return thinking budget in tokens for this effort level."""
+        """Return thinking budget in tokens for models that support it."""
         tokens = {
             ThinkingEffort.LOW: 200,
             ThinkingEffort.MEDIUM: 1000,
@@ -29,6 +29,22 @@ class ThinkingEffort(str, Enum):
             ThinkingEffort.MAX: 16000,
         }
         return tokens[self]
+
+    @property
+    def system_prompt_modifier(self) -> str:
+        """Return system prompt modifier for prompt-based effort control."""
+        modifiers = {
+            ThinkingEffort.LOW: "Think briefly and give a concise answer.",
+            ThinkingEffort.MEDIUM: "Think through this problem carefully.",
+            ThinkingEffort.HIGH: "Think step by step. Show all your reasoning. Consider multiple angles.",
+            ThinkingEffort.MAX: "Think deeply and exhaustively. Explore all possibilities. Consider edge cases. Show comprehensive reasoning.",
+        }
+        return modifiers[self]
+
+    @property
+    def use_thinking_param(self) -> bool:
+        """Whether to use thinking_budget parameter (for models that support it)."""
+        return False  # Default to False - use prompt-based control
 
 
 class LLMClient:
@@ -74,9 +90,19 @@ class LLMClient:
         max_tokens = max_tokens or self.max_tokens
         thinking_effort = thinking_effort or self.thinking_effort
 
+        messages = list(messages)  # Copy to avoid modifying original
+
         body = extra_body or {}
+
         if thinking_effort:
-            body["thinking_budget"] = thinking_effort.tokens
+            if thinking_effort.use_thinking_param:
+                body["thinking_budget"] = thinking_effort.tokens
+            else:
+                modifier = thinking_effort.system_prompt_modifier
+                if messages and messages[0].get("role") == "system":
+                    messages[0]["content"] = messages[0]["content"] + " " + modifier
+                else:
+                    messages.insert(0, {"role": "system", "content": modifier})
 
         try:
             resp = await self.client.chat.completions.create(

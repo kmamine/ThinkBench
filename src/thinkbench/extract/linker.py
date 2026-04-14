@@ -69,6 +69,42 @@ class Linker:
         logger.info(f"Built {len(edges)} edges for {len(thought_units)} nodes")
         return edges
 
+    def _classify_edge_rules(
+        self, text_a: str, text_b: str, node_type_a: str = None, node_type_b: str = None
+    ) -> Optional[dict]:
+        """Rule-based edge classification based on text patterns and node type transitions."""
+        import re
+
+        text_a_lower = text_a.lower()
+        text_b_lower = text_b.lower()
+
+        for edge_type, patterns in EDGE_PATTERNS.items():
+            for pattern in patterns:
+                if re.search(pattern, text_b_lower):
+                    confidence = 0.6
+
+                    if node_type_a and node_type_b:
+                        if edge_type == EdgeType.BRCH and node_type_b in ("ANA", "SYN"):
+                            confidence = 0.8
+                        elif edge_type == EdgeType.CRIT and node_type_b == "CRT":
+                            confidence = 0.8
+                        elif edge_type == EdgeType.BACK and node_type_b in (
+                            "HYP",
+                            "IMP",
+                        ):
+                            confidence = 0.7
+                        elif edge_type == EdgeType.SUPP and node_type_b in (
+                            "JUS",
+                            "IMP",
+                        ):
+                            confidence = 0.7
+                        elif edge_type == EdgeType.SYNT and node_type_b == "SYN":
+                            confidence = 0.8
+
+                    return {"type": edge_type, "confidence": confidence}
+
+        return None
+
     def _pass1_sequential(self, nodes: list[ThoughtUnit]) -> list[Edge]:
         """Pass 1: Sequential backbone."""
         edges = []
@@ -124,7 +160,10 @@ class Linker:
             # Fallback to rule-based if no semantic edge found
             if not found_semantic:
                 edge_result = self._classify_edge_rules(
-                    nodes[i - 1].text, nodes[i].text
+                    nodes[i - 1].text,
+                    nodes[i].text,
+                    nodes[i - 1].node_type.value if nodes[i - 1].node_type else None,
+                    nodes[i].node_type.value if nodes[i].node_type else None,
                 )
                 if edge_result:
                     new_edges.append(
@@ -199,6 +238,9 @@ class Linker:
             "Let me reconsider",
             "I'm going in circles",
             "Let me think again",
+            "I need to rethink",
+            "But wait",
+            "Hold on",
         ]
 
         for i, node in enumerate(nodes):
@@ -208,6 +250,7 @@ class Linker:
             )
 
             if is_critique or has_marker:
+                # Try LLM first
                 target = await self._find_backtrack_target(node, nodes)
                 if target:
                     edge_type = EdgeType.CRIT if is_critique else EdgeType.BACK
@@ -219,8 +262,37 @@ class Linker:
                             confidence=target["confidence"],
                         )
                     )
+                else:
+                    # Fallback to rule-based: connect to most recent HYP or JUS node
+                    target_id = self._find_backtrack_target_rulebased(nodes, i)
+                    if target_id is not None:
+                        edge_type = EdgeType.CRIT if is_critique else EdgeType.BACK
+                        edges.append(
+                            Edge(
+                                source=i,
+                                target=target_id,
+                                edge_type=edge_type,
+                                confidence=0.5,
+                            )
+                        )
 
         return edges
+
+    def _find_backtrack_target_rulebased(
+        self, nodes: list[ThoughtUnit], current_idx: int
+    ) -> Optional[int]:
+        """Rule-based backtrack target: find most recent HYP or JUS node."""
+        target_types = {NodeType.HYP, NodeType.JUS, NodeType.IMP}
+
+        for i in range(current_idx - 1, -1, -1):
+            if nodes[i].node_type in target_types:
+                return i
+
+        # Fallback to previous node
+        if current_idx > 0:
+            return current_idx - 1
+
+        return None
 
     async def _find_backtrack_target(
         self, node: ThoughtUnit, nodes: list[ThoughtUnit]
@@ -292,42 +364,43 @@ class Linker:
 
 
 EDGE_PATTERNS = {
-    EdgeType.ELAB: [
-        r"\bspecifically\b",
-        r"\bfor example\b",
-        r"\bin practice\b",
-        r"\bto elaborate\b",
-        r"\bin fact\b",
-        r"\bthat is\b",
-        r"\bi.e\.\b",
-    ],
     EdgeType.BRCH: [
-        r"\banother\b",
-        r"\balternative\b",
-        r"\bwhat if\b",
-        r"\bon the other hand\b",
         r"\bhowever\b",
-        r"\bbut\b",
-        r"\balso\b(?!\s+(?:be|have|is))",
+        r"\bon the other hand\b",
+        r"\badditionally\b",
+        r"\bfurthermore\b",
+        r"\banother aspect\b",
+        r"\banother angle\b",
+        r"\bconsider\b",
+        r"\blet's also examine\b",
+        r"\bit's also worth\b",
     ],
     EdgeType.BACK: [
         r"\bwait\b",
         r"\bactually\b",
         r"\blet me reconsider\b",
-        r"\bi was wrong\b",
-        r"\bthat\'s not right\b",
-        r"\bi realize\b",
         r"\bhowever\b",
+        r"\bi realize\b",
+        r"\bi was wrong\b",
+        r"\bthat's incorrect\b",
+        r"\bi take back\b",
+        r"\binstead\b",
+        r"\brather than\b",
     ],
     EdgeType.CRIT: [
         r"\bthe problem\b",
         r"\bfails\b",
-        r"\bdoesn\'t work\b",
+        r"\bdoesn't work\b",
         r"\bweakness\b",
         r"\bflaw\b",
         r"\bissue\b",
         r"\bshortcoming\b",
         r"\bbut\b",
+        r"\bhowever\b",
+        r"\bchallenge\b",
+        r"\bconcern\b",
+        r"\bdownside\b",
+        r"\brisk\b",
     ],
     EdgeType.SUPP: [
         r"\bbecause\b",
@@ -337,6 +410,10 @@ EDGE_PATTERNS = {
         r"\bproves\b",
         r"\bdemonstrates\b",
         r"\bshows that\b",
+        r"\bfor example\b",
+        r"\bfor instance\b",
+        r"\bthis means\b",
+        r"\bindicates\b",
     ],
     EdgeType.CONT: [
         r"\bhowever\b",
@@ -345,6 +422,17 @@ EDGE_PATTERNS = {
         r"\bwhereas\b",
         r"\bwhile\b",
         r"\bbut\b",
+        r"\bdifferent\b",
+        r"\bopposite\b",
+    ],
+    EdgeType.SYNT: [
+        r"\bin summary\b",
+        r"\bto summarize\b",
+        r"\bconcluding\b",
+        r"\bin conclusion\b",
+        r"\boverall\b",
+        r"\bultimately\b",
+        r"\bbringing it together\b",
     ],
 }
 
@@ -367,17 +455,3 @@ def build_graph(
     )
 
 
-def _classify_edge_rules(text_a: str, text_b: str) -> Optional[dict]:
-    """Rule-based edge classification."""
-    import re
-
-    text_a_lower = text_a.lower()
-    text_b_lower = text_b.lower()
-
-    # Check for specific patterns in text_b (the later thought)
-    for edge_type, patterns in EDGE_PATTERNS.items():
-        for pattern in patterns:
-            if re.search(pattern, text_b_lower):
-                return {"type": edge_type, "confidence": 0.6}
-
-    return None

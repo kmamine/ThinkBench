@@ -82,6 +82,7 @@ class ThoughtGraph(BaseModel):
 class CognitiveProfile(BaseModel):
     model: str
     domain: str | None = None
+    trace_id: str | None = None  # For matching profiles to traces
     branching_factor: float = 0.0
     unique_perspective_count: float = 0.0
     domain_spread: float = 0.0

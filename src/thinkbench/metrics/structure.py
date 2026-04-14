@@ -1,7 +1,11 @@
 """Structure metrics for cognitive profiles."""
 
+import logging
+
 import networkx as nx
 from ..extract.schemas import ThoughtGraph, NodeType, NodeFamily
+
+logger = logging.getLogger(__name__)
 
 
 def exploration_exploitation_ratio(graph: ThoughtGraph) -> float:
@@ -19,11 +23,13 @@ def exploration_exploitation_ratio(graph: ThoughtGraph) -> float:
 
 
 def backtracking_rate(graph: ThoughtGraph) -> float:
-    """Proportion of nodes with outgoing BACK edges."""
+    """Proportion of nodes with outgoing BACK or CRIT edges."""
     if not graph.nodes:
         return 0.0
 
-    back_nodes = {e.source for e in graph.edges if e.edge_type.value == "BACK"}
+    back_nodes = {
+        e.source for e in graph.edges if e.edge_type.value in ("BACK", "CRIT")
+    }
 
     return len(back_nodes) / len(graph.nodes)
 
@@ -80,7 +86,7 @@ def convergence_index(graph: ThoughtGraph) -> float:
 
 
 def orphan_ratio(graph: ThoughtGraph) -> float:
-    """Proportion of EXPLORATION nodes with no ELAB children."""
+    """Proportion of EXPLORATION nodes with no elaboration children."""
     if not graph.nodes:
         return 0.0
 
@@ -91,7 +97,8 @@ def orphan_ratio(graph: ThoughtGraph) -> float:
     orphans = 0
     for exp in exp_nodes:
         has_elab_child = any(
-            e.source == exp.tu_id and e.edge_type.value in ("ELAB", "SPC", "IMP", "JUS")
+            e.source == exp.tu_id
+            and e.edge_type.value in ("ELAB", "SPC", "IMP", "JUS", "BRCH", "SUPP")
             for e in graph.edges
         )
         if not has_elab_child:

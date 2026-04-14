@@ -1,7 +1,11 @@
 """Depth metrics for cognitive profiles."""
 
+import logging
+
 import networkx as nx
 from ..extract.schemas import ThoughtGraph, NodeType, NodeFamily
+
+logger = logging.getLogger(__name__)
 
 
 def max_elaboration_chain(graph: ThoughtGraph) -> float:
@@ -50,6 +54,10 @@ def mean_branch_depth(graph: ThoughtGraph) -> float:
 
 def specificity_gradient(graph: ThoughtGraph) -> float:
     """Correlation between node depth and entity density."""
+    import logging
+
+    logger = logging.getLogger(__name__)
+
     if not graph.nodes:
         return 0.0
 
@@ -57,7 +65,13 @@ def specificity_gradient(graph: ThoughtGraph) -> float:
         import spacy
 
         nlp = spacy.load("en_core_web_sm")
-    except:
+    except ImportError:
+        logger.debug("spaCy not available, returning 0.0 for specificity_gradient")
+        return 0.0
+    except Exception as e:
+        logger.debug(
+            f"Failed to load spaCy model: {e}, returning 0.0 for specificity_gradient"
+        )
         return 0.0
 
     G = _build_elab_graph(graph)
@@ -114,7 +128,16 @@ def _build_elab_graph(graph: ThoughtGraph) -> nx.DiGraph:
         G.add_node(node.tu_id)
 
     for edge in graph.edges:
-        if edge.edge_type.value in ("ELAB", "SPC", "IMP", "JUS", "CON"):
+        if edge.edge_type.value in (
+            "ELAB",
+            "SPC",
+            "IMP",
+            "JUS",
+            "CON",
+            "SEQ",
+            "BRCH",
+            "SUPP",
+        ):
             G.add_edge(edge.source, edge.target)
 
     return G
