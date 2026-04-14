@@ -1,0 +1,102 @@
+{
+  "trace_id": "9a4ff839-62cd-4f0e-bf9f-86c3eb7d24ab",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_004",
+  "domain": "ethical_dilemmas",
+  "run": 3,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "1. **Legal Risk:** Hiring algorithms with disparate impact can violate anti-discrimination laws, even if socioeconomic status isn't explicitly protected, as it often correlates with race, gender, or other protected classes.",
+      "start_char": 0,
+      "end_char": 223,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    },
+    {
+      "tu_id": 1,
+      "text": "2. **Ethical Obligation:** Companies have a responsibility to promote equal opportunity; using a tool that reinforces historical inequality undermines diversity and fairness.",
+      "start_char": 223,
+      "end_char": 397,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    },
+    {
+      "tu_id": 2,
+      "text": "3. **Data Flaw:** \"Accuracy\" based on biased historical data predicts adherence to past prejudices rather than true job performance potential.",
+      "start_char": 397,
+      "end_char": 539,
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 3,
+      "text": "4. **Business Impact:** Deploying the tool exposes the company to reputational damage, lawsuits, and a narrowed talent pool.\n\n**Answer:** No, not without significant bias mitigation and legal review.",
+      "start_char": 539,
+      "end_char": 738,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 2,
+      "target": 1,
+      "edge_type": "CRIT",
+      "confidence": 0.5
+    }
+  ],
+  "token_count": 100
+}

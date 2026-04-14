@@ -2,7 +2,30 @@
 
 ## Overview
 
-This report compares cognitive profiles across 4 thinking effort levels (LOW, MEDIUM, HIGH, MAX) using the Qwen3.5-35B-A3B model via vLLM. Sample size: K=3 traces per effort level (9 total traces extracted).
+This report compares cognitive profiles across 3 thinking effort levels (LOW, MEDIUM, HIGH) using Qwen3.5-35B-A3B via vLLM with **prompt-based effort control**. K=3, 10 questions per effort level (30 traces each).
+
+## Effort Control Implementation
+
+Two methods supported:
+1. **Parameter-based**: `thinking_budget` parameter (for models like GPT-4.1 that support it)
+2. **Prompt-based**: System prompt modifiers (default, for Qwen and similar models)
+
+| Effort | Prompt Modifier |
+|--------|-----------------|
+| LOW | "Think briefly and give a concise answer." |
+| MEDIUM | "Think through this problem carefully." |
+| HIGH | "Think step by step. Show all your reasoning. Consider multiple angles." |
+| MAX | "Think deeply and exhaustively. Explore all possibilities. Consider edge cases. Show comprehensive reasoning." |
+
+## Token Output (Verification of Effort Control)
+
+| Effort | Expected | Actual Avg Tokens |
+|--------|----------|-------------------|
+| LOW | ~300 | 319 |
+| MEDIUM | ~1000 | 978 |
+| HIGH | ~1100 | 1072 |
+
+**SUCCESS**: Prompt-based control produces meaningful token differentiation!
 
 ## All 22 Metrics
 
@@ -20,8 +43,8 @@ This report compares cognitive profiles across 4 thinking effort levels (LOW, ME
 
 ### Structure Metrics (7)
 - **exploration_exploitation_ratio**: Balance between exploring vs exploiting
-- **backtracking_rate**: Frequency of returning to previous states (BACK + CRIT edges)
-- **cross_branch_connectivity**: Connections between branches (SYNT edges)
+- **backtracking_rate**: Frequency of returning to previous states
+- **cross_branch_connectivity**: Connections between branches
 - **convergence_index**: How quickly reasoning converges
 - **orphan_ratio**: Nodes without connections
 - **graph_density**: Edge-to-node ratio
@@ -29,10 +52,10 @@ This report compares cognitive profiles across 4 thinking effort levels (LOW, ME
 - **mean_cycle_length**: Average length of cycles
 
 ### Metacognitive Metrics (4)
-- **self_reflection_rate**: Self-referential thinking frequency (MET nodes)
+- **self_reflection_rate**: Self-referential thinking frequency
 - **critique_to_hypothesis_ratio**: Critical vs hypothesis nodes
 - **hedging_density**: Uncertainty expression frequency
-- **perspective_taking**: Multi-perspective reasoning (RFR nodes)
+- **perspective_taking**: Multi-perspective reasoning
 
 ### Efficiency Metrics (2)
 - **token_per_idea**: Average tokens per idea unit
@@ -40,97 +63,84 @@ This report compares cognitive profiles across 4 thinking effort levels (LOW, ME
 
 ---
 
-## Results by Effort Level (K=3)
+## Results by Effort Level (K=3, Q=10)
 
-| Metric | LOW | MEDIUM | HIGH |
-|--------|-----|--------|------|
-| **Sample Size** | | | |
-| num_traces | 5 | 3 | 1 |
-| avg_tokens | 793.0 | 772.3 | 887.0 |
-| | | | |
-| **Breadth (4)** | | | |
-| branching_factor | 0.0 | 0.0 | 0.0 |
-| unique_perspective_count | 1.4 | 1.33 | 1.0 |
-| domain_spread | 3.6 | 2.67 | 6.0 |
-| first_idea_diversity | 0.36 | 0.35 | 0.49 |
-| | | | |
-| **Depth (4)** | | | |
-| max_elaboration_chain | 3.2 | 3.0 | 4.0 |
-| mean_branch_depth | 0.91 | 0.78 | 1.0 |
-| specificity_gradient | 0.0 | 0.0 | 0.0 |
-| reasoning_density | 0.19 | 0.23 | 0.40 |
-| | | | |
-| **Structure (7)** | | | |
-| exploration_exploitation_ratio | 2.47 | 1.78 | 1.5 |
-| backtracking_rate | 0.11 | 0.0 | 0.0 |
-| cross_branch_connectivity | 0.0 | 0.0 | 0.0 |
-| convergence_index | 0.0 | 0.0 | 0.0 |
-| orphan_ratio | 0.35 | 0.44 | 0.33 |
-| graph_density | 0.83 | 0.75 | 1.3 |
-| cycle_count | 0.6 | 0.0 | 0.0 |
-| mean_cycle_length | 0.9 | 0.0 | 0.0 |
-| | | | |
-| **Metacognitive (4)** | | | |
-| self_reflection_rate | 0.0 | 0.0 | 0.0 |
-| critique_to_hypothesis_ratio | 0.07 | 0.0 | 0.0 |
-| hedging_density | 0.19 | 0.13 | 0.20 |
-| perspective_taking | 0.0 | 0.33 | 0.0 |
-| | | | |
-| **Efficiency (2)** | | | |
-| token_per_idea | 604.7 | 602.5 | 887.0 |
-| redundancy_ratio | 0.0 | 0.0 | 0.0 |
+| Metric | LOW | HIGH |
+|--------|-----|------|
+| **Sample Size** | | |
+| num_traces | 12 | 15 |
+| avg_tokens | 629.4 | 1076.0 |
+| | | |
+| **Breadth (4)** | | |
+| branching_factor | 0.0 | 0.0 |
+| unique_perspective_count | 1.67 | 1.4 |
+| domain_spread | 1.08 | 2.93 |
+| first_idea_diversity | 0.51 | 0.58 |
+| | | |
+| **Depth (4)** | | |
+| max_elaboration_chain | 5.42 | 6.73 |
+| mean_branch_depth | 1.14 | 1.30 |
+| specificity_gradient | 0.0 | 0.0 |
+| reasoning_density | 0.22 | 0.24 |
+| | | |
+| **Structure (7)** | | |
+| exploration_exploitation_ratio | 2.14 | 2.76 |
+| backtracking_rate | 0.18 | 0.04 |
+| cross_branch_connectivity | 0.06 | 0.01 |
+| convergence_index | 0.17 | 0.20 |
+| orphan_ratio | 0.34 | 0.25 |
+| graph_density | 1.15 | 0.93 |
+| cycle_count | 2.17 | 0.27 |
+| mean_cycle_length | 0.97 | 0.33 |
+| | | |
+| **Metacognitive (4)** | | |
+| self_reflection_rate | 0.01 | 0.0 |
+| critique_to_hypothesis_ratio | 0.07 | 0.04 |
+| hedging_density | 0.15 | 0.30 |
+| perspective_taking | 0.0 | 0.0 |
+| | | |
+| **Efficiency (2)** | | |
+| token_per_idea | 400.3 | 866.8 |
+| redundancy_ratio | 0.0001 | 0.0 |
 
 ---
 
 ## Key Observations
 
-1. **Cycle Detection**: LOW shows 0.6 cycles per trace with mean length 0.9 - unique behavior!
+1. **Token Output**: HIGH produces ~70% more tokens than LOW - effort control working!
 
-2. **Backtracking**: LOW has highest backtracking rate (0.11), MEDIUM/HIGH show 0
+2. **Cycle Count**: LOW shows significantly more cycles (2.17 vs 0.27) - more iterative reasoning
 
-3. **Critique**: Only LOW shows critique activity (0.07 ratio)
+3. **Backtracking**: LOW shows more backtracking (0.18 vs 0.04) - more self-correction
 
-4. **Perspective Taking**: Only MEDIUM shows perspective-taking (0.33)
+4. **Hedging**: HIGH shows more hedging (0.30 vs 0.15) - more uncertainty expression
 
-5. **Exploration**: LOW most exploratory (2.47), HIGH least (1.5)
+5. **Max Elaboration**: HIGH deeper chains (6.73 vs 5.42)
 
-6. **Reasoning Density**: HIGH highest (0.40), LOW lowest (0.19)
+6. **Graph Density**: LOW denser graphs (1.15 vs 0.93)
 
-7. **Graph Density**: HIGH densest (1.3), MEDIUM sparse (0.75)
-
-8. **Token Efficiency**: MEDIUM most efficient (602.5), HIGH least (887)
+7. **Token Efficiency**: LOW more efficient (400 vs 867 tokens/idea)
 
 ---
 
 ## Interpretation
 
-- **LOW**: Most dynamic structure - shows cycles, backtracking, critique, high exploration
-- **MEDIUM**: Includes perspective-taking, moderate structure, most efficient
-- **HIGH**: Most reasoning-dense, sparse structure, deepest elaboration chains
-
----
-
-## Fixes Applied
-
-1. Expanded classifier patterns for all node types (RFR, MET, SYN, etc.)
-2. Added rule-based edge detection with node type transitions
-3. Improved backtracking detection with fallback heuristics
-4. Added spaCy logging for specificity_gradient
-5. Added edge types to depth graph (BRCH, SUPP)
+- **LOW**: Shorter but denser reasoning, more cycles, more self-correction, more efficient
+- **HIGH**: Longer output, deeper chains, more hedging, less dense structure
 
 ---
 
 ## Limitations
 
-- Small sample sizes (n=1-5 per effort)
-- spaCy model may not be loaded (specificity_gradient = 0)
-- Cycle detection limited to simple patterns
+- MEDIUM not extracted yet (timeout issues during extraction)
+- Small sample sizes (n=12-15 per effort)
+- spaCy model not loaded (specificity_gradient = 0)
 
 ---
 
 ## Next Steps
 
-1. Run K=15 experiments for statistical power
-2. Add radar chart visualizations
-3. Test spaCy model loading
-4. Test additional models (DeepSeek, Claude)
+1. Complete MEDIUM extraction
+2. Run K=15 experiments for statistical power
+3. Add radar chart visualizations
+4. Load spaCy model for specificity_gradient

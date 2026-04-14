@@ -1,0 +1,102 @@
+{
+  "trace_id": "6ca77580-4e78-44fb-9401-ecb76b3c3b7b",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_004",
+  "domain": "ethical_dilemmas",
+  "run": 1,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "**Step-by-Step Reasoning:**",
+      "start_char": 0,
+      "end_char": 27,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    },
+    {
+      "tu_id": 1,
+      "text": "1.  **Legal Compliance:** Hiring algorithms that create \"disparate impact\" against protected classes (which often correlate with socioeconomic status) violate anti-discrimination laws (e.g., Title VII in the US), regardless of their predictive accuracy.",
+      "start_char": 27,
+      "end_char": 280,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    },
+    {
+      "tu_id": 2,
+      "text": "2.  **Ethical Validity:** Using biased historical data to train an AI perpetuates systemic inequality, undermining fairness and diversity goals, which is ethically unacceptable for a modern organization.",
+      "start_char": 280,
+      "end_char": 483,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    },
+    {
+      "tu_id": 3,
+      "text": "3.  **Accuracy Definition:** \"Accuracy\" based on biased data measures how well the algorithm replicates past discrimination, not how well it identifies true merit or future performance.\n\n**Answer:**\nNo, the company should not use it. The legal liability, ethical harm, and flawed definition of accuracy outweigh the potential efficiency gains.",
+      "start_char": 483,
+      "end_char": 826,
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 0.5
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "edge_type": "SYNT",
+      "confidence": 0.7
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SYNT",
+      "confidence": 0.7
+    }
+  ],
+  "token_count": 110
+}

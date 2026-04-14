@@ -1,0 +1,96 @@
+{
+  "trace_id": "34402a28-c645-4d88-9f6f-2ac3f8450217",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_002",
+  "domain": "ethical_dilemmas",
+  "run": 2,
+  "nodes": [
+    {
+      "tu_id": 1,
+      "text": "1.  **Medical Criteria:** Both patients have an equal probability of survival, so clinical prognosis offers no basis for differentiation.",
+      "start_char": 0,
+      "end_char": 137,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    },
+    {
+      "tu_id": 2,
+      "text": "2.  **Ethical Constraints:** Healthcare ethics generally prohibit allocating resources based on \"social worth\" (e.g., family status) or age, as this introduces bias and violates principles of justice and equity.",
+      "start_char": 137,
+      "end_char": 348,
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 3,
+      "text": "3.  **Fairness Protocol:** To ensure impartiality, a neutral tie-breaker is required, such as random selection or strict chronological order.",
+      "start_char": 348,
+      "end_char": 489,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    },
+    {
+      "tu_id": 4,
+      "text": "4.  **Oversight:** Critical life-or-death decisions should involve human ethical review rather than autonomous AI determination.\n\n**Answer:**\nThe AI should allocate the medication using a neutral protocol, such as **random selection**, rather than considering age or family status. Social utility is not a valid medical triage criterion, and neutrality ensures fairness and avoids discriminatory bias.",
+      "start_char": 489,
+      "end_char": 890,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    }
+  ],
+  "token_count": 122
+}
