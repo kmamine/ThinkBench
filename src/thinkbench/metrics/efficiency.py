@@ -1,54 +1,30 @@
-"""Efficiency metrics for cognitive profiles."""
+"""Efficiency metrics for cognitive profiles (v2)."""
 
 import numpy as np
-from ..extract.schemas import ThoughtGraph, NodeFamily
+from ..extract.schemas import ThoughtGraph
+from ..utils.models import get_embed_model
 
 
 def token_per_idea(graph: ThoughtGraph) -> float:
-    """Total tokens / UPC (Unique Perspective Count)."""
-    if not graph.nodes:
-        return 0.0
-
-    exp_nodes = [n for n in graph.nodes if n.node_family == NodeFamily.EXPLORATION]
-    if not exp_nodes:
-        return float(graph.token_count)
-
-    from ..metrics.breadth import unique_perspective_count
-
+    """Total tokens / unique_perspective_count (|N_RFR|)."""
+    from .breadth import unique_perspective_count
     upc = unique_perspective_count(graph)
-
-    if upc == 0:
-        return float(graph.token_count)
-
-    return graph.token_count / upc
+    return graph.token_count / upc if upc > 0 else float(graph.token_count)
 
 
 def redundancy_ratio(graph: ThoughtGraph) -> float:
-    """Proportion of TU pairs with embedding similarity > 0.90."""
+    """Fraction of TU pairs with cosine similarity > 0.90."""
     if len(graph.nodes) < 2:
         return 0.0
-
     try:
-        from sentence_transformers import SentenceTransformer
-        from sklearn.metrics.pairwise import cosine_similarity
-
-        model = SentenceTransformer("all-MiniLM-L6-v2")
-        texts = [n.text[:300] for n in graph.nodes]
-        embeddings = model.encode(texts)
-
-        sim_matrix = cosine_similarity(embeddings)
-
-        n = len(embeddings)
-        high_sim_pairs = 0
-        total_pairs = 0
-
-        for i in range(n):
-            for j in range(i + 1, n):
-                if sim_matrix[i][j] > 0.90:
-                    high_sim_pairs += 1
-                total_pairs += 1
-
-        return high_sim_pairs / total_pairs if total_pairs > 0 else 0.0
-
+        model = get_embed_model()
+        embs = model.encode([n.text[:300] for n in graph.nodes], normalize_embeddings=True)
+        n = len(embs)
+        high = sum(
+            1 for i in range(n) for j in range(i + 1, n)
+            if float(np.dot(embs[i], embs[j])) > 0.90
+        )
+        total = n * (n - 1) // 2
+        return high / total if total > 0 else 0.0
     except ImportError:
         return 0.0

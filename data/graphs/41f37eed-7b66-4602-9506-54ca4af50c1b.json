@@ -1,0 +1,42 @@
+{
+  "trace_id": "41f37eed-7b66-4602-9506-54ca4af50c1b",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_002",
+  "domain": "ethical_dilemmas",
+  "run": 1,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "Sentence 1.",
+      "start_char": 0,
+      "end_char": 11,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    },
+    {
+      "tu_id": 1,
+      "text": "Sentence 2.",
+      "start_char": 0,
+      "end_char": 11,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    }
+  ],
+  "token_count": 1225
+}

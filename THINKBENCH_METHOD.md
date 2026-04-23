@@ -110,37 +110,35 @@ Only models that expose thinking/reasoning traces:
 
 This is the technical heart of the paper. The pipeline has three stages: **Segment → Classify → Link**. The output is a **directed graph** (not a tree or DAG) — cycles are permitted and constitute a meaningful signal (iterative refinement, oscillation between perspectives, circular justification).
 
-### 3.1 Stage A: Segmentation — CoT Text → Atomic Thought Units
+Critically, **no generative LLM is used in extraction** (v2). All segmentation and classification is done with deterministic rules and discriminative models. This eliminates circular validity — v1 used a generative LLM to analyze other models' outputs, introducing potential bias.
+
+### 3.1 Stage A: Segmentation — CoT Text → Atomic Thought Units (3-Pass Non-Generative)
 
 **Definition**: A *thought unit* (TU) is a contiguous span of the CoT that expresses a single coherent idea, claim, consideration, or reasoning step. It is the smallest unit that can be understood in isolation.
 
-**Segmentation Method**: LLM-based segmentation using a prompted parser.
+**Pass 1 — Hard Boundaries (Regex)**
 
-**Parser prompt** (to a strong instruction model like Claude Sonnet or GPT-4.1):
+A compiled lexicon of cue phrases is matched at sentence starts. Each match assigns a `BoundaryClass`:
 
-```
-You are a reasoning trace parser. Given a chain-of-thought reasoning trace, 
-segment it into atomic thought units. Each thought unit should express exactly 
-one idea, claim, hypothesis, consideration, or reasoning step.
+| BoundaryClass | Example Cue Phrases |
+|---|---|
+| BACKTRACK | "Wait,", "Actually,", "Let me reconsider", "I was wrong" |
+| BRANCH | "Alternatively,", "Another approach", "What if", "Or we could" |
+| META | "I'm going in circles", "Let me step back", "I need to reconsider my approach" |
+| CONVERGENCE | "In conclusion", "Bringing this together", "So the answer is" |
+| ELABORATION | "Specifically,", "For example,", "In practice,", "More concretely" |
+| CONTRAST | "On the other hand,", "However,", "But", "Yet" |
+| SUPPORT | "Because", "This is supported by", "The reason is", "Evidence for this" |
 
-Rules:
-1. A thought unit is the smallest span that makes sense alone
-2. Split at logical transitions: new ideas, direction changes, elaborations
-3. Preserve the original text verbatim — only add boundary markers
-4. Linguistic cues for boundaries include: "Wait,", "Actually,", "Alternatively,",
-   "But", "Let me reconsider", "On the other hand", "Now,", "So,", "However,",
-   "Hmm,", "What if", "Let me think about", paragraph breaks
-5. Do NOT split within a single chain of deduction (A→B→C stays together if 
-   it's one logical move)
+Multi-word cues take priority over single-word cues. Paragraph breaks produce SEQ boundaries. Spans shorter than 3 sentences or 50 tokens are merged with the following span.
 
-Output format: Return a JSON array where each element is:
-{
-  "tu_id": integer (0-indexed),
-  "text": "exact text span",
-  "start_char": integer,
-  "end_char": integer
-}
-```
+**Pass 2 — Soft Boundaries (TextTiling with MiniLM)**
+
+On spans without a hard boundary, sentences are encoded with `all-MiniLM-L6-v2`. A sliding window of size 3 computes cosine similarity between adjacent windows. Local minima detected by `scipy.signal.find_peaks` (prominence ≥ 0.15) that fall below τ (30th percentile of within-trace adjacent-sentence similarities) become soft boundaries (`BoundaryClass.NONE`, edge `SEQ`).
+
+**Pass 3 — NLI Edge Promotion (DeBERTa)**
+
+`cross-encoder/nli-deberta-v3-large` promotes SEQ edges to typed semantic edges. For each adjacent TU pair within window=4, three hypotheses are tested (SUPP/CONT/ELAB) at threshold 0.75. For BACKTRACK TUs more than 4 positions apart, a BACK hypothesis is tested at threshold 0.70. All pairs for a trace are submitted as a **single batched** `predict()` call for efficiency.
 
 **Validation protocol**:
 - Human-annotate 50 traces (across models/domains) for segmentation boundaries
@@ -150,7 +148,25 @@ Output format: Return a JSON array where each element is:
 
 ### 3.2 Stage B: Node Classification — Assigning Functional Types
 
-**Each TU is classified into exactly one functional type**. This taxonomy is derived from cognitive science reasoning typologies and adapted for LLM traces.
+**Each TU is classified into exactly one functional type** using a deterministic rule-based map from `BoundaryClass` to `NodeType`. No LLM call is needed.
+
+#### BoundaryClass → NodeType Map
+
+| BoundaryClass | NodeType | NodeFamily |
+|---|---|---|
+| BACKTRACK | CRT (Critique) | EVALUATION |
+| BRANCH | HYP (Hypothesis) | EXPLORATION |
+| META | MET (Meta-reflection) | EVALUATION |
+| CONVERGENCE | SYN (Synthesis) | CONVERGENCE |
+| ELABORATION | SPC (Specification) | ELABORATION |
+| CONTRAST | CMP (Comparison) | EVALUATION |
+| SUPPORT | JUS (Justification) | ELABORATION |
+| NONE, idx=0 | HYP (Hypothesis) | EXPLORATION |
+| NONE, idx>0 | SPC (Specification) | ELABORATION |
+
+Classification confidence is 1.0 for hard-boundary TUs and 0.5 for soft-boundary (NONE class).
+
+A fine-tuned DeBERTa node classifier is planned for a future iteration — the stub `load_deberta_classifier()` raises `NotImplementedError` as a placeholder.
 
 #### Node Type Taxonomy (12 types, 4 families)
 
@@ -182,29 +198,14 @@ Output format: Return a JSON array where each element is:
 |---|---|---|---|
 | Synthesis | `SYN` | Combines insights from multiple threads | "Bringing these together...", "Combining X and Y..." |
 
-**Classification Method**: LLM-based classifier with the taxonomy as a schema.
-
-**Classifier prompt**:
-```
-Classify the following thought unit into exactly one type from the taxonomy.
-
-Taxonomy:
-[... full taxonomy above ...]
-
-Thought unit: "{text}"
-Context: This thought unit appears after: "{previous_tu_text}"
-
-Output: {"type": "CODE", "confidence": 0.0-1.0, "rationale": "one sentence"}
-```
-
-**Validation**: 
+**Validation**:
 - Human-classify 200 TUs (stratified by model and domain)
 - Report macro-F1 per type and confusion matrix
 - Target: macro-F1 ≥ 0.75
 
-### 3.3 Stage C: Edge Linking — Building the Thought Graph
+### 3.3 Stage C: Graph Assembly
 
-This is the hardest step and the key methodological contribution over LCoT2Tree (which only builds trees via sequential attachment).
+The segmenter produces a complete list of `ThoughtUnit` objects (with `boundary_class` and typed edges already assigned by Passes 1–3). The linker's only role is to assemble these into a `ThoughtGraph` Pydantic object — no additional LLM calls or edge inference.
 
 #### Edge Type Taxonomy (8 types)
 
@@ -219,87 +220,37 @@ This is the hardest step and the key methodological contribution over LCoT2Tree 
 | Contrast | `CONT` | source ↔ target | Source and target represent opposing perspectives |
 | Sequential | `SEQ` | prev → next | Default adjacency (no semantic relationship beyond order) |
 
-#### Linking Algorithm
-
-The linking proceeds in three passes:
-
-**Pass 1: Sequential backbone**  
-Connect every TU_i to TU_{i+1} with a `SEQ` edge. This creates the linear backbone.
-
-**Pass 2: Local semantic linking (window = 5)**  
-For each TU_i, examine TU_{i-5} through TU_{i-1}. Use an LLM classifier to determine if a non-sequential relationship exists:
-
-```
-Given two thought units from a reasoning trace, determine their relationship.
-
-Thought unit A (earlier): "{tu_a_text}"
-Thought unit B (later): "{tu_b_text}"
-
-Possible relationships:
-- ELAB: B deepens/specifies A
-- BRCH: B starts a new direction from A's setup  
-- BACK: B revises or abandons A
-- CRIT: B challenges or critiques A
-- SUPP: B provides evidence for A
-- CONT: B contrasts with A (opposing perspective)
-- NONE: No meaningful relationship beyond sequence
-
-Output: {"relation": "CODE or NONE", "confidence": 0.0-1.0}
-```
-
-If relation ≠ NONE and confidence ≥ 0.7, add the edge. Remove the `SEQ` edge between adjacent nodes that now have a semantic edge.
-
-**Pass 3: Long-range synthesis detection**  
-This pass specifically handles cross-branch connections — the key feature directed graphs have over trees.
-
-For each TU classified as `SYN` (synthesis):
-1. Extract the key concepts/claims from the synthesis TU
-2. Scan ALL prior TUs (not just the local window) for matching concepts
-3. Use embedding similarity (threshold ≥ 0.75) + LLM verification:
-
-```
-Does this synthesis thought unit draw on the idea expressed in the candidate source?
-
-Synthesis TU: "{syn_text}"
-Candidate source TU: "{candidate_text}"
-
-Output: {"draws_from": true/false, "confidence": 0.0-1.0}
-```
-
-If confirmed, add a `SYNT` edge from each verified source to the synthesis node.
-
-**Pass 4: Backtracking detection**  
-For each TU classified as `CRT` or containing backtracking markers ("Wait,", "Actually,", "Let me reconsider"):
-1. Identify what is being revised/critiqued
-2. Scan backward (up to full trace) for the target TU
-3. Add `BACK` or `CRIT` edge from the new TU to the original
+Every edge carries an `is_sequential: bool` flag. The sequential backbone (Pass 1) sets `is_sequential=True`; NLI-promoted edges set it to `False`. Metrics that require "semantic edges only" filter on this flag.
 
 #### Thought Graph Output Schema
 ```json
 {
   "trace_id": "uuid",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_001",
+  "domain": "ethical_dilemmas",
+  "run": 1,
+  "token_count": 2847,
   "nodes": [
     {
       "tu_id": 0,
       "text": "Let me consider the ethical dimensions...",
-      "type": "HYP",
-      "type_family": "EXPLORATION",
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0,
       "start_char": 0,
-      "end_char": 147
+      "end_char": 147,
+      "token_count": 28
     }
   ],
   "edges": [
     {
       "source": 0,
       "target": 1,
-      "type": "ELAB",
-      "confidence": 0.92
-    },
-    {
-      "source": 3,
-      "target": 7,
-      "type": "SYNT",
-      "confidence": 0.85
+      "edge_type": "ELAB",
+      "confidence": 0.92,
+      "is_sequential": false
     }
   ]
 }
@@ -315,10 +266,10 @@ Each trace produces a numeric vector. Each model's profile is the mean vector ac
 
 | Metric | Formula | Intuition |
 |---|---|---|
-| **Branching factor** (BF) | Mean out-degree of EXPLORATION-family nodes via BRCH edges | How many distinct directions does the model explore? |
-| **Unique perspective count** (UPC) | Number of connected components in the subgraph induced by EXPLORATION nodes (after removing SEQ edges) | How many truly independent angles does the model try? |
-| **Domain spread** (DS) | For policy/ethics questions: number of distinct stakeholder perspectives mentioned (detected via NER + coreference) | Does the model consider multiple affected parties? |
-| **First-idea diversity** (FID) | Cosine distance between embeddings of the first 3 EXPLORATION nodes | How different are the model's initial ideas from each other? |
+| **Branching factor** (BF) | `\|E_BRCH\| / max(\|V\|, 1)` | How many distinct directions does the model explore? |
+| **Unique perspective count** (UPC) | Count of RFR (Reframing) nodes | How many truly independent angles does the model try? |
+| **Domain spread** (DS) | Number of agglomerative clusters (cosine threshold=0.45) of BRS+HYP node embeddings | Does the model consider multiple topically distinct framings? |
+| **First-idea diversity** (FID) | Mean pairwise cosine distance among embeddings of first 3 HYP nodes | How different are the model's initial ideas from each other? |
 
 ### 4.2 Depth Metrics
 
@@ -327,37 +278,35 @@ Each trace produces a numeric vector. Each model's profile is the mean vector ac
 | Metric | Formula | Intuition |
 |---|---|---|
 | **Max elaboration chain** (MEC) | Longest path following only ELAB edges from any single root | Deepest single-thread reasoning |
-| **Mean branch depth** (MBD) | Average depth across all branches (rooted at EXPLORATION nodes) | Typical elaboration depth |
-| **Specificity gradient** (SG) | Pearson correlation between node depth and entity density (entities per token) | Do ideas become more concrete as they're developed? |
-| **Reasoning density** (RD) | Ratio of (JUS + IMP + CON nodes) to total nodes | What fraction of thinking is logical reasoning vs. brainstorming? |
+| **Mean branch depth** (MBD) | Average depth across all branches (semantic subgraph) | Typical elaboration depth |
+| **Specificity gradient** (SG) | Linear regression slope of entity density vs. depth | Do ideas become more concrete as they're developed? |
+| **Reasoning density** (RD) | `\|nodes with ≥1 semantic edge\| / \|V\|` | What fraction of thinking is logically connected? |
 
 ### 4.3 Structural Metrics
 
 | Metric | Formula | Intuition |
 |---|---|---|
-| **Exploration-exploitation ratio** (EER) | (EXPLORATION nodes) / (ELABORATION nodes) | Breadth-first vs. depth-first style |
-| **Backtracking rate** (BR) | Proportion of nodes with outgoing BACK edges | How often does the model revise itself? |
-| **Cross-branch connectivity** (CBC) | Number of SYNT edges / number of branches | Does the model connect different threads? |
-| **Convergence index** (CI) | (SYN nodes in last quartile) / (total SYN nodes) | Does the model synthesize at the end or throughout? |
-| **Orphan ratio** (OR) | Proportion of EXPLORATION nodes with no ELAB children | How many ideas are raised but never developed? |
-| **Graph density** (GD) | |E| / (|V| × (|V|-1)/2) | Overall connectivity of the thought graph |
-| **Cycle count** (CC) | Number of distinct simple cycles (via networkx) | Iterative refinement / oscillation frequency |
-| **Mean cycle length** (MCL) | Mean length of all simple cycles | Short (2-3) = local oscillation; long (5+) = large reasoning loops |
+| **Exploration-exploitation ratio** (EER) | EXPLORATION nodes / ELABORATION nodes | Breadth-first vs. depth-first style |
+| **Backtracking rate** (BR) | `\|E_BACK\| / max(\|E_sem\|, 1)` | How often does the model revise itself? |
+| **Cross-branch connectivity** (CBC) | Fraction of cross-branch node pairs with SYNT or SUPP edge | Does the model connect different threads? |
+| **Convergence index** (CI) | `sum(d_in(v) for SYN nodes) / (\|V\| × mean_d_in)` | Degree to which synthesis nodes are well-connected |
+| **Graph density** (GD) | `\|E_sem\| / (\|V\|×(\|V\|-1))` (semantic edges only) | Overall semantic connectivity |
+| **Revision depth** (RvD) | `mean(\|pos(u) - pos(v)\|) for BACK edges` | How far back does the model revise? |
 
 ### 4.4 Metacognitive Metrics
 
 | Metric | Formula | Intuition |
 |---|---|---|
-| **Self-reflection rate** (SRR) | Proportion of MET nodes | How often does the model monitor its own reasoning? |
+| **Self-reflection rate** (SRR) | MET nodes / total nodes | How often does the model monitor its own reasoning? |
 | **Critique-to-hypothesis ratio** (CHR) | CRT nodes / HYP nodes | Does the model evaluate as much as it generates? |
 | **Hedging density** (HD) | Proportion of TUs containing uncertainty markers ("might", "could", "it's possible") | How much epistemic humility? |
-| **Perspective-taking** (PT) | Proportion of RFR nodes | How often does the model shift viewpoint? |
+| **Perspective-taking** (PT) | RFR nodes / total nodes | How often does the model shift viewpoint? |
 
 ### 4.5 Efficiency Metrics
 
 | Metric | Formula | Intuition |
 |---|---|---|
-| **Token-per-idea** (TPI) | Total tokens / UPC | Verbosity relative to idea generation |
+| **Token-per-idea** (TPI) | `avg_tokens / max(UPC, 1)` | Verbosity relative to idea generation |
 | **Redundancy ratio** (RR) | Proportion of TU pairs within same trace with embedding similarity > 0.90 | How repetitive is the reasoning? |
 
 ### 4.6 Profile Vector
@@ -365,10 +314,10 @@ Each trace produces a numeric vector. Each model's profile is the mean vector ac
 The full profile vector for a model M on domain D:
 
 ```
-V(M, D) = [BF, UPC, DS, FID, MEC, MBD, SG, RD, EER, BR, CBC, CI, OR, GD, CC, MCL, SRR, CHR, HD, PT, TPI, RR]
+V(M, D) = [BF, UPC, DS, FID, MEC, MBD, SG, RD, EER, BR, CBC, CI, GD, RvD, SRR, CHR, HD, PT, TPI, RR, avg_tokens, avg_tus]
 ```
 
-**22 dimensions**, computed as means over all traces of model M in domain D.
+**22 dimensions** (20 cognitive metrics + 2 summary stats), computed as means over all traces of model M in domain D.
 
 **Global profile** V(M) = mean across all 6 domains.  
 **Domain-sensitivity** = std(V(M, D)) across domains — measures how much the model adapts its style.
@@ -461,9 +410,10 @@ Position against:
 
 ## 8. Limitations & Future Work
 
-- Parser quality is LLM-dependent (mitigated by validation + gold set)
+- Node classification uses a rule-based boundary_class→node_type map (v2). A fine-tuned DeBERTa classifier per node type is planned for higher accuracy.
 - Open-ended questions have no answer quality signal (by design — this is the point)
 - Models without exposed CoT (e.g., GPT-4o) cannot be evaluated
 - Profile stability may vary with prompt sensitivity
+- NLI edge promotion uses a general-purpose cross-encoder — a domain-adapted model may improve edge precision
 - Future: longitudinal profiling (does a model's thinking style change across versions?)
 - Future: prescriptive application (route questions to the model with the best-matched thinking style)

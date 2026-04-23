@@ -1,5 +1,7 @@
 # ThinkBench: Preliminary Comparison Report
 
+> **Note**: This report was generated with the v1 pipeline (generative LLM-based extraction). Metrics `orphan_ratio`, `cycle_count`, and `mean_cycle_length` listed below are retired in v2. The current pipeline uses non-generative extraction and reports `revision_depth` instead of cycle-based metrics. Re-run extraction with `scripts/extract_graphs.py` to get v2 results.
+
 ## Overview
 
 This report compares cognitive profiles across 3 thinking effort levels (LOW, MEDIUM, HIGH) using Qwen3.5-35B-A3B via vLLM with **prompt-based effort control**. K=3, 10 questions per effort level (30 traces each).

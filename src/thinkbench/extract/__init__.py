@@ -6,11 +6,14 @@ from .schemas import (
     NodeType,
     EdgeType,
     NodeFamily,
+    BoundaryClass,
     NODE_FAMILY_MAP,
+    BOUNDARY_EDGE_MAP,
+    BOUNDARY_NODE_MAP,
 )
-from .segmenter import Segmenter
-from .classifier import Classifier
-from .linker import Linker, build_graph
+from .segmenter import segment
+from .classifier import classify_nodes
+from .linker import build_graph
 
 __all__ = [
     "ThoughtUnit",
@@ -20,9 +23,11 @@ __all__ = [
     "NodeType",
     "EdgeType",
     "NodeFamily",
+    "BoundaryClass",
     "NODE_FAMILY_MAP",
-    "Segmenter",
-    "Classifier",
-    "Linker",
+    "BOUNDARY_EDGE_MAP",
+    "BOUNDARY_NODE_MAP",
+    "segment",
+    "classify_nodes",
     "build_graph",
 ]

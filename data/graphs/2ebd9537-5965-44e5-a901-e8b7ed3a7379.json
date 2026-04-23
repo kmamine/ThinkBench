@@ -1,0 +1,504 @@
+{
+  "trace_id": "2ebd9537-5965-44e5-a901-e8b7ed3a7379",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_008",
+  "domain": "ethical_dilemmas",
+  "run": 3,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "This is a complex ethical, economic, and sociological problem. To arrive at a well-reasoned conclusion, I must analyze the problem from multiple dimensions: the impact on the user, the impact on society, the economic viability of the platform, and the psychological implications of \"defaults.\"\n\nHere is the step-by-step reasoning process.\n\n### Step 1: Define the Core Trade-off\nThe problem presents a zero-sum trade-off between two metrics:",
+      "start_char": 0,
+      "end_char": 440,
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 1,
+      "text": "1.  **Engagement:** Measured by clicks, time spent, and interaction. High engagement correlates with high ad revenue but correlates with algorithmic reinforcement of existing beliefs (echo chambers).",
+      "start_char": 440,
+      "end_char": 639,
+      "node_type": "CON",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 2,
+      "text": "2.  **Diversity:** Measured by the variety of sources, viewpoints, and topics. This reduces engagement (40% drop) but mitigates polarization and misinformation.\n\nThe decision is not just about the algorithm; it is about the **Default Setting**. In behavioral economics, the \"default\" is the path of least resistance. Most users do not change settings. Therefore, the default effectively dictates the experience for 90%+ of the user base.\n\n### Step 2: Analyze the \"Engagement-First\" Default\n**Argument for this choice:**\n*   **Business Viability:** If the platform operates on an ad-based revenue model, engagement is the currency. A 40% drop in engagement could lead to bankruptcy, loss of staff, and the closure of the service entirely.\n*   **User Preference:** Users often want content that aligns with their interests. Providing what users *want* is a valid service metric.\n*   **Efficiency:** It reduces the \"noise\" a user has to sift through to find relevant information.\n\n**Risks and Consequences:**\n*   **Epistemic Bubbles:** Users are fed only what confirms their worldview.\n*   **Polarization:** Exposure to opposing views is necessary for compromise and democratic functioning. Without it, society fractures.\n*   **Misinformation:** Echo chambers amplify falsehoods that align with group identity.\n*   **Long-term Retention:** While short-term engagement spikes, long-term trust may erode if users realize they are being manipulated.\n\n### Step 3: Analyze the \"Diversity-First\" Default\n**Argument for this choice:**\n*   **Democratic Health:** A healthy democracy requires a citizenry that understands opposing arguments.\n*   **User Growth:** Exposure to new ideas can actually increase long-term retention by making the platform feel more \"comprehensive\" and trustworthy.\n*   **Ethical Responsibility:** Platforms have a duty of care regarding the content they distribute. Spreading misinformation via engagement algorithms creates externalities (harm to society) that the platform ignores.\n\n**Risks and Consequences:**\n*   **Economic Failure:** The 40% engagement drop is significant. If this is a private company, this strategy may be unsustainable without subsidies or a shift to subscriptions.\n*   **User Frustration:** Users may feel the platform is \"lecturing\" them or wasting their time with content they don't care about.\n*   **Opt-Out Bias:** If the default is diversity, users who *want* echo chambers will opt-out. This creates a self-segregating user base, though less severe than the engagement default.\n\n### Step 4: Evaluate the \"40% Engagement Drop\"\nIs this number a hard constraint or a variable?\n*   **Metric Validity:** \"Engagement\" is often a proxy for \"indignation\" or \"clickbait.\" A 40% drop in *clicks* might result in a 5% drop in *time spent* if diverse content is higher quality and more informative.\n*   **Friction as a Feature:** The drop in engagement might be \"friction\" that forces users to think critically rather than scroll mindlessly. This is a negative for the algorithm's KPIs but a positive for user cognitive health.\n*   **Sustainability:** If the engagement drop is permanent, the business model (ads) is incompatible with diversity. If the drop is temporary (users adjust), the business model might recover.\n\n### Step 5: Consider the \"Default\" as a Nudge\nThe concept of a default is powerful.\n*   **Status Quo Bias:** If Engagement is the default, the platform is actively choosing polarization for profit.\n*   **Libertarian Paternalism:** If Diversity is the default, the platform is nudging users toward a healthier information diet while allowing them to opt-out for pure engagement.\n*   **The \"Default\" Ethical Standard:** In medical ethics and data privacy, the default is increasingly shifting toward protecting the user's long-term interest (e.g., \"Opt-in\" for data sharing rather than \"Opt-out\").\n\n### Step 6: Synthesize and Weigh the Options\nTo decide, I must weigh the **Internal Value** (Profit/User Satisfaction) against the **External Value** (Societal Impact).",
+      "start_char": 639,
+      "end_char": 4662,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.7
+    },
+    {
+      "tu_id": 3,
+      "text": "1.  **The \"Private Business\" View:** A company's fiduciary duty is to shareholders. Maximizing engagement is the only rational choice. *Verdict: Engagement Default.*",
+      "start_char": 4662,
+      "end_char": 4827,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    },
+    {
+      "tu_id": 4,
+      "text": "2.  **The \"Public Utility\" View:** Information infrastructure is essential to democracy. The harm of polarization outweighs the cost of lower ad revenue. *Verdict: Diversity Default.*",
+      "start_char": 4827,
+      "end_char": 5010,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    },
+    {
+      "tu_id": 5,
+      "text": "3.  **The \"Hybrid\" View:** We must find a middle ground.\n\n**Critical Analysis of the Binary Choice:**\nThe prompt asks which should be the *default*.\nIf we choose **Engagement**, we accept that the platform is a tool for radicalization if left unchecked. The 40% drop is the \"cost\" of sanity.\nIf we choose **Diversity**, we accept that the platform might struggle financially, potentially requiring a shift to subscription models (which changes the dynamic to \"pay for quality\" rather than \"pay for attention\").\n\n**The \"40%\" Factor:**\nA 40% reduction in engagement is catastrophic for an ad-revenue model. If the AI is a standalone product, it cannot survive. However, if the AI is part of a larger ecosystem (e.g., a search engine, a social network with other revenue streams), the hit is manageable.\n*Crucial realization:* The 40% drop assumes the current definition of engagement (clicks) is the only metric that matters. If the platform pivots to \"Quality Engagement\" (reading, sharing, learning), the drop might be less severe.\n\n### Step 7: Formulate the Recommendation\nI cannot recommend the Engagement Default because it treats the platform as a casino rather than a library. The societal cost of echo chambers (political violence, loss of shared truth) is too high to ignore.\nHowever, I cannot recommend the Diversity Default without addressing the economic reality.\n\nTherefore, the solution lies in **redefining the Default.** The default should not be a static algorithm setting, but a **User-Controlled Default with a Nudge.**\n\n*Wait, the prompt asks to choose between the two algorithms.* I must pick one.\nIf forced to choose the *single best default* for a healthy information ecosystem: **Diversity.**\nWhy? Because users can always seek out echo chambers on other platforms. If the aggregator defaults to engagement, it actively harms the public discourse. If it defaults to diversity, it protects the public discourse. The economic risk can be mitigated by changing the business model (subscriptions, grants, public funding) rather than sacrificing the product's integrity.\n\n**Refining the Recommendation:**\nThe best default is **Diversity**, but with a critical caveat: The platform must explicitly label this as a \"Civic Mode\" and offer an \"Entertainment/Personalization Mode\" as an opt-out. This acknowledges the user's desire while protecting the ecosystem.\n\n**However, looking at the constraints:**\nIf the AI is a tool for a business, the business dies.\nIf the AI is a tool for society, society suffers.\nIn the context of \"News Aggregation\" (civic duty), the societal argument outweighs the profit argument.\n\n### Final Decision Logic",
+      "start_char": 5010,
+      "end_char": 7662,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.6000000000000001
+    },
+    {
+      "tu_id": 6,
+      "text": "1.  **Harm Assessment:** Echo chambers cause societal harm (polarization). Diversity reduces it.",
+      "start_char": 7662,
+      "end_char": 7758,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    },
+    {
+      "tu_id": 7,
+      "text": "2.  **Agency Assessment:** Users can opt-out of diversity. Users cannot easily opt-out of a default engagement algorithm (it's invisible).",
+      "start_char": 7758,
+      "end_char": 7896,
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 8,
+      "text": "3.  **Long-term vs. Short-term:** Engagement maximizes short-term profit. Diversity maximizes long-term platform trust and societal health.",
+      "start_char": 7896,
+      "end_char": 8035,
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 9,
+      "text": "4.  **Conclusion:** The default should prioritize the long-term health of the information ecosystem over the short-term maximization of clicks.\n\n### Step 8: Drafting the Response\nI will structure the response to first acknowledge the complexity, then analyze the harms of engagement, the viability of diversity, the role of defaults, and finally provide a nuanced recommendation that addresses the economic constraint.\n\n*Self-Correction on the \"40%\":* I need to emphasize that the 40% drop is a metric of *ad-clicks*, not necessarily *user value*. A user reading a diverse article for 5 minutes is more valuable than 10 users clicking \"outrage\" links for 10 seconds. I will argue that the metric itself is flawed.\n\n*Final Plan:*",
+      "start_char": 8035,
+      "end_char": 8763,
+      "node_type": "CON",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 10,
+      "text": "1.  Introduction: Define the stakes.",
+      "start_char": 8763,
+      "end_char": 8799,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    },
+    {
+      "tu_id": 11,
+      "text": "2.  Analysis of Engagement Default (Business vs. Harm).",
+      "start_char": 8799,
+      "end_char": 8854,
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 12,
+      "text": "3.  Analysis of Diversity Default (Health vs. Viability).",
+      "start_char": 8854,
+      "end_char": 8911,
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 13,
+      "text": "4.  The \"Default\" Mechanism (Nudge Theory).",
+      "start_char": 8911,
+      "end_char": 8954,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    },
+    {
+      "tu_id": 14,
+      "text": "5.  The 40% Metric Critique.",
+      "start_char": 8954,
+      "end_char": 8982,
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 15,
+      "text": "6.  Final Recommendation: Diversity as Default (with business model adjustment).\n\n*(Self-Correction during final review)*: I must ensure I don't sound too utopian. I need to acknowledge that if the company goes bust, there is no platform. I will argue that the Diversity Default forces a necessary business model pivot (e.g., subscriptions) which is actually better for the user anyway.\n\nLet's write the response following this chain of thought.\n</think>\n\nTo determine which algorithm should be the default, we must weigh the economic imperatives of the platform against the ethical and societal consequences of information distribution. This is not merely a technical optimization problem; it is a normative question about the role of technology in society.\n\nHere is the step-by-step reasoning and analysis leading to a conclusion.\n\n### 1. Analysis of the \"Engagement\" Default\n**The Business Case:**\n*   **Revenue Model:** Most news aggregators operate on an advertising model. Revenue is directly tied to user attention (clicks, time on site).\n*   **Survival:** A 40% drop in engagement is not a minor setback; it is existential for an ad-revenue business. If the platform cannot pay its servers or staff, it ceases to exist, rendering the diversity argument moot.\n*   **User Autonomy:** Proponents argue that users know what they want. Providing content that aligns with their interests respects their preference for efficiency and comfort.\n\n**The Societal Cost:**\n*   **Echo Chambers:** By prioritizing engagement, the algorithm optimizes for content that triggers emotional responses (outrage, fear, confirmation bias). This reinforces existing beliefs and isolates users from opposing viewpoints.\n*   **Polarization:** When users only see information that validates their worldview, political and social compromise becomes difficult. This contributes to societal instability.\n*   **Misinformation:** False or sensationalist content often generates higher engagement than nuanced, factual reporting. An engagement-first default incentivizes the spread of misinformation.\n\n**Conclusion on Engagement Default:** While economically rational for a short-term shareholder model, it externalizes harm onto society. It treats the platform as a casino rather than a public square.\n\n### 2. Analysis of the \"Diversity\" Default\n**The Societal Benefit:**\n*   **Civic Health:** Exposure to diverse perspectives is a prerequisite for a functioning democracy. It fosters critical thinking and reduces the likelihood of radicalization.\n*   **Trust:** Platforms that prioritize truth and breadth over clicks often build higher long-term trust with users, even if short-term engagement metrics dip.\n*   **User Growth:** While engagement drops, *retention* might improve if users perceive the platform as a reliable, high-quality tool rather than a source of noise.\n\n**The Economic Risk:**\n*   **Viability:** As noted, a 40% drop in ad revenue is difficult to sustain.\n*   **User Friction:** Users accustomed to infinite, personalized feeds may find diverse feeds \"noisy\" or less satisfying, leading to churn.\n\n**Conclusion on Diversity Default:** This prioritizes the long-term health of the information ecosystem but requires a fundamental restructuring of the business model to survive the engagement drop.\n\n### 3. The Power of the \"Default\" Setting\nIn behavioral economics, the **default** is the path of least resistance. Most users do not change settings.\n*   **If Engagement is Default:** The platform actively shapes the majority of users' worldviews toward polarization. It is an active choice for the company to maximize profit over user well-being.\n*   **If Diversity is Default:** The platform nudges users toward a broader worldview. Users who *prefer* echo chambers must actively opt-out. This flips the burden of choice.\n\n**The \"Nudge\" Theory:**\nSetting Diversity as the default is a \"libertarian paternalist\" approach. It allows users to choose engagement if they wish, but it protects the majority from the harm of algorithmic radicalization by default.\n\n### 4. Re-evaluating the \"40% Engagement Drop\"\nThe specific metric of \"40% reduced engagement\" requires scrutiny.\n*   **Metric Flaw:** Engagement is often measured by clicks or time spent. High engagement does not equal high *value*. A user spending 5 minutes reading a diverse, complex article is more \"engaged\" in a meaningful sense than 10 users clicking \"outrage\" headlines.\n*   **Reframing the Cost:** The 40% drop might be a drop in *ad-impressions*, not *user value*. If the platform pivots to a subscription model (paid for quality/trust), the revenue loss might be offset by higher willingness-to-pay from users who value quality.\n*   **Sustainability:** If the engagement drop is permanent, the current ad-based business model is incompatible with a diverse news ecosystem. The default algorithm choice forces the business to adapt, which may be necessary for the industry's long-term health.\n\n### 5. Edge Cases and Considerations\n*   **Vulnerable Populations:** Children, individuals with mental health vulnerabilities, or those in crisis need protection from algorithmic manipulation. Diversity defaults offer a layer of safety.\n*   **Crisis Events:** During elections or pandemics, the cost of echo chambers is highest. A default that promotes diversity is safer during these periods.\n*   **The \"Opt-Out\" Problem:** If Engagement is the default, users *wanting* diversity have to hunt for it. If Diversity is the default, users *wanting* engagement have to hunt for it. However, seeking out \"diversity\" is generally considered a pro-social behavior, whereas seeking out \"echo chambers\" is often a symptom of polarization.\n\n### 6. Final Synthesis and Recommendation\nThe decision rests on whether the platform views itself as a **business selling attention** or a **service delivering information**.",
+      "start_char": 8982,
+      "end_char": 14850,
+      "node_type": "CON",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.6000000000000001
+    },
+    {
+      "tu_id": 16,
+      "text": "1.  **If the goal is Profit Maximization:** The Engagement default is the correct choice.",
+      "start_char": 14850,
+      "end_char": 14939,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    },
+    {
+      "tu_id": 17,
+      "text": "2.  **If the goal is Information Integrity:** The Diversity default is the correct choice.\n\nGiven that \"News Aggregation\" serves a public function (informing the citizenry), the societal impact outweighs the pure profit motive. Furthermore, an engagement-default system is unsustainable in the long run as users become aware of the manipulation, leading to regulation or backlash (e.g., the FTC investigations into social media algorithms).\n\n**The Recommendation:**\nThe **Diversity Algorithm** should be the default.\n\n**Reasoning:**",
+      "start_char": 14939,
+      "end_char": 15471,
+      "node_type": "IMP",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 18,
+      "text": "1.  **Externalities:** The harm caused by echo chambers (polarization, misinformation) is a negative externality that the engagement model ignores. The diversity model internalizes this cost for the greater good.",
+      "start_char": 15471,
+      "end_char": 15683,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    },
+    {
+      "tu_id": 19,
+      "text": "2.  **Agency:** A Diversity default protects the user *from themselves* (cognitive biases) while still allowing them to opt-out if they prefer engagement.",
+      "start_char": 15683,
+      "end_char": 15837,
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 20,
+      "text": "3.  **Business Model Evolution:** The 40% engagement drop signals that the current ad-revenue model is incompatible with a healthy information ecosystem. Making Diversity the default forces the platform to innovate toward more sustainable revenue streams (e.g., subscriptions, grants, public interest funding) rather than exploiting user attention.",
+      "start_char": 15837,
+      "end_char": 16185,
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.3
+    },
+    {
+      "tu_id": 21,
+      "text": "4.  **Transparency:** The platform must explicitly label this as a \"Civic Default\" and explain the trade-off to the user, ensuring informed consent.\n\n**Implementation Strategy:**\n*   **Default:** Diversity Algorithm.\n*   **Opt-Out:** Users can switch to \"Personalized/Engagement Mode\" if they prefer, but it must be clearly labeled as \"Echo Chamber Mode\" to ensure they understand the trade-off.\n*   **Metric Shift:** The platform should shift KPIs from \"Clicks\" to \"Time Well Spent\" or \"Learning Metrics\" to align business incentives with the diversity goal.\n\n### Conclusion\n**The Diversity Algorithm should be the default.**\n\nWhile the 40% engagement drop presents a significant economic challenge, it highlights a flaw in the current attention-economy business model rather than a failure of the diversity algorithm. The long-term societal cost of defaulting to engagement (democratic erosion, polarization) far exceeds the short-term financial cost of prioritizing diversity. By making diversity the default, the platform prioritizes user well-being and societal health, while simultaneously signaling the need for a more sustainable business model that values information quality over sheer attention volume.",
+      "start_char": 16185,
+      "end_char": 17398,
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.6000000000000001
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SEQ",
+      "confidence": 1.0
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "BRCH",
+      "confidence": 0.6
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "BRCH",
+      "confidence": 0.6
+    },
+    {
+      "source": 1,
+      "target": 6,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 6,
+      "target": 10,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 8,
+      "target": 10,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 6,
+      "target": 11,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 7,
+      "target": 11,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 10,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 11,
+      "target": 13,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 10,
+      "target": 14,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 11,
+      "target": 14,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 12,
+      "target": 14,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "BRCH",
+      "confidence": 0.6
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "BRCH",
+      "confidence": 0.6
+    },
+    {
+      "source": 13,
+      "target": 18,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 14,
+      "target": 18,
+      "edge_type": "ELAB",
+      "confidence": 0.7
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "CONT",
+      "confidence": 0.6
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "BACK",
+      "confidence": 0.7
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "BACK",
+      "confidence": 0.6
+    },
+    {
+      "source": 5,
+      "target": 4,
+      "edge_type": "BACK",
+      "confidence": 0.5
+    },
+    {
+      "source": 7,
+      "target": 6,
+      "edge_type": "CRIT",
+      "confidence": 0.5
+    },
+    {
+      "source": 14,
+      "target": 13,
+      "edge_type": "CRIT",
+      "confidence": 0.5
+    },
+    {
+      "source": 21,
+      "target": 20,
+      "edge_type": "CRIT",
+      "confidence": 0.5
+    }
+  ],
+  "token_count": 2540
+}

@@ -7,14 +7,11 @@ from datetime import datetime
 from pathlib import Path
 from typing import Optional, List
 import logging
-import os
 
-from .models import LLMClient, ThinkingEffort
-from ..extract.schemas import ThoughtUnit, Edge, ThoughtGraph
+from .models import LLMClient
+from ..extract.schemas import ThoughtUnit
 
 logger = logging.getLogger(__name__)
-
-SYSTEM_PROMPT = "Think carefully about this problem. Show your reasoning step by step."
 
 
 class TraceCollector:
@@ -22,51 +19,54 @@ class TraceCollector:
         self,
         client: LLMClient,
         output_dir: Path,
-        system_prompt: str = SYSTEM_PROMPT,
         max_retries: int = 3,
     ):
         self.client = client
         self.output_dir = Path(output_dir)
-        self.system_prompt = system_prompt
         self.max_retries = max_retries
         self.output_dir.mkdir(parents=True, exist_ok=True)
+        logger.info(f"Initialized TraceCollector with output_dir: {output_dir}")
 
     async def collect_single(
         self,
         question: dict,
         model: str,
         run: int = 1,
-        thinking_effort: Optional[ThinkingEffort] = None,
     ) -> dict:
         """Collect a single CoT trace."""
         trace_id = str(uuid.uuid4())
         messages = [
-            {"role": "system", "content": self.system_prompt},
+            {"role": "system", "content": self.client.system_prompt},
             {"role": "user", "content": question["text"]},
         ]
 
+        last_error = None
         for attempt in range(self.max_retries):
             try:
                 raw_cot = await self.client.chat(
                     messages=messages,
                     temperature=0.7,
-                    max_tokens=4096,
-                    thinking_effort=thinking_effort,
+                    max_tokens=20000,
                 )
                 break
             except Exception as e:
+                last_error = e
                 logger.warning(f"Attempt {attempt + 1} failed: {e}")
-                if attempt == self.max_retries - 1:
-                    raise
-                await asyncio.sleep(2**attempt)
+                if attempt < self.max_retries - 1:
+                    delay = 2**attempt
+                    await asyncio.sleep(delay)
+                    continue
+                logger.error(
+                    f"All {self.max_retries} attempts failed for trace {trace_id}"
+                )
+                raise
 
         record = {
             "trace_id": trace_id,
             "model": model,
             "question_id": question["id"],
-            "domain": question["domain"],
+            "domain": question.get("domain", "unknown"),
             "run": run,
-            "thinking_effort": str(thinking_effort) if thinking_effort else None,
             "raw_cot": raw_cot,
             "token_count": len(raw_cot.split()),
             "collected_at": datetime.utcnow().isoformat() + "Z",
@@ -79,60 +79,67 @@ class TraceCollector:
         questions: list[dict],
         model: str,
         runs: int = 1,
-        thinking_effort: Optional[ThinkingEffort] = None,
-    ) -> list[dict]:
-        """Collect multiple traces with parallel execution."""
-        tasks = []
-        for q in questions:
+        questions_per_batch: int = 5,
+    ) -> List[dict]:
+        """Collect CoT traces for multiple questions with runs.
+
+        Args:
+            questions: List of question dicts
+            model: Model name
+            runs: Number of runs per question
+            questions_per_batch: Process this many questions before saving (for resilience)
+        """
+        all_traces = []
+
+        for q_idx, question in enumerate(questions):
             for run in range(1, runs + 1):
-                tasks.append(self.collect_single(q, model, run, thinking_effort))
+                try:
+                    logger.info(
+                        f"[{q_idx + 1}/{len(questions)}] Question {question['id']}, Run {run}/{runs}..."
+                    )
+                    trace = await self.collect_single(
+                        question=question,
+                        model=model,
+                        run=run,
+                    )
+                    all_traces.append(trace)
+                    logger.info(f"  OK: {trace['token_count']} tokens")
 
-        results = await asyncio.gather(*tasks, return_exceptions=True)
-        return [r for r in results if not isinstance(r, Exception)]
+                    # Save in batches for resilience
+                    if len(all_traces) % questions_per_batch == 0:
+                        self._save_traces(all_traces, model)
 
-    def save_traces(
-        self,
-        traces: list[dict],
-        model: str,
-        suffix: str = "",
-        thinking_effort: Optional[ThinkingEffort] = None,
-    ):
-        safe_model = model.replace("/", "-")
-        effort_suffix = f"_{thinking_effort.value}" if thinking_effort else ""
-        output_path = (
-            self.output_dir / f"traces_{safe_model}{effort_suffix}{suffix}.jsonl"
+                except Exception as e:
+                    logger.error(f"  FAILED for {question['id']} run {run}: {e}")
+                    continue
+
+        if all_traces:
+            self._save_traces(all_traces, model)
+
+        return all_traces
+
+    def _save_traces(self, traces: List[dict], model: str):
+        """Save collected traces to file."""
+        model_slug = model.replace("/", "-")
+        output_file = self.output_dir / f"traces_{model_slug}.jsonl"
+
+        # Load existing traces
+        existing = []
+        if output_file.exists():
+            with open(output_file) as f:
+                existing = [json.loads(line) for line in f]
+
+        # Combine and dedupe
+        existing_ids = {t["trace_id"] for t in existing}
+        new_traces = [t for t in traces if t["trace_id"] not in existing_ids]
+
+        all_traces = existing + new_traces
+
+        # Save
+        with open(output_file, "w") as f:
+            for t in all_traces:
+                f.write(json.dumps(t) + "\n")
+
+        logger.info(
+            f"Saved {len(new_traces)} new traces to {output_file} (total: {len(all_traces)})"
         )
-        with open(output_path, "w") as f:
-            for trace in traces:
-                f.write(json.dumps(trace) + "\n")
-        logger.info(f"Saved {len(traces)} traces to {output_path}")
-        return output_path
-
-
-def load_questions(path: Path) -> list[dict]:
-    questions = []
-    with open(path) as f:
-        for line in f:
-            questions.append(json.loads(line))
-    return questions
-
-
-async def run_collection(
-    questions_path: str,
-    model: str,
-    runs: int = 1,
-    output_dir: str = "data/traces",
-    thinking_effort: Optional[ThinkingEffort] = None,
-    **client_kwargs,
-):
-    """CLI entry point for trace collection."""
-    client = LLMClient(thinking_effort=thinking_effort, **client_kwargs)
-    collector = TraceCollector(client, Path(output_dir))
-
-    questions = load_questions(Path(questions_path))
-    logger.info(f"Loaded {len(questions)} questions, running {runs} times each")
-
-    traces = await collector.collect_batch(questions, model, runs, thinking_effort)
-    output_path = collector.save_traces(traces, model, thinking_effort=thinking_effort)
-
-    return output_path

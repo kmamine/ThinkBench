@@ -15,10 +15,8 @@ from .structure import (
     backtracking_rate,
     cross_branch_connectivity,
     convergence_index,
-    orphan_ratio,
     graph_density,
-    cycle_count,
-    mean_cycle_length,
+    revision_depth,
 )
 from .metacognitive import (
     self_reflection_rate,
@@ -27,7 +25,7 @@ from .metacognitive import (
     perspective_taking,
 )
 from .efficiency import token_per_idea, redundancy_ratio
-from .profile import compute_profile
+from .profile import compute_profile, aggregate_profiles
 
 __all__ = [
     "branching_factor",
@@ -42,10 +40,8 @@ __all__ = [
     "backtracking_rate",
     "cross_branch_connectivity",
     "convergence_index",
-    "orphan_ratio",
     "graph_density",
-    "cycle_count",
-    "mean_cycle_length",
+    "revision_depth",
     "self_reflection_rate",
     "critique_to_hypothesis_ratio",
     "hedging_density",
@@ -53,4 +49,5 @@ __all__ = [
     "token_per_idea",
     "redundancy_ratio",
     "compute_profile",
+    "aggregate_profiles",
 ]
