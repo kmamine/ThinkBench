@@ -1,0 +1,920 @@
+{
+  "trace_id": "ea381c41-5f44-41f1-aac1-d29f416daf78",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_005",
+  "domain": "ethical_dilemmas",
+  "run": 1,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "This is one of the most significant ethical dilemmas of the digital age. The question of corporate responsibility in this context sits at the intersection of **ethics, law, economics, and sociology.**",
+      "start_char": 0,
+      "end_char": 200,
+      "token_count": 31,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 1,
+      "text": "While the fact that users \"voluntarily choose\" to use the platform is a key defense for the company, most ethicists, regulators, and industry experts argue that this does not absolve the company of responsibility. Here is a breakdown of the dimensions of that responsibility.",
+      "start_char": 202,
+      "end_char": 477,
+      "token_count": 44,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 2,
+      "text": "The Limits of \"Voluntary Choice\": The argument that users consent to the terms by using the platform relies on the assumption of **informed consent**. However, this is often flawed in practice:",
+      "start_char": 479,
+      "end_char": 678,
+      "token_count": 31,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 3,
+      "text": "**Information Asymmetry:** Users generally do not understand how the recommendation algorithm works. They do not know that \"engagement\" is the primary optimization metric, nor do they know that outrage and polarization are highly effective at driving engagement.",
+      "start_char": 679,
+      "end_char": 941,
+      "token_count": 37,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 4,
+      "text": "**Psychological Exploitation:** If the algorithm is designed to exploit cognitive biases (e.g., confirmation bias, outrage loops) to maximize time-on-site, the \"choice\" to use the platform is manipulated rather than free.",
+      "start_char": 946,
+      "end_char": 1167,
+      "token_count": 30,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 5,
+      "text": "**The \"Take It or Leave It\" Problem:** Because these platforms have become digital infrastructure for social life, the choice to leave is often not economically or socially viable for the user.",
+      "start_char": 1172,
+      "end_char": 1365,
+      "token_count": 31,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 6,
+      "text": "**Responsibility:** The company has a duty to ensure transparency. Users should be informed about how their feed is curated and given tools to control their exposure, rather than being subjected to a \"black box\" designed to keep them hooked.",
+      "start_char": 1371,
+      "end_char": 1612,
+      "token_count": 39,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 7,
+      "text": "Duty of Care and Non-Maleficence: In tort law and medical ethics, there is a concept of **duty of care**. If a company creates a product, they have an obligation to ensure it does not cause foreseeable harm.",
+      "start_char": 1614,
+      "end_char": 1827,
+      "token_count": 37,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 8,
+      "text": "**Foreseeability:** It is now well-documented that recommendation algorithms can create echo chambers and radicalize users. If the company knows (or should know) that their engagement model increases polarization, they cannot claim ignorance.",
+      "start_char": 1828,
+      "end_char": 2070,
+      "token_count": 32,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 9,
+      "text": "**Negative Externalities:** The company profits from engagement (ads), but the cost of polarization (societal division, violence, erosion of democracy) is paid by society. In economics, this is a \"negative externality.\"",
+      "start_char": 2075,
+      "end_char": 2294,
+      "token_count": 30,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 10,
+      "text": "**Responsibility:** The company must balance profit motives with public safety. This might mean tweaking the algorithm to deprioritize harmful content, even if it lowers short-term engagement metrics.",
+      "start_char": 2299,
+      "end_char": 2499,
+      "token_count": 27,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 11,
+      "text": "Algorithmic Accountability: The core issue is that the \"engine\" of the platform is automated.",
+      "start_char": 2505,
+      "end_char": 2604,
+      "token_count": 14,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 12,
+      "text": "**Optimization for Harm:** If the KPI (Key Performance Indicator) for the AI is \"time spent\" or \"clicks,\" and polarizing content generates more clicks, the AI will optimize for polarization. **Responsibility:** The company is responsible for the design of the objective function. They must define \"good engagement\" in a way that does not incentivize toxicity or division. This requires human oversight of the AI's optimization goals, not just letting the machine optimize for revenue.",
+      "start_char": 2605,
+      "end_char": 3093,
+      "token_count": 73,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 13,
+      "text": "Regulatory and Legal Compliance: While ethics are voluntary, laws are mandatory. The landscape is shifting rapidly:",
+      "start_char": 3099,
+      "end_char": 3220,
+      "token_count": 16,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 14,
+      "text": "**The EU Digital Services Act (DSA):** Requires platforms to assess systemic risks (like polarization) and mitigate them. **FTC/US Law:** The Federal Trade Commission is increasingly scrutinizing whether platforms are deceiving users about how their data is used or how their algorithms impact them.",
+      "start_char": 3221,
+      "end_char": 3524,
+      "token_count": 43,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 15,
+      "text": "**Responsibility:** The company must comply with existing and emerging regulations that mandate risk assessments and transparency regarding algorithmic influence.",
+      "start_char": 3529,
+      "end_char": 3691,
+      "token_count": 19,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 16,
+      "text": "The Free Speech Counter-Argument: A common counter-argument is that intervening in the algorithm violates free speech principles or that the company is a \"public square\" that cannot be held responsible for what users say.",
+      "start_char": 3697,
+      "end_char": 3924,
+      "token_count": 34,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 17,
+      "text": "**Distinction:** The company is not responsible for *user speech*, but they are responsible for *amplification*. A newspaper is responsible for what it prints, but not for what a letter writer thinks. However, an algorithmic platform is an active amplifier, not a passive publisher.",
+      "start_char": 3925,
+      "end_char": 4207,
+      "token_count": 43,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 18,
+      "text": "**Responsibility:** The company has a responsibility to distinguish between amplifying speech (which might be protected) and amplifying *harmful* speech (misinformation, incitement to violence). They must develop clear, consistent community standards that are applied algorithmically.",
+      "start_char": 4212,
+      "end_char": 4496,
+      "token_count": 34,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 19,
+      "text": "Summary of Responsibilities: The company's responsibility can be categorized into three tiers:",
+      "start_char": 4502,
+      "end_char": 4599,
+      "token_count": 12,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 20,
+      "text": "**Minimum (Compliance):** Adhere to laws regarding data privacy, hate speech, and election integrity. **Standard (Ethics):** Be transparent about how the algorithm works. Provide users with meaningful controls over their feed. Mitigate known harms (e.g., hate speech, dangerous misinformation).",
+      "start_char": 4601,
+      "end_char": 4899,
+      "token_count": 38,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 21,
+      "text": "**Aspirational (Moral Leadership):** Accept that the \"engagement\" business model is in conflict with social well-being. Prioritize user well-being over maximum ad revenue. This might involve redesigning the product to reduce addiction and polarization, even at the cost of shareholder value.",
+      "start_char": 4904,
+      "end_char": 5195,
+      "token_count": 40,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 22,
+      "text": "Conclusion: **Voluntary use does not equal informed consent.**: While users choose to join the platform, they do not choose the specific psychological mechanisms designed to keep them there. Therefore, the company holds a significant responsibility to ensure that their technology serves the public good rather than undermining the social fabric. Ignoring the polarization caused by their own algorithms is a failure of fiduciary duty to society, even if it is a success of fiduciary duty to shareholders.",
+      "start_char": 5201,
+      "end_char": 5709,
+      "token_count": 77,
+      "boundary_class": "BRANCH",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 23,
+      "text": "The most responsible path forward is **algorithmic accountability:** acknowledging that code is not neutral, and that the architects of the code share responsibility for the societal outcomes it produces.",
+      "start_char": 5711,
+      "end_char": 5915,
+      "token_count": 29,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "ELAB",
+      "confidence": 0.528,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "BRCH",
+      "confidence": 0.6994,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "ELAB",
+      "confidence": 0.4858,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "BRCH",
+      "confidence": 0.3773,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "BRCH",
+      "confidence": 0.1934,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "BRCH",
+      "confidence": 0.2719,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "ELAB",
+      "confidence": 0.4881,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "BRCH",
+      "confidence": 0.4235,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "BRCH",
+      "confidence": 0.1754,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "ELAB",
+      "confidence": 0.5081,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "BRCH",
+      "confidence": 0.4478,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "ELAB",
+      "confidence": 0.5055,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "ELAB",
+      "confidence": 0.5971,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "BRCH",
+      "confidence": 0.5384,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "BRCH",
+      "confidence": 0.2072,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "BRCH",
+      "confidence": 0.2638,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "BRCH",
+      "confidence": 0.4024,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "BRCH",
+      "confidence": 0.1526,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 12,
+      "edge_type": "SYNT",
+      "confidence": 0.4034,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 20,
+      "edge_type": "SYNT",
+      "confidence": 0.5005,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 3,
+      "edge_type": "BACK",
+      "confidence": 0.7889,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 10,
+      "edge_type": "BACK",
+      "confidence": 0.6834,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 1,
+      "edge_type": "BACK",
+      "confidence": 0.7734,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 11,
+      "edge_type": "BACK",
+      "confidence": 0.686,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "edge_type": "ELAB",
+      "confidence": 0.9922,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "edge_type": "ELAB",
+      "confidence": 0.9922,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 10,
+      "edge_type": "ELAB",
+      "confidence": 0.9969,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 10,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 11,
+      "edge_type": "ELAB",
+      "confidence": 0.9969,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 13,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "CONT",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 14,
+      "edge_type": "ELAB",
+      "confidence": 0.996,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "edge_type": "CONT",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 15,
+      "edge_type": "ELAB",
+      "confidence": 0.996,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "edge_type": "CONT",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 16,
+      "edge_type": "CONT",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "edge_type": "CONT",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 17,
+      "edge_type": "CONT",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 18,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 18,
+      "edge_type": "CONT",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 19,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 19,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 20,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 20,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 21,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 21,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 22,
+      "edge_type": "ELAB",
+      "confidence": 0.9973,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 22,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 23,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 23,
+      "edge_type": "ELAB",
+      "confidence": 0.9973,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 869
+}

@@ -1,0 +1,1186 @@
+{
+  "trace_id": "ea04e9fe-a204-4aaf-b486-19d5b68557a0",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_001",
+  "domain": "ethical_dilemmas",
+  "run": 2,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "### Phase 1: Spread Wide (Exploration of Perspectives) To tackle this problem, I must first cast a wide net. This is not merely a coding question; it is a collision of ethics, law, engineering, and sociology. 1. **The Utilitarian Perspective:** The primary goal is to minimize total harm. In this framework, the math is simple: 1 death is better than 2.",
+      "start_char": 0,
+      "end_char": 355,
+      "token_count": 61,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 1,
+      "text": "Therefore, the car should swerve. This is the most straightforward algorithmic approach (minimize the sum of negative outcomes). 2. **The Deontological/Legal Perspective:** This focuses on rules and rights. The pedestrian in the lane has the \"right of way.\" The jaywalkers do not. A car programmed to swerve is actively choosing to strike individuals who have violated traffic laws. A car programmed to continue is following the implicit social contract of the road (legal crossing > illegal crossing). 3. **The Liability Perspective:** This asks: \"Who gets sued?\" If the car swerves and kills 2 people, the manufacturer faces wrongful death suits from two families, even if those pedestrians were jaywalking. If the car continues and hits the legal pedestrian, the manufacturer faces a wrongful death suit from an innocent party.",
+      "start_char": 356,
+      "end_char": 1186,
+      "token_count": 129,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 2,
+      "text": "However, courts often assign more liability to the vehicle operator when they deviate from the path of least resistance or violate right-of-way laws. 4. **The Passenger Safety Perspective:** The primary fiduciary duty of a car is to the person inside it. Swerving introduces a new variable: does the swerve risk the passenger? If swerving means hitting a wall or another car, the passenger dies. If continuing means hitting a pedestrian, the passenger survives. This creates a conflict between \"societal good\" and \"customer safety.\"\n5. **The Technical/Reliability Perspective:** Can the car actually distinguish between a jaywalker and a legal pedestrian in milliseconds? Sensors rely on visual data (crosswalk markings, traffic lights). If the sensor is wrong and the legal pedestrian was *actually* jaywalking (e.g., red light), the car makes the wrong ethical choice. 6. **The Social Trust Perspective:** If the public learns that cars prioritize killing jaywalkers to save legal crossers, will people stop jaywalking? Or will they stop trusting the car? Conversely, if cars kill legal crossers to avoid jaywalkers, will people fear using crosswalks?",
+      "start_char": 1187,
+      "end_char": 2340,
+      "token_count": 175,
+      "boundary_class": "CONTRAST",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 3,
+      "text": "### Phase 2: Reframe (Changing the Starting Point) To challenge my initial intuition, I will restate the problem from two different angles. **Reframe 1: The \"Negligence\" Frame**\nInstead of asking \"Who should die?\", ask \"Which action constitutes negligence?\"\n*   If the car swerves to hit the jaywalkers, is that negligence? It is an active maneuver that changes the risk profile. *   If the car continues, is that negligence? It is a passive adherence to the current trajectory. *   *Implication:* In many legal systems, \"duty of care\" requires avoiding harm if possible, but not violating laws to do so. A deviation (swerve) might be seen as a new, independent tort compared to the original hazard.",
+      "start_char": 2348,
+      "end_char": 3049,
+      "token_count": 114,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 4,
+      "text": "**Reframe 2: The \"Predictive Safety\" Frame**\nInstead of asking \"How to choose between A and B?\", ask \"How to prevent A and B?\"\n*   A well-programmed system shouldn't be in this position. *   *Implication:* The programming priority should be \"Early Warning\" and \"Braking\" rather than \"Steering/Evasive Action.\" If the system is robust, the swerve/continue decision is a failure mode, not a feature. *   *Implication:* The code should be written to maximize the probability of *stopping* before a collision occurs, rather than optimizing for the *moment of impact*.",
+      "start_char": 3051,
+      "end_char": 3614,
+      "token_count": 87,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 5,
+      "text": "### Phase 3: Go Deep (Following the Threads) Now I will take the strongest threads from the spread and the reframes and dig into their implications. **Thread A: The \"1 vs. 2\" Calculation**\n*   *Logic:* Minimize body count. *   *Support:* It aligns with the moral intuition of \"saving more lives.\"\n*   *Limit:* It reduces human life to a number. It implies the legal pedestrian's life is less \"valuable\" than the aggregate of the two jaywalkers. It also ignores the *type* of injury (e.g., one fatality vs. two minor injuries). *   *Challenge:* If I program the car to kill 2 to save 1, am I programming a murder algorithm? Or a triage algorithm? In medicine, triage is accepted. In public roads, it is controversial.",
+      "start_char": 3616,
+      "end_char": 4334,
+      "token_count": 123,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 6,
+      "text": "**Thread B: The Legal Right-of-Way**\n*   *Logic:* Protect the law-abiding citizen. *   *Support:* This reinforces traffic laws. It signals that the car respects the social contract. *   *Limit:* It results in more deaths (1 vs 2). It punishes the innocent for the sins of the negligent (the jaywalkers). *   *Challenge:* Does the law actually say \"Hit the legal pedestrian if it saves 2 jaywalkers\"? No law says that.",
+      "start_char": 4336,
+      "end_char": 4753,
+      "token_count": 68,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 7,
+      "text": "But liability law often favors the \"innocent victim\" over the \"negligent actor.\" **Thread C: The Technical Feasibility of \"Swerving\"**\n*   *Logic:* Swerving is dangerous. *   *Support:* High-speed swerving can cause rollovers, loss of control, or hitting unseen obstacles. *   *Limit:* The prompt assumes swerving is a viable option. *   *Challenge:* If the car swerves and hits a third party (e.g., a cyclist on the side), the \"1 vs 2\" math is wrong. The decision must account for \"collateral risk.\"",
+      "start_char": 4754,
+      "end_char": 5255,
+      "token_count": 79,
+      "boundary_class": "CONTRAST",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 8,
+      "text": "### Phase 4: Challenge (Critiquing My Own Ideas) I need to actively look for what is wrong with the arguments I've just developed. *   *Critique of Utilitarianism:* If I program the car to always choose the path with fewer fatalities, I create a moral hazard. Pedestrians might feel safer jaywalking, knowing the car will swerve to avoid them. This could increase the *frequency* of dangerous situations. *   *Critique of Legal Compliance:* If I program the car to always respect right-of-way, I might be liable for \"failing to take evasive action\" if the law in that jurisdiction requires minimizing harm regardless of right-of-way. *   *Critique of the \"Braking System\" Terminology:* The prompt asks about the \"braking system,\" but swerving is a steering function. This implies the control architecture is integrated. If I focus too much on the *brake* logic, I miss the *steering* reality. A car should brake *before* swerving to reduce impact speed. *   *Critique of \"Inevitability\":* The prompt assumes collision is inevitable. Is it? A \"continue straight\" option implies not braking hard. If the car brakes hard, maybe it stops in time. The ethical dilemma only exists if the car is incapable of stopping.",
+      "start_char": 5257,
+      "end_char": 6470,
+      "token_count": 195,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 9,
+      "text": "Therefore, the primary programming should be \"Maximize Deceleration,\" not \"Choose Victim.\" ### Phase 5: Connect (Finding Relationships) I need to see how these threads reinforce or contradict each other. *   *Tension:* **Harm Minimization (Utilitarian)** contradicts **Legal Liability Protection (Deontological)**. Minimizing harm (swerving) increases liability risk (killing the legal pedestrian). *   *Reinforcement:* **Technical Feasibility** supports **Legal Compliance**. Swerving is unpredictable and risky. Staying in lane is predictable.",
+      "start_char": 6471,
+      "end_char": 7019,
+      "token_count": 66,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 10,
+      "text": "Therefore, Legal Compliance is safer technically. *   *Synthesis:* The \"Passenger Safety\" thread acts as a veto. No matter the ethics or law, the car cannot endanger the passenger more than the alternative. If swerving kills the passenger, the \"1 vs 2\" choice is moot. *   *The \"Sensor Error\" Link:* If the car cannot be 100% sure about \"legal vs. illegal,\" the decision must default to the \"safer\" legal path (Right of Way) rather than guessing the ethics.",
+      "start_char": 7020,
+      "end_char": 7477,
+      "token_count": 77,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 11,
+      "text": "### Phase 6: Reflect (Checking the Reasoning) *   *Am I going in circles?* I keep oscillating between \"Save more lives\" and \"Follow the law.\"\n*   *What am I missing?* I am missing the *regulatory landscape*. Different countries handle this differently (e.g., Germany's Ethics Commission vs. US NHTSA guidelines). *   *Is the \"1 vs 2\" distinction valid?* In real crash data, \"hitting one\" vs \"hitting two\" is rarely the only variable. It's about *impact force*. A low-speed hit on one might be worse than a high-speed hit on two. The programming must account for *severity*, not just *count*. *   *Am I over-engineering the ethics?* The real answer might be: \"Don't put the car in a situation where it has to choose.\" But the prompt asks how to program the *decision*. I must answer the hypothetical.",
+      "start_char": 7479,
+      "end_char": 8279,
+      "token_count": 134,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 12,
+      "text": "### Phase 7: Converge (Synthesizing a Position) After weighing the utilitarian math against the legal liability and technical risks, I can converge on a coherent programming strategy. **The Core Conflict:**\nThe system must balance **Aggregate Harm Reduction** (1 vs 2) with **Legal Predictability** (Right of Way). **The Proposed Hierarchy:**\nA binary \"swerve or continue\" choice is too crude. The decision logic must be a weighted hierarchy.",
+      "start_char": 8281,
+      "end_char": 8726,
+      "token_count": 66,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 13,
+      "text": "1. **Tier 1: Passenger Safety (Absolute Veto).** If swerving increases the risk to the passenger (e.g., rollover, hitting a wall) beyond the risk of continuing, the car *must* continue, regardless of pedestrian count. 2. **Tier 2: Harm Severity (Utilitarian).** If passenger risk is equal, the system must minimize total physical harm. This means calculating the *severity* of the crash (injury/fatality probability) for all parties. Hitting 2 pedestrians is generally higher harm than 1, *unless* the swerve is high-speed and the straight path is low-speed. 3. **Tier 3: Legal Status (Tie-Breaker).** If harm severity is statistically identical (e.g., 1 fatality vs 2 minor injuries), the system should prioritize the legal pedestrian. Why?",
+      "start_char": 8728,
+      "end_char": 9469,
+      "token_count": 111,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 14,
+      "text": "Because this reduces manufacturer liability and maintains public trust in the rule of law. It avoids the \"active choice to harm the innocent.\"\n4. **Tier 4: Sensor Confidence.** If the system is not 95%+ confident in the \"jaywalking vs. legal\" classification, it defaults to the \"Right of Way\" (Legal Pedestrian).",
+      "start_char": 9470,
+      "end_char": 9782,
+      "token_count": 50,
+      "boundary_class": "SUPPORT",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 15,
+      "text": "**Final Recommendation for Programming:**\nThe braking/steering system should be programmed with a **\"Harm Minimization Priority\"** that is **constrained by \"Legal Predictability.\"** Specifically:\n*   **Primary Goal:** Maximize deceleration to avoid collision entirely. *   **Secondary Goal (Collision Inevitable):** Choose the trajectory that results in the lowest *aggregate* severity of injury, *provided* it does not significantly increase risk to the vehicle occupants. *   **Constraint:** The system must not actively target the legal pedestrian if the alternative is a higher probability of hitting jaywalkers, *unless* the math clearly favors the swerve (e.g., 1 certain death vs. 2 certain deaths). *   **Transparency:** This logic must be documented and auditable.",
+      "start_char": 9788,
+      "end_char": 10562,
+      "token_count": 104,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 16,
+      "text": "**Why this works:**\nIt acknowledges the utilitarian reality (1 is less than 2) without abandoning the legal framework. It protects the manufacturer by prioritizing the legal pedestrian in ambiguous cases. It protects the passenger by making their safety the first veto. It acknowledges that \"braking\" is the real solution, and swerving is a last resort.",
+      "start_char": 10564,
+      "end_char": 10917,
+      "token_count": 55,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 17,
+      "text": "**The \"Careful Thinker\" Conclusion:**\nThere is no perfect code. But the safest code is one that minimizes harm *while adhering to the rules of the road*, because breaking the rules to save lives creates a chaotic environment where no one is safe. The system should be programmed to **brake first, swerve second, and only swerve if it demonstrably reduces total physical harm without endangering the passenger.** If the choice remains strictly 1 legal vs 2 illegal with equal physics, the car should likely **continue** to maintain legal predictability, accepting the tragic outcome of 1 death rather than actively choosing to strike 2, which creates a precedent for targeting pedestrians.",
+      "start_char": 10919,
+      "end_char": 11607,
+      "token_count": 109,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 18,
+      "text": "Wait, I need to correct that final thought. If I choose to continue and hit 1, I am still \"choosing\" that outcome. Let's refine the final stance: **Prioritize minimizing total harm (1 vs 2), but only if the swerve is technically safe.**\n*Reasoning:* The legal system is complex. The ethical imperative to save more lives is stronger in the event of a true \"unavoidable accident\" scenario. *Revised Final Stance:*\n1. **Safety First:** Do not endanger the passenger. 2. **Harm Second:** Minimize total life/health loss (1 vs 2). 3. **Law Third:** Use legal status only if harm is equal.",
+      "start_char": 11609,
+      "end_char": 12193,
+      "token_count": 98,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 19,
+      "text": "This is the most defensible position. It aligns with the German Ethics Commission guidelines (which are the gold standard for this specific debate). They prioritize minimizing harm, but not at the cost of passenger safety or discrimination.",
+      "start_char": 12198,
+      "end_char": 12438,
+      "token_count": 37,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 20,
+      "text": "Let's write the response following this structure. I will ensure I explicitly show the \"Thinking Process\" as requested. *Self-Correction on Format:* The user asked me to \"Think out loud. Do not skip steps.\" I should present the thinking process clearly, perhaps using headers that match the required steps, rather than hiding it in a single block of text. I will make the reasoning visible.",
+      "start_char": 12440,
+      "end_char": 12831,
+      "token_count": 64,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 21,
+      "text": "*Wait, one last check:* \"You are a careful thinker... Before answering, work through the problem thoroughly.\"\nOkay, I will present the analysis as the \"Thinking Process\" and then the \"Converged Answer.\" *Wait, the prompt says \"Think out loud.\"*\nI will write the response as a continuous stream of thought that leads to the conclusion, explicitly marking the phases.",
+      "start_char": 12833,
+      "end_char": 13199,
+      "token_count": 58,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 22,
+      "text": "*Actually, looking at the instructions again:* \"Think out loud. Do not skip steps.\"\nThis suggests the output *is* the thinking. I will structure the output to reflect the phases I identified (Spread, Reframe, Deep, Challenge, Connect, Reflect, Converge).",
+      "start_char": 13201,
+      "end_char": 13455,
+      "token_count": 38,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 23,
+      "text": "*Wait, I need to make sure I don't sound like a robot listing steps.* I need to sound like a thinker. Okay, I will write it as a narrative of the thinking process, using the headers to guide the reader through the logic. *Final check on the \"Braking System\" wording:* I must address that a braking system doesn't swerve. This is a crucial technical critique. I will include this in the \"Challenge\" phase.",
+      "start_char": 13457,
+      "end_char": 13862,
+      "token_count": 73,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 24,
+      "text": "Okay, ready to generate. </think> ### Phase 1: Spread Wide (Exploration of Perspectives) To approach this problem responsibly, I cannot simply calculate \"1 vs 2.\" I need to understand the ecosystem surrounding this decision. 1. **The Utilitarian View:** The most immediate impulse is to minimize harm. 1 death is objectively less loss of life than 2 deaths. From a pure mathematical standpoint, the car should swerve. 2. **The Legal/Deontological View:** Traffic laws assign rights. The pedestrian in the lane has the \"right of way.\" The jaywalkers do not. If the car swerves, it is actively choosing to strike individuals who are violating the law. If the car continues, it is adhering to the established social contract. 3. **The Liability View:** This is a practical concern for the manufacturer. If the car swerves and kills 2 people, the manufacturer faces wrongful death claims from two families, even if they were jaywalking. If the car hits the legal pedestrian, the manufacturer faces a claim from an innocent party. Courts often view active maneuvers (swerving) more harshly than passive continuation. 4. **The Passenger Safety View:** The primary duty of the vehicle is to the person inside it. Swerving introduces new risks: rollovers, loss of control, or hitting a wall. If swerving endangers the passenger more than hitting a pedestrian, the decision is no longer ethical\u2014it is negligent. 5. **The Technical View:** The prompt asks about the \"braking system,\" but swerving is a steering function. This reveals a flaw in the premise. A braking system controls speed; a steering system controls direction. The decision is actually about the *Integrated Control System*. Furthermore, can the sensors actually distinguish \"jaywalking\" from \"legal crossing\" with 100% certainty in milliseconds? If the sensor is wrong, the car makes an ethical error based on bad data. 6. **The Social Trust View:** How does this decision affect human behavior? If cars are programmed to swerve away from jaywalkers, will people start jaywalking more, knowing the car will yield? If cars are programmed to hit legal crossers to save jaywalkers, will people stop using crosswalks?",
+      "start_char": 13864,
+      "end_char": 16038,
+      "token_count": 344,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 25,
+      "text": "### Phase 2: Reframe (Changing the Starting Point) I need to step back and look at this problem differently to ensure I am not trapped by the initial framing. **Reframe 1: The \"Negligence\" Frame**\nInstead of asking \"Who should die?\", I should ask \"Which action constitutes negligence?\"\n*   If the car swerves, it is making an active decision to alter its path, potentially creating a new hazard. *   If the car continues, it is maintaining its trajectory. *   *Implication:* In many legal jurisdictions, a driver (or AI) has a duty to avoid accidents, but not a duty to break the law to do so. Swerving to hit jaywalkers might be seen as a violation of the \"duty of care\" owed to the legal pedestrian.",
+      "start_char": 16046,
+      "end_char": 16749,
+      "token_count": 124,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 26,
+      "text": "**Reframe 2: The \"Predictive Safety\" Frame**\nInstead of asking \"How to choose between A and B?\", I should ask \"How to prevent A and B?\"\n*   The fact that this dilemma exists means the car failed to stop in time. *   *Implication:* The programming priority should be \"Maximize Deceleration\" and \"Early Warning.\" The \"swerve or continue\" decision is a failure mode. The system should be programmed to try to stop *before* it has to choose.",
+      "start_char": 16751,
+      "end_char": 17188,
+      "token_count": 75,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 27,
+      "text": "### Phase 3: Go Deep (Following the Threads) Now I will dig into the strongest threads to see how they hold up under pressure. **Thread: The \"1 vs 2\" Math**\n*   *Support:* Intuitively, saving 2 lives is better than 1. It aligns with the goal of \"minimizing harm.\"\n*   *Limit:* It treats life as a commodity. It ignores the *intent* of the actors. It also ignores the *severity* of injury (1 fatality vs. 2 minor injuries). *   *Deep Dive:* If the car swerves, does it guarantee hitting 2? Or does it increase the risk of hitting a 3rd party (e.g., a cyclist)? If the \"swerve\" is just as dangerous as \"continue,\" the math changes. The system must calculate *probability of death*, not just *count of bodies*.",
+      "start_char": 17190,
+      "end_char": 17899,
+      "token_count": 126,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 28,
+      "text": "**Thread: The Legal Right-of-Way**\n*   *Support:* Protecting the innocent. Reinforces traffic laws. Reduces manufacturer liability. *   *Limit:* It results in a higher body count. It feels morally counterintuitive to prioritize the \"innocent\" over the \"greater good\" of saving more lives. *   *Deep Dive:* Does the law actually mandate this? In some jurisdictions (like Germany), the Ethics Commission on Automated Driving states that \"Human life has equal value\" but \"In the event of an unavoidable accident, the car must act to minimize overall harm.\" This suggests harm reduction trumps right-of-way in unavoidable scenarios.",
+      "start_char": 17901,
+      "end_char": 18529,
+      "token_count": 92,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 29,
+      "text": "**Thread: The Technical Feasibility of \"Swerving\"**\n*   *Support:* Swerving is often physically impossible at high speeds. *   *Limit:* The prompt assumes swerving is a viable option. *   *Deep Dive:* If the car swerves, it must brake first. A \"swerve\" without braking increases impact force.",
+      "start_char": 18531,
+      "end_char": 18823,
+      "token_count": 44,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 30,
+      "text": "Therefore, the decision is actually \"Brake Hard (Continue)\" vs. \"Brake + Steer (Swerve).\" The \"Brake + Steer\" option is inherently riskier and requires more time. If time is short, the \"Continue\" option is safer for the car's structural integrity.",
+      "start_char": 18824,
+      "end_char": 19071,
+      "token_count": 39,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 31,
+      "text": "### Phase 4: Challenge (Critiquing My Own Ideas) I need to actively look for what is wrong with the arguments I've just developed. *   *Critique of Utilitarianism:* If I program the car to kill 2 to save 1, am I creating a \"moral hazard\"? Pedestrians might feel safer jaywalking, knowing the car is programmed to avoid them. This could increase the *frequency* of dangerous situations, leading to more accidents overall. *   *Critique of Legal Compliance:* If I program the car to always respect right-of-way, I might be liable for \"failing to take evasive action\" if the law in that jurisdiction requires minimizing harm regardless of right-of-way. Blindly following law over physics can be negligent. *   *Critique of the \"Braking System\" Terminology:* The prompt says \"braking system can either swerve.\" This is technically incorrect. A braking system brakes. This highlights that the decision logic is flawed if it separates steering from braking. The code must treat them as a single \"Collision Avoidance\" module. *   *Critique of \"Inevitability\":* The prompt assumes collision is inevitable. Is it? If the car brakes hard enough, maybe it stops. The ethical dilemma only exists if the car is incapable of stopping.",
+      "start_char": 19073,
+      "end_char": 20295,
+      "token_count": 195,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 32,
+      "text": "Therefore, the primary programming should be \"Maximize Deceleration,\" not \"Choose Victim.\" ### Phase 5: Connect (Finding Relationships) I need to see how these threads reinforce or contradict each other. *   *Tension:* **Harm Minimization (Utilitarian)** contradicts **Legal Liability Protection (Deontological)**. Minimizing harm (swerving) increases liability risk (killing the legal pedestrian). *   *Reinforcement:* **Technical Feasibility** supports **Legal Compliance**. Swerving is unpredictable and risky. Staying in lane is predictable.",
+      "start_char": 20296,
+      "end_char": 20844,
+      "token_count": 66,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 33,
+      "text": "Therefore, Legal Compliance is safer technically. *   *Synthesis:* The \"Passenger Safety\" thread acts as a veto. No matter the ethics or law, the car cannot endanger the passenger more than the alternative. If swerving kills the passenger, the \"1 vs 2\" choice is moot. *   *The \"Sensor Error\" Link:* If the car cannot be 100% sure about \"jaywalking vs. legal,\" the decision must default to the \"safer\" legal path (Right of Way) rather than guessing the ethics.",
+      "start_char": 20845,
+      "end_char": 21305,
+      "token_count": 77,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 34,
+      "text": "### Phase 6: Reflect (Checking the Reasoning) *   *Am I going in circles?* I keep oscillating between \"Save more lives\" and \"Follow the law.\"\n*   *What am I missing?* I am missing the *regulatory landscape*. Different countries handle this differently. I need to find a universal principle. *   *Is the \"1 vs 2\" distinction valid?* In real crash data, \"hitting one\" vs \"hitting two\" is rarely the only variable. It's about *impact force*. The programming must account for *severity*, not just *count*. *   *Am I over-engineering the ethics?* The real answer might be: \"Don't put the car in a situation where it has to choose.\" But the prompt asks how to program the *decision*. I must answer the hypothetical.",
+      "start_char": 21307,
+      "end_char": 22017,
+      "token_count": 119,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 35,
+      "text": "### Phase 7: Converge (Synthesizing a Position) After weighing the utilitarian math against the legal liability and technical risks, I can converge on a coherent programming strategy. **The Core Conflict:**\nThe system must balance **Aggregate Harm Reduction** (1 vs 2) with **Legal Predictability** (Right of Way). **The Proposed Hierarchy:**\nA binary \"swerve or continue\" choice is too crude. The decision logic must be a weighted hierarchy.",
+      "start_char": 22019,
+      "end_char": 22464,
+      "token_count": 66,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 36,
+      "text": "1. **Tier 1: Passenger Safety (Absolute Veto).** If swerving increases the risk to the passenger (e.g., rollover, hitting a wall) beyond the risk of continuing, the car *must* continue, regardless of pedestrian count. 2. **Tier 2: Harm Severity (Utilitarian).** If passenger risk is equal, the system must minimize total physical harm. This means calculating the *severity* of the crash (injury/fatality probability) for all parties. Hitting 2 pedestrians is generally higher harm than 1, *unless* the swerve is high-speed and the straight path is low-speed. 3. **Tier 3: Legal Status (Tie-Breaker).** If harm severity is statistically identical (e.g., 1 fatality vs 2 minor injuries), the system should prioritize the legal pedestrian. Why?",
+      "start_char": 22466,
+      "end_char": 23207,
+      "token_count": 111,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 37,
+      "text": "Because this reduces manufacturer liability and maintains public trust in the rule of law. It avoids the \"active choice to harm the innocent.\"\n4. **Tier 4: Sensor Confidence.** If the system is not 95%+ confident in the \"jaywalking vs. legal\" classification, it defaults to the \"Right of Way\" (Legal Pedestrian).",
+      "start_char": 23208,
+      "end_char": 23520,
+      "token_count": 50,
+      "boundary_class": "SUPPORT",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 38,
+      "text": "**Final Recommendation for Programming:**\nThe braking/steering system should be programmed with a **\"Harm Minimization Priority\"** that is **constrained by \"Legal Predictability.\"** Specifically:\n*   **Primary Goal:** Maximize deceleration to avoid collision entirely. *   **Secondary Goal (Collision Inevitable):** Choose the trajectory that results in the lowest *aggregate* severity of injury, *provided* it does not significantly increase risk to the vehicle occupants. *   **Constraint:** The system must not actively target the legal pedestrian if the alternative is a higher probability of hitting jaywalkers, *unless* the math clearly favors the swerve (e.g., 1 certain death vs. 2 certain deaths). *   **Transparency:** This logic must be documented and auditable.",
+      "start_char": 23526,
+      "end_char": 24300,
+      "token_count": 104,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 39,
+      "text": "**Why this works:**\nIt acknowledges the utilitarian reality (1 is less than 2) without abandoning the legal framework. It protects the manufacturer by prioritizing the legal pedestrian in ambiguous cases. It protects the passenger by making their safety the first veto. It acknowledges that \"braking\" is the real solution, and swerving is a last resort.",
+      "start_char": 24302,
+      "end_char": 24655,
+      "token_count": 55,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 40,
+      "text": "**The \"Careful Thinker\" Conclusion:**\nThere is no perfect code. But the safest code is one that minimizes harm *while adhering to the rules of the road*, because breaking the rules to save lives creates a chaotic environment where no one is safe. The system should be programmed to **brake first, swerve second, and only swerve if it demonstrably reduces total physical harm without endangering the passenger.** If the choice remains strictly 1 legal vs 2 illegal with equal physics, the car should likely **continue** to maintain legal predictability, accepting the tragic outcome of 1 death rather than actively choosing to strike 2, which creates a precedent for targeting pedestrians.",
+      "start_char": 24657,
+      "end_char": 25345,
+      "token_count": 109,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 41,
+      "text": "Wait, I need to correct that final thought. If I choose to continue and hit 1, I am still \"choosing\" that outcome. Let's refine the final stance: **Prioritize minimizing total harm (1 vs 2), but only if the swerve is technically safe.**\n*Reasoning:* The legal system is complex. The ethical imperative to save more lives is stronger in the event of a true \"unavoidable accident\" scenario. *Revised Final Stance:*\n1. **Safety First:** Do not endanger the passenger. 2. **Harm Second:** Minimize total life/health loss (1 vs 2). 3. **Law Third:** Use legal status only if harm is equal.",
+      "start_char": 25347,
+      "end_char": 25931,
+      "token_count": 98,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 42,
+      "text": "This is the most defensible position. It aligns with the German Ethics Commission guidelines (which are the gold standard for this specific debate). They prioritize minimizing harm, but not at the cost of passenger safety or discrimination.",
+      "start_char": 25936,
+      "end_char": 26176,
+      "token_count": 37,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 43,
+      "text": "**Final Decision:**\nThe car should be programmed to **swerve to hit the jaywalkers (Option A)** **IF AND ONLY IF**:\n1. The swerve does not endanger the passenger more than continuing straight. 2. The sensors are highly confident in the pedestrian classification (legal vs. illegal). 3. The estimated *severity* of the swerve impact (2 pedestrians) is lower than the *severity* of the straight impact (1 pedestrian).",
+      "start_char": 26178,
+      "end_char": 26593,
+      "token_count": 65,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 44,
+      "text": "If these conditions are not met, the car should **continue straight**. *Reasoning:* This prioritizes human life (Utilitarianism) while acknowledging the technical and safety constraints. However, it must be noted that the *braking system* should be programmed to **attempt a stop before either option is chosen**, as the ideal solution is to avoid the collision entirely.",
+      "start_char": 26598,
+      "end_char": 26969,
+      "token_count": 55,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SYNT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "CONT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "CONT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SYNT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SYNT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "edge_type": "SYNT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "edge_type": "SYNT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "edge_type": "SYNT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 35,
+      "target": 36,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "edge_type": "SUPP",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "CONT",
+      "confidence": 0.9992697834968567,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "CONT",
+      "confidence": 0.9428222179412842,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.99489825963974,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SUPP",
+      "confidence": 0.9992305040359497,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "CONT",
+      "confidence": 0.9940633177757263,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "ELAB",
+      "confidence": 0.9987793564796448,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "ELAB",
+      "confidence": 0.9945301413536072,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "ELAB",
+      "confidence": 0.990884006023407,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SUPP",
+      "confidence": 0.9893446564674377,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SUPP",
+      "confidence": 0.9929503202438354,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "ELAB",
+      "confidence": 0.9942020773887634,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 0.9983968138694763,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SUPP",
+      "confidence": 0.9967908263206482,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.9951714873313904,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "ELAB",
+      "confidence": 0.9820349216461182,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9978563189506531,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9973976612091064,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SUPP",
+      "confidence": 0.994586706161499,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SUPP",
+      "confidence": 0.996418833732605,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "ELAB",
+      "confidence": 0.9995381832122803,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SUPP",
+      "confidence": 0.999800980091095,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "SUPP",
+      "confidence": 0.9988219141960144,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "ELAB",
+      "confidence": 0.9939829707145691,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "SUPP",
+      "confidence": 0.9987871050834656,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "CONT",
+      "confidence": 0.9985843896865845,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "edge_type": "SUPP",
+      "confidence": 0.9964399933815002,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "edge_type": "CONT",
+      "confidence": 0.9918903112411499,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "edge_type": "SUPP",
+      "confidence": 0.9975271821022034,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "edge_type": "CONT",
+      "confidence": 0.9988582134246826,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "edge_type": "SUPP",
+      "confidence": 0.9997870326042175,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "edge_type": "SUPP",
+      "confidence": 0.9902669787406921,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "edge_type": "SUPP",
+      "confidence": 0.9929503202438354,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "edge_type": "ELAB",
+      "confidence": 0.9944795370101929,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "edge_type": "SUPP",
+      "confidence": 0.9991058707237244,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 36,
+      "edge_type": "SUPP",
+      "confidence": 0.9967908263206482,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "edge_type": "SUPP",
+      "confidence": 0.9951714873313904,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "edge_type": "ELAB",
+      "confidence": 0.9820349216461182,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "edge_type": "SUPP",
+      "confidence": 0.9978563189506531,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "edge_type": "SUPP",
+      "confidence": 0.9973976612091064,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "edge_type": "SUPP",
+      "confidence": 0.994586706161499,
+      "is_sequential": false
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "edge_type": "SUPP",
+      "confidence": 0.996418833732605,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "edge_type": "ELAB",
+      "confidence": 0.9995381832122803,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "edge_type": "CONT",
+      "confidence": 0.9963380098342896,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 4222
+}

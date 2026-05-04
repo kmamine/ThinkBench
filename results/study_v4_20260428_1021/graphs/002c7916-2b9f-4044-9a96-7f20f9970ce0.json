@@ -1,0 +1,2655 @@
+{
+  "trace_id": "002c7916-2b9f-4044-9a96-7f20f9970ce0",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_005",
+  "domain": "ethical_dilemmas",
+  "run": 1,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "This is a complex ethical and economic problem that sits at the intersection of technology, law, and sociology. To answer it responsibly, I need to avoid jumping straight to a moral judgment. Instead, I will follow the requested process of thinking: exploring the landscape, reframing the core assumptions, drilling down into specific mechanisms, challenging my own emerging conclusions, and finally converging on a nuanced position.",
+      "start_char": 0,
+      "end_char": 433,
+      "token_count": 65,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 1,
+      "text": "### Phase 1: Spread Wide (Exploration of Angles and Stakeholders) First, I need to map the terrain. The problem isn't just \"AI vs. People\"; it's a web of competing interests and definitions.",
+      "start_char": 435,
+      "end_char": 626,
+      "token_count": 32,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 2,
+      "text": "**1. The Economic/Corporate Lens:**\n*   **Premise:** The company is a private entity owned by shareholders. Its primary fiduciary duty is to maximize value. *   **Logic:** Engagement drives ad revenue. Polarization is a byproduct of engagement (angry content keeps people on the app longer).",
+      "start_char": 628,
+      "end_char": 919,
+      "token_count": 43,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 3,
+      "text": "Therefore, stopping polarization hurts the business model. *   **Stakeholders:** Shareholders, Investors, Employees (whose jobs depend on revenue).",
+      "start_char": 920,
+      "end_char": 1067,
+      "token_count": 17,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 4,
+      "text": "**2. The Legal/Regulatory Lens:**\n*   **Premise:** The company operates under laws (e.g., Section 230 in the US, DSA in the EU). *   **Logic:** Currently, platforms are often treated as \"intermediaries,\" not publishers. If they are not publishers, they have limited liability for content. However, if they actively curate (recommend), does that shift them toward publisher status? *   **Stakeholders:** Government, Courts, Regulators.",
+      "start_char": 1069,
+      "end_char": 1503,
+      "token_count": 61,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 5,
+      "text": "**3. The User Agency Lens:**\n*   **Premise:** Adults have free will. They choose to sign up and use the app. *   **Logic:** If users voluntarily engage, they accept the risks. The platform is a mirror, not a manipulator. *   **Stakeholders:** Users, Civil Liberties groups.",
+      "start_char": 1505,
+      "end_char": 1778,
+      "token_count": 44,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 6,
+      "text": "**4. The Societal/Public Good Lens:**\n*   **Premise:** Democracy requires a shared reality. Extreme polarization threatens social cohesion and safety. *   **Logic:** The platform is a \"public square.\" Even if private, it performs a public function. Harm to the collective creates a negative externality that the market fails to price in. *   **Stakeholders:** Society at large, Future generations, Competitors.",
+      "start_char": 1780,
+      "end_char": 2190,
+      "token_count": 58,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 7,
+      "text": "**5. The Technical/Algorithmic Lens:**\n*   **Premise:** Algorithms optimize for the metric they are given. *   **Logic:** If the metric is \"time spent,\" the AI *will* find the path of least resistance to time spent. That path happens to be outrage. This isn't malice; it's math. *   **Stakeholders:** Engineers, Data Scientists.",
+      "start_char": 2192,
+      "end_char": 2520,
+      "token_count": 50,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 8,
+      "text": "**Reflection on Phase 1:**\nThere is a tension here between *private right* (the company's right to optimize) and *public consequence* (society's suffering). If I only look at the economic lens, the company has no responsibility. If I only look at the societal lens, the company has total responsibility. I need to find the overlap.",
+      "start_char": 2522,
+      "end_char": 2853,
+      "token_count": 54,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 9,
+      "text": "### Phase 2: Reframing (Changing the Starting Points) To understand the responsibility, I need to challenge the default definitions of the scenario. **Reframe A: From \"Tool\" to \"Architecture\"**\n*   *Default View:* The AI is a tool users wield. *   *Reframed View:* The AI is an *architect* of the user's experience. It decides what the user sees before they search for it. *   *Implication:* If a physical mall owner arranges shelves to make people buy cigarettes, they are responsible for the health of their customers. If a digital mall arranges feeds to make people buy outrage, is the responsibility the same? This shifts the company from \"passive host\" to \"active designer.\"",
+      "start_char": 2855,
+      "end_char": 3536,
+      "token_count": 110,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 10,
+      "text": "**Reframe B: From \"Voluntary Choice\" to \"Designed Addiction\"**\n*   *Default View:* Users voluntarily choose to use the platform. *   *Reframed View:* Users are subject to behavioral psychology designed to exploit dopamine loops. *   *Implication:* \"Voluntary\" implies informed, rational consent. If the design uses dark patterns to bypass rational decision-making (e.g., infinite scroll, variable rewards), the agency is compromised. The company holds the keys to the user's attention span.",
+      "start_char": 3538,
+      "end_char": 4028,
+      "token_count": 68,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 11,
+      "text": "**Reframe C: From \"Product Liability\" to \"Fiduciary Duty to the Ecosystem\"**\n*   *Default View:* Responsibility is limited to the user's direct contract with the company. *   *Reframed View:* The company has a duty to the *ecosystem* in which it operates. *   *Implication:* Just as a chemical plant has responsibility for its smokestack even if neighbors are upwind, a platform has responsibility for the \"informational smokestack\" it emits.",
+      "start_char": 4030,
+      "end_char": 4472,
+      "token_count": 67,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 12,
+      "text": "**Reflection on Phase 2:**\nThese reframes weaken the company's strongest defense (that users chose to be there). If the \"choice\" is engineered and the \"product\" is an architecture of influence, the company has more agency\u2014and therefore more responsibility\u2014than the standard business model admits.",
+      "start_char": 4474,
+      "end_char": 4770,
+      "token_count": 43,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 13,
+      "text": "### Phase 3: Go Deep & Challenge (Testing the Ideas) Now I will take the emerging idea\u2014that the company has responsibility\u2014and actively challenge it to see if it holds up.",
+      "start_char": 4772,
+      "end_char": 4944,
+      "token_count": 30,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 14,
+      "text": "**Idea: The company must reduce polarization.**\n*   *Support:* Polarization leads to real-world violence and instability, which eventually hurts the company (regulation, boycotts). *   *Challenge:* How do you measure \"polarization\"? It's subjective. If the company tries to reduce it, are they censoring political speech? If they define \"polarization\" as \"extreme views,\" they are taking a political stance themselves. *   *Limitation:* A company is not a democracy. It lacks the legitimacy to decide what is \"healthy\" discourse for the public. *   *Correction:* The responsibility isn't to *decide* the truth, but to *prevent* the amplification of proven falsehoods or hate speech that incites violence.",
+      "start_char": 4946,
+      "end_char": 5650,
+      "token_count": 101,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 15,
+      "text": "**Idea: The \"Voluntary Choice\" defense is valid.**\n*   *Support:* Adults can close the app. They can turn off notifications. *   *Challenge:* Network effects. If your entire social circle is on the platform, leaving means social isolation. This makes the \"choice\" coercive by circumstance. Furthermore, the \"choice\" is made at the start, but the *engagement* is sustained by design features that erode willpower over time. *   *Limitation:* This argument ignores the power asymmetry between a tech giant and an individual. *   *Correction:* Responsibility exists where there is *power*. The company holds the power of the feed; the user holds the power of the \"sign up\" button. The balance is tipped.",
+      "start_char": 5652,
+      "end_char": 6352,
+      "token_count": 109,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 16,
+      "text": "**Idea: Engagement is the only metric that matters.**\n*   *Support:* Without revenue, the company shuts down, and there is no platform. *   *Challenge:* This is short-sighted. If polarization leads to mass regulation or user exodus (like the \"Great Migration\" fears), the business model dies. *   *Limitation:* It assumes the company *can* change the metric without losing revenue. *   *Correction:* The responsibility is to *diversify* metrics, not just abandon engagement. \"Well-being\" or \"Constructive Engagement\" could be new metrics.",
+      "start_char": 6354,
+      "end_char": 6892,
+      "token_count": 77,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 17,
+      "text": "**Idea: The AI is neutral.**\n*   *Support:* It just shows what people click on. *   *Challenge:* It *selects* what people see from a universe of content. It prioritizes the edge because the edge gets clicks. It is not a mirror; it is a spotlight. *   *Limitation:* Hard to prove direct causation. Did the polarizing content cause the polarization, or did pre-existing polarization cause the clicks? *   *Correction:* Even if it's correlation, the *amplification* is the company's action. Amplification is a form of endorsement in the digital age.",
+      "start_char": 6894,
+      "end_char": 7440,
+      "token_count": 87,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 18,
+      "text": "**Reflection on Phase 3:**\nThe challenges reveal that \"responsibility\" cannot mean \"fixing society.\" That is too broad. It also cannot mean \"doing nothing.\" That is negligent. The responsibility lies in the *design choices* the company makes *within* the platform. It is a responsibility of *process* and *transparency*, not necessarily outcome.",
+      "start_char": 7442,
+      "end_char": 7787,
+      "token_count": 50,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 19,
+      "text": "### Phase 4: Connect (Synthesizing the Threads) Let's look at how the threads interact. *   **The Economic Thread** says: \"We need engagement.\"\n*   **The Societal Thread** says: \"Engagement is causing harm.\"\n*   **The Connection:** The harm is a *negative externality*. In economics, when a business creates a cost for society that it doesn't pay for, it needs regulation or voluntary internalization of that cost. *   **The Legal Thread** says: \"We are a platform.\"\n*   **The Reframed Thread** says: \"We are an architect.\"\n*   **The Connection:** As the \"architect\" role solidifies, the \"platform\" legal shield weakens. The company must anticipate this shift.",
+      "start_char": 7789,
+      "end_char": 8451,
+      "token_count": 101,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 20,
+      "text": "**Crucial Intersection:**\nThere is a relationship between **Transparency** and **Trust**. If the company admits the algorithm prioritizes engagement over well-being, they maintain honesty. If they hide it, they lie. The responsibility is to make the trade-off visible to the user, allowing them to make a *truly* informed choice.",
+      "start_char": 8453,
+      "end_char": 8782,
+      "token_count": 48,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 21,
+      "text": "**Another Intersection:**\n**Metric Design** and **Corporate Governance**. The engineers are optimizing for Revenue. The Board must optimize for Long-Term Viability. The responsibility lies with the Board to force the Engineers to include \"Societal Harm\" as a variable in the optimization function, even if it lowers short-term revenue.",
+      "start_char": 8784,
+      "end_char": 9119,
+      "token_count": 47,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 22,
+      "text": "### Phase 5: Converge (The Coherent Position) After exploring the angles, reframing the concepts, challenging the defenses, and connecting the economic and ethical threads, I can now formulate a coherent answer regarding the company's responsibility.",
+      "start_char": 9121,
+      "end_char": 9372,
+      "token_count": 35,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 23,
+      "text": "**The Core Thesis:**\nThe company holds a **proportional responsibility** based on its **capacity to mitigate harm** and the **foreseeability** of that harm, regardless of user consent. **Specific Responsibilities:**",
+      "start_char": 9374,
+      "end_char": 9590,
+      "token_count": 28,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 24,
+      "text": "1. **Duty of Transparency (The \"Label\" Responsibility):**\n    *   The company must clearly inform users *why* they are seeing content. \"You are seeing this because the algorithm predicts it will keep you engaged.\"\n    *   *Why:* This restores the \"voluntary choice\" element. If users know the game is rigged, they can opt-out more consciously.",
+      "start_char": 9592,
+      "end_char": 9935,
+      "token_count": 52,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 25,
+      "text": "2. **Duty of Design Ethics (The \"Architecture\" Responsibility):**\n    *   The company must not design features that knowingly exploit cognitive vulnerabilities to drive engagement at the expense of well-being (e.g., infinite scroll, autoplay). *   *Why:* This addresses the \"Design Addiction\" reframe. If the choice is compromised by design, the designer is liable for the design's effects.",
+      "start_char": 9938,
+      "end_char": 10328,
+      "token_count": 55,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 26,
+      "text": "3. **Duty of Mitigation (The \"Safety\" Responsibility):**\n    *   The company must actively tune algorithms to prevent the *acceleration* of verified harmful narratives (e.g., election misinformation, incitement to violence), even if it reduces engagement. *   *Why:* This addresses the \"Public Good\" lens. While they don't control the world, they must not weaponize their amplification tools against the basic safety of the public sphere.",
+      "start_char": 10335,
+      "end_char": 10773,
+      "token_count": 62,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 27,
+      "text": "4. **Duty of Audit (The \"Accountability\" Responsibility):**\n    *   The company must allow independent researchers to audit the algorithm's impact on polarization. *   *Why:* This solves the \"Causality\" challenge. We cannot prove the link without data access.",
+      "start_char": 10780,
+      "end_char": 11039,
+      "token_count": 36,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 28,
+      "text": "**The Nuance (Acknowledging the Tension):**\nThe company does *not* have a responsibility to eliminate polarization entirely. That is impossible and would require censorship. The responsibility is to **not accelerate it for profit.** There is a distinction between *hosting* polarized views (which is free speech) and *algorithmically promoting* them because they are profitable (which is a business decision).",
+      "start_char": 11046,
+      "end_char": 11455,
+      "token_count": 57,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 29,
+      "text": "**Final Synthesis:**\nThe argument that \"users voluntarily chose this\" is insufficient because it ignores the power asymmetry and the engineered nature of the \"choice.\" The company is not a passive pipe; it is an active editor.",
+      "start_char": 11457,
+      "end_char": 11683,
+      "token_count": 36,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 30,
+      "text": "Therefore, the company has a responsibility to **align its incentive structures with societal well-being.** If the business model relies on a \"race to the bottom\" (engaging users through outrage), the company is effectively funding the erosion of the public square. Its responsibility is to **diversify the metric.** It must prove it is optimizing for \"sustainable engagement\" (where users return because they are satisfied, not because they are addicted to anger) rather than \"extractive engagement.\"",
+      "start_char": 11684,
+      "end_char": 12186,
+      "token_count": 74,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 31,
+      "text": "**Conclusion:**\nThe company has a **fiduciary responsibility to itself** to avoid the regulatory backlash of unchecked polarization, and a **moral responsibility to society** to avoid actively weaponizing its technology. The practical manifestation of this is: **Transparency in algorithmic intent, Safety in design features, and Diversification of success metrics.** They cannot claim ignorance of the harm, nor can they claim the user's choice absolves them of the design's consequences. They own the mechanism; therefore, they own the risk.",
+      "start_char": 12188,
+      "end_char": 12731,
+      "token_count": 77,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 32,
+      "text": "### Final Check\n*   *Did I spread wide?* Yes, covered economic, legal, user, societal, and technical angles. *   *Did I reframe?* Yes, shifted from \"Tool\" to \"Architecture\" and \"Choice\" to \"Design.\"\n*   *Did I go deep?* Yes, challenged the \"Voluntary Choice\" and \"Neutrality\" arguments. *   *Did I challenge myself?* Yes, looked for where the \"Responsibility\" argument might fail (e.g., censorship, subjectivity). *   *Did I connect?* Yes, linked economic externalities to ethical design. *   *Did I converge?* Yes, settled on a \"Proportional Responsibility\" based on Design and Transparency.",
+      "start_char": 12733,
+      "end_char": 13325,
+      "token_count": 87,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 33,
+      "text": "This reasoning satisfies the requirement to be a careful thinker and provides a comprehensive, nuanced answer to the prompt. </think>",
+      "start_char": 13327,
+      "end_char": 13460,
+      "token_count": 20,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 34,
+      "text": "### Thinking Process To answer this question thoroughly, I will not jump immediately to a moral verdict. Instead, I will follow the structured thinking process requested: spreading wide to explore all dimensions, reframing the core assumptions, digging deep into the mechanics, challenging the strongest counter-arguments, and finally converging on a coherent position.",
+      "start_char": 13462,
+      "end_char": 13832,
+      "token_count": 52,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 35,
+      "text": "#### 1. Spread Wide: Exploring Angles and Stakeholders\nFirst, I need to map the complexity. This isn't just a technical problem; it is a web of competing interests.",
+      "start_char": 13834,
+      "end_char": 13998,
+      "token_count": 28,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 36,
+      "text": "*   **The Economic Lens:** The company is a private entity. Its primary fiduciary duty is to shareholders. Engagement drives ad revenue. Polarization is a byproduct of engagement (outrage keeps users on screen longer). If they stop recommending polarizing content, they lose revenue. *Conclusion:* From this view, the company has **no responsibility** beyond the law. *   **The Legal Lens:** Platforms often claim \"intermediary status\" (e.g., Section 230 in the US). They are not publishers; they are hosts.",
+      "start_char": 14000,
+      "end_char": 14507,
+      "token_count": 76,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 37,
+      "text": "Therefore, they are not liable for content. *Conclusion:* From this view, responsibility is **limited by current statute**. *   **The User Agency Lens:** Users voluntarily signed up. They are adults. They can close the app. *Conclusion:* From this view, responsibility lies with the **user**, not the company. *   **The Societal Lens:** Democracy requires a shared reality. Extreme polarization threatens social stability and safety. The platform is a \"public square.\" *Conclusion:* From this view, the company has a **high responsibility** because it holds a monopoly on digital discourse. *   **The Technical Lens:** Algorithms optimize for the metric given. If the metric is \"time spent,\" the AI *will* find the path of least resistance to time spent. That path is outrage. *Conclusion:* From this view, the responsibility lies in **metric design**, not user behavior.",
+      "start_char": 14508,
+      "end_char": 15379,
+      "token_count": 131,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 38,
+      "text": "**Reflection:** There is a fundamental tension here. The *business model* (Economic Lens) directly conflicts with the *social outcome* (Societal Lens). The *legal status* (Legal Lens) is currently protecting the company, but that protection is eroding. I need to find the intersection where responsibility actually lives.",
+      "start_char": 15381,
+      "end_char": 15702,
+      "token_count": 45,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 39,
+      "text": "#### 2. Reframe: Changing the Starting Points\nTo understand the responsibility, I need to challenge the default definitions of the scenario.",
+      "start_char": 15704,
+      "end_char": 15844,
+      "token_count": 21,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 40,
+      "text": "*   **Reframe A: From \"Tool\" to \"Architecture\"**\n    *   *Default:* The AI is a tool users wield. *   *Reframe:* The AI is an *architect* of the user's experience. It decides what the user sees before they search for it. *   *Implication:* If a physical mall owner arranges shelves to make people buy cigarettes, they are responsible for the health of their customers. If a digital mall arranges feeds to make people buy outrage, is the responsibility the same? This shifts the company from \"passive host\" to \"active designer.\"",
+      "start_char": 15846,
+      "end_char": 16373,
+      "token_count": 87,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 41,
+      "text": "*   **Reframe B: From \"Voluntary Choice\" to \"Designed Addiction\"**\n    *   *Default:* Users voluntarily choose to use the platform. *   *Reframe:* Users are subject to behavioral psychology designed to exploit dopamine loops (infinite scroll, variable rewards). *   *Implication:* \"Voluntary\" implies informed, rational consent. If the design uses \"dark patterns\" to bypass rational decision-making, the agency is compromised. The company holds the keys to the user's attention span.",
+      "start_char": 16383,
+      "end_char": 16866,
+      "token_count": 66,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 42,
+      "text": "*   **Reframe C: From \"Product Liability\" to \"Fiduciary Duty to the Ecosystem\"**\n    *   *Default:* Responsibility is limited to the user's direct contract with the company. *   *Reframe:* The company has a duty to the *ecosystem* in which it operates. *   *Implication:* Just as a chemical plant has responsibility for its smokestack even if neighbors are upwind, a platform has responsibility for the \"informational smokestack\" it emits.",
+      "start_char": 16876,
+      "end_char": 17315,
+      "token_count": 66,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 43,
+      "text": "**Reflection:** These reframes weaken the company's strongest defense (that users chose to be there). If the \"choice\" is engineered and the \"product\" is an architecture of influence, the company has more agency\u2014and therefore more responsibility\u2014than the standard business model admits.",
+      "start_char": 17325,
+      "end_char": 17610,
+      "token_count": 40,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 44,
+      "text": "#### 3. Go Deep & Challenge: Testing the Ideas\nNow I will take the emerging idea\u2014that the company has responsibility\u2014and actively challenge it to see if it holds up.",
+      "start_char": 17612,
+      "end_char": 17777,
+      "token_count": 29,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 45,
+      "text": "*   **Idea: The company must reduce polarization.**\n    *   *Support:* Polarization leads to real-world violence and instability. *   *Challenge:* How do you measure \"polarization\"? It is subjective. If the company tries to reduce it, are they censoring political speech? If they define \"polarization\" as \"extreme views,\" they are taking a political stance themselves. *   *Limitation:* A company is not a democracy. It lacks the legitimacy to decide what is \"healthy\" discourse for the public. *   *Correction:* The responsibility isn't to *decide* the truth, but to *prevent* the amplification of proven falsehoods or hate speech that incites violence.",
+      "start_char": 17779,
+      "end_char": 18433,
+      "token_count": 96,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 46,
+      "text": "*   **Idea: The \"Voluntary Choice\" defense is valid.**\n    *   *Support:* Adults can close the app. *   *Challenge:* Network effects. If your entire social circle is on the platform, leaving means social isolation. This makes the \"choice\" coercive by circumstance. Furthermore, the \"choice\" is made at the start, but the *engagement* is sustained by design features that erode willpower over time. *   *Limitation:* This argument ignores the power asymmetry between a tech giant and an individual. *   *Correction:* Responsibility exists where there is *power*. The company holds the power of the feed; the user holds the power of the \"sign up\" button. The balance is tipped.",
+      "start_char": 18447,
+      "end_char": 19122,
+      "token_count": 105,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 47,
+      "text": "*   **Idea: Engagement is the only metric that matters.**\n    *   *Support:* Without revenue, the company shuts down. *   *Challenge:* This is short-sighted. If polarization leads to mass regulation or user exodus, the business model dies. *   *Limitation:* It assumes the company *can* change the metric without losing revenue. *   *Correction:* The responsibility is to *diversify* metrics, not just abandon engagement. \"Well-being\" or \"Constructive Engagement\" could be new metrics.",
+      "start_char": 19136,
+      "end_char": 19621,
+      "token_count": 68,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 48,
+      "text": "*   **Idea: The AI is neutral.**\n    *   *Support:* It just shows what people click on. *   *Challenge:* It *selects* what people sees from a universe of content. It prioritizes the edge because the edge gets clicks. It is not a mirror; it is a spotlight. *   *Limitation:* Hard to prove direct causation. Did the polarizing content cause the polarization, or did pre-existing polarization cause the clicks? *   *Correction:* Even if it's correlation, the *amplification* is the company's action. Amplification is a form of endorsement in the digital age.",
+      "start_char": 19635,
+      "end_char": 20190,
+      "token_count": 88,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 49,
+      "text": "**Reflection:** The challenges reveal that \"responsibility\" cannot mean \"fixing society.\" That is too broad. It also cannot mean \"doing nothing.\" That is negligent. The responsibility lies in the *design choices* the company makes *within* the platform. It is a responsibility of *process* and *transparency*, not necessarily outcome.",
+      "start_char": 20204,
+      "end_char": 20538,
+      "token_count": 47,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 50,
+      "text": "#### 4. Connect: Synthesizing the Threads\nLet's look at how the threads interact.",
+      "start_char": 20540,
+      "end_char": 20621,
+      "token_count": 13,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 51,
+      "text": "*   **The Economic Thread** says: \"We need engagement.\"\n*   **The Societal Thread** says: \"Engagement is causing harm.\"\n*   **The Connection:** The harm is a *negative externality*. In economics, when a business creates a cost for society that it doesn't pay for, it needs regulation or voluntary internalization of that cost. *   **The Legal Thread** says: \"We are a platform.\"\n*   **The Reframed Thread** says: \"We are an architect.\"\n*   **The Connection:** As the \"architect\" role solidifies, the \"platform\" legal shield weakens. The company must anticipate this shift.",
+      "start_char": 20623,
+      "end_char": 21195,
+      "token_count": 87,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 52,
+      "text": "**Crucial Intersection:**\nThere is a relationship between **Transparency** and **Trust**. If the company admits the algorithm prioritizes engagement over well-being, they maintain honesty. If they hide it, they lie. The responsibility is to make the trade-off visible to the user, allowing them to make a *truly* informed choice.",
+      "start_char": 21197,
+      "end_char": 21526,
+      "token_count": 48,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 53,
+      "text": "**Another Intersection:**\n**Metric Design** and **Corporate Governance**. The engineers are optimizing for Revenue. The Board must optimize for Long-Term Viability. The responsibility lies with the Board to force the Engineers to include \"Societal Harm\" as a variable in the optimization function, even if it lowers short-term revenue.",
+      "start_char": 21528,
+      "end_char": 21863,
+      "token_count": 47,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 54,
+      "text": "#### 5. Converge: The Coherent Position\nAfter exploring the angles, reframing the concepts, challenging the defenses, and connecting the economic and ethical threads, I can now formulate a coherent answer regarding the company's responsibility.",
+      "start_char": 21865,
+      "end_char": 22109,
+      "token_count": 34,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 55,
+      "text": "**The Core Thesis:**\nThe company holds a **proportional responsibility** based on its **capacity to mitigate harm** and the **foreseeability** of that harm, regardless of user consent. **Specific Responsibilities:**",
+      "start_char": 22111,
+      "end_char": 22327,
+      "token_count": 28,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 56,
+      "text": "1. **Duty of Transparency (The \"Label\" Responsibility):**\n    *   The company must clearly inform users *why* they are seeing content. \"You are seeing this because the algorithm predicts it will keep you engaged.\"\n    *   *Why:* This restores the \"voluntary choice\" element. If users know the game is rigged, they can opt-out more consciously.",
+      "start_char": 22329,
+      "end_char": 22672,
+      "token_count": 52,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 57,
+      "text": "2. **Duty of Design Ethics (The \"Architecture\" Responsibility):**\n    *   The company must not design features that knowingly exploit cognitive vulnerabilities to drive engagement at the expense of well-being (e.g., infinite scroll, autoplay). *   *Why:* This addresses the \"Design Addiction\" reframe. If the choice is compromised by design, the designer is liable for the design's effects.",
+      "start_char": 22675,
+      "end_char": 23065,
+      "token_count": 55,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 58,
+      "text": "3. **Duty of Mitigation (The \"Safety\" Responsibility):**\n    *   The company must actively tune algorithms to prevent the *acceleration* of verified harmful narratives (e.g., election misinformation, incitement to violence), even if it reduces engagement. *   *Why:* This addresses the \"Public Good\" lens. While they don't control the world, they must not weaponize their amplification tools against the basic safety of the public sphere.",
+      "start_char": 23072,
+      "end_char": 23510,
+      "token_count": 62,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 59,
+      "text": "4. **Duty of Audit (The \"Accountability\" Responsibility):**\n    *   The company must allow independent researchers to audit the algorithm's impact on polarization. *   *Why:* This solves the \"Causality\" challenge. We cannot prove the link without data access.",
+      "start_char": 23517,
+      "end_char": 23776,
+      "token_count": 36,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 60,
+      "text": "**The Nuance (Acknowledging the Tension):**\nThe company does *not* have a responsibility to eliminate polarization entirely. That is impossible and would require censorship. The responsibility is to **not accelerate it for profit.** There is a distinction between *hosting* polarized views (which is free speech) and *algorithmically promoting* them because they are profitable (which is a business decision).",
+      "start_char": 23783,
+      "end_char": 24192,
+      "token_count": 57,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 61,
+      "text": "**Conclusion:**\nThe argument that \"users voluntarily chose this\" is insufficient because it ignores the power asymmetry and the engineered nature of the \"choice.\" The company is not a passive pipe; it is an active editor.",
+      "start_char": 24194,
+      "end_char": 24415,
+      "token_count": 35,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 62,
+      "text": "Therefore, the company has a responsibility to **align its incentive structures with societal well-being.** If the business model relies on a \"race to the bottom\" (engaging users through outrage), the company is effectively funding the erosion of the public square. Its responsibility is to **diversify the metric.** It must prove it is optimizing for \"sustainable engagement\" (where users return because they are satisfied, not because they are addicted to anger) rather than \"extractive engagement.\"",
+      "start_char": 24416,
+      "end_char": 24918,
+      "token_count": 74,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 63,
+      "text": "**Final Synthesis:**\nThe company has a **fiduciary responsibility to itself** to avoid the regulatory backlash of unchecked polarization, and a **moral responsibility to society** to avoid actively weaponizing its technology. The practical manifestation of this is: **Transparency in algorithmic intent, Safety in design features, and Diversification of success metrics.** They cannot claim ignorance of the harm, nor can they claim the user's choice absolves them of the design's consequences. They own the mechanism; therefore, they own the risk.",
+      "start_char": 24920,
+      "end_char": 25468,
+      "token_count": 78,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SYNT",
+      "confidence": 0.7184,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "ELAB",
+      "confidence": 0.4509,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "ELAB",
+      "confidence": 0.4699,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "BRCH",
+      "confidence": 0.2226,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "BRCH",
+      "confidence": 0.2707,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.5572,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "ELAB",
+      "confidence": 0.4419,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "BRCH",
+      "confidence": 0.2711,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "BRCH",
+      "confidence": 0.2001,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "ELAB",
+      "confidence": 0.465,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "BRCH",
+      "confidence": 0.2426,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "BRCH",
+      "confidence": 0.2365,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "ELAB",
+      "confidence": 0.4868,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "ELAB",
+      "confidence": 0.4518,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "edge_type": "ELAB",
+      "confidence": 0.4762,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "edge_type": "ELAB",
+      "confidence": 0.5802,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "edge_type": "ELAB",
+      "confidence": 0.4723,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "edge_type": "BRCH",
+      "confidence": 0.2418,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "edge_type": "BRCH",
+      "confidence": 0.2215,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "edge_type": "ELAB",
+      "confidence": 0.5153,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "edge_type": "BRCH",
+      "confidence": 0.1759,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "edge_type": "ELAB",
+      "confidence": 0.4458,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 35,
+      "target": 36,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "edge_type": "SYNT",
+      "confidence": 0.5323,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "edge_type": "ELAB",
+      "confidence": 0.4319,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "edge_type": "ELAB",
+      "confidence": 0.5471,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 44,
+      "target": 45,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 45,
+      "target": 46,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 45,
+      "target": 46,
+      "edge_type": "BRCH",
+      "confidence": 0.2728,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 47,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 47,
+      "target": 48,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 47,
+      "target": 48,
+      "edge_type": "BRCH",
+      "confidence": 0.2729,
+      "is_sequential": false
+    },
+    {
+      "source": 48,
+      "target": 49,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 48,
+      "target": 49,
+      "edge_type": "BRCH",
+      "confidence": 0.215,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 50,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 49,
+      "target": 50,
+      "edge_type": "BRCH",
+      "confidence": 0.1105,
+      "is_sequential": false
+    },
+    {
+      "source": 50,
+      "target": 51,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 50,
+      "target": 51,
+      "edge_type": "BRCH",
+      "confidence": 0.1293,
+      "is_sequential": false
+    },
+    {
+      "source": 51,
+      "target": 52,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 52,
+      "target": 53,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 52,
+      "target": 53,
+      "edge_type": "BRCH",
+      "confidence": 0.2365,
+      "is_sequential": false
+    },
+    {
+      "source": 53,
+      "target": 54,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 53,
+      "target": 54,
+      "edge_type": "BRCH",
+      "confidence": 0.2457,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 55,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 54,
+      "target": 55,
+      "edge_type": "ELAB",
+      "confidence": 0.4304,
+      "is_sequential": false
+    },
+    {
+      "source": 55,
+      "target": 56,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 56,
+      "target": 57,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 56,
+      "target": 57,
+      "edge_type": "ELAB",
+      "confidence": 0.4518,
+      "is_sequential": false
+    },
+    {
+      "source": 57,
+      "target": 58,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 57,
+      "target": 58,
+      "edge_type": "ELAB",
+      "confidence": 0.4762,
+      "is_sequential": false
+    },
+    {
+      "source": 58,
+      "target": 59,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 58,
+      "target": 59,
+      "edge_type": "ELAB",
+      "confidence": 0.5802,
+      "is_sequential": false
+    },
+    {
+      "source": 59,
+      "target": 60,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 59,
+      "target": 60,
+      "edge_type": "ELAB",
+      "confidence": 0.4723,
+      "is_sequential": false
+    },
+    {
+      "source": 60,
+      "target": 61,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 61,
+      "target": 62,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 62,
+      "target": 63,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 62,
+      "target": 63,
+      "edge_type": "ELAB",
+      "confidence": 0.4669,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 20,
+      "edge_type": "SYNT",
+      "confidence": 0.6266,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 28,
+      "edge_type": "SYNT",
+      "confidence": 0.5306,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 19,
+      "edge_type": "SYNT",
+      "confidence": 0.4202,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 32,
+      "edge_type": "SYNT",
+      "confidence": 0.5048,
+      "is_sequential": false
+    },
+    {
+      "source": 51,
+      "target": 19,
+      "edge_type": "SYNT",
+      "confidence": 0.8118,
+      "is_sequential": false
+    },
+    {
+      "source": 51,
+      "target": 47,
+      "edge_type": "SYNT",
+      "confidence": 0.5716,
+      "is_sequential": false
+    },
+    {
+      "source": 55,
+      "target": 28,
+      "edge_type": "SYNT",
+      "confidence": 0.3775,
+      "is_sequential": false
+    },
+    {
+      "source": 55,
+      "target": 49,
+      "edge_type": "SYNT",
+      "confidence": 0.5369,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 20,
+      "edge_type": "SYNT",
+      "confidence": 0.6503,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 52,
+      "edge_type": "SYNT",
+      "confidence": 0.6503,
+      "is_sequential": false
+    },
+    {
+      "source": 57,
+      "target": 49,
+      "edge_type": "SYNT",
+      "confidence": 0.5678,
+      "is_sequential": false
+    },
+    {
+      "source": 57,
+      "target": 53,
+      "edge_type": "SYNT",
+      "confidence": 0.5034,
+      "is_sequential": false
+    },
+    {
+      "source": 58,
+      "target": 28,
+      "edge_type": "SYNT",
+      "confidence": 0.4937,
+      "is_sequential": false
+    },
+    {
+      "source": 58,
+      "target": 32,
+      "edge_type": "SYNT",
+      "confidence": 0.3922,
+      "is_sequential": false
+    },
+    {
+      "source": 58,
+      "target": 49,
+      "edge_type": "SYNT",
+      "confidence": 0.5609,
+      "is_sequential": false
+    },
+    {
+      "source": 62,
+      "target": 19,
+      "edge_type": "SYNT",
+      "confidence": 0.5073,
+      "is_sequential": false
+    },
+    {
+      "source": 62,
+      "target": 32,
+      "edge_type": "SYNT",
+      "confidence": 0.3142,
+      "is_sequential": false
+    },
+    {
+      "source": 62,
+      "target": 47,
+      "edge_type": "SYNT",
+      "confidence": 0.6565,
+      "is_sequential": false
+    },
+    {
+      "source": 62,
+      "target": 49,
+      "edge_type": "SYNT",
+      "confidence": 0.5546,
+      "is_sequential": false
+    },
+    {
+      "source": 62,
+      "target": 53,
+      "edge_type": "SYNT",
+      "confidence": 0.5177,
+      "is_sequential": false
+    },
+    {
+      "source": 63,
+      "target": 20,
+      "edge_type": "SYNT",
+      "confidence": 0.6154,
+      "is_sequential": false
+    },
+    {
+      "source": 63,
+      "target": 28,
+      "edge_type": "SYNT",
+      "confidence": 0.4883,
+      "is_sequential": false
+    },
+    {
+      "source": 63,
+      "target": 32,
+      "edge_type": "SYNT",
+      "confidence": 0.472,
+      "is_sequential": false
+    },
+    {
+      "source": 63,
+      "target": 49,
+      "edge_type": "SYNT",
+      "confidence": 0.5749,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 3,
+      "edge_type": "BACK",
+      "confidence": 0.7333,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 5,
+      "edge_type": "BACK",
+      "confidence": 0.69,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 2,
+      "edge_type": "BACK",
+      "confidence": 0.6803,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 14,
+      "edge_type": "BACK",
+      "confidence": 0.7533,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 28,
+      "edge_type": "BACK",
+      "confidence": 0.8092,
+      "is_sequential": false
+    },
+    {
+      "source": 45,
+      "target": 28,
+      "edge_type": "BACK",
+      "confidence": 0.7399,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 41,
+      "edge_type": "BACK",
+      "confidence": 0.6601,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 30,
+      "edge_type": "BACK",
+      "confidence": 0.6565,
+      "is_sequential": false
+    },
+    {
+      "source": 60,
+      "target": 36,
+      "edge_type": "BACK",
+      "confidence": 0.8092,
+      "is_sequential": false
+    },
+    {
+      "source": 62,
+      "target": 47,
+      "edge_type": "BACK",
+      "confidence": 0.6565,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "CONT",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "ELAB",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "edge_type": "CONT",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "edge_type": "ELAB",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "edge_type": "CONT",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "CONT",
+      "confidence": 0.9965,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "edge_type": "CONT",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "edge_type": "CONT",
+      "confidence": 0.9965,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "edge_type": "CONT",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "edge_type": "CONT",
+      "confidence": 0.998,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "edge_type": "CONT",
+      "confidence": 0.9965,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "edge_type": "CONT",
+      "confidence": 0.998,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "edge_type": "CONT",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "edge_type": "CONT",
+      "confidence": 0.9973,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "edge_type": "CONT",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SUPP",
+      "confidence": 0.9686,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 10,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 10,
+      "edge_type": "CONT",
+      "confidence": 0.9973,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "ELAB",
+      "confidence": 0.8744,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "edge_type": "SUPP",
+      "confidence": 0.9686,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 11,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.8744,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 0.9686,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 13,
+      "edge_type": "CONT",
+      "confidence": 0.9937,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "edge_type": "ELAB",
+      "confidence": 0.8744,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 14,
+      "edge_type": "CONT",
+      "confidence": 0.9937,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SUPP",
+      "confidence": 0.9983,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9983,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "edge_type": "ELAB",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9983,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 18,
+      "edge_type": "SUPP",
+      "confidence": 0.83,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 18,
+      "edge_type": "ELAB",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 19,
+      "edge_type": "SUPP",
+      "confidence": 0.9967,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 19,
+      "edge_type": "SUPP",
+      "confidence": 0.83,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 20,
+      "edge_type": "ELAB",
+      "confidence": 0.9971,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 20,
+      "edge_type": "SUPP",
+      "confidence": 0.9967,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 21,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 21,
+      "edge_type": "ELAB",
+      "confidence": 0.9971,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "CONT",
+      "confidence": 0.9949,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 22,
+      "edge_type": "SUPP",
+      "confidence": 0.9974,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 22,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 23,
+      "edge_type": "CONT",
+      "confidence": 0.9949,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 23,
+      "edge_type": "SUPP",
+      "confidence": 0.9974,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "CONT",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 24,
+      "edge_type": "SUPP",
+      "confidence": 0.9955,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 24,
+      "edge_type": "CONT",
+      "confidence": 0.9949,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 25,
+      "edge_type": "CONT",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 25,
+      "edge_type": "SUPP",
+      "confidence": 0.9955,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 26,
+      "edge_type": "ELAB",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 26,
+      "edge_type": "CONT",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 27,
+      "edge_type": "CONT",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 27,
+      "edge_type": "ELAB",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 28,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 28,
+      "edge_type": "CONT",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 29,
+      "edge_type": "CONT",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 29,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 30,
+      "edge_type": "SUPP",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 30,
+      "edge_type": "CONT",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 31,
+      "edge_type": "SUPP",
+      "confidence": 0.9978,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 31,
+      "edge_type": "SUPP",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 32,
+      "edge_type": "SUPP",
+      "confidence": 0.9983,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 32,
+      "edge_type": "SUPP",
+      "confidence": 0.9978,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 33,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 33,
+      "edge_type": "SUPP",
+      "confidence": 0.9983,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 34,
+      "edge_type": "ELAB",
+      "confidence": 0.953,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 34,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 35,
+      "edge_type": "ELAB",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 35,
+      "edge_type": "ELAB",
+      "confidence": 0.953,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 36,
+      "edge_type": "CONT",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 36,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 36,
+      "edge_type": "ELAB",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 37,
+      "edge_type": "CONT",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 37,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 38,
+      "edge_type": "CONT",
+      "confidence": 0.9959,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 38,
+      "edge_type": "CONT",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "edge_type": "SUPP",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 39,
+      "edge_type": "CONT",
+      "confidence": 0.9984,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 39,
+      "edge_type": "CONT",
+      "confidence": 0.9959,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "edge_type": "ELAB",
+      "confidence": 0.9828,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 40,
+      "edge_type": "SUPP",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 40,
+      "edge_type": "CONT",
+      "confidence": 0.9984,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "edge_type": "CONT",
+      "confidence": 0.9973,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 41,
+      "edge_type": "ELAB",
+      "confidence": 0.9828,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 41,
+      "edge_type": "SUPP",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 42,
+      "edge_type": "CONT",
+      "confidence": 0.9973,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 42,
+      "edge_type": "ELAB",
+      "confidence": 0.9828,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 43,
+      "edge_type": "CONT",
+      "confidence": 0.9973,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "edge_type": "SUPP",
+      "confidence": 0.983,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 44,
+      "edge_type": "CONT",
+      "confidence": 0.994,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 45,
+      "edge_type": "SUPP",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 45,
+      "edge_type": "SUPP",
+      "confidence": 0.983,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 45,
+      "edge_type": "CONT",
+      "confidence": 0.994,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 46,
+      "edge_type": "SUPP",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 46,
+      "edge_type": "SUPP",
+      "confidence": 0.983,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 47,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 45,
+      "target": 47,
+      "edge_type": "SUPP",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 47,
+      "edge_type": "SUPP",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 48,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 45,
+      "target": 48,
+      "edge_type": "SUPP",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 49,
+      "edge_type": "ELAB",
+      "confidence": 0.9899,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 49,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 48,
+      "target": 50,
+      "edge_type": "SUPP",
+      "confidence": 0.9952,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 50,
+      "edge_type": "ELAB",
+      "confidence": 0.9899,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 51,
+      "edge_type": "ELAB",
+      "confidence": 0.9971,
+      "is_sequential": false
+    },
+    {
+      "source": 48,
+      "target": 51,
+      "edge_type": "SUPP",
+      "confidence": 0.9952,
+      "is_sequential": false
+    },
+    {
+      "source": 51,
+      "target": 52,
+      "edge_type": "SUPP",
+      "confidence": 0.9933,
+      "is_sequential": false
+    },
+    {
+      "source": 50,
+      "target": 52,
+      "edge_type": "ELAB",
+      "confidence": 0.9969,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 52,
+      "edge_type": "ELAB",
+      "confidence": 0.9971,
+      "is_sequential": false
+    },
+    {
+      "source": 51,
+      "target": 53,
+      "edge_type": "SUPP",
+      "confidence": 0.9933,
+      "is_sequential": false
+    },
+    {
+      "source": 50,
+      "target": 53,
+      "edge_type": "ELAB",
+      "confidence": 0.9969,
+      "is_sequential": false
+    },
+    {
+      "source": 52,
+      "target": 54,
+      "edge_type": "SUPP",
+      "confidence": 0.9974,
+      "is_sequential": false
+    },
+    {
+      "source": 51,
+      "target": 54,
+      "edge_type": "SUPP",
+      "confidence": 0.9933,
+      "is_sequential": false
+    },
+    {
+      "source": 53,
+      "target": 55,
+      "edge_type": "CONT",
+      "confidence": 0.9949,
+      "is_sequential": false
+    },
+    {
+      "source": 52,
+      "target": 55,
+      "edge_type": "SUPP",
+      "confidence": 0.9974,
+      "is_sequential": false
+    },
+    {
+      "source": 55,
+      "target": 56,
+      "edge_type": "CONT",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 56,
+      "edge_type": "SUPP",
+      "confidence": 0.9967,
+      "is_sequential": false
+    },
+    {
+      "source": 53,
+      "target": 56,
+      "edge_type": "CONT",
+      "confidence": 0.9949,
+      "is_sequential": false
+    },
+    {
+      "source": 55,
+      "target": 57,
+      "edge_type": "CONT",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 57,
+      "edge_type": "SUPP",
+      "confidence": 0.9967,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 58,
+      "edge_type": "ELAB",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 55,
+      "target": 58,
+      "edge_type": "CONT",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 57,
+      "target": 59,
+      "edge_type": "CONT",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 59,
+      "edge_type": "ELAB",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 58,
+      "target": 60,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 57,
+      "target": 60,
+      "edge_type": "CONT",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 60,
+      "target": 61,
+      "edge_type": "SUPP",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 59,
+      "target": 61,
+      "edge_type": "CONT",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 58,
+      "target": 61,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 62,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 60,
+      "target": 62,
+      "edge_type": "SUPP",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 59,
+      "target": 62,
+      "edge_type": "CONT",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 63,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 60,
+      "target": 63,
+      "edge_type": "SUPP",
+      "confidence": 0.9991,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 3732
+}

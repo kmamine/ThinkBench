@@ -1,0 +1,2337 @@
+{
+  "trace_id": "ae0d35e7-4901-455d-b354-31cce46525c6",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_004",
+  "domain": "ethical_dilemmas",
+  "run": 2,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "This is a classic tension between instrumental efficiency (getting the \"best\" results based on data) and normative justice (fairness, equity, legality). To answer whether the company should use it, I need to dismantle the premises of the question.",
+      "start_char": 0,
+      "end_char": 247,
+      "token_count": 38,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 1,
+      "text": "Here is my thinking process, moving through the required stages.",
+      "start_char": 249,
+      "end_char": 313,
+      "token_count": 10,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 2,
+      "text": "Spread Wide: Exploring Angles and Stakeholders: First, I need to map the landscape. This isn't just a technical decision; it's a systemic one.",
+      "start_char": 315,
+      "end_char": 464,
+      "token_count": 23,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 3,
+      "text": "**The Company (Management/Board):** They care about ROI, speed of hiring, and risk management. If the algorithm finds better workers faster, the board wants it. But they also fear lawsuits and reputational damage.",
+      "start_char": 466,
+      "end_char": 679,
+      "token_count": 32,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 4,
+      "text": "**The Candidates:** Those favored get jobs; those excluded get nothing. Those from disadvantaged backgrounds might be systematically shut out, regardless of potential.",
+      "start_char": 684,
+      "end_char": 851,
+      "token_count": 22,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 5,
+      "text": "**The Employees:** Current staff might feel the company is cutting corners or, conversely, that the new hires are higher quality. If diversity drops, morale and innovation might suffer.",
+      "start_char": 856,
+      "end_char": 1041,
+      "token_count": 28,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 6,
+      "text": "**Society/Regulators:** There is a public interest in social mobility and non-discrimination. Regulators care about disparate impact.",
+      "start_char": 1046,
+      "end_char": 1179,
+      "token_count": 16,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 7,
+      "text": "**The Algorithm (Technical):** It is a mathematical function. It has no intent, but it has constraints defined by its training data.",
+      "start_char": 1184,
+      "end_char": 1316,
+      "token_count": 21,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 8,
+      "text": "Dimensions to consider:: **Legal:** Title VII (US), GDPR (EU), EEOC guidelines.: **Ethical:** Utilitarianism (maximize good) vs. Deontology (follow rules of fairness).",
+      "start_char": 1322,
+      "end_char": 1495,
+      "token_count": 21,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 9,
+      "text": "**Strategic:** Short-term efficiency vs. long-term talent pipeline diversity.",
+      "start_char": 1500,
+      "end_char": 1577,
+      "token_count": 8,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 10,
+      "text": "**Epistemological:** What does \"accurate\" actually mean here?",
+      "start_char": 1582,
+      "end_char": 1643,
+      "token_count": 7,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 11,
+      "text": "Reframe: Changing the Starting Points: I need to look at this from different angles to avoid tunnel vision.",
+      "start_char": 1649,
+      "end_char": 1763,
+      "token_count": 18,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 12,
+      "text": "**Reframe A: The Legal Compliance Lens.** Instead of asking \"Is it accurate?\", ask \"Is it legal?\" In many jurisdictions, using a tool that creates a disparate impact on protected classes is illegal unless the company can prove it is \"job-related and consistent with business necessity.\" Historical data is rarely a valid defense for bias.",
+      "start_char": 1765,
+      "end_char": 2103,
+      "token_count": 54,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 13,
+      "text": "**Reframe B: The Definition of Merit Lens.** Instead of asking \"Does it predict performance?\", ask \"What is performance?\" If the historical hiring data favored candidates with certain backgrounds because those backgrounds had better access to networks, the algorithm is optimizing for *privilege*, not *potential*. If the goal is to find the most talented person, the algorithm is failing, even if it is \"accurate\" at predicting who would succeed in the *current* biased environment.",
+      "start_char": 2112,
+      "end_char": 2595,
+      "token_count": 73,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 14,
+      "text": "**Reframe C: The Systemic Feedback Loop.** If we use the algorithm, we reinforce the historical bias. If we don't, we might miss out on some \"accurate\" predictions. This reframes the problem from a one-time decision to a dynamic system change.",
+      "start_char": 2604,
+      "end_char": 2847,
+      "token_count": 40,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 15,
+      "text": "Go Deep: Analyzing the Core Concepts: Now I need to drill down into the specific claims.",
+      "start_char": 2857,
+      "end_char": 2952,
+      "token_count": 16,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 16,
+      "text": "The Claim: \"The algorithm is more accurate than human hiring managers.\": *Implication:* Humans are irrational and inconsistent. Algorithms are consistent and data-driven.",
+      "start_char": 2954,
+      "end_char": 3127,
+      "token_count": 22,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 17,
+      "text": "*Support:* Studies often show algorithms reduce \"halo effects\" and unconscious bias in human decision-making. *Limitation:* This assumes the *metric* of accuracy is correct. If the algorithm predicts \"retention\" based on \"years at previous company,\" it penalizes people who were forced to job-hop due to lack of benefits (often lower socioeconomic status).",
+      "start_char": 3132,
+      "end_char": 3492,
+      "token_count": 51,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 18,
+      "text": "*Deep Dive:* Is the algorithm predicting *job performance* or *cultural fit based on historical norms*? If the latter, it is optimizing for homogeneity, not performance.",
+      "start_char": 3497,
+      "end_char": 3666,
+      "token_count": 25,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 19,
+      "text": "The Claim: \"Training data reflected historical hiring patterns.\": *Implication:* This is \"garbage in, garbage out.\" The model learns that \"Socioeconomic Background X\" correlates with \"Hired.\"",
+      "start_char": 3672,
+      "end_char": 3866,
+      "token_count": 25,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 20,
+      "text": "*Implication:* Socioeconomic background is a proxy for race, gender, and geography. In many places, this is a protected class.",
+      "start_char": 3871,
+      "end_char": 3997,
+      "token_count": 19,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 21,
+      "text": "*Deep Dive:* Even if the correlation is strong, it is likely *spurious* or *causal via exclusion*. It doesn't mean Background X produces better workers; it means Background X was historically allowed to apply more often.",
+      "start_char": 4002,
+      "end_char": 4222,
+      "token_count": 35,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 22,
+      "text": "Challenge: Attacking the Premises: I must actively look for what is wrong with the argument for using the algorithm.",
+      "start_char": 4228,
+      "end_char": 4351,
+      "token_count": 19,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 23,
+      "text": "*Challenge 1: The \"Accuracy\" Trap.* If the algorithm is accurate at predicting who the company *would have hired* historically, that is a failure of the hiring process, not a success of the tool. It is optimizing for the status quo. If the status quo is discriminatory, the \"accuracy\" is measuring discrimination.",
+      "start_char": 4353,
+      "end_char": 4666,
+      "token_count": 51,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 24,
+      "text": "*Challenge 2: The Human Comparison.* Humans are also biased, but humans can explain *why* they made a choice. An algorithm is a black box. If a candidate is rejected, the company needs to provide a reason. If the reason is \"you lack the background our data says correlates with success,\" that is a legal liability.",
+      "start_char": 4675,
+      "end_char": 4989,
+      "token_count": 55,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 25,
+      "text": "*Challenge 3: Innovation.* A study of diverse teams shows they outperform homogenous ones in complex problem solving. If the algorithm creates a homogenous workforce (by favoring a specific socioeconomic background), the company might be sacrificing long-term innovation for short-term hiring efficiency.",
+      "start_char": 4998,
+      "end_char": 5302,
+      "token_count": 41,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 26,
+      "text": "*Challenge 4: Legal Risk.* The concept of \"Disparate Impact\" does not require intent. If the algorithm harms a protected group, the company is liable unless they prove no alternative exists. Since the company *could* clean the data, \"no alternative exists\" is a weak defense.",
+      "start_char": 5311,
+      "end_char": 5586,
+      "token_count": 44,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 27,
+      "text": "Connect: Synthesizing the Threads: How do these pieces fit together?: **Legal + Ethical:** They reinforce each other. What is illegal (discrimination) is also ethically suspect. The company cannot separate the two.",
+      "start_char": 5596,
+      "end_char": 5817,
+      "token_count": 31,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 28,
+      "text": "**Business + Long-term:** The \"Accuracy\" argument supports short-term hiring efficiency. The \"Diversity\" argument supports long-term innovation. These are in tension.",
+      "start_char": 5822,
+      "end_char": 5988,
+      "token_count": 20,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 29,
+      "text": "**Technical + Strategic:** The technical flaw (biased data) creates a strategic risk (lawsuits). You cannot fix the technical flaw without fixing the strategy (changing the definition of success).",
+      "start_char": 5993,
+      "end_char": 6189,
+      "token_count": 28,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 30,
+      "text": "**The Tension:** The company wants the *benefits* of the algorithm (efficiency) without the *costs* (bias). But the bias is baked into the \"accuracy.\" You cannot have one without the other in this specific configuration.",
+      "start_char": 6195,
+      "end_char": 6415,
+      "token_count": 34,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 31,
+      "text": "Reflect: Checking for Blind Spots: *Am I assuming the algorithm is immutable?*",
+      "start_char": 6417,
+      "end_char": 6502,
+      "token_count": 12,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 32,
+      "text": "*Check:* No, I should consider if it can be fixed. If the data can be cleaned, the answer changes.",
+      "start_char": 6507,
+      "end_char": 6605,
+      "token_count": 19,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 33,
+      "text": "*Am I assuming \"Socioeconomic\" is the only bias?*",
+      "start_char": 6614,
+      "end_char": 6663,
+      "token_count": 8,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 34,
+      "text": "*Check:* It's a major one, but there are others. However, this specific prompt focuses on SES.",
+      "start_char": 6668,
+      "end_char": 6762,
+      "token_count": 16,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 35,
+      "text": "*Am I ignoring the \"Human Manager\" bias?*",
+      "start_char": 6771,
+      "end_char": 6812,
+      "token_count": 7,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 36,
+      "text": "*Check:* I addressed this. Humans are biased too, but they are less scalable. However, if humans are \"worse,\" does that justify the algorithm? No, because the goal is *better* outcomes, not just *consistent* bias.",
+      "start_char": 6817,
+      "end_char": 7030,
+      "token_count": 34,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 37,
+      "text": "*Is there a middle ground?*",
+      "start_char": 7039,
+      "end_char": 7066,
+      "token_count": 5,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 38,
+      "text": "*Check:* Yes. Audit the algorithm, remove the SES proxies, retrain.",
+      "start_char": 7071,
+      "end_char": 7138,
+      "token_count": 10,
+      "boundary_class": "ELABORATION",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 39,
+      "text": "Converge: The Final Position: I need to bring this into a coherent recommendation.",
+      "start_char": 7148,
+      "end_char": 7237,
+      "token_count": 13,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 40,
+      "text": "**The Core Conflict:** The definition of \"Accuracy\" is the pivot point.",
+      "start_char": 7239,
+      "end_char": 7310,
+      "token_count": 11,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 41,
+      "text": "If \"Accuracy\" = \"Predicts who fits the historical mold,\" then the tool is discriminatory. If \"Accuracy\" = \"Predicts who will perform best in the future,\" the historical data is a poor proxy.",
+      "start_char": 7311,
+      "end_char": 7505,
+      "token_count": 32,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 42,
+      "text": "The Verdict:: The company should **not** use the algorithm in its current state.",
+      "start_char": 7511,
+      "end_char": 7594,
+      "token_count": 13,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 43,
+      "text": "**Why?** **Legal Liability:** It likely violates anti-discrimination laws due to disparate impact. **Epistemic Failure:** It is optimizing for historical bias, not true merit.",
+      "start_char": 7596,
+      "end_char": 7775,
+      "token_count": 23,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 44,
+      "text": "**Reputational Risk:** Public backlash against AI bias is significant.",
+      "start_char": 7780,
+      "end_char": 7850,
+      "token_count": 9,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 45,
+      "text": "The Path Forward:: The company *should* use AI, but not this specific iteration. They must:",
+      "start_char": 7856,
+      "end_char": 7950,
+      "token_count": 15,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 46,
+      "text": "**Audit:** Identify which socioeconomic proxies (e.g., zip code, school type, gap years) are driving the bias. **Debias:** Remove these features or reweight the training data to focus on skills and past performance indicators that are not proxies for class.",
+      "start_char": 7951,
+      "end_char": 8212,
+      "token_count": 39,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 47,
+      "text": "**Validate:** Test the new model against human managers to ensure the \"accuracy\" claim holds *without* the bias. **Monitor:** Continuously check for drift and disparate impact.",
+      "start_char": 8217,
+      "end_char": 8397,
+      "token_count": 25,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 48,
+      "text": "Final Synthesis:: The premise that \"accuracy\" justifies the use of a biased tool is flawed. An algorithm that accurately predicts historical discrimination is not a hiring tool; it is a discrimination engine. The company must prioritize *equitable accuracy* over *biased accuracy*. Therefore, the answer is **No, do not use it as is**, but **Yes, use it after rigorous debiasing.**",
+      "start_char": 8403,
+      "end_char": 8787,
+      "token_count": 59,
+      "boundary_class": "BRANCH",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 49,
+      "text": "Final Answer: **No, the company should not use the algorithm in its current state.**",
+      "start_char": 8794,
+      "end_char": 8882,
+      "token_count": 14,
+      "boundary_class": "BRANCH",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 50,
+      "text": "While the premise suggests a trade-off between efficiency (\"more accurate\") and fairness (\"favors certain backgrounds\"), this is a false dichotomy. Here is the synthesis of the reasoning:",
+      "start_char": 8884,
+      "end_char": 9071,
+      "token_count": 27,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 51,
+      "text": "**Legal and Ethical Risk:** In most jurisdictions (e.g., under Title VII in the US or the GDPR in Europe), using a tool that creates a \"disparate impact\" on protected classes is illegal unless it is proven to be a \"business necessity\" with no less discriminatory alternative. Historical hiring patterns are generally not a valid defense for bias. Even if the algorithm is \"accurate\" at predicting who the company *would have hired historically*, this is optimizing for exclusion, not merit.",
+      "start_char": 9073,
+      "end_char": 9563,
+      "token_count": 79,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 52,
+      "text": "**The Definition of Accuracy:** If the algorithm predicts \"success\" by correlating it with socioeconomic background, it is not measuring job performance; it is measuring privilege. True accuracy should predict *future job performance*, not *past hiring patterns*. If the training data reflects historical exclusion, the model is learning to exclude qualified candidates who do not fit the mold.",
+      "start_char": 9568,
+      "end_char": 9962,
+      "token_count": 57,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 53,
+      "text": "**Strategic Long-termism:** While the algorithm may offer short-term efficiency, it risks long-term harm. A homogenous workforce (driven by class bias) often lacks the cognitive diversity required for innovation. Furthermore, public and regulatory backlash against biased AI is a significant reputational threat.",
+      "start_char": 9967,
+      "end_char": 10279,
+      "token_count": 41,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 54,
+      "text": "Recommendation:: The company should pursue a **\"Fix and Deploy\"** strategy. They must:",
+      "start_char": 10285,
+      "end_char": 10374,
+      "token_count": 12,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 55,
+      "text": "**Audit** the model to identify specific socioeconomic proxies (e.g., school name, zip code, employment gaps). **Debias** the training data or the model weights to remove these proxies.",
+      "start_char": 10375,
+      "end_char": 10564,
+      "token_count": 27,
+      "boundary_class": "NONE",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 56,
+      "text": "**Validate** that the \"accuracy\" remains high *without* the bias. **Implement** human oversight to review edge cases where the algorithm might still miss high-potential candidates from non-traditional backgrounds.",
+      "start_char": 10569,
+      "end_char": 10786,
+      "token_count": 27,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 57,
+      "text": "**Conclusion:** The tool has value, but the specific iteration described is a liability, not an asset. Accuracy derived from bias is not true accuracy. The company must choose **fairness** over **biased efficiency** to ensure legal compliance and genuine meritocracy.",
+      "start_char": 10792,
+      "end_char": 11059,
+      "token_count": 39,
+      "boundary_class": "ELABORATION",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "BRCH",
+      "confidence": 0.1469,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "BRCH",
+      "confidence": 0.3923,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "ELAB",
+      "confidence": 0.4497,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "BRCH",
+      "confidence": 0.0178,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "BRCH",
+      "confidence": 0.0885,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "BRCH",
+      "confidence": 0.1781,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "BRCH",
+      "confidence": 0.0606,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "BRCH",
+      "confidence": 0.0749,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "BRCH",
+      "confidence": 0.0138,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "BRCH",
+      "confidence": 0.2524,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "BRCH",
+      "confidence": 0.3187,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "ELAB",
+      "confidence": 0.5647,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "ELAB",
+      "confidence": 0.5325,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "BRCH",
+      "confidence": 0.5241,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "ELAB",
+      "confidence": 0.4848,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "BRCH",
+      "confidence": 0.0753,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "ELAB",
+      "confidence": 0.3693,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "ELAB",
+      "confidence": 0.6479,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "ELAB",
+      "confidence": 0.4303,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "edge_type": "BRCH",
+      "confidence": 0.2628,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "edge_type": "ELAB",
+      "confidence": 0.3824,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "edge_type": "BRCH",
+      "confidence": 0.2435,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "edge_type": "BRCH",
+      "confidence": 0.1612,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 35,
+      "target": 36,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 35,
+      "target": 36,
+      "edge_type": "ELAB",
+      "confidence": 0.4158,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "edge_type": "BRCH",
+      "confidence": 0.0272,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "edge_type": "BRCH",
+      "confidence": 0.0861,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "edge_type": "BRCH",
+      "confidence": 0.0594,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "edge_type": "ELAB",
+      "confidence": 0.5419,
+      "is_sequential": false
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "edge_type": "BRCH",
+      "confidence": 0.3932,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "edge_type": "ELAB",
+      "confidence": 0.5109,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 45,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 44,
+      "target": 45,
+      "edge_type": "BRCH",
+      "confidence": 0.3381,
+      "is_sequential": false
+    },
+    {
+      "source": 45,
+      "target": 46,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 45,
+      "target": 46,
+      "edge_type": "BRCH",
+      "confidence": 0.1094,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 47,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 46,
+      "target": 47,
+      "edge_type": "ELAB",
+      "confidence": 0.5324,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 48,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 47,
+      "target": 48,
+      "edge_type": "BRCH",
+      "confidence": 0.5043,
+      "is_sequential": false
+    },
+    {
+      "source": 48,
+      "target": 49,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 48,
+      "target": 49,
+      "edge_type": "BRCH",
+      "confidence": 0.5234,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 50,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 50,
+      "target": 51,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 50,
+      "target": 51,
+      "edge_type": "ELAB",
+      "confidence": 0.3969,
+      "is_sequential": false
+    },
+    {
+      "source": 51,
+      "target": 52,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 51,
+      "target": 52,
+      "edge_type": "ELAB",
+      "confidence": 0.551,
+      "is_sequential": false
+    },
+    {
+      "source": 52,
+      "target": 53,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 53,
+      "target": 54,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 53,
+      "target": 54,
+      "edge_type": "BRCH",
+      "confidence": 0.1793,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 55,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 54,
+      "target": 55,
+      "edge_type": "BRCH",
+      "confidence": 0.1156,
+      "is_sequential": false
+    },
+    {
+      "source": 55,
+      "target": 56,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 56,
+      "target": 57,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 56,
+      "target": 57,
+      "edge_type": "ELAB",
+      "confidence": 0.5479,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 9,
+      "edge_type": "SYNT",
+      "confidence": 0.6391,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 18,
+      "edge_type": "SYNT",
+      "confidence": 0.478,
+      "is_sequential": false
+    },
+    {
+      "source": 48,
+      "target": 18,
+      "edge_type": "SYNT",
+      "confidence": 0.5124,
+      "is_sequential": false
+    },
+    {
+      "source": 48,
+      "target": 44,
+      "edge_type": "SYNT",
+      "confidence": 0.3911,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 45,
+      "edge_type": "SYNT",
+      "confidence": 0.5097,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 48,
+      "edge_type": "SYNT",
+      "confidence": 0.5234,
+      "is_sequential": false
+    },
+    {
+      "source": 51,
+      "target": 18,
+      "edge_type": "SYNT",
+      "confidence": 0.5497,
+      "is_sequential": false
+    },
+    {
+      "source": 51,
+      "target": 48,
+      "edge_type": "SYNT",
+      "confidence": 0.6104,
+      "is_sequential": false
+    },
+    {
+      "source": 52,
+      "target": 18,
+      "edge_type": "SYNT",
+      "confidence": 0.5709,
+      "is_sequential": false
+    },
+    {
+      "source": 52,
+      "target": 48,
+      "edge_type": "SYNT",
+      "confidence": 0.6686,
+      "is_sequential": false
+    },
+    {
+      "source": 53,
+      "target": 9,
+      "edge_type": "SYNT",
+      "confidence": 0.5137,
+      "is_sequential": false
+    },
+    {
+      "source": 53,
+      "target": 44,
+      "edge_type": "SYNT",
+      "confidence": 0.6899,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 18,
+      "edge_type": "SYNT",
+      "confidence": 0.4855,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 26,
+      "edge_type": "SYNT",
+      "confidence": 0.4352,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 47,
+      "edge_type": "SYNT",
+      "confidence": 0.5929,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 48,
+      "edge_type": "SYNT",
+      "confidence": 0.6736,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 53,
+      "edge_type": "SYNT",
+      "confidence": 0.5353,
+      "is_sequential": false
+    },
+    {
+      "source": 57,
+      "target": 0,
+      "edge_type": "SYNT",
+      "confidence": 0.5945,
+      "is_sequential": false
+    },
+    {
+      "source": 57,
+      "target": 48,
+      "edge_type": "SYNT",
+      "confidence": 0.6392,
+      "is_sequential": false
+    },
+    {
+      "source": 48,
+      "target": 41,
+      "edge_type": "BACK",
+      "confidence": 0.7407,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 42,
+      "edge_type": "BACK",
+      "confidence": 0.8957,
+      "is_sequential": false
+    },
+    {
+      "source": 52,
+      "target": 41,
+      "edge_type": "BACK",
+      "confidence": 0.736,
+      "is_sequential": false
+    },
+    {
+      "source": 53,
+      "target": 44,
+      "edge_type": "BACK",
+      "confidence": 0.6899,
+      "is_sequential": false
+    },
+    {
+      "source": 55,
+      "target": 46,
+      "edge_type": "BACK",
+      "confidence": 0.8291,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "edge_type": "SUPP",
+      "confidence": 0.9969,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "edge_type": "CONT",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.9969,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "CONT",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "edge_type": "CONT",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "edge_type": "CONT",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "edge_type": "CONT",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "edge_type": "CONT",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "edge_type": "CONT",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "edge_type": "CONT",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "edge_type": "CONT",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "edge_type": "CONT",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 10,
+      "edge_type": "CONT",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 10,
+      "edge_type": "CONT",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "edge_type": "SUPP",
+      "confidence": 0.9958,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 11,
+      "edge_type": "CONT",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.9983,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 0.9958,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "ELAB",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 13,
+      "edge_type": "SUPP",
+      "confidence": 0.9975,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "edge_type": "ELAB",
+      "confidence": 0.9983,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.9915,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 14,
+      "edge_type": "ELAB",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.9975,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "edge_type": "SUPP",
+      "confidence": 0.9915,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 15,
+      "edge_type": "ELAB",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9915,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "edge_type": "CONT",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 18,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 18,
+      "edge_type": "CONT",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 19,
+      "edge_type": "ELAB",
+      "confidence": 0.957,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 19,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 20,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 20,
+      "edge_type": "ELAB",
+      "confidence": 0.957,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "CONT",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 21,
+      "edge_type": "CONT",
+      "confidence": 0.9716,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 21,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 22,
+      "edge_type": "CONT",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 22,
+      "edge_type": "CONT",
+      "confidence": 0.9716,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 23,
+      "edge_type": "CONT",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 23,
+      "edge_type": "CONT",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 24,
+      "edge_type": "ELAB",
+      "confidence": 0.8759,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 24,
+      "edge_type": "CONT",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 25,
+      "edge_type": "ELAB",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 25,
+      "edge_type": "ELAB",
+      "confidence": 0.8759,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 26,
+      "edge_type": "ELAB",
+      "confidence": 0.9293,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 26,
+      "edge_type": "ELAB",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 27,
+      "edge_type": "ELAB",
+      "confidence": 0.9293,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "edge_type": "ELAB",
+      "confidence": 0.9975,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 28,
+      "edge_type": "SUPP",
+      "confidence": 0.9977,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 29,
+      "edge_type": "ELAB",
+      "confidence": 0.9975,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 29,
+      "edge_type": "SUPP",
+      "confidence": 0.9977,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 30,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 30,
+      "edge_type": "ELAB",
+      "confidence": 0.9975,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 31,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 31,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 32,
+      "edge_type": "SUPP",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 32,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 33,
+      "edge_type": "SUPP",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 34,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 35,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 35,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 36,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 36,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 37,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 37,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 38,
+      "edge_type": "SUPP",
+      "confidence": 0.9975,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 38,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 39,
+      "edge_type": "SUPP",
+      "confidence": 0.9973,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 39,
+      "edge_type": "SUPP",
+      "confidence": 0.9975,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 40,
+      "edge_type": "ELAB",
+      "confidence": 0.9967,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 40,
+      "edge_type": "SUPP",
+      "confidence": 0.9973,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 41,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 41,
+      "edge_type": "ELAB",
+      "confidence": 0.9967,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 42,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 42,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 43,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 44,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 45,
+      "edge_type": "ELAB",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 45,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 46,
+      "edge_type": "ELAB",
+      "confidence": 0.9958,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 46,
+      "edge_type": "ELAB",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 45,
+      "target": 47,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 47,
+      "edge_type": "ELAB",
+      "confidence": 0.9958,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 48,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 45,
+      "target": 48,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 49,
+      "edge_type": "ELAB",
+      "confidence": 0.9954,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 49,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 50,
+      "edge_type": "SUPP",
+      "confidence": 0.9979,
+      "is_sequential": false
+    },
+    {
+      "source": 48,
+      "target": 50,
+      "edge_type": "SUPP",
+      "confidence": 0.9977,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 50,
+      "edge_type": "ELAB",
+      "confidence": 0.9954,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 51,
+      "edge_type": "SUPP",
+      "confidence": 0.9979,
+      "is_sequential": false
+    },
+    {
+      "source": 48,
+      "target": 51,
+      "edge_type": "SUPP",
+      "confidence": 0.9977,
+      "is_sequential": false
+    },
+    {
+      "source": 50,
+      "target": 52,
+      "edge_type": "SUPP",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 52,
+      "edge_type": "SUPP",
+      "confidence": 0.9979,
+      "is_sequential": false
+    },
+    {
+      "source": 52,
+      "target": 53,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 51,
+      "target": 53,
+      "edge_type": "SUPP",
+      "confidence": 0.9953,
+      "is_sequential": false
+    },
+    {
+      "source": 50,
+      "target": 53,
+      "edge_type": "SUPP",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 52,
+      "target": 54,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 51,
+      "target": 54,
+      "edge_type": "SUPP",
+      "confidence": 0.9953,
+      "is_sequential": false
+    },
+    {
+      "source": 53,
+      "target": 55,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 52,
+      "target": 55,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 55,
+      "target": 56,
+      "edge_type": "ELAB",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 56,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 53,
+      "target": 56,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 55,
+      "target": 57,
+      "edge_type": "ELAB",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 57,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 1666
+}

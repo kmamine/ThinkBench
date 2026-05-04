@@ -48,24 +48,23 @@ def compute_profile(
 def aggregate_profiles(
     profiles: list[CognitiveProfile],
     trace_model_map: dict[str, str] | None = None,
+    trace_prompt_map: dict[str, str] | None = None,
 ) -> list[dict]:
-    """Group profiles by model and average all numeric metrics.
-
-    trace_model_map: optional {trace_id → model_name} override (e.g. from trace files).
-    """
-    groups: dict[str, list[CognitiveProfile]] = defaultdict(list)
+    """Group profiles by (model, prompt_variant) and average all numeric metrics."""
+    groups: dict[tuple[str, str], list[CognitiveProfile]] = defaultdict(list)
     for p in profiles:
         model_name = (trace_model_map or {}).get(p.trace_id or "", p.model)
-        groups[model_name].append(p)
+        prompt_variant = (trace_prompt_map or {}).get(p.trace_id or "", "normal")
+        groups[(model_name, prompt_variant)].append(p)
 
     result = []
-    for model_name, profs in sorted(groups.items()):
+    for (model_name, prompt_variant), profs in sorted(groups.items()):
         metrics: dict[str, list[float]] = defaultdict(list)
         for p in profs:
             for field, value in p.model_dump().items():
                 if field not in ("model", "domain", "trace_id") and isinstance(value, (int, float)):
                     metrics[field].append(float(value))
-        row = {"model": model_name, "num_traces": len(profs)}
+        row = {"model": model_name, "prompt_variant": prompt_variant, "num_traces": len(profs)}
         row.update({k: sum(v) / len(v) for k, v in sorted(metrics.items()) if v})
         result.append(row)
     return result

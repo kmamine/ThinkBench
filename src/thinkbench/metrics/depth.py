@@ -44,24 +44,43 @@ def mean_branch_depth(graph: ThoughtGraph) -> float:
 
 
 def specificity_gradient(graph: ThoughtGraph) -> float:
-    """Slope of NER density vs sequential position (positive = progressive specification)."""
+    """Slope of lexical specificity vs sequential position.
+
+    Specificity proxy (spacy-free): ratio of concrete tokens —
+    numbers, capitalised non-sentence-start words, and symbol-like
+    tokens (%, $, units) — to total word-tokens per TU.
+    A positive slope indicates the reasoning becomes more concrete
+    and grounded over time.
+    """
     if not graph.nodes:
         return 0.0
-    try:
-        import spacy
-        nlp = spacy.load("en_core_web_sm")
-    except Exception:
-        return 0.0
+    import re
+    import numpy as np
+
+    _NUM    = re.compile(r'^-?\d+(?:[.,]\d+)*%?$')
+    _SYMBOL = re.compile(r'[%$£€°]')
+    _WORD   = re.compile(r'\b\w+\b')
+
     positions, densities = [], []
     for idx, node in enumerate(graph.nodes):
-        doc = nlp(node.text[:500])
-        if len(doc) > 0:
-            positions.append(float(idx))
-            densities.append(len(doc.ents) / len(doc))
+        words = _WORD.findall(node.text[:500])
+        if not words:
+            continue
+        concrete = 0
+        for wi, w in enumerate(words):
+            if _NUM.match(w):
+                concrete += 1
+            elif _SYMBOL.search(w):
+                concrete += 1
+            elif w[0].isupper() and wi > 0:
+                # Capitalised mid-sentence → likely proper noun / named entity
+                concrete += 1
+        positions.append(float(idx))
+        densities.append(concrete / len(words))
+
     if len(positions) < 3:
         return 0.0
     try:
-        import numpy as np
         return float(np.polyfit(positions, densities, 1)[0])
     except Exception:
         return 0.0

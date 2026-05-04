@@ -1,0 +1,711 @@
+{
+  "trace_id": "17f81165-705c-4520-8093-0cb709f5953e",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_004",
+  "domain": "ethical_dilemmas",
+  "run": 3,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "The short answer is **no, the company should not use the algorithm in its current state.** While the premise presents a utilitarian dilemma (maximizing predictive accuracy vs. ensuring fairness), the decision to deploy the algorithm involves legal, ethical, and long-term business risks that outweigh the immediate efficiency gains.",
+      "start_char": 0,
+      "end_char": 333,
+      "token_count": 48,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 1,
+      "text": "Here is a detailed breakdown of why the company should not use it as-is, followed by a potential path forward.",
+      "start_char": 335,
+      "end_char": 445,
+      "token_count": 20,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 2,
+      "text": "Legal and Compliance Risks: In many jurisdictions, hiring algorithms that result in **disparate impact** are illegal, regardless of their predictive accuracy.",
+      "start_char": 447,
+      "end_char": 611,
+      "token_count": 21,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 3,
+      "text": "**Protected Classes:** Socioeconomic status is often a proxy for race, ethnicity, and gender. In the US (under Title VII), the EU (GDPR/AI Act), and other regions, using data that correlates with protected characteristics can lead to discrimination lawsuits.",
+      "start_char": 612,
+      "end_char": 870,
+      "token_count": 38,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 4,
+      "text": "**Liability:** If the algorithm filters out qualified candidates from lower-income backgrounds, the company is liable for the discriminatory outcome. \"The algorithm made me do it\" is not a valid legal defense.",
+      "start_char": 875,
+      "end_char": 1084,
+      "token_count": 31,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 5,
+      "text": "**Regulatory Scrutiny:** Governments are increasingly regulating AI in hiring. Deploying a tool known to be biased invites regulatory audits and penalties.",
+      "start_char": 1089,
+      "end_char": 1244,
+      "token_count": 21,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 6,
+      "text": "The \"Accuracy\" Paradox: The claim that the algorithm is \"more accurate\" requires scrutiny.",
+      "start_char": 1250,
+      "end_char": 1346,
+      "token_count": 13,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 7,
+      "text": "**Historical Bias:** If the training data reflects historical hiring patterns where only wealthy candidates were hired, the algorithm is learning to predict \"who gets hired,\" not necessarily \"who performs best.\"",
+      "start_char": 1347,
+      "end_char": 1558,
+      "token_count": 30,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 8,
+      "text": "**Proxy Variables:** If the algorithm uses data points like zip code, university tier, or unpaid internship history, it is effectively measuring wealth rather than aptitude. **Optimization:** If the algorithm is optimized for the status quo, it is accurate at maintaining inequality. In a dynamic market, this may lead to \"groupthink\" and a lack of innovation, which ultimately harms long-term accuracy regarding business success.",
+      "start_char": 1563,
+      "end_char": 1997,
+      "token_count": 63,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 9,
+      "text": "Reputational and Brand Damage: **Public Perception:** In the age of social media, a company caught automating socioeconomic discrimination could face a massive boycott or PR crisis.",
+      "start_char": 2003,
+      "end_char": 2190,
+      "token_count": 26,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 10,
+      "text": "**Employee Morale:** A workforce that perceives the hiring process as rigged against them will suffer from low engagement and high turnover. **Talent Pool:** High-potential candidates from underrepresented backgrounds may self-select out of the application process if they know the algorithm is biased, shrinking the company's talent pool.",
+      "start_char": 2195,
+      "end_char": 2538,
+      "token_count": 47,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 11,
+      "text": "Ethical Responsibility: **Social Mobility:** Hiring decisions have a profound impact on an individual's ability to achieve financial stability. Automating bias perpetuates systemic inequality.",
+      "start_char": 2544,
+      "end_char": 2742,
+      "token_count": 23,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 12,
+      "text": "**Corporate Values:** Companies that claim to value diversity and inclusion cannot justify using tools that actively undermine those values.",
+      "start_char": 2747,
+      "end_char": 2887,
+      "token_count": 19,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 13,
+      "text": "Recommended Path Forward: The company should not abandon AI in hiring, but it must remediate the tool before deployment.",
+      "start_char": 2893,
+      "end_char": 3016,
+      "token_count": 19,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 14,
+      "text": "**Audit and Mitigate:** Conduct a rigorous fairness audit. Use techniques like re-sampling, re-weighting, or adversarial debiasing to remove socioeconomic proxies from the model.",
+      "start_char": 3018,
+      "end_char": 3196,
+      "token_count": 23,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 15,
+      "text": "**Define \"Success\" Clearly:** Re-define the target variable. Does the algorithm predict job performance, or does it predict \"fit with the current culture\" (which is often synonymous with \"fit with the current demographic\")? The former should be the goal.",
+      "start_char": 3201,
+      "end_char": 3455,
+      "token_count": 38,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 16,
+      "text": "**Human-in-the-Loop:** Do not let the algorithm make the final decision. Use it as a screening tool or a recommendation engine, but require human review for all candidates, with a specific focus on ensuring the human reviewer is checking for bias.",
+      "start_char": 3460,
+      "end_char": 3707,
+      "token_count": 40,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 17,
+      "text": "**Alternative Data:** Use skills-based assessments or work samples that are less correlated with socioeconomic background (e.g., blind coding tests) to train or validate the model. **Transparency:** Be transparent with candidates about how AI is used in the process and allow them to opt out.",
+      "start_char": 3712,
+      "end_char": 4008,
+      "token_count": 44,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 18,
+      "text": "Conclusion: **Efficiency cannot come at the cost of legality and equity.** An algorithm that is accurate at reproducing historical bias is not a tool for better hiring; it is a tool for automating discrimination. The company must fix the data and the model before using it, even if that means sacrificing some short-term predictive power for long-term sustainability and compliance.",
+      "start_char": 4014,
+      "end_char": 4399,
+      "token_count": 60,
+      "boundary_class": "BRANCH",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "ELAB",
+      "confidence": 0.4064,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "BRCH",
+      "confidence": 0.2449,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.431,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "ELAB",
+      "confidence": 0.4916,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "BRCH",
+      "confidence": 0.3471,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "ELAB",
+      "confidence": 0.4077,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "ELAB",
+      "confidence": 0.5087,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "BRCH",
+      "confidence": 0.2426,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "BRCH",
+      "confidence": 0.4163,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "BRCH",
+      "confidence": 0.2188,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "BRCH",
+      "confidence": 0.1967,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "BRCH",
+      "confidence": 0.2099,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "BRCH",
+      "confidence": 0.3612,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 7,
+      "edge_type": "BACK",
+      "confidence": 0.6665,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "edge_type": "CONT",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "edge_type": "CONT",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "edge_type": "CONT",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "edge_type": "CONT",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "edge_type": "CONT",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "edge_type": "CONT",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "edge_type": "CONT",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SUPP",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 10,
+      "edge_type": "ELAB",
+      "confidence": 0.9965,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 10,
+      "edge_type": "CONT",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "edge_type": "SUPP",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 11,
+      "edge_type": "ELAB",
+      "confidence": 0.9965,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.9829,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 13,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "edge_type": "ELAB",
+      "confidence": 0.9829,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.9967,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 15,
+      "edge_type": "SUPP",
+      "confidence": 0.9967,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "edge_type": "CONT",
+      "confidence": 0.9975,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 16,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 17,
+      "edge_type": "CONT",
+      "confidence": 0.9975,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 18,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 18,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 650
+}

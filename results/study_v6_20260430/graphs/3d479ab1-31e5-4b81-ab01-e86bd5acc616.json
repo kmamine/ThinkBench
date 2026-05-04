@@ -1,0 +1,782 @@
+{
+  "trace_id": "3d479ab1-31e5-4b81-ab01-e86bd5acc616",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_008",
+  "domain": "ethical_dilemmas",
+  "run": 2,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "Analysis of the Default Setting Dilemma: High-Level Summary of Reasoning: To resolve this tension, I evaluated the problem through multiple lenses: economic viability, user autonomy, societal impact, and algorithmic ethics. The core conflict lies between short-term engagement metrics (driven by personalization) and long-term information health (driven by diversity).",
+      "start_char": 0,
+      "end_char": 376,
+      "token_count": 48,
+      "boundary_class": "BRANCH",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 1,
+      "text": "**Stakeholder Perspectives:**",
+      "start_char": 378,
+      "end_char": 407,
+      "token_count": 2,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 2,
+      "text": "**Platform:** Requires engagement for revenue; a 40% drop threatens viability.",
+      "start_char": 412,
+      "end_char": 490,
+      "token_count": 10,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 3,
+      "text": "**Users:** Seek relevance but suffer from polarization and fatigue over time.",
+      "start_char": 499,
+      "end_char": 576,
+      "token_count": 11,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 4,
+      "text": "**Society:** Needs informed citizens; echo chambers degrade democratic discourse.",
+      "start_char": 585,
+      "end_char": 666,
+      "token_count": 9,
+      "boundary_class": "ELABORATION",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 5,
+      "text": "**Regulators:** Increasingly scrutinize algorithmic harm; non-compliance risks fines or bans.",
+      "start_char": 675,
+      "end_char": 768,
+      "token_count": 10,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 6,
+      "text": "**Reframing the Choice:**",
+      "start_char": 778,
+      "end_char": 803,
+      "token_count": 3,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 7,
+      "text": "Instead of \"Engagement vs. Diversity,\" the choice is reframed as \"Short-Term Retention vs. Long-Term Resilience.\"",
+      "start_char": 808,
+      "end_char": 921,
+      "token_count": 15,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 8,
+      "text": "The binary is also challenged by the definition of \"Default.\" Defaults shape behavior; choosing Engagement as default normalizes polarization.",
+      "start_char": 930,
+      "end_char": 1072,
+      "token_count": 19,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 9,
+      "text": "**Critical Constraints:**",
+      "start_char": 1082,
+      "end_char": 1107,
+      "token_count": 2,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 10,
+      "text": "**The 40% Cost:** This is a significant business risk. A platform that dies cannot serve users.",
+      "start_char": 1112,
+      "end_char": 1207,
+      "token_count": 16,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 11,
+      "text": "**Definition of Diversity:** Who defines \"diverse\"? Is it political, cultural, or topical?",
+      "start_char": 1216,
+      "end_char": 1306,
+      "token_count": 12,
+      "boundary_class": "ELABORATION",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 12,
+      "text": "**User Agency:** Most users do not change defaults; the default effectively dictates policy.",
+      "start_char": 1315,
+      "end_char": 1407,
+      "token_count": 13,
+      "boundary_class": "ELABORATION",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 13,
+      "text": "**Synthesis of Findings:**",
+      "start_char": 1417,
+      "end_char": 1443,
+      "token_count": 3,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 14,
+      "text": "Pure engagement optimization creates negative externalities (polarization) that eventually trigger regulatory intervention, which is a greater existential threat than revenue loss.",
+      "start_char": 1448,
+      "end_char": 1628,
+      "token_count": 21,
+      "boundary_class": "ELABORATION",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 15,
+      "text": "Pure diversity optimization is unsustainable without a shift in business models (e.g., subscription vs. ad-revenue).",
+      "start_char": 1637,
+      "end_char": 1753,
+      "token_count": 15,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 16,
+      "text": "Therefore, the default cannot be a binary switch. It requires a structural integration of both goals.",
+      "start_char": 1762,
+      "end_char": 1863,
+      "token_count": 16,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 17,
+      "text": "Converged Recommendation: The default should be **\"Diversity-Weighted Engagement.\"**: This approach does not treat diversity as a separate mode that cuts engagement by 40%, but rather as a constraint within the engagement algorithm.",
+      "start_char": 1873,
+      "end_char": 2109,
+      "token_count": 32,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 18,
+      "text": "**Why not pure Engagement?** It maximizes short-term metrics while eroding the long-term value of the platform and inviting regulatory crackdowns. It treats users as data points to be manipulated rather than citizens to be informed.",
+      "start_char": 2111,
+      "end_char": 2343,
+      "token_count": 35,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 19,
+      "text": "**Why not pure Diversity?** It ignores the user's immediate need for relevance and risks driving users to competitors who do offer personalized content. **The Solution:** The algorithm should optimize for engagement *subject to* a diversity constraint. For example, it can prioritize high-quality content that aligns with user interests but ensures a minimum threshold of opposing or broadening viewpoints are surfaced. This mitigates the 40% drop by finding the \"sweet spot\" where engagement remains high enough to sustain the platform, but diversity is sufficient to prevent radicalization.",
+      "start_char": 2348,
+      "end_char": 2944,
+      "token_count": 86,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 20,
+      "text": "Additionally, the platform must be transparent about this choice. Users should be informed that the default prioritizes a balanced diet of information, which may require a shift in the business model (e.g., freemium or subscription) to absorb the initial engagement friction. This aligns the platform's incentives with the long-term health of its user base and the information ecosystem.",
+      "start_char": 2950,
+      "end_char": 3337,
+      "token_count": 58,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "ELAB",
+      "confidence": 0.3132,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "ELAB",
+      "confidence": 0.4373,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "ELAB",
+      "confidence": 0.3022,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "BRCH",
+      "confidence": 0.0306,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "BRCH",
+      "confidence": 0.0577,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "BRCH",
+      "confidence": 0.0239,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "BRCH",
+      "confidence": 0.1007,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "ELAB",
+      "confidence": 0.4866,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "BRCH",
+      "confidence": 0.1578,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "ELAB",
+      "confidence": 0.3898,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "ELAB",
+      "confidence": 0.4254,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "ELAB",
+      "confidence": 0.3965,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "edge_type": "SUPP",
+      "confidence": 0.9978,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "edge_type": "CONT",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.9978,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.9935,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "edge_type": "SUPP",
+      "confidence": 0.9884,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "edge_type": "CONT",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "CONT",
+      "confidence": 0.9979,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "edge_type": "ELAB",
+      "confidence": 0.9935,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "edge_type": "SUPP",
+      "confidence": 0.9884,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "edge_type": "CONT",
+      "confidence": 0.9979,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "edge_type": "ELAB",
+      "confidence": 0.9935,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "edge_type": "CONT",
+      "confidence": 0.9979,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "edge_type": "SUPP",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 10,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 10,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 11,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 0.9978,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 13,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "edge_type": "SUPP",
+      "confidence": 0.9978,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.998,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 14,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "edge_type": "CONT",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 15,
+      "edge_type": "SUPP",
+      "confidence": 0.998,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 16,
+      "edge_type": "CONT",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 18,
+      "edge_type": "SUPP",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 18,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 19,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 19,
+      "edge_type": "SUPP",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 20,
+      "edge_type": "SUPP",
+      "confidence": 0.9956,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 20,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 456
+}

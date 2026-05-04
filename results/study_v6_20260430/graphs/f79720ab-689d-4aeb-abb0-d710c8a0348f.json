@@ -1,0 +1,2579 @@
+{
+  "trace_id": "f79720ab-689d-4aeb-abb0-d710c8a0348f",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_007",
+  "domain": "ethical_dilemmas",
+  "run": 2,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "Phase 1: Spread Wide (Exploring Angles and Stakeholders): **Stakeholder Mapping:**: **Minority Patients:** They are the ones suffering the specific harm (misdiagnosis of rare conditions). For them, the cost of deployment is potentially life-threatening or life-altering.",
+      "start_char": 0,
+      "end_char": 277,
+      "token_count": 35,
+      "boundary_class": "BRANCH",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 1,
+      "text": "**Majority Patients:** They likely benefit from the 95% accuracy. They might get faster or cheaper care.",
+      "start_char": 286,
+      "end_char": 390,
+      "token_count": 16,
+      "boundary_class": "ELABORATION",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 2,
+      "text": "**Clinicians:** If the AI is used as a tool, they must manage the risk. If they trust it too much (automation bias), the misdiagnosis becomes a human error. If they distrust it, they ignore a potentially useful tool.",
+      "start_char": 399,
+      "end_char": 615,
+      "token_count": 38,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 3,
+      "text": "**Hospital/Provider:** They face liability risks. If a minority patient is harmed, is the hospital sued for deploying a biased tool? What about the reputation damage?",
+      "start_char": 624,
+      "end_char": 790,
+      "token_count": 25,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 4,
+      "text": "**Developers/Company:** Reputation risk. If this comes to light, does the brand become \"the biased AI\"?",
+      "start_char": 799,
+      "end_char": 902,
+      "token_count": 15,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 5,
+      "text": "**Regulators (FDA, etc.):** They care about safety and efficacy across populations. Deploying a system known to fail on a specific demographic might violate regulatory requirements for equitable safety.",
+      "start_char": 911,
+      "end_char": 1113,
+      "token_count": 28,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 6,
+      "text": "**Metric Ambiguity:**",
+      "start_char": 1123,
+      "end_char": 1144,
+      "token_count": 2,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 7,
+      "text": "\"95% Accuracy\" is a dangerous aggregate. In a skewed population (e.g., 90% majority, 10% minority), 95% overall accuracy could hide a 0% accuracy rate for the minority group if the majority group is diagnosed perfectly.",
+      "start_char": 1149,
+      "end_char": 1368,
+      "token_count": 35,
+      "boundary_class": "ELABORATION",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 8,
+      "text": "\"Rare Conditions\" implies low prevalence. In diagnostic testing, sensitivity (catching the disease) is often more critical than overall accuracy. If it misses the rare condition, it's a False Negative, which is often worse than a False Positive in medicine.",
+      "start_char": 1377,
+      "end_char": 1634,
+      "token_count": 39,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 9,
+      "text": "**Context of Use:**",
+      "start_char": 1644,
+      "end_char": 1663,
+      "token_count": 3,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 10,
+      "text": "Is this an autonomous diagnostic (AI decides)?",
+      "start_char": 1668,
+      "end_char": 1714,
+      "token_count": 7,
+      "boundary_class": "ELABORATION",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 11,
+      "text": "Is this a decision support system (AI suggests, Doctor decides)?",
+      "start_char": 1723,
+      "end_char": 1787,
+      "token_count": 10,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 12,
+      "text": "Is it for triage (ruling things in/out) or confirmation?",
+      "start_char": 1796,
+      "end_char": 1852,
+      "token_count": 9,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 13,
+      "text": "Phase 2: Reframe (Shifting the Starting Point): **Reframe A: The \"Product Quality\" Lens.**",
+      "start_char": 1862,
+      "end_char": 1956,
+      "token_count": 13,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 14,
+      "text": "*Question:* Is this software fit for release?",
+      "start_char": 1961,
+      "end_char": 2006,
+      "token_count": 7,
+      "boundary_class": "ELABORATION",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 15,
+      "text": "*Thought:* Standard software might patch this later. But this is medical software. A \"bug\" is a misdiagnosis. If a car brake system works 95% of the time but fails specifically for a certain weight class, you don't sell it.",
+      "start_char": 2015,
+      "end_char": 2238,
+      "token_count": 39,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 16,
+      "text": "*Shift:* This isn't just about accuracy; it's about safety engineering standards for a high-risk domain.",
+      "start_char": 2247,
+      "end_char": 2351,
+      "token_count": 15,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 17,
+      "text": "**Reframe B: The \"Social Justice\" Lens.**",
+      "start_char": 2361,
+      "end_char": 2402,
+      "token_count": 6,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 18,
+      "text": "*Question:* Does this deployment exacerbate health inequities?",
+      "start_char": 2407,
+      "end_char": 2469,
+      "token_count": 7,
+      "boundary_class": "ELABORATION",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 19,
+      "text": "*Thought:* The problem isn't just technical; it's historical. If the AI was trained on data that excluded minorities, it perpetuates the exclusion. Deploying it now validates the current data landscape.",
+      "start_char": 2478,
+      "end_char": 2680,
+      "token_count": 30,
+      "boundary_class": "ELABORATION",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 20,
+      "text": "*Shift:* Deployment is a political and ethical act, not just a technical one. It signals who the system values.",
+      "start_char": 2689,
+      "end_char": 2800,
+      "token_count": 19,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 21,
+      "text": "**Reframe C: The \"Opportunity Cost\" Lens.**",
+      "start_char": 2810,
+      "end_char": 2853,
+      "token_count": 6,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 22,
+      "text": "*Question:* What happens if we *don't* deploy?",
+      "start_char": 2858,
+      "end_char": 2904,
+      "token_count": 7,
+      "boundary_class": "ELABORATION",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 23,
+      "text": "*Thought:* If we don't deploy, the majority loses out on the efficiency/accuracy gains. Doctors still have to diagnose manually, which is also fallible. Maybe the AI is *better* than the current average human performance for everyone, even if it's worse for minorities?",
+      "start_char": 2913,
+      "end_char": 3182,
+      "token_count": 42,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 24,
+      "text": "*Shift:* The baseline is not \"perfect AI,\" it is \"current human practice.\" Is the AI better than a tired doctor?",
+      "start_char": 3191,
+      "end_char": 3303,
+      "token_count": 20,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 25,
+      "text": "Phase 3: Go Deep (Following the Threads): **Thread 1: The Statistical Illusion.**",
+      "start_char": 3313,
+      "end_char": 3398,
+      "token_count": 12,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 26,
+      "text": "*Analysis:* If accuracy is 95%, that means 5% error. If the minority group constitutes 10% of the population, and the error rate for them is much higher, the overall 95% is masking a crisis.",
+      "start_char": 3403,
+      "end_char": 3593,
+      "token_count": 34,
+      "boundary_class": "ELABORATION",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 27,
+      "text": "*Implication:* You cannot trust the headline metric. You need to see the confusion matrix disaggregated by race/ethnicity.",
+      "start_char": 3602,
+      "end_char": 3724,
+      "token_count": 17,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 28,
+      "text": "*Limitation:* I don't have the disaggregated data in the prompt. I must assume the prompt's premise is true (it *does* tend to misdiagnose).",
+      "start_char": 3733,
+      "end_char": 3873,
+      "token_count": 23,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 29,
+      "text": "**Thread 2: The \"Rare Condition\" Severity.**",
+      "start_char": 3883,
+      "end_char": 3927,
+      "token_count": 6,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 30,
+      "text": "*Analysis:* Rare conditions often mean severe outcomes if untreated (e.g., genetic disorders, specific cancers).",
+      "start_char": 3932,
+      "end_char": 4044,
+      "token_count": 14,
+      "boundary_class": "ELABORATION",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 31,
+      "text": "*Implication:* A false negative is catastrophic. A false positive is annoying (extra tests). The cost function is asymmetric.",
+      "start_char": 4053,
+      "end_char": 4178,
+      "token_count": 18,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 32,
+      "text": "*Deep Dive:* If the system fails on rare conditions, it fails on high-stakes cases. This elevates the risk profile significantly.",
+      "start_char": 4187,
+      "end_char": 4316,
+      "token_count": 20,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 33,
+      "text": "**Thread 3: The \"Human in the Loop\" Mitigation.**",
+      "start_char": 4326,
+      "end_char": 4375,
+      "token_count": 8,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 34,
+      "text": "*Analysis:* If a doctor sees the AI output, can they override it?",
+      "start_char": 4380,
+      "end_char": 4445,
+      "token_count": 12,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 35,
+      "text": "*Implication:* If the AI says \"Negative\" (due to bias), the doctor might accept it.",
+      "start_char": 4454,
+      "end_char": 4537,
+      "token_count": 14,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 36,
+      "text": "*Challenge:* Automation bias is real. Doctors often trust algorithms over their own intuition, especially if the algorithm looks authoritative.",
+      "start_char": 4546,
+      "end_char": 4689,
+      "token_count": 19,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 37,
+      "text": "*Refinement:* Deployment requires a protocol where minority patients get *extra* scrutiny if the AI gives a negative result for rare conditions.",
+      "start_char": 4698,
+      "end_char": 4842,
+      "token_count": 21,
+      "boundary_class": "ELABORATION",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 38,
+      "text": "Phase 4: Challenge Yourself (Finding Flaws in the Thinking): *Critique of \"Don't Deploy\":* Is it paternalistic to withhold a tool that helps the majority? If the minority group is small, is the utilitarian math in favor of deployment?",
+      "start_char": 4852,
+      "end_char": 5090,
+      "token_count": 38,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 39,
+      "text": "*Counter:* No. In medicine, the \"Rule of Rescue\" and non-maleficence (do no harm) usually trump pure utilitarianism. You cannot sacrifice a minority for the majority's convenience.",
+      "start_char": 5095,
+      "end_char": 5275,
+      "token_count": 26,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 40,
+      "text": "*Critique of \"Conditional Deployment\":* What does that actually look like? \"Don't use for minority patients\" creates a surveillance burden (having to check race before using AI).",
+      "start_char": 5284,
+      "end_char": 5462,
+      "token_count": 26,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 41,
+      "text": "*Counter:* That's inefficient and stigmatizing. Better to say \"Don't use AI for this specific condition *at all* until fixed.\"",
+      "start_char": 5467,
+      "end_char": 5593,
+      "token_count": 19,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 42,
+      "text": "*Critique of \"Fix the Data\":* How long does retraining take?",
+      "start_char": 5602,
+      "end_char": 5662,
+      "token_count": 10,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 43,
+      "text": "*Counter:* If the harm is ongoing, time is a luxury we can't afford. We need a bridge strategy.",
+      "start_char": 5667,
+      "end_char": 5762,
+      "token_count": 18,
+      "boundary_class": "ELABORATION",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 44,
+      "text": "Phase 5: Connect (Synthesizing the Threads): **Connection 1 (Technical + Ethical):** The technical limitation (data imbalance) creates the ethical violation (health disparity). You cannot solve the ethics without fixing the code/data.",
+      "start_char": 5772,
+      "end_char": 6010,
+      "token_count": 31,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 45,
+      "text": "**Connection 2 (Metric + Safety):** The 95% accuracy metric is insufficient for safety certification. Regulatory bodies (like FDA) are moving toward \"subgroup performance\" requirements.",
+      "start_char": 6015,
+      "end_char": 6200,
+      "token_count": 24,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 46,
+      "text": "**Connection 3 (Stakeholder + Liability):** If deployed and a minority patient is harmed, the liability isn't just medical malpractice; it's product liability for a biased system. This makes the hospital risk-averse.",
+      "start_char": 6205,
+      "end_char": 6421,
+      "token_count": 31,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 47,
+      "text": "Phase 6: Reflect (Checking for Bias and Circularity): *Self-Correction:* Am I assuming the system is *worse* than human doctors for everyone? The prompt says 95% accuracy. Humans aren't 100%. Maybe the AI is still better than the average doctor for the majority?",
+      "start_char": 6427,
+      "end_char": 6693,
+      "token_count": 42,
+      "boundary_class": "BRANCH",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 48,
+      "text": "*Adjustment:* Even if it's better than humans for the majority, the *difference* in performance between groups is the dealbreaker. If it works for Group A and fails for Group B, it's not a general diagnostic tool; it's a conditional one.",
+      "start_char": 6698,
+      "end_char": 6935,
+      "token_count": 40,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 49,
+      "text": "*Self-Correction:* Am I ignoring the potential for the AI to *improve* over time?",
+      "start_char": 6944,
+      "end_char": 7025,
+      "token_count": 13,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 50,
+      "text": "*Adjustment:* Deployment *in the wild* might generate more data. But in medicine, \"learning by doing\" is dangerous. You can't learn from the mistakes you make on patients. You need to fix it before deployment.",
+      "start_char": 7030,
+      "end_char": 7239,
+      "token_count": 34,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 51,
+      "text": "Phase 7: Converge (The Final Position): **The Core Tension:** The tension is between *Systemic Utility* (helping the many) and *Individual Equity* (protecting the vulnerable). In medical ethics, individual safety usually trumps aggregate utility when the risk is life-threatening.",
+      "start_char": 7249,
+      "end_char": 7533,
+      "token_count": 38,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 52,
+      "text": "**The Verdict:** The system should **not be deployed** in its current state as a standalone or primary diagnostic tool. **The Nuance:** It could be deployed *only* as a secondary screening tool with strict human oversight, *if* the risk of false negatives is low, but given \"rare conditions\" (high stakes), this is likely too risky.",
+      "start_char": 7538,
+      "end_char": 7874,
+      "token_count": 54,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 53,
+      "text": "**The Path Forward:**",
+      "start_char": 7879,
+      "end_char": 7900,
+      "token_count": 3,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 54,
+      "text": "**Stop Deployment:** Do not release to general population.",
+      "start_char": 7905,
+      "end_char": 7963,
+      "token_count": 8,
+      "boundary_class": "ELABORATION",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 55,
+      "text": "**Audit:** Force a disaggregated performance audit (by race/ethnicity).",
+      "start_char": 7972,
+      "end_char": 8043,
+      "token_count": 8,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 56,
+      "text": "**Mitigation:** Until the data imbalance is fixed, the system must be explicitly flagged as \"Not Validated for Minority Populations.\"",
+      "start_char": 8052,
+      "end_char": 8185,
+      "token_count": 19,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 57,
+      "text": "**Alternative:** Use the system only for the majority population while developing a parallel model for the minority population, acknowledging the resource cost.",
+      "start_char": 8194,
+      "end_char": 8354,
+      "token_count": 22,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 58,
+      "text": "**Final Synthesis:** Deploying the system as is normalizes health inequity. The 95% accuracy is a red herring that hides a critical failure mode. The ethical imperative of \"Do No Harm\" combined with the legal risk of biased liability dictates a halt to deployment until the subgroup performance is brought up to the standard of the majority.",
+      "start_char": 8364,
+      "end_char": 8705,
+      "token_count": 56,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 59,
+      "text": "Final Answer Formulation:: Based on the analysis above, here is the recommendation.",
+      "start_char": 8716,
+      "end_char": 8803,
+      "token_count": 12,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 60,
+      "text": "**Decision: Do Not Deploy (in current state).**",
+      "start_char": 8805,
+      "end_char": 8852,
+      "token_count": 7,
+      "boundary_class": "NONE",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 61,
+      "text": "Reasoning:: **Safety First:** In medical diagnostics, false negatives for rare conditions can be fatal. The \"95% accuracy\" metric is an aggregate that hides a likely catastrophic failure rate for the minority subgroup.",
+      "start_char": 8854,
+      "end_char": 9075,
+      "token_count": 32,
+      "boundary_class": "BRANCH",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 62,
+      "text": "**Equity:** Deploying a system known to discriminate against specific demographics violates the principle of equitable care. It compounds existing health disparities.",
+      "start_char": 9080,
+      "end_char": 9246,
+      "token_count": 21,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 63,
+      "text": "**Liability:** Hospitals and developers face significant legal risk if a known bias causes harm. This is not just a bug; it is a foreseeable hazard.",
+      "start_char": 9251,
+      "end_char": 9399,
+      "token_count": 25,
+      "boundary_class": "NONE",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 64,
+      "text": "**Mitigation Strategy:** The system should only be considered for deployment once the training data is balanced and performance is validated across all demographic subgroups, or if it is strictly limited to a \"decision support\" role with mandatory human review for all minority patients.",
+      "start_char": 9404,
+      "end_char": 9691,
+      "token_count": 43,
+      "boundary_class": "NONE",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 65,
+      "text": "**Caveat:** If the alternative to this AI is *no* AI and significantly worse human diagnostics for the majority, a risk-benefit analysis *might* allow for deployment with strict \"Human-in-the-Loop\" protocols, but the ethical bar remains extremely high. The default position must be safety and equity.",
+      "start_char": 9697,
+      "end_char": 9997,
+      "token_count": 44,
+      "boundary_class": "ELABORATION",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "ELAB",
+      "confidence": 0.4304,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "ELAB",
+      "confidence": 0.4545,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.4545,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "BRCH",
+      "confidence": 0.174,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "ELAB",
+      "confidence": 0.3874,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "BRCH",
+      "confidence": 0.0073,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "BRCH",
+      "confidence": 0.056,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "ELAB",
+      "confidence": 0.6572,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.3683,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "BRCH",
+      "confidence": 0.1454,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "BRCH",
+      "confidence": 0.1395,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "BRCH",
+      "confidence": 0.1725,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "BRCH",
+      "confidence": 0.0439,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "BRCH",
+      "confidence": 0.1882,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "BRCH",
+      "confidence": 0.1786,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "ELAB",
+      "confidence": 0.6347,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "BRCH",
+      "confidence": 0.1927,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "edge_type": "ELAB",
+      "confidence": 0.4476,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "edge_type": "ELAB",
+      "confidence": 0.6074,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "edge_type": "ELAB",
+      "confidence": 0.3893,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "edge_type": "ELAB",
+      "confidence": 0.7224,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 36,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 35,
+      "target": 36,
+      "edge_type": "ELAB",
+      "confidence": 0.5777,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "edge_type": "ELAB",
+      "confidence": 0.5128,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "edge_type": "BRCH",
+      "confidence": 0.4183,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "edge_type": "ELAB",
+      "confidence": 0.4117,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "edge_type": "ELAB",
+      "confidence": 0.5335,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "edge_type": "ELAB",
+      "confidence": 0.4559,
+      "is_sequential": false
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "edge_type": "BRCH",
+      "confidence": 0.1699,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "edge_type": "BRCH",
+      "confidence": 0.2762,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 45,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 44,
+      "target": 45,
+      "edge_type": "ELAB",
+      "confidence": 0.4509,
+      "is_sequential": false
+    },
+    {
+      "source": 45,
+      "target": 46,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 45,
+      "target": 46,
+      "edge_type": "ELAB",
+      "confidence": 0.3639,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 47,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 46,
+      "target": 47,
+      "edge_type": "BRCH",
+      "confidence": 0.311,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 48,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 47,
+      "target": 48,
+      "edge_type": "ELAB",
+      "confidence": 0.4463,
+      "is_sequential": false
+    },
+    {
+      "source": 48,
+      "target": 49,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 48,
+      "target": 49,
+      "edge_type": "BRCH",
+      "confidence": 0.1774,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 50,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 50,
+      "target": 51,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 50,
+      "target": 51,
+      "edge_type": "BRCH",
+      "confidence": 0.2739,
+      "is_sequential": false
+    },
+    {
+      "source": 51,
+      "target": 52,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 52,
+      "target": 53,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 52,
+      "target": 53,
+      "edge_type": "BRCH",
+      "confidence": 0.0831,
+      "is_sequential": false
+    },
+    {
+      "source": 53,
+      "target": 54,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 53,
+      "target": 54,
+      "edge_type": "BRCH",
+      "confidence": 0.181,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 55,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 55,
+      "target": 56,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 55,
+      "target": 56,
+      "edge_type": "ELAB",
+      "confidence": 0.4118,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 57,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 56,
+      "target": 57,
+      "edge_type": "ELAB",
+      "confidence": 0.4829,
+      "is_sequential": false
+    },
+    {
+      "source": 57,
+      "target": 58,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 58,
+      "target": 59,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 58,
+      "target": 59,
+      "edge_type": "BRCH",
+      "confidence": 0.2366,
+      "is_sequential": false
+    },
+    {
+      "source": 59,
+      "target": 60,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 59,
+      "target": 60,
+      "edge_type": "BRCH",
+      "confidence": 0.1293,
+      "is_sequential": false
+    },
+    {
+      "source": 60,
+      "target": 61,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 60,
+      "target": 61,
+      "edge_type": "BRCH",
+      "confidence": 0.1399,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 62,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 62,
+      "target": 63,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 63,
+      "target": 64,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 64,
+      "target": 65,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 64,
+      "target": 65,
+      "edge_type": "ELAB",
+      "confidence": 0.5426,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 8,
+      "edge_type": "SYNT",
+      "confidence": 0.6338,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 48,
+      "edge_type": "SYNT",
+      "confidence": 0.4928,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 1,
+      "edge_type": "BACK",
+      "confidence": 0.6781,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 7,
+      "edge_type": "BACK",
+      "confidence": 0.8152,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 8,
+      "edge_type": "BACK",
+      "confidence": 0.7126,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 23,
+      "edge_type": "BACK",
+      "confidence": 0.6864,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 23,
+      "edge_type": "BACK",
+      "confidence": 0.652,
+      "is_sequential": false
+    },
+    {
+      "source": 60,
+      "target": 54,
+      "edge_type": "BACK",
+      "confidence": 0.663,
+      "is_sequential": false
+    },
+    {
+      "source": 63,
+      "target": 46,
+      "edge_type": "BACK",
+      "confidence": 0.7259,
+      "is_sequential": false
+    },
+    {
+      "source": 64,
+      "target": 40,
+      "edge_type": "BACK",
+      "confidence": 0.7071,
+      "is_sequential": false
+    },
+    {
+      "source": 65,
+      "target": 52,
+      "edge_type": "BACK",
+      "confidence": 0.6529,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "ELAB",
+      "confidence": 0.986,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "edge_type": "CONT",
+      "confidence": 0.8348,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.986,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "edge_type": "CONT",
+      "confidence": 0.8348,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SUPP",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "edge_type": "ELAB",
+      "confidence": 0.986,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "edge_type": "CONT",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "edge_type": "CONT",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 10,
+      "edge_type": "SUPP",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 10,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 11,
+      "edge_type": "SUPP",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 0.9984,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 13,
+      "edge_type": "ELAB",
+      "confidence": 0.9936,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "edge_type": "SUPP",
+      "confidence": 0.9984,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 14,
+      "edge_type": "ELAB",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 14,
+      "edge_type": "ELAB",
+      "confidence": 0.9936,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SUPP",
+      "confidence": 0.9949,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "edge_type": "SUPP",
+      "confidence": 0.9978,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 15,
+      "edge_type": "ELAB",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9932,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9949,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9978,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9932,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9949,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 18,
+      "edge_type": "ELAB",
+      "confidence": 0.9871,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 18,
+      "edge_type": "SUPP",
+      "confidence": 0.9932,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 19,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 19,
+      "edge_type": "ELAB",
+      "confidence": 0.9871,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "ELAB",
+      "confidence": 0.9902,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 20,
+      "edge_type": "SUPP",
+      "confidence": 0.9947,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 20,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 21,
+      "edge_type": "ELAB",
+      "confidence": 0.9902,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 21,
+      "edge_type": "SUPP",
+      "confidence": 0.9947,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 22,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 22,
+      "edge_type": "ELAB",
+      "confidence": 0.9902,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "SUPP",
+      "confidence": 0.9909,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 23,
+      "edge_type": "ELAB",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 23,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 24,
+      "edge_type": "SUPP",
+      "confidence": 0.9909,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 24,
+      "edge_type": "ELAB",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 25,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 25,
+      "edge_type": "SUPP",
+      "confidence": 0.9909,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 26,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 26,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 27,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 27,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 28,
+      "edge_type": "SUPP",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 28,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "edge_type": "SUPP",
+      "confidence": 0.9981,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 29,
+      "edge_type": "SUPP",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 30,
+      "edge_type": "SUPP",
+      "confidence": 0.9981,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "edge_type": "ELAB",
+      "confidence": 0.9919,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 31,
+      "edge_type": "SUPP",
+      "confidence": 0.9987,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 31,
+      "edge_type": "SUPP",
+      "confidence": 0.9981,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 32,
+      "edge_type": "ELAB",
+      "confidence": 0.9919,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 32,
+      "edge_type": "SUPP",
+      "confidence": 0.9987,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 33,
+      "edge_type": "SUPP",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 33,
+      "edge_type": "ELAB",
+      "confidence": 0.9919,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "edge_type": "ELAB",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 34,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 34,
+      "edge_type": "SUPP",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 35,
+      "edge_type": "ELAB",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 35,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 36,
+      "edge_type": "ELAB",
+      "confidence": 0.9943,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 36,
+      "edge_type": "ELAB",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 37,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 37,
+      "edge_type": "ELAB",
+      "confidence": 0.9943,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 38,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 38,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 39,
+      "edge_type": "SUPP",
+      "confidence": 0.9942,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 39,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 40,
+      "edge_type": "ELAB",
+      "confidence": 0.9969,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 40,
+      "edge_type": "SUPP",
+      "confidence": 0.9942,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 41,
+      "edge_type": "ELAB",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 41,
+      "edge_type": "ELAB",
+      "confidence": 0.9969,
+      "is_sequential": false
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 42,
+      "edge_type": "ELAB",
+      "confidence": 0.9925,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 42,
+      "edge_type": "ELAB",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 41,
+      "target": 43,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 43,
+      "edge_type": "ELAB",
+      "confidence": 0.9925,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 44,
+      "edge_type": "SUPP",
+      "confidence": 0.9927,
+      "is_sequential": false
+    },
+    {
+      "source": 41,
+      "target": 44,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 45,
+      "edge_type": "ELAB",
+      "confidence": 0.9977,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 45,
+      "edge_type": "SUPP",
+      "confidence": 0.9927,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 46,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 46,
+      "edge_type": "ELAB",
+      "confidence": 0.9977,
+      "is_sequential": false
+    },
+    {
+      "source": 45,
+      "target": 47,
+      "edge_type": "CONT",
+      "confidence": 0.9975,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 47,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 48,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 45,
+      "target": 48,
+      "edge_type": "CONT",
+      "confidence": 0.9975,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 49,
+      "edge_type": "ELAB",
+      "confidence": 0.9966,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 49,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 50,
+      "edge_type": "SUPP",
+      "confidence": 0.9937,
+      "is_sequential": false
+    },
+    {
+      "source": 48,
+      "target": 50,
+      "edge_type": "ELAB",
+      "confidence": 0.9942,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 50,
+      "edge_type": "ELAB",
+      "confidence": 0.9966,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 51,
+      "edge_type": "SUPP",
+      "confidence": 0.9937,
+      "is_sequential": false
+    },
+    {
+      "source": 48,
+      "target": 51,
+      "edge_type": "ELAB",
+      "confidence": 0.9942,
+      "is_sequential": false
+    },
+    {
+      "source": 51,
+      "target": 52,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 52,
+      "edge_type": "SUPP",
+      "confidence": 0.9937,
+      "is_sequential": false
+    },
+    {
+      "source": 51,
+      "target": 53,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 52,
+      "target": 54,
+      "edge_type": "SUPP",
+      "confidence": 0.996,
+      "is_sequential": false
+    },
+    {
+      "source": 51,
+      "target": 54,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 55,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 53,
+      "target": 55,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 52,
+      "target": 55,
+      "edge_type": "SUPP",
+      "confidence": 0.996,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 56,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 53,
+      "target": 56,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 55,
+      "target": 57,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 57,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 57,
+      "target": 58,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 58,
+      "edge_type": "ELAB",
+      "confidence": 0.9923,
+      "is_sequential": false
+    },
+    {
+      "source": 55,
+      "target": 58,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 57,
+      "target": 59,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 59,
+      "edge_type": "ELAB",
+      "confidence": 0.9923,
+      "is_sequential": false
+    },
+    {
+      "source": 58,
+      "target": 60,
+      "edge_type": "SUPP",
+      "confidence": 0.9974,
+      "is_sequential": false
+    },
+    {
+      "source": 57,
+      "target": 60,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 59,
+      "target": 61,
+      "edge_type": "ELAB",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 58,
+      "target": 61,
+      "edge_type": "SUPP",
+      "confidence": 0.9974,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 62,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 60,
+      "target": 62,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 59,
+      "target": 62,
+      "edge_type": "ELAB",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 62,
+      "target": 63,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 63,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 60,
+      "target": 63,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 63,
+      "target": 64,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 62,
+      "target": 64,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 64,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 63,
+      "target": 65,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 62,
+      "target": 65,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 1501
+}

@@ -1,0 +1,918 @@
+{
+  "trace_id": "709d0534-7097-46ef-815a-5c0dacec9726",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_010",
+  "domain": "ethical_dilemmas",
+  "run": 2,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "The question of whether personalized learning via AI is \"ethically superior\" cannot be answered with a simple yes or no. Instead, it presents a fundamental ethical tension between **individual optimization** and **collective cohesion**.",
+      "start_char": 0,
+      "end_char": 236,
+      "token_count": 33,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 1,
+      "text": "Whether this approach is ethically superior depends entirely on which ethical framework one prioritizes: the maximization of individual potential or the maintenance of social and civic unity. Here is an analysis of the ethical trade-offs involved.",
+      "start_char": 238,
+      "end_char": 486,
+      "token_count": 36,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 2,
+      "text": "The Argument for Ethical Superiority (Individual-Centric): From a perspective focused on **individual rights, autonomy, and equity**, personalized AI learning appears superior.",
+      "start_char": 488,
+      "end_char": 670,
+      "token_count": 21,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 3,
+      "text": "**Equity of Access:** Traditional classrooms often teach to the \"middle,\" leaving advanced students bored and struggling students behind. AI allows every student to learn at their own pace, theoretically leveling the playing field for neurodivergent students or those with learning disabilities.",
+      "start_char": 672,
+      "end_char": 967,
+      "token_count": 41,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 4,
+      "text": "**Efficiency and Well-being:** If a student masters a concept faster than their peers, forcing them to wait is inefficient and frustrating. Personalized learning respects the student's cognitive autonomy and reduces the anxiety of falling behind.",
+      "start_char": 972,
+      "end_char": 1218,
+      "token_count": 35,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 5,
+      "text": "**Maximizing Potential:** If the primary goal of education is to maximize the skill level of the individual, then a system that optimizes for each student's specific strengths is ethically preferable to a \"one-size-fits-all\" model that caps potential.",
+      "start_char": 1223,
+      "end_char": 1474,
+      "token_count": 37,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 6,
+      "text": "The Argument Against Ethical Superiority (Collective-Centric): From a perspective focused on **social contract, civic virtue, and shared reality**, the scenario described in your prompt reveals a significant ethical failure.",
+      "start_char": 1480,
+      "end_char": 1710,
+      "token_count": 29,
+      "boundary_class": "BRANCH",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 7,
+      "text": "**Erosion of Common Ground:** Collaboration relies on a shared framework of knowledge, language, and methodology. If Student A learns via a system that prioritizes speed and Student B learns via a system that prioritizes depth, they may lack a shared vocabulary. This fragmentation makes teamwork, debate, and social cohesion difficult.",
+      "start_char": 1712,
+      "end_char": 2048,
+      "token_count": 50,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 8,
+      "text": "**The \"Algorithmic Segregation\":** If students have different AI tutors, they are effectively being educated in different epistemic realities. If the AI tutors are proprietary or trained on different datasets, students may learn different versions of \"truth\" or different problem-solving heuristics. This creates a form of intellectual segregation that undermines the democratic ideal of a shared society.",
+      "start_char": 2053,
+      "end_char": 2458,
+      "token_count": 56,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 9,
+      "text": "**Collaboration as a Skill:** Education is not just about knowledge acquisition; it is about socialization. If AI tutors solve the learning friction for the student, they may fail to develop the resilience and communication skills required to bridge gaps with peers. A society of highly skilled individuals who cannot work together is less functional than a society of moderately skilled individuals who collaborate effectively.",
+      "start_char": 2463,
+      "end_char": 2891,
+      "token_count": 64,
+      "boundary_class": "NONE",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 10,
+      "text": "The Epistemic Risk: A deeper ethical concern arises from the nature of the AI itself.",
+      "start_char": 2897,
+      "end_char": 2988,
+      "token_count": 15,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 11,
+      "text": "**Black Box Pedagogy:** If an AI personalizes learning by bypassing certain foundational topics to reach a \"skill peak\" faster, students may develop high skills in specific areas but lack the foundational context that allows them to understand *why* they know what they know.",
+      "start_char": 2989,
+      "end_char": 3264,
+      "token_count": 43,
+      "boundary_class": "NONE",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 12,
+      "text": "**Dependency:** If students rely on AI to tailor their learning, they may lose the ability to self-regulate or to learn from peers who approach a problem differently. This creates a dependency on the tool rather than human connection.",
+      "start_char": 3269,
+      "end_char": 3503,
+      "token_count": 38,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 13,
+      "text": "Conclusion: It Is a Trade-off, Not a Victory: Personalized learning is **not inherently ethically superior**; rather, it shifts the ethical burden.",
+      "start_char": 3509,
+      "end_char": 3662,
+      "token_count": 21,
+      "boundary_class": "BRANCH",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 14,
+      "text": "**If we value the individual above all else**, the answer is yes. The suffering of a child who cannot keep up in a traditional class is a moral harm that personalized learning fixes.",
+      "start_char": 3664,
+      "end_char": 3846,
+      "token_count": 33,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 15,
+      "text": "**If we value the community and social cohesion**, the answer is no. A system that creates a \"Tower of Babel\" effect in the classroom is ethically problematic because it undermines the collective capacity to solve shared problems.",
+      "start_char": 3851,
+      "end_char": 4081,
+      "token_count": 37,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 16,
+      "text": "The Ethical Path Forward:: To make personalized learning ethically superior, it must be redesigned to account for the collective. This requires:",
+      "start_char": 4087,
+      "end_char": 4234,
+      "token_count": 21,
+      "boundary_class": "BRANCH",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 17,
+      "text": "**Synchronized Collaboration:** AI tutors should be designed to identify where a student's knowledge diverges from the group and flag it for peer review. **Shared Core Curriculum:** Regardless of personalization, certain foundational concepts and methodologies should be standardized to ensure a common language for collaboration.",
+      "start_char": 4235,
+      "end_char": 4569,
+      "token_count": 44,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 18,
+      "text": "**Transparency:** We must ensure that the \"different AI tutors\" do not create unequal realities based on data bias or proprietary algorithms.",
+      "start_char": 4574,
+      "end_char": 4715,
+      "token_count": 21,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 19,
+      "text": "Ultimately, an education system that creates isolated geniuses is less ethically sound than one that cultivates competent, collaborative citizens. Personalization is a tool, but it becomes unethical if it sacrifices the social fabric for individual efficiency.",
+      "start_char": 4721,
+      "end_char": 4981,
+      "token_count": 36,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "BRCH",
+      "confidence": 0.4903,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "ELAB",
+      "confidence": 0.5732,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "BRCH",
+      "confidence": 0.4046,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "BRCH",
+      "confidence": 0.3169,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "BRCH",
+      "confidence": 0.3113,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "ELAB",
+      "confidence": 0.6301,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "BRCH",
+      "confidence": 0.3736,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.5602,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "BRCH",
+      "confidence": 0.3795,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "ELAB",
+      "confidence": 0.6408,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "ELAB",
+      "confidence": 0.5783,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "BRCH",
+      "confidence": 0.5124,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "ELAB",
+      "confidence": 0.598,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SYNT",
+      "confidence": 0.4544,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 4,
+      "edge_type": "SYNT",
+      "confidence": 0.4449,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 9,
+      "edge_type": "SYNT",
+      "confidence": 0.5972,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 1,
+      "edge_type": "SYNT",
+      "confidence": 0.4506,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 4,
+      "edge_type": "SYNT",
+      "confidence": 0.6074,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 1,
+      "edge_type": "SYNT",
+      "confidence": 0.4476,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 4,
+      "edge_type": "SYNT",
+      "confidence": 0.5284,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 6,
+      "edge_type": "SYNT",
+      "confidence": 0.5265,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 15,
+      "edge_type": "SYNT",
+      "confidence": 0.5124,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 4,
+      "edge_type": "SYNT",
+      "confidence": 0.4243,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 9,
+      "edge_type": "SYNT",
+      "confidence": 0.6838,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 4,
+      "edge_type": "SYNT",
+      "confidence": 0.3128,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 9,
+      "edge_type": "SYNT",
+      "confidence": 0.5504,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 12,
+      "edge_type": "SYNT",
+      "confidence": 0.5515,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 1,
+      "edge_type": "SYNT",
+      "confidence": 0.4427,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 4,
+      "edge_type": "SYNT",
+      "confidence": 0.5056,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 5,
+      "edge_type": "SYNT",
+      "confidence": 0.5108,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 15,
+      "edge_type": "SYNT",
+      "confidence": 0.4501,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 1,
+      "edge_type": "BACK",
+      "confidence": 0.6543,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 3,
+      "edge_type": "BACK",
+      "confidence": 0.6854,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 3,
+      "edge_type": "BACK",
+      "confidence": 0.666,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 3,
+      "edge_type": "BACK",
+      "confidence": 0.6606,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 2,
+      "edge_type": "BACK",
+      "confidence": 0.676,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 9,
+      "edge_type": "BACK",
+      "confidence": 0.6838,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 8,
+      "edge_type": "BACK",
+      "confidence": 0.7193,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 13,
+      "edge_type": "BACK",
+      "confidence": 0.6949,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "edge_type": "ELAB",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "edge_type": "ELAB",
+      "confidence": 0.9954,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "edge_type": "ELAB",
+      "confidence": 0.9954,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 10,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 10,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "ELAB",
+      "confidence": 0.9137,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 11,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.9137,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 13,
+      "edge_type": "CONT",
+      "confidence": 0.9939,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "edge_type": "ELAB",
+      "confidence": 0.9137,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 14,
+      "edge_type": "CONT",
+      "confidence": 0.9939,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "edge_type": "ELAB",
+      "confidence": 0.9978,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 15,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 16,
+      "edge_type": "ELAB",
+      "confidence": 0.9978,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 18,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 18,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 19,
+      "edge_type": "SUPP",
+      "confidence": 0.9984,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 19,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 732
+}

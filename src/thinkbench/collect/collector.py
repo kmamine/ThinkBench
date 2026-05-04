@@ -64,6 +64,7 @@ class TraceCollector:
         record = {
             "trace_id": trace_id,
             "model": model,
+            "prompt_variant": self.client.prompt_variant,
             "question_id": question["id"],
             "domain": question.get("domain", "unknown"),
             "run": run,
@@ -121,7 +122,8 @@ class TraceCollector:
     def _save_traces(self, traces: List[dict], model: str):
         """Save collected traces to file."""
         model_slug = model.replace("/", "-")
-        output_file = self.output_dir / f"traces_{model_slug}.jsonl"
+        prompt_variant = self.client.prompt_variant
+        output_file = self.output_dir / f"traces_{model_slug}_{prompt_variant}.jsonl"
 
         # Load existing traces
         existing = []

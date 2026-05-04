@@ -20,8 +20,8 @@ def unique_perspective_count(graph: ThoughtGraph) -> float:
 def domain_spread(graph: ThoughtGraph) -> float:
     """Distinct semantic clusters among BRS+HYP nodes (agglomerative, cosine threshold=0.45)."""
     target = [n for n in graph.nodes if n.node_type in (NodeType.BRS, NodeType.HYP)]
-    if len(target) < 2:
-        return float(len(target))
+    if len(target) < 3:
+        return 0.0
     try:
         import numpy as np
         from sklearn.cluster import AgglomerativeClustering

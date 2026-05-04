@@ -1,0 +1,1032 @@
+{
+  "trace_id": "1857ee57-86ea-4cf8-9b44-4539eb8b2580",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_006",
+  "domain": "ethical_dilemmas",
+  "run": 3,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "The question of whether to ban Lethal Autonomous Weapons Systems (LAWS)\u2014often colloquially called \"killer robots\"\u2014is one of the most significant ethical and legal debates of the modern era. There is no global consensus yet, but the discussion generally centers on a trade-off between military efficiency and human accountability.",
+      "start_char": 0,
+      "end_char": 329,
+      "token_count": 48,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 1,
+      "text": "Here is a breakdown of the primary arguments from both sides of the debate, as well as the emerging middle ground.",
+      "start_char": 331,
+      "end_char": 445,
+      "token_count": 21,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 2,
+      "text": "Arguments for Banning Autonomous Weapons: Proponents of a ban, including the Campaign to Stop Killer Robots, many human rights organizations, and some legal scholars, argue that the risks outweigh the benefits.",
+      "start_char": 447,
+      "end_char": 661,
+      "token_count": 31,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 3,
+      "text": "**The Accountability Gap:** Under International Humanitarian Law (IHL), a human commander or soldier must be held responsible for war crimes. With autonomous systems, it is unclear who is liable if the system kills civilians: the programmer, the manufacturer, the commander who deployed it, or the machine itself. Critics argue a legal ban is necessary to prevent a \"responsibility vacuum.\"",
+      "start_char": 663,
+      "end_char": 1053,
+      "token_count": 59,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 4,
+      "text": "**Dehumanization of Conflict:** Many argue that the decision to take a human life should never be delegated to an algorithm. They contend that removing human empathy and moral judgment from the killing process lowers the threshold for going to war and violates human dignity.",
+      "start_char": 1058,
+      "end_char": 1333,
+      "token_count": 44,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 5,
+      "text": "**Escalation and Proliferation:** There is fear that autonomous weapons could lower the political cost of war, making conflicts more likely. Furthermore, if these systems are cheap and easy to build, they could proliferate to non-state actors, terrorists, or rogue regimes.",
+      "start_char": 1338,
+      "end_char": 1611,
+      "token_count": 40,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 6,
+      "text": "**Technical Vulnerability:** Autonomous systems rely on software and sensors, which can be hacked, spoofed, or malfunction. A hacked drone swarm could be turned against its own side or used indiscriminately.",
+      "start_char": 1616,
+      "end_char": 1823,
+      "token_count": 30,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 7,
+      "text": "**Compliance with IHL:** Critics argue that AI cannot currently meet the requirements of distinction (distinguishing combatant from civilian) and proportionality (weighing military advantage against civilian harm) required by the laws of war.",
+      "start_char": 1828,
+      "end_char": 2070,
+      "token_count": 32,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 8,
+      "text": "Arguments Against a Ban (or for Regulation): Defense departments, military strategists, and some technology advocates argue that a ban is either unenforceable or counterproductive.",
+      "start_char": 2076,
+      "end_char": 2260,
+      "token_count": 24,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 9,
+      "text": "**Saving Friendly Lives:** The primary military argument is that autonomous systems can operate in environments too dangerous for humans (e.g., high radiation, extreme heat, or heavy anti-air fire), thereby reducing casualties among one's own troops.",
+      "start_char": 2262,
+      "end_char": 2512,
+      "token_count": 35,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 10,
+      "text": "**Precision and Collateral Damage:** Proponents argue that AI can process sensor data faster and more accurately than humans. In theory, an AI could distinguish between a combatant and a civilian better than a tired or stressed human soldier, potentially *reducing* civilian casualties.",
+      "start_char": 2517,
+      "end_char": 2803,
+      "token_count": 42,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 11,
+      "text": "**Speed of Engagement:** Modern warfare involves threats moving at hypersonic speeds. Human reaction times may be too slow to defend against incoming drone swarms or missiles. Autonomous point-defense systems (like the Iron Dome) are already used and accepted for this reason.",
+      "start_char": 2808,
+      "end_char": 3084,
+      "token_count": 41,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 12,
+      "text": "**Strategic Necessity:** Nations argue that banning these weapons unilaterally would put them at a strategic disadvantage against adversaries who do not sign the ban. They argue that development should continue to ensure deterrence and national security.",
+      "start_char": 3089,
+      "end_char": 3343,
+      "token_count": 36,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 13,
+      "text": "**Distinction Between Systems:** Some argue that \"autonomous\" is too broad. They distinguish between weapons that select targets (offensive) and weapons that defend against attacks (defensive), arguing that defensive autonomy should not be banned.",
+      "start_char": 3348,
+      "end_char": 3595,
+      "token_count": 33,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 14,
+      "text": "The \"Meaningful Human Control\" Compromise: Because a total ban faces significant geopolitical hurdles, many nations and experts advocate for a middle ground: **regulation rather than prohibition.**",
+      "start_char": 3601,
+      "end_char": 3802,
+      "token_count": 26,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 15,
+      "text": "**Meaningful Human Control (MHC):** This concept suggests that while machines can assist, a human must always remain \"in the loop\" or \"on the loop\" for the critical decision to use lethal force. The human would authorize the specific engagement, even if the AI tracks and identifies the target.",
+      "start_char": 3804,
+      "end_char": 4098,
+      "token_count": 48,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 16,
+      "text": "**Targeting Restrictions:** Some propose banning specific types of autonomous systems, such as those designed to target humans directly, while allowing autonomous systems for defending against non-human targets (like missiles or tanks).",
+      "start_char": 4103,
+      "end_char": 4339,
+      "token_count": 31,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 17,
+      "text": "**Testing and Certification:** Calls for rigorous international testing and certification to ensure systems cannot malfunction or be hacked before deployment.",
+      "start_char": 4344,
+      "end_char": 4502,
+      "token_count": 20,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 18,
+      "text": "Current International Status: Currently, there is no binding international treaty banning LAWS. The issue is discussed primarily within the United Nations Convention on Certain Conventional Weapons (CCW).",
+      "start_char": 4508,
+      "end_char": 4716,
+      "token_count": 27,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 19,
+      "text": "**Consensus:** There is no consensus on a ban. Some nations (like Austria and Germany) support a preemptive ban. Others (like the US, Russia, and Israel) prefer non-binding guidelines or no regulation, arguing that existing laws of war are sufficient.",
+      "start_char": 4717,
+      "end_char": 4968,
+      "token_count": 39,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 20,
+      "text": "**Humanitarian Efforts:** The International Committee of the Red Cross (ICRC) has called for new laws to ensure that autonomous weapons comply with international law, though they have not explicitly called for a total ban.",
+      "start_char": 4973,
+      "end_char": 5195,
+      "token_count": 34,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 21,
+      "text": "Conclusion: The question of banning autonomous lethal weapons is not just about technology; it is about the future of warfare and ethics.",
+      "start_char": 5201,
+      "end_char": 5342,
+      "token_count": 22,
+      "boundary_class": "BRANCH",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 22,
+      "text": "**If banned:** Humanity preserves a moral line regarding the taking of life and ensures accountability, but risks falling behind in military technology and potentially increasing casualties for human soldiers. **If allowed:** Military efficiency and force protection may increase, but there is a risk of lowering the barrier to war, creating accountability loopholes, and relying on fragile technology for life-or-death decisions.",
+      "start_char": 5344,
+      "end_char": 5778,
+      "token_count": 60,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 23,
+      "text": "Most experts agree that the debate is not yet settled. The outcome will likely depend on future technological capabilities, geopolitical stability, and whether the international community can agree on a definition of \"meaningful human control.\"",
+      "start_char": 5784,
+      "end_char": 6028,
+      "token_count": 35,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "BRCH",
+      "confidence": 0.1656,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "BRCH",
+      "confidence": 0.2867,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "ELAB",
+      "confidence": 0.5032,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.5128,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "BRCH",
+      "confidence": 0.2968,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "BRCH",
+      "confidence": 0.4664,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "ELAB",
+      "confidence": 0.5643,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "BRCH",
+      "confidence": 0.3018,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "BRCH",
+      "confidence": 0.2706,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "BRCH",
+      "confidence": 0.262,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "ELAB",
+      "confidence": 0.7065,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "ELAB",
+      "confidence": 0.5039,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "BRCH",
+      "confidence": 0.4945,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "ELAB",
+      "confidence": 0.6083,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "ELAB",
+      "confidence": 0.5598,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 0,
+      "edge_type": "SYNT",
+      "confidence": 0.5609,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 6,
+      "edge_type": "SYNT",
+      "confidence": 0.5072,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 7,
+      "edge_type": "SYNT",
+      "confidence": 0.5638,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 0,
+      "edge_type": "SYNT",
+      "confidence": 0.6193,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 6,
+      "edge_type": "SYNT",
+      "confidence": 0.4097,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 7,
+      "edge_type": "SYNT",
+      "confidence": 0.5679,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 0,
+      "edge_type": "SYNT",
+      "confidence": 0.5644,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 6,
+      "edge_type": "SYNT",
+      "confidence": 0.4254,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 7,
+      "edge_type": "SYNT",
+      "confidence": 0.5062,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 13,
+      "edge_type": "SYNT",
+      "confidence": 0.6772,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 14,
+      "edge_type": "SYNT",
+      "confidence": 0.5259,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 0,
+      "edge_type": "SYNT",
+      "confidence": 0.7802,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 6,
+      "edge_type": "SYNT",
+      "confidence": 0.2754,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 13,
+      "edge_type": "SYNT",
+      "confidence": 0.6334,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 0,
+      "edge_type": "SYNT",
+      "confidence": 0.5642,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 7,
+      "edge_type": "SYNT",
+      "confidence": 0.5337,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 14,
+      "edge_type": "SYNT",
+      "confidence": 0.5964,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 20,
+      "edge_type": "SYNT",
+      "confidence": 0.4855,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 0,
+      "edge_type": "BACK",
+      "confidence": 0.7802,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "edge_type": "CONT",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "edge_type": "CONT",
+      "confidence": 0.9974,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "edge_type": "CONT",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "edge_type": "CONT",
+      "confidence": 0.9974,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "ELAB",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 10,
+      "edge_type": "ELAB",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 10,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "edge_type": "ELAB",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 11,
+      "edge_type": "ELAB",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "CONT",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 13,
+      "edge_type": "CONT",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 14,
+      "edge_type": "CONT",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 15,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "ELAB",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "CONT",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "edge_type": "ELAB",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 18,
+      "edge_type": "CONT",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 18,
+      "edge_type": "ELAB",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 19,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 19,
+      "edge_type": "CONT",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 20,
+      "edge_type": "CONT",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 20,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 21,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 21,
+      "edge_type": "CONT",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 22,
+      "edge_type": "ELAB",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 22,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 23,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 23,
+      "edge_type": "ELAB",
+      "confidence": 0.9994,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 880
+}

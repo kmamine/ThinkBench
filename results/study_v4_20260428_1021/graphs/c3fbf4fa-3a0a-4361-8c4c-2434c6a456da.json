@@ -1,0 +1,342 @@
+{
+  "trace_id": "c3fbf4fa-3a0a-4361-8c4c-2434c6a456da",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_002",
+  "domain": "ethical_dilemmas",
+  "run": 2,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "This scenario presents a profound ethical dilemma that sits at the intersection of medical ethics, resource allocation, and artificial intelligence governance. There is no universally agreed-upon \"correct\" answer, but ethical guidelines and AI safety principles suggest a specific framework for how such a decision should be approached.",
+      "start_char": 0,
+      "end_char": 336,
+      "token_count": 47,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 1,
+      "text": "An ethical AI system should not make this decision in isolation based on personal or societal biases. Instead, it should follow a structured, transparent, and pre-established protocol. Here is how the decision-making process should be structured:",
+      "start_char": 338,
+      "end_char": 584,
+      "token_count": 36,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 2,
+      "text": "### 1. Adherence to Established Triage Protocols\nThe AI should not invent its own ethical rules. It must operate strictly within the legal and ethical guidelines established by the healthcare institution, public health authorities (e.g., WHO, CDC), or the government. *   **Standard of Care:** In many jurisdictions, the primary triage criterion is **medical utility** (probability of survival and duration of benefit). Since both patients have an equal chance of survival, the medical utility is tied. *   **Prohibited Variables:** Ethical guidelines generally prohibit using **social worth** as a variable. This means the AI should not prioritize the patient based on their job (teacher vs. parent), their role in society, or their family status (single parent vs. no family). Valuing a person based on their dependents or contribution to society introduces discrimination and inequality.",
+      "start_char": 586,
+      "end_char": 1476,
+      "token_count": 132,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 3,
+      "text": "### 2. Tie-Breaking Criteria\nWhen medical probability is equal, most ethical frameworks consider the following tie-breakers, though they vary by region and institution:\n*   **Life-Years Saved (Utilitarian Approach):** Some protocols prioritize the patient expected to live longer after treatment. In this case, the 35-year-old might be prioritized over the 75-year-old to maximize the total years of life saved. *Note: This is controversial and can be viewed as ageist.*\n*   **Randomization (Egalitarian Approach):** If medical utility and life-years are considered too subjective or discriminatory to apply, the fairest method is a random selection (e.g., a coin flip). This ensures that every human life is valued equally regardless of age or family status. *   **First-Come, First-Served:** If the patients arrived at different times, this is a neutral, logistical tie-breaker.",
+      "start_char": 1478,
+      "end_char": 2358,
+      "token_count": 127,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 4,
+      "text": "### 3. Avoidance of Bias\nThe AI must be audited to ensure it is not reinforcing societal biases. *   **Ageism:** Automatically prioritizing the younger patient based solely on age can be considered age discrimination. *   **Social Bias:** Prioritizing the parent of three implicitly values the *children's* needs over the *patient's* right to care, which complicates the doctor-patient relationship. The 75-year-old has an equal right to care regardless of their family status.",
+      "start_char": 2360,
+      "end_char": 2837,
+      "token_count": 71,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 5,
+      "text": "### 4. Human-in-the-Loop Oversight\nGiven the high stakes and moral weight of the decision, an AI system should **not** have autonomous authority to allocate life-saving resources in this specific scenario. *   **Recommendation:** The AI should flag the case as a \"Critical Ethical Dilemma\" and alert a human ethics committee or senior medical board. *   **Justification:** Humans can navigate the nuance of the specific circumstances better than an algorithm and can accept moral responsibility for the outcome.",
+      "start_char": 2839,
+      "end_char": 3350,
+      "token_count": 76,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 6,
+      "text": "### 5. Transparency and Explainability\nIf the AI is allowed to make a recommendation, it must provide a transparent explanation of its logic. *   **Example:** \"Both patients have equal survival probability. Current protocol suggests prioritizing based on [Life-Years / Random Selection]. Based on [Protocol X], Patient B is selected.\"\n*   **Audit Trail:** The decision must be logged for post-event review to ensure accountability.",
+      "start_char": 3352,
+      "end_char": 3783,
+      "token_count": 63,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 7,
+      "text": "### Conclusion\nThe AI should not decide based on the number of children or the age of the patients as primary factors. If the system follows standard medical ethics:\n1. It should prioritize **medical prognosis** (which is tied). 2. It should avoid **social utility** (family status). 3. If the protocol allows, it may consider **life-years**, but this is ethically debated. 4. If the protocol is silent or strictly egalitarian, it should recommend **randomization**. 5. Crucially, the final decision should ideally be **reviewed by a human ethics committee** rather than left to the algorithm.",
+      "start_char": 3785,
+      "end_char": 4378,
+      "token_count": 93,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 8,
+      "text": "**Summary:** The AI should treat the two patients as having equal moral worth. The decision should be made based on pre-existing, publicly vetted triage guidelines (likely randomization or life-years) rather than the AI's own assessment of social value, and the process should be transparent and overseen by human medical professionals.",
+      "start_char": 4385,
+      "end_char": 4721,
+      "token_count": 50,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "ELAB",
+      "confidence": 0.6966,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "BRCH",
+      "confidence": 0.4564,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "BRCH",
+      "confidence": 0.4963,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "ELAB",
+      "confidence": 0.6231,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "ELAB",
+      "confidence": 0.7038,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 2,
+      "edge_type": "SYNT",
+      "confidence": 0.6626,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 3,
+      "edge_type": "SYNT",
+      "confidence": 0.6071,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 0,
+      "edge_type": "BACK",
+      "confidence": 0.7762,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 0,
+      "edge_type": "BACK",
+      "confidence": 0.6928,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SUPP",
+      "confidence": 0.9443,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "edge_type": "CONT",
+      "confidence": 0.9976,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "edge_type": "ELAB",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "CONT",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9443,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "edge_type": "CONT",
+      "confidence": 0.9976,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "edge_type": "CONT",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.9443,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "edge_type": "ELAB",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "edge_type": "CONT",
+      "confidence": 0.9989,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 695
+}

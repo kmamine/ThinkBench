@@ -1,0 +1,690 @@
+{
+  "trace_id": "8f711739-b700-48ea-939a-4304e74f311e",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_002",
+  "domain": "ethical_dilemmas",
+  "run": 2,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "### Step 1: Spread Wide (Exploring Angles and Perspectives) Let me cast a wide net over this scenario. I need to identify every possible lens through which this decision can be viewed before I narrow down. *   **Medical/Utilitarian Lens:** The primary goal of healthcare is to save lives and maximize health outcomes. If survival chances are equal, do we maximize *life-years*? The 35-year-old has potentially 40-50 more years; the 75-year-old has 10-15. From a pure QALY (Quality-Adjusted Life Year) calculation, the younger patient wins. *   **Egalitarian/Deontological Lens:** Every life has equal intrinsic value. To assign value based on age or family status is to discriminate. If medical need and prognosis are identical, the right to treatment is identical. The fairest method is a random lottery. *   **Social/Communitarian Lens:** We exist in a web of relationships.",
+      "start_char": 0,
+      "end_char": 876,
+      "token_count": 135,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 1,
+      "text": "The death of the 35-year-old results in three potential orphans and a family unit collapse. The death of the 75-year-old results in no immediate dependents. The decision should minimize *secondary* harm to the community. *   **Legal/Ethical Compliance Lens:** Many jurisdictions explicitly forbid triage decisions based on age or social worth (e.g., disability discrimination acts). If the AI encodes \"save the parent,\" it might be liable for age discrimination against the elderly. *   **AI Safety/Bias Lens:** AI systems amplify training data. If we train this AI on historical data where younger people were saved, it learns ageism. If we train it to prioritize children, it learns dependency bias. Who programs the weights? *   **Psychological/Emotional Lens:** What is the impact on the survivors? The family of the 35-year-old will suffer. The community of the 75-year-old might feel abandoned. What about the medical staff? Would they feel the AI made a \"cold\" calculation? *   **Procedural Justice Lens:** It is less important *who* wins than *how* the decision is made. Transparency, explainability, and appeal mechanisms matter more than the specific outcome.",
+      "start_char": 877,
+      "end_char": 2046,
+      "token_count": 177,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 2,
+      "text": "### Step 2: Reframe (Restating the Problem) I need to step back and look at the problem from different starting points to avoid getting stuck in the binary of \"Teacher vs. Parent.\" *   **Reframe 1: The \"Resource Scarcity\" Problem.** This isn't really about who is *better*. It is about how to distribute a scarce good when demand exceeds supply. The core question becomes: \"What allocation mechanism is most robust against public distrust?\"\n*   **Reframe 2: The \"Moral Agency\" Problem.** The real question isn't who gets the drug. It is: \"Should an algorithm be permitted to make moral value judgments regarding human worth?\" If the AI makes the decision, it assumes a moral agency it does not possess. *   **Reframe 3: The \"Systemic Design\" Problem.** Instead of solving this one instance, how do we design the *system* so this dilemma is resolved consistently across thousands of cases? This shifts the focus from the specific patients to the algorithmic protocol.",
+      "start_char": 2050,
+      "end_char": 3018,
+      "token_count": 158,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 3,
+      "text": "### Step 3: Go Deep (Following the Threads) Let me pick the three strongest threads from the wide spread and follow them to their logical conclusions. **Thread A: The Utilitarian Calculation (Maximize Life-Years)**\n*   *Argument:* Saving the 35-year-old saves more biological time and protects dependents. *   *Implication:* Society prioritizes the future over the past. This aligns with pandemic triage guidelines in some regions. *   *Limit:* It explicitly devalues the elderly. It treats human life as a commodity (time units) rather than an inherent right. It risks creating a \"caste system\" where the old are second-class citizens in life-and-death scenarios. *   *AI Risk:* This codifies ageism. If the AI is widely deployed, it reinforces the notion that aging = lower value.",
+      "start_char": 3020,
+      "end_char": 3804,
+      "token_count": 120,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 4,
+      "text": "**Thread B: The Egalitarian Lottery (Random Allocation)**\n*   *Argument:* Since medical prognosis is equal, no one has a superior claim. Randomness ensures impartiality. *   *Implication:* Everyone has a 50/50 shot. It treats the 75-year-old and 35-year-old with absolute dignity. *   *Limit:* It ignores the \"ripple effects.\" Saving the parent prevents three children from losing a caregiver. Is it fair to ignore the welfare of the innocent third parties (the children)? *   *AI Risk:* While procedurally fair, the outcome might feel intuitively \"wrong\" to the public, eroding trust in the AI system.",
+      "start_char": 3806,
+      "end_char": 4408,
+      "token_count": 91,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 5,
+      "text": "**Thread C: The Care Ethics Approach (Dependency and Vulnerability)**\n*   *Argument:* The 35-year-old is a primary caregiver. Her vulnerability is higher because her death harms others. *   *Implication:* We protect the most vulnerable ecosystem. *   *Limit:* This is slippery. Does a single parent have more \"right\" than a teacher who is a pillar of the community? What about a 35-year-old with no family vs. a 75-year-old with a spouse? It requires subjective assessment of \"social worth.\"\n*   *AI Risk:* Highly subjective data. \"Social worth\" is a dangerous metric for AI. It opens the door to bias against those without traditional family structures (e.g., childless adults).",
+      "start_char": 4410,
+      "end_char": 5089,
+      "token_count": 105,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 6,
+      "text": "### Step 4: Challenge Yourself (Critiquing the Ideas) Now I must attack my own reasoning. Where am I missing something? *   *Challenge to Utilitarianism:* Is the 75-year-old's life *actually* less valuable? A retired teacher might have a profound legacy. Counting years ignores quality of life. If the 75-year-old has already lived a full life, is it \"unfair\" to take it?",
+      "start_char": 5091,
+      "end_char": 5464,
+      "token_count": 60,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 7,
+      "text": "But if we stop that logic, we deny medicine to anyone who has \"lived enough.\"\n*   *Challenge to Lottery:* Is randomness truly fair? If I buy a lottery ticket, I accept the risk. If the government allocates life-saving drugs via lottery, is that a different contract? It might be.",
+      "start_char": 5465,
+      "end_char": 5744,
+      "token_count": 49,
+      "boundary_class": "CONTRAST",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 8,
+      "text": "But it is the only way to avoid bias. *   *Challenge to \"AI should decide\":* I am assuming the AI has the authority. In reality, most medical AI is a *decision support* tool. If the AI suggests the parent, and the doctor overrides it, who is responsible? If the AI decides automatically, is it a \"black box\" killing machine? *   *Challenge to the \"Equal Chance\" Premise:* The prompt states equal survival chance. In reality, age is a confounding variable for survival (comorbidities). If the AI knows the 75-year-old is \"healthier\" than typical for age, that changes the calculation.",
+      "start_char": 5745,
+      "end_char": 6328,
+      "token_count": 98,
+      "boundary_class": "CONTRAST",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 9,
+      "text": "But I must accept the prompt's constraints. *   *Challenge to \"Children\":* Is prioritizing the parent based on children essentially prioritizing the *future* over the *present*? Or is it prioritizing the *family unit*? If the AI prioritizes the parent, it is prioritizing the children's welfare.",
+      "start_char": 6329,
+      "end_char": 6624,
+      "token_count": 44,
+      "boundary_class": "CONTRAST",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 10,
+      "text": "But does the AI have the right to judge the children's welfare? ### Step 5: Connect (Synthesizing the Threads) Let's look for relationships between these threads. *   **Tension:** The tension between *Procedural Fairness* (Lottery) and *Consequential Good* (Saving the parent/children). *   **Connection:** The AI cannot resolve this tension ethically on its own. The AI is a tool; the ethics are human.",
+      "start_char": 6625,
+      "end_char": 7031,
+      "token_count": 61,
+      "boundary_class": "CONTRAST",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 11,
+      "text": "Therefore, the AI's role is to *surface* the dilemma, not *solve* it. *   **Relationship:** The \"Equal Chance\" constraint forces us into the ethical layer. If one had a 90% chance and the other 10%, the medical logic would win.",
+      "start_char": 7032,
+      "end_char": 7259,
+      "token_count": 39,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 12,
+      "text": "Since medical logic is neutral, the *social* logic must take over. But AI is bad at social logic. *   **Synthesis:** The solution must be hybrid. The AI should flag the \"Tie Case.\" It should not output a definitive \"Patient A\" or \"Patient B\" without human oversight.",
+      "start_char": 7260,
+      "end_char": 7526,
+      "token_count": 46,
+      "boundary_class": "SUPPORT",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 13,
+      "text": "### Step 6: Reflect (Checking for Bias and Loops) *   *Am I looping?* I keep circling back to \"AI shouldn't decide.\" Is that a cop-out? Yes, if the goal is to design a system that *must* decide. If the system is automated, I need a rule. *   *Am I biased?* I might be leaning towards the parent because of societal norms regarding children. I need to ensure I am not dismissing the elderly patient's inherent right to life. *   *Missing Element:* I haven't considered the *consent* of the patients. Did they sign up for a lottery? Did they sign up for a utilitarian protocol? *   *Missing Element:* The *public trust* factor. If the public knows the AI kills the elderly to save parents, they will stop using the healthcare system. If they know it kills parents to save the elderly, they will riot. The system needs legitimacy.",
+      "start_char": 7528,
+      "end_char": 8356,
+      "token_count": 147,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 14,
+      "text": "### Step 7: Converge (Coherent Position) Okay, I have explored the angles, reframed the issue, dug deep into the ethics, challenged my assumptions, and connected the dots. Here is where I land. **The Core Problem:** This is not a medical problem; it is an ethical governance problem disguised as an algorithmic one.",
+      "start_char": 8358,
+      "end_char": 8675,
+      "token_count": 52,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 15,
+      "text": "**The Decision Framework:**\n1. **Primary Filter (Medical):** Survival probability. (Already equal, so pass). 2. **Secondary Filter (Ethical):** If medical utility is equal, we must choose a mechanism that is transparent, defensible, and minimizes discrimination. 3. **The AI's Role:** The AI should not be the moral arbiter. It should be the procedural enforcer.",
+      "start_char": 8677,
+      "end_char": 9039,
+      "token_count": 52,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 16,
+      "text": "**The Recommendation:**\nThe AI should not autonomously select one patient over the other based on age or family status. Instead, it should trigger a **\"Triage Tie-Breaker Protocol.\"** *   **Option A (Randomization):** The system assigns a random number to both. This is the most legally defensible method to avoid discrimination claims. It treats both lives as equal. *   **Option B (Human Escalation):** The system flags the case for a human ethics committee or triage officer. This allows for contextual nuance (e.g., \"Is the teacher actually in hospice? Is the parent actually the only caregiver?\").",
+      "start_char": 9044,
+      "end_char": 9647,
+      "token_count": 93,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 17,
+      "text": "**Why this converges:**\n*   It respects the **Egalitarian** view (by not arbitrarily valuing one life over another without process). *   It respects the **Utilitarian** view (by allowing human oversight to consider the \"greater good\" if society agrees on that protocol, rather than hiding it in code). *   It protects the **AI** from liability (by removing the moral decision from the code). *   It protects the **Patients** (by ensuring the decision isn't based on a biased algorithm).",
+      "start_char": 9649,
+      "end_char": 10135,
+      "token_count": 76,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 18,
+      "text": "**Final Verdict:** The AI should **not make the allocation decision autonomously.** It should identify the medical equivalence and escalate to a human-led process or a pre-defined randomization protocol that is publicly audited. If forced to choose a *rule*, the most ethically robust rule is **random allocation among medically eligible candidates**, as it avoids embedding discriminatory values about age or social worth into the system.",
+      "start_char": 10137,
+      "end_char": 10576,
+      "token_count": 64,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 19,
+      "text": "*** ### Final Answer Formulation Based on the thinking process above, here is the structured response to the prompt. **1. The Ethical Dilemma: Equal Medical Need, Unequal Social Context**\nThe core constraint here is that the medical prognosis is identical (\"equal chance of survival\"). This removes the standard medical triage metric (who will benefit most medically?) and forces the system into a value judgment about social worth.",
+      "start_char": 10578,
+      "end_char": 11013,
+      "token_count": 67,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 20,
+      "text": "**2. Analysis of Potential Algorithms**\n*   **Maximizing Life-Years (Utilitarian):** Select the 35-year-old. *   *Pros:* Maximizes biological time, protects dependents. *   *Cons:* Explicitly discriminates against the elderly. Encodes ageism into healthcare. *   **Random Lottery (Egalitarian):** 50/50 chance. *   *Pros:* Treats all lives as equal. Legally defensible against discrimination. *   *Cons:* Ignores the secondary harm to the children. *   **Social Utility (Care Ethics):** Select the parent to protect the family unit. *   *Pros:* Minimizes societal harm. *   *Cons:* Subjective. Who defines \"social utility\"? What about a single parent vs. a teacher who mentors hundreds?",
+      "start_char": 11015,
+      "end_char": 11701,
+      "token_count": 92,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 21,
+      "text": "**3. The AI's Limitation**\nAn AI system should not be designed to calculate \"social worth.\" Doing so amplifies historical biases and lacks moral agency. The decision to value one life over another based on family status is a societal value, not a medical fact.",
+      "start_char": 11727,
+      "end_char": 11987,
+      "token_count": 44,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 22,
+      "text": "**4. The Converged Recommendation**\nThe AI should not make the final decision autonomously. The most robust approach is a **Procedural Justice Model**:",
+      "start_char": 11989,
+      "end_char": 12140,
+      "token_count": 22,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 23,
+      "text": "1. **Flag the Tie:** The AI identifies that both patients meet the primary medical criteria equally. 2. **Escalate or Randomize:**\n    *   *Best Case:* Escalate to a human triage officer who can apply community-endorsed guidelines. *   *Automated Case:* Implement a **randomized lottery** (e.g., coin flip algorithm) between the two patients.",
+      "start_char": 12142,
+      "end_char": 12484,
+      "token_count": 49,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 24,
+      "text": "**Why Randomization is the Winner:**\nWhile it feels counter-intuitive to \"ignore\" the children, a lottery is the only method that guarantees no discrimination based on age (against the teacher) or social structure (against the childless parent). It places the burden of the moral choice on the *system's design* (which chose the lottery) rather than the *algorithm's calculation* (which would have to weigh lives).",
+      "start_char": 12492,
+      "end_char": 12906,
+      "token_count": 63,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 25,
+      "text": "**Conclusion:**\nThe AI should allocate the medication based on a **pre-defined random lottery** among medically eligible candidates. This ensures procedural fairness, avoids embedding discriminatory biases regarding age or family status, and maintains public trust in the healthcare system. If the system allows for human override, that override should be transparently recorded to maintain accountability.",
+      "start_char": 12908,
+      "end_char": 13314,
+      "token_count": 54,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "CONT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "CONT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "CONT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "CONT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SYNT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SUPP",
+      "confidence": 0.9964524507522583,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "CONT",
+      "confidence": 0.9951946139335632,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.9901078939437866,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.9996178150177002,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "ELAB",
+      "confidence": 0.989436149597168,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "ELAB",
+      "confidence": 0.9978122711181641,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.9965354204177856,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.9920996427536011,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SUPP",
+      "confidence": 0.9980247020721436,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SUPP",
+      "confidence": 0.99979168176651,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SUPP",
+      "confidence": 0.9987969398498535,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.8983182311058044,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SUPP",
+      "confidence": 0.9972098469734192,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.9896867871284485,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "ELAB",
+      "confidence": 0.9945270419120789,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "CONT",
+      "confidence": 0.9994990825653076,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9994885921478271,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "ELAB",
+      "confidence": 0.9959843158721924,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SUPP",
+      "confidence": 0.9996310472488403,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "CONT",
+      "confidence": 0.9993340373039246,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SUPP",
+      "confidence": 0.9945518374443054,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "SUPP",
+      "confidence": 0.9997202754020691,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "SUPP",
+      "confidence": 0.9997702240943909,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "ELAB",
+      "confidence": 0.9908026456832886,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "ELAB",
+      "confidence": 0.9992879033088684,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 2058
+}

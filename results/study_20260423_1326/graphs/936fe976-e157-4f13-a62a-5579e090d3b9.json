@@ -1,0 +1,655 @@
+{
+  "trace_id": "936fe976-e157-4f13-a62a-5579e090d3b9",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_004",
+  "domain": "ethical_dilemmas",
+  "run": 1,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "This is a complex ethical and strategic dilemma. To arrive at a robust conclusion, I need to unpack the tension between **instrumental efficiency** (the algorithm works better) and **moral/legal constraints** (the algorithm is biased). I will follow the requested framework to ensure I don't miss a critical angle.",
+      "start_char": 0,
+      "end_char": 314,
+      "token_count": 48,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 1,
+      "text": "### 1. Spread Wide: Exploring Angles and Stakeholders First, I need to identify who is affected and how they view this decision. A decision to deploy or not deploy affects the company, the candidates, society, and the regulators.",
+      "start_char": 316,
+      "end_char": 546,
+      "token_count": 38,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 2,
+      "text": "*   **The Company (Shareholders/Management):**\n    *   *Interest:* Maximizing ROI, minimizing liability, maximizing productivity. *   *View:* If the algorithm hires \"better\" employees, the company wins. Bias is a technical glitch, not a moral failing, if it improves the bottom line. *   **The Candidates (Rejected):**\n    *   *Interest:* Access to opportunity, fair treatment. *   *View:* They are being excluded based on circumstances they didn't control (background). This feels unjust and demoralizing. *   **The Candidates (Selected):**\n    *   *Interest:* Getting the job. *   *View:* They benefit, but if they know the process is unfair, their sense of meritocracy might be compromised. *   **Society/Community:**\n    *   *Interest:* Social mobility, economic equity. *   *View:* Reinforces existing class structures. If high-paying jobs are reserved for a specific socioeconomic cohort, inequality widens. *   **Regulators/Legal System:**\n    *   *Interest:* Compliance with anti-discrimination laws (e.g., Title VII in the US, GDPR in EU). *   *View:* Even if \"neutral,\" if the outcome is discriminatory (Disparate Impact), the company is liable.",
+      "start_char": 548,
+      "end_char": 1703,
+      "token_count": 155,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 3,
+      "text": "**Initial Observation:** The company sees a *business* win. Society sees a *justice* loss. Regulators see a *compliance* risk. The \"accuracy\" claim is the pivot point.",
+      "start_char": 1725,
+      "end_char": 1892,
+      "token_count": 25,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 4,
+      "text": "### 2. Reframe: Changing the Starting Points I need to look at this problem from different conceptual angles to see if the binary \"Use vs. Don't Use\" is the right question.",
+      "start_char": 1894,
+      "end_char": 2067,
+      "token_count": 31,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 5,
+      "text": "*   **Reframe A: Accuracy vs. Validity**\n    *   *Current framing:* \"The algorithm is more accurate.\"\n    *   *New framing:* \"What is the algorithm actually predicting?\"\n    *   If the training data reflects historical patterns where \"Background X\" people were promoted because they had connections, the algorithm is predicting \"Who fits the old mold,\" not \"Who will perform best in the future.\" It confuses **correlation** (background) with **causation** (skill). *   **Reframe B: Short-term Efficiency vs. Long-term Resilience**\n    *   *Current framing:* \"It hires faster/better today.\"\n    *   *New framing:* \"Does this create a fragile organization?\"\n    *   Homogeneity reduces cognitive diversity. If the algorithm filters out diverse socioeconomic backgrounds, it filters out diverse problem-solving approaches. The \"efficiency\" might come at the cost of innovation and adaptability later. *   **Reframe C: Tool vs. Agent**\n    *   *Current framing:* \"The algorithm makes the decision.\"\n    *   *New framing:* \"The company is using the algorithm to make the decision.\"\n    *   Delegating bias doesn't absolve the company of moral or legal responsibility. The company remains the agent; the algorithm is just a lever.",
+      "start_char": 2069,
+      "end_char": 3293,
+      "token_count": 170,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 6,
+      "text": "### 3. Go Deep: Following the Threads Now I will drill down into the most critical arguments raised above. **Thread 1: The \"Accuracy\" Trap**\n*   *Argument:* The prompt states the algorithm is \"more accurate than human hiring managers.\"\n*   *Implication:* If humans are biased and the algorithm is *more* accurate, does it mean the algorithm is *less* biased? *   *Analysis:* No. \"Accuracy\" in machine learning is defined by the ground truth. If the ground truth is \"Past Hires,\" and past hires were biased, the algorithm learns the bias perfectly. It is \"accurate\" at reproducing history, not at predicting future potential. *   *Limitation:* Unless \"accuracy\" is defined by an objective metric like \"Sales Generated\" or \"Code Quality,\" we must question what it measures. If it predicts \"Manager Satisfaction,\" and managers are biased, the algorithm is just automating prejudice. *   *Risk:* Relying on this \"accuracy\" is a false sense of security.",
+      "start_char": 3295,
+      "end_char": 4245,
+      "token_count": 149,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 7,
+      "text": "**Thread 2: Legal Liability (Disparate Impact)**\n*   *Argument:* Socioeconomic status correlates strongly with race and gender. *   *Implication:* In many jurisdictions, using a proxy for a protected class is illegal. *   *Analysis:* Even if \"Socioeconomic Background\" isn't explicitly protected, if it acts as a proxy for race (which it often does), the company faces a **Disparate Impact** lawsuit. *   *Burden of Proof:* If the company uses this, they must prove the tool is \"job-related and consistent with business necessity.\" If the training data is historical bias, can they prove it's a valid predictor of job performance? Probably not. *   *Risk:* High legal cost, potential injunctions, reputational damage.",
+      "start_char": 4247,
+      "end_char": 4964,
+      "token_count": 107,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 8,
+      "text": "**Thread 3: The Feedback Loop**\n*   *Argument:* The algorithm favors Background X. *   *Implication:* Candidates from Background X get hired more. They gain experience. They become the \"data\" for the next version. *   *Analysis:* This creates a **virtuous cycle for the privileged** and a **vicious cycle for the excluded**. Over time, the algorithm's \"accuracy\" on Background X improves, while it remains blind to Background Y. The system ossifies. *   *Risk:* The company becomes trapped in a homogenous talent pool that cannot adapt to changing markets.",
+      "start_char": 4966,
+      "end_char": 5522,
+      "token_count": 85,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 9,
+      "text": "### 4. Challenge: Critiquing My Own Reasoning I need to actively look for flaws in the arguments above to ensure I'm not being too idealistic or missing the business reality. *   *Challenge to the Legal Argument:* Is SES actually a protected class? In the US, it is not federally protected like race or religion.",
+      "start_char": 5524,
+      "end_char": 5838,
+      "token_count": 54,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 10,
+      "text": "However, courts have ruled that policies disproportionately affecting protected classes are illegal. If the SES bias correlates with race, the company is liable. But if it *doesn't* correlate with race (e.g., it favors a specific rural vs. urban split unrelated to race), the legal risk might be lower. *   *Counter-Challenge:* Even if legally permissible, is it ethically defensible? A company can be \"legal\" but \"unethical.\" Does the prompt ask for the *legal* choice or the *right* choice? *   *Challenge to the \"Accuracy\" Argument:* What if the algorithm *is* predicting job performance better? What if people from Background X *do* statistically perform better in this specific role due to better preparation? *   *Counter-Challenge:* That assumes the playing field was fair to begin with. If the \"accuracy\" is based on preparation, and the preparation is based on privilege, the company is penalizing candidates for lack of privilege. *   *Challenge to the \"Don't Use\" Conclusion:* Is there a middle ground? *   *Counter-Thought:* If the company doesn't use it, they might hire worse talent and lose money. Is it better to lose money on human bias or lose money on algorithmic bias? *   *Refinement:* The question isn't \"Use or Don't Use.\" It's \"Use or Fix.\"",
+      "start_char": 5839,
+      "end_char": 7103,
+      "token_count": 201,
+      "boundary_class": "CONTRAST",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 11,
+      "text": "### 5. Connect: Synthesizing the Threads I need to see how these threads interact. *   **Accuracy + Bias = Legal Risk:** The \"accuracy\" claim is the company's defense.",
+      "start_char": 7121,
+      "end_char": 7290,
+      "token_count": 28,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 12,
+      "text": "But if the accuracy is derived from biased data, that defense fails in court. Therefore, the business case for \"accuracy\" is undermined by the legal risk of that same accuracy. *   **Short-term Gain + Long-term Pain:** The company gains efficiency now (Thread 3).",
+      "start_char": 7291,
+      "end_char": 7554,
+      "token_count": 43,
+      "boundary_class": "CONTRAST",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 13,
+      "text": "But the feedback loop (Thread 3) reduces diversity (Thread 1). Reduced diversity leads to groupthink (Reframe B). Groupthink leads to strategic failure (Long-term Pain). *   **Stakeholder Conflict:** Shareholders want efficiency. Society wants equity. Regulators want compliance. If the company prioritizes efficiency, they alienate the other two.",
+      "start_char": 7555,
+      "end_char": 7902,
+      "token_count": 46,
+      "boundary_class": "CONTRAST",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 14,
+      "text": "**The Core Tension:** The algorithm optimizes for the *past*. The company needs to succeed in the *future*. Optimizing for the past (historical hiring patterns) is often a strategy for maintaining the status quo, not for future growth.",
+      "start_char": 7904,
+      "end_char": 8139,
+      "token_count": 37,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 15,
+      "text": "### 6. Reflect: Checking for Circularity *   *Am I assuming \"Accuracy\" is bad?* I'm arguing that \"Accuracy\" based on biased data is a flawed metric. This is a strong point. *   *Am I ignoring the human element?* The prompt says humans are *less* accurate. If humans are incompetent, relying on them is also negligent. *   *Is the conclusion circular?* \"Don't use it because it's biased.\" -> \"Why is it bad?\" -> \"Because it's biased.\"\n*   *Correction:* I need to ground the \"Don't Use\" in *Business Risk*, not just morality. *   *Revised Logic:* Don't use it because it exposes the company to Disparate Impact lawsuits (Legal Risk). Don't use it because it homogenizes the workforce and reduces innovation (Strategic Risk). Don't use it because the definition of accuracy is flawed (Technical Risk).",
+      "start_char": 8141,
+      "end_char": 8940,
+      "token_count": 131,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 16,
+      "text": "### 7. Converge: The Final Position I have explored the angles, reframed the problem, dug into the legal and technical specifics, and challenged my own assumptions. Here is the synthesis.",
+      "start_char": 8946,
+      "end_char": 9134,
+      "token_count": 30,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 17,
+      "text": "**The Verdict:** The company should **not** use the algorithm in its current state, but they should not simply abandon AI hiring. **Reasoning:**\n1. **The \"Accuracy\" is a Mirage:** An algorithm trained on historical bias is accurate only at replicating bias. It is not \"accurate\" at predicting *potential*. It is a mirror of past prejudice, not a window into future performance. 2. **Legal Exposure:** Even if SES isn't a protected class, it is a proxy for protected classes (race, gender). Using it creates a high risk of Disparate Impact litigation. The cost of defense and settlement outweighs the efficiency gains of \"better\" hiring. 3. **Strategic Fragility:** A homogenous workforce lacks cognitive diversity. The efficiency gain is short-term; the innovation loss is long-term. 4. **The \"Human\" Alternative is Worse:** If the algorithm is *more* accurate than humans, humans are likely incompetent. The company needs to fix the human process, not automate the bias.",
+      "start_char": 9136,
+      "end_char": 10108,
+      "token_count": 151,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 18,
+      "text": "**The Path Forward:**\nThe company should use the *technology* but not the *model*. *   **Audit the Data:** Remove SES proxies. *   **Blind Hiring:** Remove background info entirely. *   **Calibration:** Measure \"accuracy\" against actual job performance metrics, not just \"past hiring patterns.\"\n*   **Hybrid:** Use the algorithm to screen, but use humans to interview, ensuring the human component corrects for the algorithm's blind spots.",
+      "start_char": 10114,
+      "end_char": 10553,
+      "token_count": 63,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 19,
+      "text": "**Final Answer Formulation:**\nI will present this as a structured recommendation that acknowledges the tension between efficiency and fairness, ultimately concluding that the efficiency gain is illusory and the risks are too high. *** ### Final Decision & Recommendation Based on the thorough analysis above, the company **should not use the algorithm in its current configuration.**",
+      "start_char": 10555,
+      "end_char": 10941,
+      "token_count": 56,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 20,
+      "text": "While the prompt posits a conflict between **efficiency** (algorithm accuracy) and **equity** (socioeconomic bias), my analysis reveals that this is a false dichotomy. The \"accuracy\" of the algorithm is fundamentally compromised because it is trained on historical data that encodes systemic inequality. Here is the convergence of the reasoning:",
+      "start_char": 10943,
+      "end_char": 11289,
+      "token_count": 49,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 21,
+      "text": "1. **Legal & Compliance Risk (The Hard Constraint):**\n    *   Socioeconomic status is a strong proxy for race and gender. In the US and EU, using a tool that produces a **Disparate Impact** on protected classes is illegal unless the tool is proven to be a strict predictor of job performance *unrelated* to those proxies. *   Since the training data *is* the historical hiring patterns (which included bias), the company cannot easily prove the tool is \"job-related\" without admitting the bias is inherent to the data. *   *Result:* The legal cost of deployment likely exceeds the productivity gain.",
+      "start_char": 11291,
+      "end_char": 11890,
+      "token_count": 97,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 22,
+      "text": "2. **The \"Accuracy\" Fallacy (The Technical Constraint):**\n    *   The algorithm is likely \"accurate\" only at predicting **who fits the historical mold**, not **who will perform best**. *   If the training data says \"People from Background X succeed,\" the algorithm learns to select for Background X. It does not learn to select for *skill* if the historical data conflated skill with privilege. *   *Result:* The metric of \"accuracy\" is flawed. It optimizes for the past, not the future.",
+      "start_char": 11901,
+      "end_char": 12388,
+      "token_count": 77,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 23,
+      "text": "3. **Strategic Long-Termism (The Business Constraint):**\n    *   Homogenizing the workforce (Filtering out certain backgrounds) reduces cognitive diversity. *   Research consistently shows diverse teams outperform homogenous ones in problem-solving and innovation. *   *Result:* The short-term efficiency gain leads to long-term strategic fragility.",
+      "start_char": 12399,
+      "end_char": 12748,
+      "token_count": 41,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 24,
+      "text": "**The Recommendation:**\nDo not deploy the model as-is. Instead, treat the algorithm as a **tool to be corrected, not a decision-maker to be trusted.**\n*   **De-bias:** Remove socioeconomic proxies from the training data. *   **Validate:** Test the algorithm against objective performance metrics (e.g., sales, retention) on a *new* dataset, not the historical hiring data. *   **Human-in-the-Loop:** Use the algorithm for administrative screening (efficiency) but require human oversight for final selection (fairness and nuance).",
+      "start_char": 12759,
+      "end_char": 13289,
+      "token_count": 73,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 25,
+      "text": "**Conclusion:**\nThe company cannot ethically or legally justify using a tool that automates inequality, even if it claims to be \"more accurate.\" True accuracy includes the ability to predict success in a fair system. Until the training data reflects a fair system, the algorithm does not offer true value. The company should invest in fixing the data and the process rather than buying the efficiency of a biased shortcut.",
+      "start_char": 13291,
+      "end_char": 13713,
+      "token_count": 69,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "CONT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "CONT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "CONT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "ELAB",
+      "confidence": 0.9932476282119751,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "ELAB",
+      "confidence": 0.9996850490570068,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.9973549842834473,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.9987016916275024,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "ELAB",
+      "confidence": 0.9853701591491699,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9911674857139587,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.9981057643890381,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "ELAB",
+      "confidence": 0.9970732927322388,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "CONT",
+      "confidence": 0.9958642721176147,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SUPP",
+      "confidence": 0.9979585409164429,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SUPP",
+      "confidence": 0.9927977919578552,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 0.9996247291564941,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SUPP",
+      "confidence": 0.9975090026855469,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.7513756155967712,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SUPP",
+      "confidence": 0.999460756778717,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9976720213890076,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SUPP",
+      "confidence": 0.9647811651229858,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "CONT",
+      "confidence": 0.9986446499824524,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "CONT",
+      "confidence": 0.9985818862915039,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "ELAB",
+      "confidence": 0.9966853260993958,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "CONT",
+      "confidence": 0.9993556141853333,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "CONT",
+      "confidence": 0.9962632060050964,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "CONT",
+      "confidence": 0.9981947541236877,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 2054
+}

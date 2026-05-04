@@ -1,0 +1,730 @@
+{
+  "trace_id": "b8936636-dc35-4c8f-8653-1520d0ff594e",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_008",
+  "domain": "ethical_dilemmas",
+  "run": 3,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "### 1. Spread Wide: Exploring Angles and Stakeholders To solve this, I first need to map the ecosystem. This isn't just a code problem; it's an economic, social, and psychological one.",
+      "start_char": 0,
+      "end_char": 185,
+      "token_count": 31,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 1,
+      "text": "*   **The Platform (Business):** If engagement drops 40%, ad revenue likely drops similarly. Unless they have a subscription model, this could threaten solvency. They care about retention, CPMs, and shareholder value. *   **The User:** Users have conflicting desires. They want comfort (validation) but also information (utility). Some users feel \"echo-chambered\" and want more; others feel overwhelmed by opposing views and want less. *   **The Advertiser:** They pay for eyeballs. If diversity reduces eyeballs, they leave.",
+      "start_char": 187,
+      "end_char": 712,
+      "token_count": 75,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 2,
+      "text": "But they also fear brand safety (ads next to extremism). *   **Society/Democracy:** Echo chambers fuel polarization, misinformation, and instability. A society with an informed citizenry (via diverse perspectives) is generally considered a public good. *   **Regulators:** Governments might step in. If the status quo leads to harm (e.g., election interference), they may mandate diversity, making the 40% cost a regulatory compliance cost. *   **Content Creators:** Personalization favors clickbait. Diversity might favor nuance. Who gets paid?",
+      "start_char": 713,
+      "end_char": 1258,
+      "token_count": 75,
+      "boundary_class": "CONTRAST",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 3,
+      "text": "**Initial Observation:** The tension is fundamentally between **Short-Term Viability** (Engagement) and **Long-Term Sustainability** (Trust/Social Health). ### 2. Reframe: Changing the Starting Point",
+      "start_char": 1260,
+      "end_char": 1460,
+      "token_count": 22,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 4,
+      "text": "Let's try to look at this from different conceptual angles to avoid binary thinking. *   **Reframe A: The \"Product\" vs. The \"Service\"**\n    *   *Old Frame:* Is the algorithm maximizing clicks? *   *New Frame:* Is the platform a utility (like a library) or a marketplace (like a mall)? If it's a utility, diversity is a feature. If it's a marketplace, engagement is the product. *   *Implication:* If we reframe it as a public square, the default *must* be diversity. If it's a business, it *must* be engagement.",
+      "start_char": 1462,
+      "end_char": 1974,
+      "token_count": 86,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 5,
+      "text": "*   **Reframe B: The \"Time Horizon\"**\n    *   *Old Frame:* Engagement today. *   *New Frame:* Retention in 5 years. *   *Implication:* Echo chambers often lead to \"burnout\" or \"churn\" when users realize their worldview is distorted. High engagement today might mean low retention tomorrow if trust erodes. The 40% drop might be short-term; the engagement cost of polarization might be long-term.",
+      "start_char": 1984,
+      "end_char": 2379,
+      "token_count": 60,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 6,
+      "text": "*   **Reframe C: The \"Default\" as a Signal**\n    *   *Old Frame:* Which algorithm runs? *   *New Frame:* What does the default signal to the user? *   *Implication:* A default of \"Engagement\" signals \"We care about your time.\" A default of \"Diversity\" signals \"We care about your truth.\"",
+      "start_char": 2389,
+      "end_char": 2676,
+      "token_count": 47,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 7,
+      "text": "### 3. Go Deep: Analyzing the Core Constraint The prompt specifies a **40% reduction in engagement**. This is a massive number.",
+      "start_char": 2686,
+      "end_char": 2814,
+      "token_count": 21,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 8,
+      "text": "*   **Economic Implication:** In the ad-supported model, 40% less engagement = 40% less revenue. Most startups cannot survive this. This suggests that unless the business model shifts (e.g., subscription, public funding, non-profit), the \"Diversity\" default is economically unviable for a commercial entity. *   **Psychological Implication:** Why does engagement drop? Likely because diverse content is harder to consume, more challenging, or less \"clicky.\" This implies the user base *prefers* the echo chamber if given the choice. *   **The \"Default\" Power:** Setting a default is paternalistic. It forces a value system on the user. If the default is diversity, are we assuming users can't handle their own preferences? If the default is engagement, are we assuming users can't handle the consequences?",
+      "start_char": 2816,
+      "end_char": 3621,
+      "token_count": 119,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 9,
+      "text": "**Deep Dive Conclusion:** The 40% metric is the dealbreaker for a pure \"Diversity\" default in a capitalist framework. However, the cost of *not* diversifying is externalized to society, not the platform. ### 4. Challenge Yourself: Testing the Emerging Ideas",
+      "start_char": 3623,
+      "end_char": 3881,
+      "token_count": 39,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 10,
+      "text": "*   *Critique of \"Maximize Engagement\":*\n    *   *Problem:* This leads to radicalization. If the platform facilitates harm, it risks bans (e.g., app store removals) or heavy regulation. *   *Missed Point:* Engagement is a vanity metric. \"Satisfaction\" might be a better metric. A user might engage less but feel better informed, leading to higher loyalty. *   *Counter:* But loyalty doesn't pay the servers if the ad revenue tanks.",
+      "start_char": 3883,
+      "end_char": 4314,
+      "token_count": 66,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 11,
+      "text": "*   *Critique of \"Maximize Diversity\":*\n    *   *Problem:* Who defines \"diverse\"? If the algorithm forces \"balanced\" views, it might create false equivalence (e.g., giving equal weight to climate science and climate denial). *   *Missed Point:* Users might perceive this as bias, leading to *their* churn. *   *Counter:* If the platform is transparent about *why* diversity is shown, trust might offset the engagement loss.",
+      "start_char": 4324,
+      "end_char": 4747,
+      "token_count": 62,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 12,
+      "text": "*   *Critique of \"The 40% Number\":*\n    *   *Problem:* Is this number fixed? Or is it a result of current tech? *   *Challenge:* Better AI might find a way to introduce diversity *without* the full 40% penalty. Maybe the 40% is a worst-case scenario, not a law of physics. *   *Limit:* We must answer the prompt as given, but acknowledge this variable.",
+      "start_char": 4757,
+      "end_char": 5109,
+      "token_count": 61,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 13,
+      "text": "### 5. Connect: Linking the Threads *   **Economics vs. Ethics:** The economic reality (40% loss) conflicts with the ethical imperative (echo chambers). *   **Solution Path:** They are only compatible if the business model changes. If the platform charges users, engagement matters less. If it relies on ads, engagement is king. *   **The \"Default\" Compromise:** The default shouldn't be a binary switch. It should be a **Dynamic Default**. *   *Connection:* We can connect \"Diversity\" to \"Breaking News\" (where accuracy matters) and \"Engagement\" to \"Leisure/Opinion\" (where preference matters). *   *Connection:* We can connect \"User Control\" to \"Default.\" If the default is \"Let me choose,\" the platform remains neutral.",
+      "start_char": 5119,
+      "end_char": 5842,
+      "token_count": 106,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 14,
+      "text": "### 6. Reflect: Checking for Bias and Blind Spots *   *Am I being too idealistic?* I keep suggesting \"subscriptions\" or \"transparency.\" But the prompt asks what the *default* should be for a generic aggregator. I need to answer for the *current* reality of ad-based aggregators. *   *Am I ignoring the user's agency?* I am assuming the user doesn't know what's good for them.",
+      "start_char": 5852,
+      "end_char": 6228,
+      "token_count": 63,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 15,
+      "text": "But users often *do* know they feel better in an echo chamber. *   *Am I overestimating the harm?* 40% engagement drop is severe. If the platform dies, there is no news aggregator at all. *   *Correction:* I need to balance the \"Societal Good\" with \"Platform Survival.\" A dead platform does no good.",
+      "start_char": 6229,
+      "end_char": 6528,
+      "token_count": 52,
+      "boundary_class": "CONTRAST",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 16,
+      "text": "### 7. Converge: Synthesizing a Coherent Position Here is where I bring the threads together. **The Tension:** You cannot maximize both engagement and diversity in a short-term ad model. The 40% cost is the price of doing business ethically.",
+      "start_char": 6530,
+      "end_char": 6773,
+      "token_count": 39,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 17,
+      "text": "**The Decision:**\n1. **If the goal is Profit/Survival:** The default must be **Engagement**. However, this requires \"mitigation layers\" (e.g., fact-checking labels, \"read more\" nudges) to reduce harm without killing the metric. 2. **If the goal is Long-Term Health/Trust:** The default must be **Diversity**, but *only* if the revenue model shifts (subscription/public funding) OR if the 40% drop is framed as an investment in retention/trust.",
+      "start_char": 6775,
+      "end_char": 7218,
+      "token_count": 64,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 18,
+      "text": "**The Nuanced Answer:**\nThe default should not be a hard binary. It should be a **\"Context-Aware Default\"** that leans towards Diversity on high-stakes topics (politics, health) and Engagement on low-stakes topics (entertainment, sports). However, since I must choose a *general* default:\n**The default should be Diversity.**\n*Why?* Because the cost of the engagement drop is finite (40%), but the cost of the echo chamber is existential (for society and eventually the platform itself due to regulation/trust collapse). *The Caveat:* The platform *must* communicate this choice to the user and offer an \"Engagement Mode\" toggle. The default is the ethical baseline; the toggle is the user preference. This balances the 40% risk with user autonomy.",
+      "start_char": 7222,
+      "end_char": 7971,
+      "token_count": 114,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 19,
+      "text": "**Final Polish:**\nWait, if the platform dies because of the 40% drop, the diversity doesn't matter. So, the default should be **Engagement with a \"Diversity Nudge.\"**\n*Re-evaluation:* No, that just perpetuates the problem. *Final Final Decision:* The default should be **Diversity**, but the *business model* must be part of the answer. If the platform cannot afford the 40% hit, it is not a viable business.",
+      "start_char": 7973,
+      "end_char": 8381,
+      "token_count": 65,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 20,
+      "text": "Therefore, the question implies a choice of values. *Decision:* I will recommend **Diversity as the default**, but explicitly state that this requires a business model pivot (subscriptions or public interest funding) to be sustainable. If that pivot isn't possible, the platform should default to **Engagement** but must implement **Transparency** features.",
+      "start_char": 8382,
+      "end_char": 8739,
+      "token_count": 50,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 21,
+      "text": "*Wait, I need to be decisive.*\nIf I have to pick one for the *algorithm* default: **Diversity.**\nReason: Externalities of engagement (polarization) are too high. The 40% is a solvable economic problem (new revenue streams), whereas echo chambers are a structural societal problem. Let's write the response following this structure.",
+      "start_char": 8741,
+      "end_char": 9073,
+      "token_count": 50,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 22,
+      "text": "*** ### Analysis of the News Aggregator Dilemma To determine the default, we must weigh the immediate economic cost against the long-term systemic risk. Here is the breakdown of the decision-making process. #### 1. The Core Trade-off\nThe problem presents a zero-sum game: **Short-term Revenue (Engagement)** vs. **Long-term Viability (Trust/Social Health)**. *   **Engagement Default:** Maximizes immediate cash flow but accelerates polarization, misinformation spread, and eventual regulatory crackdown. *   **Diversity Default:** Preserves democratic health and potentially long-term trust, but incurs a 40% immediate revenue hit that threatens solvency in an ad-based model.",
+      "start_char": 9075,
+      "end_char": 9755,
+      "token_count": 91,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 23,
+      "text": "#### 2. Why the \"Engagement Default\" is Risky\nChoosing engagement as the default assumes the platform can survive the societal backlash. *   **The \"Regulatory Cliff\":** If echo chambers cause real-world harm (e.g., election interference, public health crises), governments will intervene. The 40% engagement loss is a *voluntary* cost; a government ban or fine is an *involuntary* cost. *   **The \"Burnout\" Factor:** Users often report fatigue with algorithmic feeds. If engagement is high but satisfaction is low, churn will eventually rise. *   **The Externalities:** The platform captures the profit from engagement, but society pays the cost of polarization. As a responsible AI, I must account for these externalities.",
+      "start_char": 9757,
+      "end_char": 10480,
+      "token_count": 107,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 24,
+      "text": "#### 3. Why the \"Diversity Default\" is Economically Challenging\nChoosing diversity as the default assumes the 40% loss is manageable. *   **The Ad Model:** In a pure ad model, a 40% drop is likely fatal. The platform needs a subscription model or public funding to support this default. *   **User Pushback:** Users may feel \"manipulated\" if they are shown content they don't want. This can lead to immediate churn. *   **The Definition Problem:** Who defines \"diverse\"? If the algorithm forces false equivalence (e.g., equal weight to facts and misinformation), it damages credibility.",
+      "start_char": 10482,
+      "end_char": 11068,
+      "token_count": 92,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 25,
+      "text": "#### 4. The \"Third Way\": Dynamic Defaults\nA binary choice is flawed. The optimal system is **Context-Aware**. *   **High Stakes:** Politics, Health, Science -> Default to **Diversity** (with fact-checking). *   **Low Stakes:** Entertainment, Sports, Lifestyle -> Default to **Engagement**. *   **Transparency:** The user must know *why* they are seeing what they see.",
+      "start_char": 11070,
+      "end_char": 11437,
+      "token_count": 52,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 26,
+      "text": "#### 5. Final Recommendation\nGiven the constraint that I must choose a default for the *general* case: **The default should be Diversity.** **Reasoning:**\n1. **Sustainability:** The 40% engagement drop is a solvable economic problem (via subscriptions, memberships, or diversified revenue). The societal collapse caused by echo chambers is not easily solvable once it happens. 2. **Trust as Currency:** In the long run, trust is more valuable than engagement. Users will pay for a service that helps them understand the world, rather than just entertain them. 3. **Ethical Baseline:** The default setting represents the platform's values. Setting it to diversity signals that the platform prioritizes the user's well-being over their wallet.",
+      "start_char": 11439,
+      "end_char": 12182,
+      "token_count": 110,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 27,
+      "text": "**Crucial Caveat:**\nThis default is only viable if the platform offers a **\"User Override\"** (an easy toggle to switch to \"For You\" mode) and pursues a **non-ad-reliant business model**. Without these, the default should be **Engagement**, but with mandatory **\"Diversity Nudges\"** (e.g., \"Here is a counter-argument to this popular view\") to mitigate harm without killing the business.",
+      "start_char": 12187,
+      "end_char": 12573,
+      "token_count": 57,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 28,
+      "text": "**Conclusion:** Prioritize **Diversity** as the ethical baseline, but acknowledge that without a business model shift, the platform must prioritize **Engagement** while actively mitigating the harms of polarization through transparency. The \"Default\" is a moral choice; the \"Business Model\" is an economic enabler.",
+      "start_char": 12575,
+      "end_char": 12889,
+      "token_count": 42,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "CONT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "CONT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "SYNT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "ELAB",
+      "confidence": 0.9998482465744019,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SUPP",
+      "confidence": 0.9970752000808716,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "ELAB",
+      "confidence": 0.9871663451194763,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "CONT",
+      "confidence": 0.9953879714012146,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "ELAB",
+      "confidence": 0.9628891944885254,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "CONT",
+      "confidence": 0.9966298937797546,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.9997877478599548,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SUPP",
+      "confidence": 0.9994625449180603,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SUPP",
+      "confidence": 0.9998477697372437,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.9961668848991394,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "ELAB",
+      "confidence": 0.9946245551109314,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.9982085227966309,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "ELAB",
+      "confidence": 0.9419589638710022,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9859305620193481,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9988917708396912,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SUPP",
+      "confidence": 0.998745322227478,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "ELAB",
+      "confidence": 0.9940962791442871,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "SUPP",
+      "confidence": 0.9730522036552429,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SUPP",
+      "confidence": 0.9991556406021118,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "SUPP",
+      "confidence": 0.9992727637290955,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "SUPP",
+      "confidence": 0.9896392822265625,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "ELAB",
+      "confidence": 0.9898936152458191,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "SUPP",
+      "confidence": 0.9994100332260132,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "edge_type": "SUPP",
+      "confidence": 0.9937258362770081,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "edge_type": "SUPP",
+      "confidence": 0.9947393536567688,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "edge_type": "SUPP",
+      "confidence": 0.9978994131088257,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 1918
+}

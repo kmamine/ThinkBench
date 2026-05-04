@@ -8,10 +8,32 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-DEEP_THINKING_SYSTEM_PROMPT = """Think through this problem carefully and thoroughly.
-Explore multiple perspectives, consider edge cases, and show your complete reasoning chain.
-Think step by step and examine the problem from all angles before reaching a conclusion.
-Show all your work and reasoning - do not skip steps."""
+SYSTEM_PROMPTS: dict[str, str] = {
+    "empty": "",
+    "pure": "You are a helpful assistant.",
+    "normal": "You are a helpful assistant. Think carefully before answering.",
+    "eliciting": (
+        "You are a careful thinker. Before answering, work through the problem "
+        "thoroughly using the following approach:\n\n"
+        "- Spread wide first: explore as many distinct angles, framings, and "
+        "stakeholder perspectives as you can before going deep on any one\n"
+        "- Reframe: try restating the problem from at least two completely different "
+        "starting points\n"
+        "- Go deep: for each idea you raise, follow it — ask what it implies, what "
+        "supports it, what limits it\n"
+        "- Challenge yourself: after developing an idea, actively look for what is "
+        "wrong with it or what it misses\n"
+        "- Connect: look for relationships between the threads you've opened — do any "
+        "of them reinforce, contradict, or combine with each other?\n"
+        "- Reflect: periodically check whether your reasoning is going in circles or "
+        "missing something important\n"
+        "- Converge: at the end, bring your threads together into a coherent position "
+        "that acknowledges the tensions you found\n\n"
+        "Think out loud. Do not skip steps."
+    ),
+}
+
+PROMPT_VARIANTS = list(SYSTEM_PROMPTS.keys())
 
 
 class LLMClient:
@@ -20,6 +42,7 @@ class LLMClient:
         api_key: Optional[str] = None,
         endpoint: Optional[str] = None,
         model: Optional[str] = None,
+        prompt_variant: str = "normal",
         temperature: float = 0.7,
         max_tokens: int = 20000,
         timeout: int = 300,
@@ -27,6 +50,7 @@ class LLMClient:
         self.api_key = api_key or os.getenv("VLLM_API_KEY")
         self.endpoint = endpoint or os.getenv("VLLM_ENDPOINT", "http://localhost:8978")
         self.model = model or os.getenv("VLLM_MODEL", "Qwen/Qwen3.5-35B-A3B")
+        self.prompt_variant = prompt_variant if prompt_variant in SYSTEM_PROMPTS else "normal"
         self.temperature = temperature
         self.max_tokens = max_tokens
         self.timeout = timeout
@@ -37,14 +61,12 @@ class LLMClient:
             base_url=base_url,
             timeout=self.timeout,
         )
-        logger.info(
-            f"Initialized LLM client: model={self.model}, endpoint={self.endpoint}"
-        )
-        logger.info(f"System prompt: {DEEP_THINKING_SYSTEM_PROMPT[:50]}...")
+        logger.info(f"Initialized LLM client: model={self.model}, endpoint={self.endpoint}")
+        logger.info(f"Prompt variant: {self.prompt_variant}")
 
     @property
     def system_prompt(self) -> str:
-        return DEEP_THINKING_SYSTEM_PROMPT
+        return SYSTEM_PROMPTS[self.prompt_variant]
 
     async def chat(
         self,
@@ -60,14 +82,13 @@ class LLMClient:
 
         messages = list(messages)
 
+        system_prompt = SYSTEM_PROMPTS[self.prompt_variant]
+        # Strip any existing system turn first
         if messages and messages[0].get("role") == "system":
-            messages[0]["content"] = (
-                messages[0]["content"] + " " + DEEP_THINKING_SYSTEM_PROMPT
-            )
-        else:
-            messages.insert(
-                0, {"role": "system", "content": DEEP_THINKING_SYSTEM_PROMPT}
-            )
+            messages = messages[1:]
+        # Only prepend system message when the variant has a non-empty prompt
+        if system_prompt:
+            messages.insert(0, {"role": "system", "content": system_prompt})
 
         try:
             resp = await self.client.chat.completions.create(

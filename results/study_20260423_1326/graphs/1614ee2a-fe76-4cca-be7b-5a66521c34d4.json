@@ -1,0 +1,680 @@
+{
+  "trace_id": "1614ee2a-fe76-4cca-be7b-5a66521c34d4",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_010",
+  "domain": "ethical_dilemmas",
+  "run": 2,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "This is a complex ethical dilemma that pits individual optimization against collective cohesion. To answer whether personalized learning is \"ethically superior,\" I need to unpack the definitions of ethics, the nature of the harm, and the long-term consequences. I will work through this systematically, spreading out the perspectives first, then re-framing the problem, digging into the implications, challenging my own assumptions, connecting the dots, and finally converging on a conclusion.",
+      "start_char": 0,
+      "end_char": 493,
+      "token_count": 70,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 1,
+      "text": "### Phase 1: Spread Wide (Exploring Angles and Stakeholders) First, I need to cast a wide net. Who is involved, and what values are in conflict? 1. **The Student (Individual):**\n    *   *Interest:* Wants to learn effectively, achieve personal potential, get good grades/jobs. *   *Ethical Claim:* Autonomy and self-actualization. If an AI helps them become the best version of themselves, is that not a moral good? *   *Risk:* Social isolation, inability to function in teams, cognitive rigidity.",
+      "start_char": 495,
+      "end_char": 993,
+      "token_count": 76,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 2,
+      "text": "2. **The Peer Group (Collective):**\n    *   *Interest:* Needs to communicate, share knowledge, and build things together. *   *Ethical Claim:* Social solidarity and shared understanding. Education is a public good, not just a private asset. *   *Risk:* Fragmentation. If everyone speaks a different \"intellectual language,\" society fractures.",
+      "start_char": 1004,
+      "end_char": 1346,
+      "token_count": 46,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 3,
+      "text": "3. **The Institution/Society (Systemic):**\n    *   *Interest:* Economic productivity, social stability, democratic functioning. *   *Ethical Claim:* The common good. A society of geniuses who can't talk to each other is fragile. *   *Risk:* Loss of trust, breakdown of collaboration, innovation stagnation (innovation often happens at intersections).",
+      "start_char": 1357,
+      "end_char": 1707,
+      "token_count": 45,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 4,
+      "text": "4. **The AI Developer/Provider:**\n    *   *Interest:* Efficiency, metrics, scalability. *   *Ethical Claim:* Neutrality. They provide the tool; the user decides. *   *Risk:* Externalizing the social cost of their optimization.",
+      "start_char": 1718,
+      "end_char": 1944,
+      "token_count": 29,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 5,
+      "text": "5. **Ethical Frameworks:**\n    *   *Utilitarianism:* Does it maximize total happiness? (High individual scores vs. low social friction). *   *Deontology:* Do we have a duty to teach specific virtues (like collaboration)? *   *Virtue Ethics:* What kind of person does this produce? (The solitary genius or the collaborative citizen?)\n    *   *Rawlsian Justice:* Would we choose this system if we didn't know which AI tutor we'd get? (Risk aversion).",
+      "start_char": 1955,
+      "end_char": 2403,
+      "token_count": 66,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 6,
+      "text": "**Initial Thought:** The tension is clear. The system maximizes *individual* utility but potentially degrades *social* utility. Is the individual gain worth the social cost?",
+      "start_char": 2414,
+      "end_char": 2587,
+      "token_count": 24,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 7,
+      "text": "### Phase 2: Reframe (Changing the Starting Point) I need to look at this from different angles to see if the problem is actually about \"AI\" or something deeper. *   **Reframe 1: The \"Language\" Problem.**\n    *   *Old View:* It's about AI algorithms. *   *New View:* It's about curriculum standardization. If Tutor A teaches \"Logic-First\" and Tutor B teaches \"Intuition-First,\" they aren't just different tutors; they are different epistemological cultures. *   *Implication:* The ethical issue isn't personalization per se, but the *lack of a common language*.",
+      "start_char": 2589,
+      "end_char": 3152,
+      "token_count": 85,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 8,
+      "text": "*   **Reframe 2: The \"Preparation\" Problem.**\n    *   *Old View:* Is it ethical to maximize test scores? *   *New View:* Is school for \"schooling\" (learning content) or \"schooling\" (learning to be a citizen)? *   *Implication:* If the goal is citizenship, then the AI is failing its primary ethical mandate, regardless of test scores.",
+      "start_char": 3162,
+      "end_char": 3496,
+      "token_count": 52,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 9,
+      "text": "*   **Reframe 3: The \"Friction\" Problem.**\n    *   *Old View:* Collaboration breakdown is a bug. *   *New View:* Is collaboration breakdown a feature of high-level specialization? *   *Implication:* Maybe in the future, collaboration isn't about everyone knowing the same thing, but about bridging the gap. If the AI doesn't teach bridge-building, that's the failure.",
+      "start_char": 3506,
+      "end_char": 3873,
+      "token_count": 53,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 10,
+      "text": "**Reflection:** Reframing helps me realize the core conflict isn't \"Personal vs. Collective,\" but \"Specialization vs. Generalization.\" The ethical question shifts from \"Is personalization bad?\" to \"Is personalization without a shared foundation bad?\"",
+      "start_char": 3883,
+      "end_char": 4133,
+      "token_count": 32,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 11,
+      "text": "### Phase 3: Go Deep (Following the Threads) Let's take the strongest arguments and push them to their limits. *   **Thread A: The Case for Individual Superiority.**\n    *   *Argument:* Every student has a unique brain. Forcing them into a mold is unethical (inefficient, demoralizing). If the AI unlocks potential, the individual is \"saved\" from mediocrity. *   *Implication:* We have a duty of care to the individual child in front of us. Ignoring their specific needs for the sake of \"social cohesion\" is a form of neglect. *   *Limit:* If the \"saved\" child cannot integrate into the workforce or community, their \"saved\" status is hollow. A genius who cannot work is often a liability, not an asset.",
+      "start_char": 4135,
+      "end_char": 4840,
+      "token_count": 116,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 12,
+      "text": "*   **Thread B: The Case for Collective Superiority.**\n    *   *Argument:* Human progress is collaborative. Science, art, governance all require shared paradigms. *   *Implication:* Education is a \"commons.\" If I optimize myself at your expense (by making us incomprehensible to each other), I am stealing from the commons. *   *Limit:* Standardization can be oppressive. It crushes neurodivergence. If \"shared language\" means \"white male cis-normative way of thinking,\" then enforcing it is unethical.",
+      "start_char": 4850,
+      "end_char": 5352,
+      "token_count": 71,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 13,
+      "text": "*   **Thread C: The \"Different Tutors\" Nuance.**\n    *   *Argument:* The prompt says \"different AI tutors.\"\n    *   *Implication:* Does this mean Tutor A is better than Tutor B? Or just that they take different paths? *   *Deep Dive:* If Tutor A makes the student a math wizard but ignores reading, and Tutor B does the opposite, they are both broken. If Tutor A teaches \"Debate\" and Tutor B teaches \"Consensus,\" they clash. *   *Ethical Weight:* The ethics lie in the *design* of the tutors. Are they designed to optimize for *outcome* (score) or *capability* (function)?",
+      "start_char": 5362,
+      "end_char": 5934,
+      "token_count": 94,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 14,
+      "text": "### Phase 4: Challenge (Attacking My Own Assumptions) I need to be critical of the scenario and my own reasoning. *   **Challenge 1: Is the premise true?**\n    *   *Question:* Do highly skilled students *actually* fail to collaborate because of their tutors? Or is collaboration a separate skill the AI failed to teach? *   *Counter:* The prompt states it as a fact (\"creates... students who cannot collaborate\"). I must accept the premise.",
+      "start_char": 5944,
+      "end_char": 6386,
+      "token_count": 71,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 15,
+      "text": "However, I should challenge *why*. Is it cognitive incompatibility or just a lack of social training? *   *Correction:* If the AI focuses 100% on cognitive strengths, it ignores social/emotional learning (SEL).",
+      "start_char": 6387,
+      "end_char": 6597,
+      "token_count": 31,
+      "boundary_class": "CONTRAST",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 16,
+      "text": "That is a design choice, not an inherent flaw of personalization. *   **Challenge 2: Is \"Ethical Superiority\" binary?**\n    *   *Question:* Can something be superior in one way and inferior in another? *   *Counter:* Yes. \"Ethical superiority\" is often a shorthand for \"Does the net benefit outweigh the harm?\"\n    *   *Refinement:* I shouldn't ask \"Is it superior?\" I should ask \"Is it *sustainable*?\"",
+      "start_char": 6598,
+      "end_char": 7009,
+      "token_count": 62,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 17,
+      "text": "*   **Challenge 3: The \"Different Tutors\" Assumption.**\n    *   *Question:* Why must they be different? *   *Counter:* In a real market, they would be different (Apple vs. Android). In a public system, they should be standardized. *   *Implication:* The ethical failure might be the *marketization* of education, not the personalization itself. If all AI tutors shared a \"Common Core Protocol,\" collaboration would remain intact.",
+      "start_char": 7015,
+      "end_char": 7444,
+      "token_count": 63,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 18,
+      "text": "### Phase 5: Connect (Synthesizing the Threads) Now I need to link the individual, the collective, and the system design. 1. **Interdependence:** Individual excellence depends on a collective capable of understanding that excellence. If the collective breaks down, the individual's excellence loses value. 2. **The Bridge:** The missing element is \"Interoperability.\" Just as software needs drivers to talk to each other, students need a shared epistemic framework. 3. **The Trade-off:** We are trading *efficiency of acquisition* (learning fast/specific) for *efficiency of application* (working together). 4. **Justice:** If only the wealthy get the \"Collaboration-Aware\" AI, while the poor get the \"Score-Optimized\" AI, that creates a class divide. Personalization becomes a tool of stratification.",
+      "start_char": 7454,
+      "end_char": 8257,
+      "token_count": 112,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 19,
+      "text": "**Connection Point:** The ethical problem isn't personalization; it's *unregulated* personalization. Without a shared baseline, personalization becomes fragmentation. ### Phase 6: Reflect (Checking for Blind Spots)",
+      "start_char": 8263,
+      "end_char": 8478,
+      "token_count": 25,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 20,
+      "text": "*   *Bias Check:* Am I overvaluing collaboration? Is there value in the \"Lone Genius\"? *   *Correction:* History has lone geniuses, but they rely on the infrastructure built by others. They still need to communicate ideas eventually. *   *Bias Check:* Am I assuming the AI is \"dumb\" socially? *   *Correction:* The AI could be designed to teach collaboration *within* the personalized path. The prompt implies it doesn't. *   *Long-term view:* In 10 years, if we have a generation that can't talk to each other, what happens to democracy? *   *Insight:* This is the highest stakes. If personalized learning erodes the \"public sphere,\" it is ethically catastrophic regardless of individual test scores.",
+      "start_char": 8480,
+      "end_char": 9181,
+      "token_count": 110,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 21,
+      "text": "### Phase 7: Converge (The Final Position) Based on the spread, reframing, deep dives, challenges, and connections, I can now formulate a coherent answer. **The Core Tension:**\nThe dilemma is between **Instrumental Ethics** (does it work for the individual?) and **Relational Ethics** (does it work for the community?). **The Verdict:**\nPersonalized learning is **not ethically superior** in its current form if it inherently precludes collaboration.",
+      "start_char": 9195,
+      "end_char": 9648,
+      "token_count": 65,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 22,
+      "text": "However, it **can be ethically superior** if redesigned. **Why?**\n1. **The \"Common Good\" Constraint:** Education is a public utility. If a system maximizes individual utility at the expense of the collective capacity to function, it violates the social contract of education. 2. **The Design Flaw:** The inability to collaborate is not an inevitable result of personalization; it is a result of *narrow* personalization. An ethical AI tutor would optimize for both individual strengths *and* shared communicative competencies. 3. **The Fragility of Specialization:** A society of hyper-specialized, non-collaborative experts is fragile. Innovation requires cross-pollination. If the AI isolates minds, it stifles long-term human progress.",
+      "start_char": 9649,
+      "end_char": 10388,
+      "token_count": 103,
+      "boundary_class": "CONTRAST",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 23,
+      "text": "**The Synthesis:**\nPersonalized learning is ethically permissible only if it includes a **mandatory layer of shared epistemic standards**. *   It must teach the *content* differently (personalization). *   It must teach the *language* of collaboration the same way (standardization). *   Without the \"shared language\" layer, personalized learning becomes ethically neutral at best, and socially destructive at worst.",
+      "start_char": 10393,
+      "end_char": 10809,
+      "token_count": 56,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 24,
+      "text": "**Final Conclusion:**\nIt is not the *personalization* that is the ethical problem; it is the *isolation* it creates. Therefore, the current model described in the prompt is **ethically inferior** because it prioritizes individual metrics over social cohesion. A truly ethical personalized system would be \"Personalized Pathways within a Shared Framework.\"",
+      "start_char": 10811,
+      "end_char": 11166,
+      "token_count": 50,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 25,
+      "text": "--- ### Summary of Reasoning 1. **Spread:** Identified stakeholders (Student, Society, AI) and ethical frameworks (Utilitarian, Virtue, Justice). 2. **Reframe:** Shifted from \"AI vs. Human\" to \"Specialization vs. Standardization\" and \"Individual Good vs. Public Good.\"\n3. **Deep:** Explored the cost of fragmentation and the duty of care to the individual vs. the community. 4. **Challenge:** Questioned whether collaboration breakdown is inevitable or a design failure. 5. **Connect:** Linked individual success to the health of the collective \"commons.\"\n6. **Reflect:** Checked for bias toward collaboration and considered long-term societal stability. 7. **Converge:** Determined that personalization is only ethical if it includes shared foundational standards to maintain collaboration.",
+      "start_char": 11168,
+      "end_char": 11961,
+      "token_count": 106,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 26,
+      "text": "**Final Answer:** No, personalized learning is not ethically superior if it inherently creates a barrier to collaboration. True ethical superiority requires a hybrid model where individual paths are optimized, but a shared framework for communication and cooperation is maintained. The current scenario describes a failure of design, not an inherent virtue of personalization.",
+      "start_char": 11970,
+      "end_char": 12346,
+      "token_count": 53,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "CONT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "ELAB",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "CONT",
+      "confidence": 1.0,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "CONT",
+      "confidence": 0.9990702271461487,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "CONT",
+      "confidence": 0.9990735054016113,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "ELAB",
+      "confidence": 0.9970331192016602,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SUPP",
+      "confidence": 0.9970397353172302,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "CONT",
+      "confidence": 0.9745497107505798,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9974097609519958,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "ELAB",
+      "confidence": 0.9997912049293518,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.9922367930412292,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SUPP",
+      "confidence": 0.997855007648468,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 0.9996581077575684,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "CONT",
+      "confidence": 0.9897364377975464,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.9377416372299194,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "ELAB",
+      "confidence": 0.9987439513206482,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9920333027839661,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "ELAB",
+      "confidence": 0.8170380592346191,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SUPP",
+      "confidence": 0.9994584918022156,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SUPP",
+      "confidence": 0.9772486686706543,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "SUPP",
+      "confidence": 0.9990594983100891,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SUPP",
+      "confidence": 0.9570268988609314,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "SUPP",
+      "confidence": 0.9978871941566467,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "SUPP",
+      "confidence": 0.9871379137039185,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "SUPP",
+      "confidence": 0.999265730381012,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "SUPP",
+      "confidence": 0.9996805191040039,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "edge_type": "CONT",
+      "confidence": 0.996379554271698,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 1766
+}

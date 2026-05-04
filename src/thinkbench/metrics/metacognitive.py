@@ -23,7 +23,7 @@ def critique_to_hypothesis_ratio(graph: ThoughtGraph) -> float:
     hyp_count = sum(1 for n in graph.nodes if n.node_type == NodeType.HYP)
 
     if hyp_count == 0:
-        return float(crt_count) if crt_count > 0 else 0.0
+        return 0.0
 
     return crt_count / hyp_count
 

@@ -3,6 +3,7 @@
 
 Usage:
     python scripts/run_experiment.py --questions data/questions/ethical_dilemmas.jsonl --runs 3 --all
+    python scripts/run_experiment.py --questions data/questions/ethical_dilemmas.jsonl --runs 3 --prompt eliciting --all
 """
 
 import asyncio
@@ -16,7 +17,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
-from thinkbench.collect.models import LLMClient
+from thinkbench.collect.models import LLMClient, PROMPT_VARIANTS
 from thinkbench.collect.collector import TraceCollector
 from thinkbench.extract.segmenter import segment
 from thinkbench.extract.classifier import classify_nodes
@@ -37,7 +38,7 @@ async def collect_traces(args):
         questions = [json.loads(line) for line in f]
     logger.info(f"Loaded {len(questions)} questions")
 
-    client = LLMClient(api_key=api_key, endpoint=endpoint, model=model)
+    client = LLMClient(api_key=api_key, endpoint=endpoint, model=model, prompt_variant=args.prompt)
     collector = TraceCollector(client=client, output_dir=Path(args.output_dir))
     traces = await collector.collect_batch(questions=questions, model=model, runs=args.runs, questions_per_batch=5)
     logger.info(f"Collected {len(traces)} traces")
@@ -72,13 +73,13 @@ def extract_graphs(args):
                 continue
 
             try:
-                tus, edges = segment(trace["raw_cot"])
+                tus, edges, embeddings = segment(trace["raw_cot"])
                 if not tus:
                     logger.warning(f"No TUs for {trace_id}")
                     stats["failed"] += 1
                     continue
 
-                classify_nodes(tus)
+                classify_nodes(tus, edges, embeddings)
                 graph = build_graph(trace, tus, edges)
 
                 with open(output_path, "w") as f:
@@ -104,11 +105,13 @@ def compute_profiles_fn(args):
 
     traces_dir = Path(args.output_dir)
     trace_model: dict[str, str] = {}
+    trace_prompt: dict[str, str] = {}
     for tf in traces_dir.glob("traces_*.jsonl"):
         with open(tf) as f:
             for line in f:
                 t = json.loads(line)
                 trace_model[t["trace_id"]] = t.get("model", "unknown")
+                trace_prompt[t["trace_id"]] = t.get("prompt_variant", "normal")
 
     profiles = []
     for gf in graph_files:
@@ -119,7 +122,7 @@ def compute_profiles_fn(args):
         except Exception as e:
             logger.error(f"  Error {gf.name}: {e}")
 
-    aggregated = aggregate_profiles(profiles, trace_model)
+    aggregated = aggregate_profiles(profiles, trace_model, trace_prompt)
     for row in aggregated:
         logger.info(f"Aggregated {row['num_traces']} traces for {row['model']}")
 
@@ -138,6 +141,7 @@ async def main():
     parser.add_argument("--output-dir", type=str, default="data/traces/")
     parser.add_argument("--graphs-dir", type=str, default="data/graphs/")
     parser.add_argument("--profiles-dir", type=str, default="data/profiles/")
+    parser.add_argument("--prompt", type=str, default="normal", choices=PROMPT_VARIANTS)
     parser.add_argument("--collect", action="store_true")
     parser.add_argument("--extract", action="store_true")
     parser.add_argument("--compute", action="store_true")

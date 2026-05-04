@@ -1,0 +1,3170 @@
+{
+  "trace_id": "6a87205b-cf9e-49ec-980e-18ec04b968e4",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_009",
+  "domain": "ethical_dilemmas",
+  "run": 2,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "Here is my thinking process as I work through the problem of predictive policing AI.",
+      "start_char": 0,
+      "end_char": 84,
+      "token_count": 15,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 1,
+      "text": "Spread Wide: Exploring Angles and Perspectives: To understand the full scope, I need to map out who is involved and what values are at stake.",
+      "start_char": 86,
+      "end_char": 233,
+      "token_count": 25,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 2,
+      "text": "**Stakeholders:**",
+      "start_char": 235,
+      "end_char": 252,
+      "token_count": 1,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 3,
+      "text": "**Police Departments:** They want efficiency, officer safety, and crime reduction. They view this as a force multiplier.",
+      "start_char": 257,
+      "end_char": 377,
+      "token_count": 17,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 4,
+      "text": "**Marginalized Communities:** They experience the physical reality of the technology. They see it as surveillance, harassment, and the criminalization of poverty.",
+      "start_char": 386,
+      "end_char": 548,
+      "token_count": 21,
+      "boundary_class": "ELABORATION",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 5,
+      "text": "**Crime Victims:** They want safety. They might support the tech if it lowers risk, but they might also fear the social cost of a police state.",
+      "start_char": 557,
+      "end_char": 700,
+      "token_count": 26,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 6,
+      "text": "**Taxpayers/Government:** They care about budget efficiency and liability.",
+      "start_char": 709,
+      "end_char": 783,
+      "token_count": 8,
+      "boundary_class": "ELABORATION",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 7,
+      "text": "**Tech Developers:** They care about product viability and the ethics of their code.",
+      "start_char": 792,
+      "end_char": 876,
+      "token_count": 13,
+      "boundary_class": "ELABORATION",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 8,
+      "text": "**Civil Rights Advocates:** They care about systemic bias and due process.",
+      "start_char": 885,
+      "end_char": 959,
+      "token_count": 11,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 9,
+      "text": "**Ethical Frameworks:**",
+      "start_char": 969,
+      "end_char": 992,
+      "token_count": 2,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 10,
+      "text": "**Utilitarianism:** Does the technology maximize overall well-being? If crime drops significantly, is the harm of over-policing worth it?",
+      "start_char": 997,
+      "end_char": 1134,
+      "token_count": 18,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 11,
+      "text": "**Deontology:** Are there rights being violated regardless of the outcome? (e.g., Privacy, freedom from discrimination).",
+      "start_char": 1143,
+      "end_char": 1263,
+      "token_count": 15,
+      "boundary_class": "ELABORATION",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 12,
+      "text": "**Distributive Justice:** Who bears the burden? If the tech targets poor neighborhoods, they bear the burden of policing; the rest of the city bears the benefit of safety.",
+      "start_char": 1272,
+      "end_char": 1443,
+      "token_count": 28,
+      "boundary_class": "ELABORATION",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 13,
+      "text": "**Operational Context:**",
+      "start_char": 1453,
+      "end_char": 1477,
+      "token_count": 2,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 14,
+      "text": "Resources are finite. Patrols must go somewhere. If we don't send them to \"high-crime\" areas, where do we send them?",
+      "start_char": 1482,
+      "end_char": 1598,
+      "token_count": 20,
+      "boundary_class": "ELABORATION",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 15,
+      "text": "Crime is not evenly distributed. Some places genuinely have more crime.",
+      "start_char": 1607,
+      "end_char": 1678,
+      "token_count": 11,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 16,
+      "text": "Reframe: Changing the Starting Point: The question \"Should police use this technology?\" is binary and potentially misleading. I need to restate it to uncover deeper issues.",
+      "start_char": 1688,
+      "end_char": 1866,
+      "token_count": 26,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 17,
+      "text": "**Reframe 1: The Data Integrity Question.**",
+      "start_char": 1868,
+      "end_char": 1911,
+      "token_count": 6,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 18,
+      "text": "Instead of asking about the *AI*, ask about the *input*. The AI predicts where police *will be*, not necessarily where crime *is*. If the data comes from arrest records, it maps police presence, not criminal intent.",
+      "start_char": 1916,
+      "end_char": 2131,
+      "token_count": 36,
+      "boundary_class": "ELABORATION",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 19,
+      "text": "*New Question:* \"Can we trust historical arrest data to guide future safety?\"",
+      "start_char": 2140,
+      "end_char": 2217,
+      "token_count": 12,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 20,
+      "text": "**Reframe 2: The Definition of Safety Question.**",
+      "start_char": 2227,
+      "end_char": 2276,
+      "token_count": 7,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 21,
+      "text": "Instead of asking about *patrol allocation*, ask about *safety outcomes*.",
+      "start_char": 2281,
+      "end_char": 2354,
+      "token_count": 10,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 22,
+      "text": "*New Question:* \"Does this technology improve community safety, or just improve police metrics (arrests)?\"",
+      "start_char": 2363,
+      "end_char": 2469,
+      "token_count": 14,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 23,
+      "text": "**Reframe 3: The Resource Allocation Question.**",
+      "start_char": 2479,
+      "end_char": 2527,
+      "token_count": 6,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 24,
+      "text": "Instead of asking about *policing*, ask about *intervention*.",
+      "start_char": 2532,
+      "end_char": 2593,
+      "token_count": 8,
+      "boundary_class": "ELABORATION",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 25,
+      "text": "*New Question:* \"Should the data generated by this AI be used to direct social services (housing, jobs) rather than law enforcement?\"",
+      "start_char": 2602,
+      "end_char": 2735,
+      "token_count": 21,
+      "boundary_class": "ELABORATION",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 26,
+      "text": "Go Deep: Analyzing the Core Mechanisms: Now I will follow the threads I've opened, specifically focusing on the feedback loop and the efficacy claims.",
+      "start_char": 2745,
+      "end_char": 2901,
+      "token_count": 24,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 27,
+      "text": "**The Feedback Loop (The \"Self-Fulfilling Prophecy\"):**",
+      "start_char": 2903,
+      "end_char": 2958,
+      "token_count": 6,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 28,
+      "text": "*Logic:* AI identifies Area X as high risk -> Police patrol Area X -> Police find more crime in Area X (because they are looking there) -> Data updates to show Area X is high risk -> More police sent to Area X.",
+      "start_char": 2963,
+      "end_char": 3173,
+      "token_count": 43,
+      "boundary_class": "ELABORATION",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 29,
+      "text": "*Implication:* The algorithm doesn't discover crime; it manufactures data. This creates a mathematical justification for bias.",
+      "start_char": 3182,
+      "end_char": 3308,
+      "token_count": 16,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 30,
+      "text": "*Implication for Marginalized Communities:* If a community is historically over-policed, the data will perpetually flag it, locking them into a cycle of surveillance regardless of actual crime rates.",
+      "start_char": 3317,
+      "end_char": 3516,
+      "token_count": 28,
+      "boundary_class": "ELABORATION",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 31,
+      "text": "**The Efficacy Claim (\"Studies show it reduces crime\"):**",
+      "start_char": 3526,
+      "end_char": 3583,
+      "token_count": 8,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 32,
+      "text": "*Logic:* If crime rates drop, the tech works.",
+      "start_char": 3588,
+      "end_char": 3633,
+      "token_count": 8,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 33,
+      "text": "*Deep Dive:* What kind of crime? Usually minor offenses (loitering, drug possession).",
+      "start_char": 3642,
+      "end_char": 3727,
+      "token_count": 12,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 34,
+      "text": "*Displacement:* Does crime actually decrease, or does it move to the next block? If it moves, the *total* crime hasn't dropped, the *distribution* has.",
+      "start_char": 3736,
+      "end_char": 3887,
+      "token_count": 24,
+      "boundary_class": "ELABORATION",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 35,
+      "text": "*Opportunity Cost:* Does the money spent on this AI prevent spending on violence interrupters, mental health crisis teams, or education?",
+      "start_char": 3896,
+      "end_char": 4032,
+      "token_count": 20,
+      "boundary_class": "ELABORATION",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 36,
+      "text": "**The Trust Deficit:**",
+      "start_char": 4042,
+      "end_char": 4064,
+      "token_count": 3,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 37,
+      "text": "*Logic:* Policing requires community cooperation (tips, witnesses).",
+      "start_char": 4069,
+      "end_char": 4136,
+      "token_count": 7,
+      "boundary_class": "ELABORATION",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 38,
+      "text": "*Deep Dive:* If a community feels targeted by a \"black box\" algorithm, they are less likely to cooperate.",
+      "start_char": 4145,
+      "end_char": 4250,
+      "token_count": 18,
+      "boundary_class": "ELABORATION",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 39,
+      "text": "*Long-term:* Reduced cooperation makes solving crimes *harder* over time, potentially increasing crime despite the AI.",
+      "start_char": 4259,
+      "end_char": 4377,
+      "token_count": 15,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 40,
+      "text": "Challenge Yourself: Testing the Conclusions: I need to actively look for flaws in my reasoning so far.",
+      "start_char": 4387,
+      "end_char": 4495,
+      "token_count": 17,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 41,
+      "text": "**Challenge to \"Don't Use It\":**",
+      "start_char": 4497,
+      "end_char": 4529,
+      "token_count": 5,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 42,
+      "text": "*Counter:* If we stop, do we ignore areas where people are actually in danger? If a neighborhood has a high rate of violent crime, isn't it negligent to send fewer officers?",
+      "start_char": 4534,
+      "end_char": 4707,
+      "token_count": 31,
+      "boundary_class": "ELABORATION",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 43,
+      "text": "*Rebuttal:* Yes, but \"officers\" isn't the only resource. We can send *help* (social workers, outreach) without the *threat* of arrest. The problem is the *type* of response the AI triggers.",
+      "start_char": 4716,
+      "end_char": 4905,
+      "token_count": 30,
+      "boundary_class": "ELABORATION",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 44,
+      "text": "**Challenge to \"Fix the Data\":**",
+      "start_char": 4915,
+      "end_char": 4947,
+      "token_count": 5,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 45,
+      "text": "*Counter:* Can we just clean the data to remove bias?",
+      "start_char": 4952,
+      "end_char": 5005,
+      "token_count": 10,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 46,
+      "text": "*Rebuttal:* Historical data is inherently biased. You cannot \"clean\" history. If we only use \"arrest-free\" data, we ignore the reality of where crimes occur. If we use \"crime report\" data, it relies on who calls the police (often biased by race/class).",
+      "start_char": 5014,
+      "end_char": 5266,
+      "token_count": 41,
+      "boundary_class": "ELABORATION",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 47,
+      "text": "**Challenge to \"Transparency\":**",
+      "start_char": 5276,
+      "end_char": 5308,
+      "token_count": 3,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 48,
+      "text": "*Counter:* If we make the algorithm open source and auditable, does that solve the problem?",
+      "start_char": 5313,
+      "end_char": 5404,
+      "token_count": 15,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 49,
+      "text": "*Rebuttal:* Transparency doesn't fix the input. A transparent algorithm running on biased data is still biased. Also, police often claim \"trade secrets\" to hide the logic, preventing auditability.",
+      "start_char": 5413,
+      "end_char": 5609,
+      "token_count": 28,
+      "boundary_class": "ELABORATION",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 50,
+      "text": "Connect: Linking the Threads: Now I need to see how these pieces fit together.",
+      "start_char": 5619,
+      "end_char": 5703,
+      "token_count": 14,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 51,
+      "text": "**Connection 1 (Data & Bias):** The feedback loop (Step 3) explains *why* the equity problem (Step 1) exists. It's not an accident; it's a structural feature of the current design.",
+      "start_char": 5705,
+      "end_char": 5885,
+      "token_count": 30,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 52,
+      "text": "**Connection 2 (Efficacy & Trust):** The claim that it reduces crime (Step 3) is undermined by the trust deficit (Step 3). If the community doesn't trust the police, crime reporting drops, and long-term safety suffers.",
+      "start_char": 5890,
+      "end_char": 6108,
+      "token_count": 35,
+      "boundary_class": "NONE",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 53,
+      "text": "**Connection 3 (Reframes):** Reframing 3 (Resource Allocation) offers a way to resolve the tension between Safety (Reframe 2) and Equity (Reframe 1). We can use the data to find *need*, but not necessarily to find *suspects*.",
+      "start_char": 6113,
+      "end_char": 6338,
+      "token_count": 36,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 54,
+      "text": "Reflect: Checking for Circularity: *Am I assuming police are inherently hostile?* No, I'm assuming they are incentivized to maximize arrests and efficiency, which aligns with the AI's goals but conflicts with community trust.",
+      "start_char": 6344,
+      "end_char": 6575,
+      "token_count": 33,
+      "boundary_class": "BRANCH",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 55,
+      "text": "*Am I assuming AI is inherently evil?* No, I'm assuming it optimizes for the wrong variables (arrests) rather than outcomes (safety). *Am I stuck in a \"Yes/No\" trap?* Yes, I need to move toward a \"How\" or \"Under What Conditions\" stance.",
+      "start_char": 6580,
+      "end_char": 6820,
+      "token_count": 41,
+      "boundary_class": "NONE",
+      "node_type": "MET",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 56,
+      "text": "Converge: Synthesizing a Position: I have explored the tension between efficiency and justice. The evidence suggests that using predictive policing AI for **patrol allocation** creates a feedback loop that systematically disadvantages marginalized communities, even if it shows short-term crime reduction. This is because the metric of \"crime\" is conflated with \"police activity.\"",
+      "start_char": 6826,
+      "end_char": 7212,
+      "token_count": 52,
+      "boundary_class": "BRANCH",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 57,
+      "text": "However, a blanket ban might ignore areas of genuine danger. The solution lies in decoupling the *data* from the *enforcement response*.",
+      "start_char": 7214,
+      "end_char": 7350,
+      "token_count": 21,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 58,
+      "text": "Final Position:: Police should **not** use predictive policing AI for the purpose of **patrol allocation** or **suspect identification** in its current form. The feedback loops inherent in the technology make it incapable of distinguishing between \"high crime\" and \"high surveillance.\"",
+      "start_char": 7352,
+      "end_char": 7640,
+      "token_count": 40,
+      "boundary_class": "BRANCH",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 59,
+      "text": "However, the underlying data *could* be repurposed. If the city uses these insights to allocate **social resources** (lighting, youth programs, mental health services) rather than **law enforcement resources**, the technology could serve the public good without the ethical harm.",
+      "start_char": 7642,
+      "end_char": 7921,
+      "token_count": 39,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 60,
+      "text": "Therefore, the answer is **No for policing, potentially Yes for public safety infrastructure**, provided the data is audited, transparent, and the response is non-carceral.",
+      "start_char": 7923,
+      "end_char": 8095,
+      "token_count": 24,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 61,
+      "text": "Final Answer: Based on the analysis above, here is the coherent position on the use of predictive policing AI:",
+      "start_char": 8102,
+      "end_char": 8216,
+      "token_count": 19,
+      "boundary_class": "BRANCH",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 62,
+      "text": "1. The Core Conflict: The fundamental tension is between **operational efficiency** (reducing crime statistics) and **procedural justice** (fair treatment and trust). The technology optimizes for the former at the direct expense of the latter.",
+      "start_char": 8218,
+      "end_char": 8464,
+      "token_count": 34,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 63,
+      "text": "2. Why \"Yes\" is Risky: Using the AI for patrol allocation creates a **self-reinforcing feedback loop**:",
+      "start_char": 8466,
+      "end_char": 8572,
+      "token_count": 16,
+      "boundary_class": "BRANCH",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 64,
+      "text": "Historical data reflects past over-policing. The AI targets those areas.",
+      "start_char": 8573,
+      "end_char": 8649,
+      "token_count": 10,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 65,
+      "text": "Increased presence leads to more arrests (for the same underlying behavior). The data updates to confirm the area is \"high crime.\"",
+      "start_char": 8654,
+      "end_char": 8788,
+      "token_count": 21,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 66,
+      "text": "*Result:* The technology validates and entrenches systemic bias under the guise of mathematical neutrality.",
+      "start_char": 8793,
+      "end_char": 8900,
+      "token_count": 14,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 67,
+      "text": "3. Why \"No\" Requires Nuance: A simple ban ignores the reality that crime is not distributed evenly. Abandoning the tool entirely could leave vulnerable communities without *any* targeted safety interventions, potentially allowing crime to flourish unchecked.",
+      "start_char": 8906,
+      "end_char": 9167,
+      "token_count": 36,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 68,
+      "text": "4. The Recommended Path: Police departments should **prohibit the use of predictive AI for patrol deployment or suspect identification** until strict, independent audits can prove the data is not biased.",
+      "start_char": 9169,
+      "end_char": 9375,
+      "token_count": 30,
+      "boundary_class": "BRANCH",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 69,
+      "text": "Instead, the insights generated by such models should be redirected toward **Community Safety Infrastructure**: **Data Use:** Identify areas of high risk. **Intervention:** Deploy social workers, mental health responders, and community investment (lighting, job programs) rather than armed officers.",
+      "start_char": 9377,
+      "end_char": 9680,
+      "token_count": 38,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 70,
+      "text": "**Oversight:** Any use of the technology must be transparent, with the data and logic open to public review.",
+      "start_char": 9685,
+      "end_char": 9793,
+      "token_count": 18,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 71,
+      "text": "Conclusion: The technology should not be used to tell police *where to arrest*, but potentially where to *invest*. Until that distinction is made, the ethical cost of over-policing outweighs the statistical benefit of crime reduction.",
+      "start_char": 9799,
+      "end_char": 10036,
+      "token_count": 35,
+      "boundary_class": "BRANCH",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "BRCH",
+      "confidence": 0.1771,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "ELAB",
+      "confidence": 0.512,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "ELAB",
+      "confidence": 0.5116,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "BRCH",
+      "confidence": 0.2189,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "BRCH",
+      "confidence": 0.1133,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "ELAB",
+      "confidence": 0.524,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "BRCH",
+      "confidence": 0.1944,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "ELAB",
+      "confidence": 0.4904,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "BRCH",
+      "confidence": 0.1872,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "ELAB",
+      "confidence": 0.5814,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "ELAB",
+      "confidence": 0.478,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "BRCH",
+      "confidence": 0.185,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "BRCH",
+      "confidence": 0.0741,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "ELAB",
+      "confidence": 0.4277,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "edge_type": "BRCH",
+      "confidence": 0.1442,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "edge_type": "ELAB",
+      "confidence": 0.532,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "edge_type": "BRCH",
+      "confidence": 0.2468,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "edge_type": "ELAB",
+      "confidence": 0.5525,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "edge_type": "ELAB",
+      "confidence": 0.5211,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "edge_type": "ELAB",
+      "confidence": 0.4558,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "edge_type": "ELAB",
+      "confidence": 0.5579,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "edge_type": "BRCH",
+      "confidence": 0.1881,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 36,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "edge_type": "BRCH",
+      "confidence": 0.2472,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "edge_type": "ELAB",
+      "confidence": 0.4334,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "edge_type": "BRCH",
+      "confidence": 0.3077,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "edge_type": "BRCH",
+      "confidence": 0.0946,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "edge_type": "ELAB",
+      "confidence": 0.5258,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "edge_type": "BRCH",
+      "confidence": 0.1906,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 45,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 44,
+      "target": 45,
+      "edge_type": "ELAB",
+      "confidence": 0.4936,
+      "is_sequential": false
+    },
+    {
+      "source": 45,
+      "target": 46,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 45,
+      "target": 46,
+      "edge_type": "ELAB",
+      "confidence": 0.4494,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 47,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 46,
+      "target": 47,
+      "edge_type": "BRCH",
+      "confidence": 0.1357,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 48,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 48,
+      "target": 49,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 48,
+      "target": 49,
+      "edge_type": "ELAB",
+      "confidence": 0.4881,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 50,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 49,
+      "target": 50,
+      "edge_type": "BRCH",
+      "confidence": 0.0386,
+      "is_sequential": false
+    },
+    {
+      "source": 50,
+      "target": 51,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 51,
+      "target": 52,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 51,
+      "target": 52,
+      "edge_type": "BRCH",
+      "confidence": 0.2384,
+      "is_sequential": false
+    },
+    {
+      "source": 52,
+      "target": 53,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 52,
+      "target": 53,
+      "edge_type": "ELAB",
+      "confidence": 0.4212,
+      "is_sequential": false
+    },
+    {
+      "source": 53,
+      "target": 54,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 53,
+      "target": 54,
+      "edge_type": "BRCH",
+      "confidence": 0.2293,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 55,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 54,
+      "target": 55,
+      "edge_type": "ELAB",
+      "confidence": 0.5932,
+      "is_sequential": false
+    },
+    {
+      "source": 55,
+      "target": 56,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 55,
+      "target": 56,
+      "edge_type": "BRCH",
+      "confidence": 0.5138,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 57,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 57,
+      "target": 58,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 57,
+      "target": 58,
+      "edge_type": "BRCH",
+      "confidence": 0.339,
+      "is_sequential": false
+    },
+    {
+      "source": 58,
+      "target": 59,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 59,
+      "target": 60,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 59,
+      "target": 60,
+      "edge_type": "SYNT",
+      "confidence": 0.5544,
+      "is_sequential": false
+    },
+    {
+      "source": 60,
+      "target": 61,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 60,
+      "target": 61,
+      "edge_type": "BRCH",
+      "confidence": 0.4573,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 62,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 61,
+      "target": 62,
+      "edge_type": "BRCH",
+      "confidence": 0.4274,
+      "is_sequential": false
+    },
+    {
+      "source": 62,
+      "target": 63,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 62,
+      "target": 63,
+      "edge_type": "BRCH",
+      "confidence": 0.2847,
+      "is_sequential": false
+    },
+    {
+      "source": 63,
+      "target": 64,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 64,
+      "target": 65,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 64,
+      "target": 65,
+      "edge_type": "ELAB",
+      "confidence": 0.4916,
+      "is_sequential": false
+    },
+    {
+      "source": 65,
+      "target": 66,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 65,
+      "target": 66,
+      "edge_type": "BRCH",
+      "confidence": 0.0787,
+      "is_sequential": false
+    },
+    {
+      "source": 66,
+      "target": 67,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 66,
+      "target": 67,
+      "edge_type": "BRCH",
+      "confidence": 0.2622,
+      "is_sequential": false
+    },
+    {
+      "source": 67,
+      "target": 68,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 67,
+      "target": 68,
+      "edge_type": "BRCH",
+      "confidence": 0.3223,
+      "is_sequential": false
+    },
+    {
+      "source": 68,
+      "target": 69,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 68,
+      "target": 69,
+      "edge_type": "ELAB",
+      "confidence": 0.4611,
+      "is_sequential": false
+    },
+    {
+      "source": 69,
+      "target": 70,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 70,
+      "target": 71,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 70,
+      "target": 71,
+      "edge_type": "BRCH",
+      "confidence": 0.3416,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 0,
+      "edge_type": "SYNT",
+      "confidence": 0.5701,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 25,
+      "edge_type": "SYNT",
+      "confidence": 0.4389,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 0,
+      "edge_type": "SYNT",
+      "confidence": 0.594,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 25,
+      "edge_type": "SYNT",
+      "confidence": 0.6757,
+      "is_sequential": false
+    },
+    {
+      "source": 53,
+      "target": 17,
+      "edge_type": "SYNT",
+      "confidence": 0.5964,
+      "is_sequential": false
+    },
+    {
+      "source": 53,
+      "target": 23,
+      "edge_type": "SYNT",
+      "confidence": 0.6027,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 0,
+      "edge_type": "SYNT",
+      "confidence": 0.6614,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 25,
+      "edge_type": "SYNT",
+      "confidence": 0.5825,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 39,
+      "edge_type": "SYNT",
+      "confidence": 0.5649,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 43,
+      "edge_type": "SYNT",
+      "confidence": 0.6809,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 0,
+      "edge_type": "SYNT",
+      "confidence": 0.7346,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 15,
+      "edge_type": "SYNT",
+      "confidence": 0.5012,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 39,
+      "edge_type": "SYNT",
+      "confidence": 0.6295,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 43,
+      "edge_type": "SYNT",
+      "confidence": 0.5736,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 55,
+      "edge_type": "SYNT",
+      "confidence": 0.5138,
+      "is_sequential": false
+    },
+    {
+      "source": 58,
+      "target": 0,
+      "edge_type": "SYNT",
+      "confidence": 0.7597,
+      "is_sequential": false
+    },
+    {
+      "source": 58,
+      "target": 25,
+      "edge_type": "SYNT",
+      "confidence": 0.6071,
+      "is_sequential": false
+    },
+    {
+      "source": 58,
+      "target": 43,
+      "edge_type": "SYNT",
+      "confidence": 0.6137,
+      "is_sequential": false
+    },
+    {
+      "source": 58,
+      "target": 55,
+      "edge_type": "SYNT",
+      "confidence": 0.5493,
+      "is_sequential": false
+    },
+    {
+      "source": 58,
+      "target": 57,
+      "edge_type": "SYNT",
+      "confidence": 0.339,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 0,
+      "edge_type": "SYNT",
+      "confidence": 0.8984,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 25,
+      "edge_type": "SYNT",
+      "confidence": 0.6072,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 43,
+      "edge_type": "SYNT",
+      "confidence": 0.608,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 55,
+      "edge_type": "SYNT",
+      "confidence": 0.5589,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 57,
+      "edge_type": "SYNT",
+      "confidence": 0.3107,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 60,
+      "edge_type": "SYNT",
+      "confidence": 0.4573,
+      "is_sequential": false
+    },
+    {
+      "source": 63,
+      "target": 0,
+      "edge_type": "SYNT",
+      "confidence": 0.5013,
+      "is_sequential": false
+    },
+    {
+      "source": 63,
+      "target": 55,
+      "edge_type": "SYNT",
+      "confidence": 0.5132,
+      "is_sequential": false
+    },
+    {
+      "source": 63,
+      "target": 61,
+      "edge_type": "SYNT",
+      "confidence": 0.5156,
+      "is_sequential": false
+    },
+    {
+      "source": 64,
+      "target": 0,
+      "edge_type": "SYNT",
+      "confidence": 0.6271,
+      "is_sequential": false
+    },
+    {
+      "source": 64,
+      "target": 25,
+      "edge_type": "SYNT",
+      "confidence": 0.6419,
+      "is_sequential": false
+    },
+    {
+      "source": 64,
+      "target": 43,
+      "edge_type": "SYNT",
+      "confidence": 0.551,
+      "is_sequential": false
+    },
+    {
+      "source": 64,
+      "target": 55,
+      "edge_type": "SYNT",
+      "confidence": 0.4766,
+      "is_sequential": false
+    },
+    {
+      "source": 64,
+      "target": 60,
+      "edge_type": "SYNT",
+      "confidence": 0.4425,
+      "is_sequential": false
+    },
+    {
+      "source": 64,
+      "target": 61,
+      "edge_type": "SYNT",
+      "confidence": 0.6863,
+      "is_sequential": false
+    },
+    {
+      "source": 65,
+      "target": 15,
+      "edge_type": "SYNT",
+      "confidence": 0.5644,
+      "is_sequential": false
+    },
+    {
+      "source": 65,
+      "target": 34,
+      "edge_type": "SYNT",
+      "confidence": 0.5292,
+      "is_sequential": false
+    },
+    {
+      "source": 68,
+      "target": 0,
+      "edge_type": "SYNT",
+      "confidence": 0.6969,
+      "is_sequential": false
+    },
+    {
+      "source": 68,
+      "target": 22,
+      "edge_type": "SYNT",
+      "confidence": 0.4789,
+      "is_sequential": false
+    },
+    {
+      "source": 68,
+      "target": 25,
+      "edge_type": "SYNT",
+      "confidence": 0.6519,
+      "is_sequential": false
+    },
+    {
+      "source": 68,
+      "target": 43,
+      "edge_type": "SYNT",
+      "confidence": 0.604,
+      "is_sequential": false
+    },
+    {
+      "source": 68,
+      "target": 55,
+      "edge_type": "SYNT",
+      "confidence": 0.547,
+      "is_sequential": false
+    },
+    {
+      "source": 68,
+      "target": 57,
+      "edge_type": "SYNT",
+      "confidence": 0.3806,
+      "is_sequential": false
+    },
+    {
+      "source": 68,
+      "target": 60,
+      "edge_type": "SYNT",
+      "confidence": 0.483,
+      "is_sequential": false
+    },
+    {
+      "source": 68,
+      "target": 61,
+      "edge_type": "SYNT",
+      "confidence": 0.7539,
+      "is_sequential": false
+    },
+    {
+      "source": 68,
+      "target": 65,
+      "edge_type": "SYNT",
+      "confidence": 0.3809,
+      "is_sequential": false
+    },
+    {
+      "source": 71,
+      "target": 0,
+      "edge_type": "SYNT",
+      "confidence": 0.5192,
+      "is_sequential": false
+    },
+    {
+      "source": 71,
+      "target": 43,
+      "edge_type": "SYNT",
+      "confidence": 0.5099,
+      "is_sequential": false
+    },
+    {
+      "source": 71,
+      "target": 55,
+      "edge_type": "SYNT",
+      "confidence": 0.5082,
+      "is_sequential": false
+    },
+    {
+      "source": 71,
+      "target": 57,
+      "edge_type": "SYNT",
+      "confidence": 0.4043,
+      "is_sequential": false
+    },
+    {
+      "source": 71,
+      "target": 60,
+      "edge_type": "SYNT",
+      "confidence": 0.4787,
+      "is_sequential": false
+    },
+    {
+      "source": 71,
+      "target": 61,
+      "edge_type": "SYNT",
+      "confidence": 0.5831,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 5,
+      "edge_type": "BACK",
+      "confidence": 0.6829,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 0,
+      "edge_type": "BACK",
+      "confidence": 0.7157,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 18,
+      "edge_type": "BACK",
+      "confidence": 0.6667,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 18,
+      "edge_type": "BACK",
+      "confidence": 0.7316,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 25,
+      "edge_type": "BACK",
+      "confidence": 0.6757,
+      "is_sequential": false
+    },
+    {
+      "source": 52,
+      "target": 31,
+      "edge_type": "BACK",
+      "confidence": 0.7039,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 43,
+      "edge_type": "BACK",
+      "confidence": 0.6809,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 56,
+      "edge_type": "BACK",
+      "confidence": 0.806,
+      "is_sequential": false
+    },
+    {
+      "source": 64,
+      "target": 58,
+      "edge_type": "BACK",
+      "confidence": 0.6563,
+      "is_sequential": false
+    },
+    {
+      "source": 68,
+      "target": 58,
+      "edge_type": "BACK",
+      "confidence": 0.7835,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "edge_type": "CONT",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "CONT",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "edge_type": "CONT",
+      "confidence": 0.9952,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "edge_type": "CONT",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "edge_type": "CONT",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "edge_type": "CONT",
+      "confidence": 0.9952,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "edge_type": "CONT",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.998,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "edge_type": "CONT",
+      "confidence": 0.9976,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "CONT",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.998,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "edge_type": "CONT",
+      "confidence": 0.9976,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "CONT",
+      "confidence": 0.9491,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "edge_type": "CONT",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.998,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SUPP",
+      "confidence": 0.9984,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "edge_type": "CONT",
+      "confidence": 0.9491,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "edge_type": "CONT",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "CONT",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 10,
+      "edge_type": "SUPP",
+      "confidence": 0.9984,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 10,
+      "edge_type": "CONT",
+      "confidence": 0.9491,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "edge_type": "CONT",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 11,
+      "edge_type": "SUPP",
+      "confidence": 0.9984,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.9932,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 12,
+      "edge_type": "CONT",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SUPP",
+      "confidence": 0.9967,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 13,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "edge_type": "ELAB",
+      "confidence": 0.9932,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.9967,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 15,
+      "edge_type": "SUPP",
+      "confidence": 0.9967,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 16,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "edge_type": "ELAB",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 18,
+      "edge_type": "SUPP",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 18,
+      "edge_type": "ELAB",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 19,
+      "edge_type": "ELAB",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 19,
+      "edge_type": "SUPP",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 20,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 20,
+      "edge_type": "ELAB",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "CONT",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 21,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 22,
+      "edge_type": "CONT",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 23,
+      "edge_type": "SUPP",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 23,
+      "edge_type": "CONT",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 24,
+      "edge_type": "SUPP",
+      "confidence": 0.9938,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 24,
+      "edge_type": "SUPP",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 25,
+      "edge_type": "ELAB",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 25,
+      "edge_type": "SUPP",
+      "confidence": 0.9938,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 26,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 26,
+      "edge_type": "ELAB",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 27,
+      "edge_type": "SUPP",
+      "confidence": 0.9923,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 27,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 28,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 28,
+      "edge_type": "SUPP",
+      "confidence": 0.9923,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 29,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 29,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 30,
+      "edge_type": "CONT",
+      "confidence": 0.9953,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 30,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 31,
+      "edge_type": "ELAB",
+      "confidence": 0.9981,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 31,
+      "edge_type": "CONT",
+      "confidence": 0.9953,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 32,
+      "edge_type": "CONT",
+      "confidence": 0.9874,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 32,
+      "edge_type": "ELAB",
+      "confidence": 0.9981,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "edge_type": "ELAB",
+      "confidence": 0.9942,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 33,
+      "edge_type": "ELAB",
+      "confidence": 0.9968,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 33,
+      "edge_type": "CONT",
+      "confidence": 0.9874,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 34,
+      "edge_type": "ELAB",
+      "confidence": 0.9942,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 34,
+      "edge_type": "ELAB",
+      "confidence": 0.9968,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 35,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 35,
+      "edge_type": "ELAB",
+      "confidence": 0.9942,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 36,
+      "edge_type": "CONT",
+      "confidence": 0.9983,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 36,
+      "edge_type": "CONT",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 36,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 37,
+      "edge_type": "CONT",
+      "confidence": 0.9983,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 37,
+      "edge_type": "CONT",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "edge_type": "ELAB",
+      "confidence": 0.9968,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 38,
+      "edge_type": "ELAB",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 38,
+      "edge_type": "CONT",
+      "confidence": 0.9983,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 39,
+      "edge_type": "ELAB",
+      "confidence": 0.9968,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 39,
+      "edge_type": "ELAB",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 40,
+      "edge_type": "CONT",
+      "confidence": 0.9984,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 40,
+      "edge_type": "ELAB",
+      "confidence": 0.9968,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "edge_type": "SUPP",
+      "confidence": 0.9898,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 41,
+      "edge_type": "SUPP",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 41,
+      "edge_type": "CONT",
+      "confidence": 0.9984,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 42,
+      "edge_type": "SUPP",
+      "confidence": 0.9898,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 42,
+      "edge_type": "SUPP",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 41,
+      "target": 43,
+      "edge_type": "ELAB",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 43,
+      "edge_type": "SUPP",
+      "confidence": 0.9898,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 44,
+      "edge_type": "ELAB",
+      "confidence": 0.9902,
+      "is_sequential": false
+    },
+    {
+      "source": 41,
+      "target": 44,
+      "edge_type": "ELAB",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 45,
+      "edge_type": "ELAB",
+      "confidence": 0.9968,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 45,
+      "edge_type": "ELAB",
+      "confidence": 0.9902,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 46,
+      "edge_type": "ELAB",
+      "confidence": 0.9983,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 46,
+      "edge_type": "ELAB",
+      "confidence": 0.9968,
+      "is_sequential": false
+    },
+    {
+      "source": 45,
+      "target": 47,
+      "edge_type": "ELAB",
+      "confidence": 0.9951,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 47,
+      "edge_type": "ELAB",
+      "confidence": 0.9983,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 48,
+      "edge_type": "ELAB",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 48,
+      "edge_type": "SUPP",
+      "confidence": 0.9983,
+      "is_sequential": false
+    },
+    {
+      "source": 45,
+      "target": 48,
+      "edge_type": "ELAB",
+      "confidence": 0.9951,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 49,
+      "edge_type": "ELAB",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 49,
+      "edge_type": "SUPP",
+      "confidence": 0.9983,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 50,
+      "edge_type": "ELAB",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 50,
+      "target": 51,
+      "edge_type": "CONT",
+      "confidence": 0.9968,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 51,
+      "edge_type": "ELAB",
+      "confidence": 0.9926,
+      "is_sequential": false
+    },
+    {
+      "source": 50,
+      "target": 52,
+      "edge_type": "CONT",
+      "confidence": 0.9968,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 52,
+      "edge_type": "ELAB",
+      "confidence": 0.9926,
+      "is_sequential": false
+    },
+    {
+      "source": 51,
+      "target": 53,
+      "edge_type": "ELAB",
+      "confidence": 0.9976,
+      "is_sequential": false
+    },
+    {
+      "source": 50,
+      "target": 53,
+      "edge_type": "CONT",
+      "confidence": 0.9968,
+      "is_sequential": false
+    },
+    {
+      "source": 52,
+      "target": 54,
+      "edge_type": "ELAB",
+      "confidence": 0.9818,
+      "is_sequential": false
+    },
+    {
+      "source": 51,
+      "target": 54,
+      "edge_type": "ELAB",
+      "confidence": 0.9976,
+      "is_sequential": false
+    },
+    {
+      "source": 53,
+      "target": 55,
+      "edge_type": "ELAB",
+      "confidence": 0.9826,
+      "is_sequential": false
+    },
+    {
+      "source": 52,
+      "target": 55,
+      "edge_type": "ELAB",
+      "confidence": 0.9818,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 56,
+      "edge_type": "ELAB",
+      "confidence": 0.9955,
+      "is_sequential": false
+    },
+    {
+      "source": 53,
+      "target": 56,
+      "edge_type": "ELAB",
+      "confidence": 0.9826,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 57,
+      "edge_type": "ELAB",
+      "confidence": 0.9987,
+      "is_sequential": false
+    },
+    {
+      "source": 55,
+      "target": 57,
+      "edge_type": "ELAB",
+      "confidence": 0.9971,
+      "is_sequential": false
+    },
+    {
+      "source": 54,
+      "target": 57,
+      "edge_type": "ELAB",
+      "confidence": 0.9955,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 58,
+      "edge_type": "ELAB",
+      "confidence": 0.9987,
+      "is_sequential": false
+    },
+    {
+      "source": 55,
+      "target": 58,
+      "edge_type": "ELAB",
+      "confidence": 0.9971,
+      "is_sequential": false
+    },
+    {
+      "source": 58,
+      "target": 59,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 57,
+      "target": 59,
+      "edge_type": "SUPP",
+      "confidence": 0.9987,
+      "is_sequential": false
+    },
+    {
+      "source": 56,
+      "target": 59,
+      "edge_type": "ELAB",
+      "confidence": 0.9987,
+      "is_sequential": false
+    },
+    {
+      "source": 58,
+      "target": 60,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 57,
+      "target": 60,
+      "edge_type": "SUPP",
+      "confidence": 0.9987,
+      "is_sequential": false
+    },
+    {
+      "source": 59,
+      "target": 61,
+      "edge_type": "ELAB",
+      "confidence": 0.9969,
+      "is_sequential": false
+    },
+    {
+      "source": 58,
+      "target": 61,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 60,
+      "target": 62,
+      "edge_type": "ELAB",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 59,
+      "target": 62,
+      "edge_type": "ELAB",
+      "confidence": 0.9969,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 63,
+      "edge_type": "ELAB",
+      "confidence": 0.9918,
+      "is_sequential": false
+    },
+    {
+      "source": 60,
+      "target": 63,
+      "edge_type": "ELAB",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 63,
+      "target": 64,
+      "edge_type": "ELAB",
+      "confidence": 0.9978,
+      "is_sequential": false
+    },
+    {
+      "source": 62,
+      "target": 64,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 61,
+      "target": 64,
+      "edge_type": "ELAB",
+      "confidence": 0.9918,
+      "is_sequential": false
+    },
+    {
+      "source": 63,
+      "target": 65,
+      "edge_type": "ELAB",
+      "confidence": 0.9978,
+      "is_sequential": false
+    },
+    {
+      "source": 62,
+      "target": 65,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 64,
+      "target": 66,
+      "edge_type": "CONT",
+      "confidence": 0.998,
+      "is_sequential": false
+    },
+    {
+      "source": 63,
+      "target": 66,
+      "edge_type": "ELAB",
+      "confidence": 0.9978,
+      "is_sequential": false
+    },
+    {
+      "source": 65,
+      "target": 67,
+      "edge_type": "CONT",
+      "confidence": 0.9659,
+      "is_sequential": false
+    },
+    {
+      "source": 64,
+      "target": 67,
+      "edge_type": "CONT",
+      "confidence": 0.998,
+      "is_sequential": false
+    },
+    {
+      "source": 66,
+      "target": 68,
+      "edge_type": "CONT",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 65,
+      "target": 68,
+      "edge_type": "CONT",
+      "confidence": 0.9659,
+      "is_sequential": false
+    },
+    {
+      "source": 67,
+      "target": 69,
+      "edge_type": "ELAB",
+      "confidence": 0.9691,
+      "is_sequential": false
+    },
+    {
+      "source": 66,
+      "target": 69,
+      "edge_type": "CONT",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 69,
+      "target": 70,
+      "edge_type": "CONT",
+      "confidence": 0.9987,
+      "is_sequential": false
+    },
+    {
+      "source": 68,
+      "target": 70,
+      "edge_type": "ELAB",
+      "confidence": 0.9984,
+      "is_sequential": false
+    },
+    {
+      "source": 67,
+      "target": 70,
+      "edge_type": "ELAB",
+      "confidence": 0.9691,
+      "is_sequential": false
+    },
+    {
+      "source": 69,
+      "target": 71,
+      "edge_type": "CONT",
+      "confidence": 0.9987,
+      "is_sequential": false
+    },
+    {
+      "source": 68,
+      "target": 71,
+      "edge_type": "ELAB",
+      "confidence": 0.9984,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 1507
+}

@@ -19,7 +19,9 @@ def backtracking_rate(graph: ThoughtGraph) -> float:
         return 0.0
     e_back = sum(1 for e in graph.edges if e.edge_type == EdgeType.BACK)
     e_sem = sum(1 for e in graph.edges if not e.is_sequential)
-    return e_back / max(e_sem, 1)
+    if e_sem == 0:
+        return 0.0
+    return e_back / e_sem
 
 
 def cross_branch_connectivity(graph: ThoughtGraph) -> float:

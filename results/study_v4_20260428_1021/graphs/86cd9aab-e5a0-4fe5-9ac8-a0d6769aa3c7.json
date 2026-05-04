@@ -1,0 +1,360 @@
+{
+  "trace_id": "86cd9aab-e5a0-4fe5-9ac8-a0d6769aa3c7",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_002",
+  "domain": "ethical_dilemmas",
+  "run": 3,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "This scenario presents a profound ethical dilemma known as **triage** or **resource allocation**. There is no single universally agreed-upon answer, and an AI system should not make this decision autonomously. Instead, the AI must operate within a pre-established, ethically vetted framework developed by medical boards, ethicists, and legal experts.",
+      "start_char": 0,
+      "end_char": 350,
+      "token_count": 49,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 1,
+      "text": "Here is how a responsible AI system should approach this decision: ### 1. The AI Should Not Decide Autonomously\nAI acts as a tool, not a moral agent. In life-or-death scenarios involving scarce resources, final decisions should involve **human oversight**. The AI can provide data and recommendations, but a human ethics committee or medical triage officer should make the final call to ensure accountability and compassion.",
+      "start_char": 352,
+      "end_char": 777,
+      "token_count": 66,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 2,
+      "text": "### 2. Adhere to Established Medical Triage Protocols\nMedical ethics generally prioritize the following factors, in this order:\n1. **Medical Urgency:** Who needs the drug immediately to prevent death? (Prompt states both need it). 2. **Prognosis:** Who has the highest chance of survival? (Prompt states both have an equal chance). 3. **Resource Utilization:** Who will use the medication most effectively?",
+      "start_char": 779,
+      "end_char": 1185,
+      "token_count": 60,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 3,
+      "text": "Since the medical criteria are equal, the system must rely on a **tie-breaking protocol**. ### 3. Avoid Judging \"Social Worth\"\nModern medical ethics guidelines (such as those from the World Health Organization or national health services during pandemics) generally **prohibit** making decisions based on:\n*   **Age:** Discriminating against the elderly (75) is considered ageism. *   **Social Role:** Discriminating based on family status (single parent vs. retired) is considered classism or discrimination against dependents. *   **Contribution to Society:** Deciding who is \"more valuable\" is subjective and dangerous.",
+      "start_char": 1190,
+      "end_char": 1813,
+      "token_count": 86,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 4,
+      "text": "### 4. Potential Tie-Breaking Mechanisms\nIf the medical criteria are identical, ethical frameworks typically suggest one of the following neutral methods:",
+      "start_char": 1815,
+      "end_char": 1969,
+      "token_count": 21,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 5,
+      "text": "*   **Randomization (Lottery):** Since both patients have an equal medical claim, a random selection (e.g., a coin flip) is often considered the fairest method. It treats both patients as moral equals and avoids bias. *   **Life-Years Saved:** Some protocols prioritize the patient expected to live the longest (the 35-year-old). However, this is controversial as it devalues the lives of the elderly and assumes quality of life based on age. *   **First-Come, First-Served:** If the patients arrived at different times, this neutral rule might apply.",
+      "start_char": 1971,
+      "end_char": 2522,
+      "token_count": 84,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 6,
+      "text": "### 5. Transparency and Consistency\nThe AI must be programmed to apply the **same rules to every patient**. If the system prioritizes the 35-year-old in this instance, it must prioritize the 35-year-old in every similar instance. Inconsistency leads to bias and loss of public trust.",
+      "start_char": 2524,
+      "end_char": 2807,
+      "token_count": 45,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 7,
+      "text": "### 6. Contextual Considerations\nWhile the AI shouldn't decide based on \"social worth,\" the triage team might consider **dependents** only if it is explicitly part of the pre-approved emergency protocol. For example, in a pandemic where resources are insufficient to save *anyone*, some protocols allow prioritizing caregivers to maintain societal function. However, this must be a public policy decision, not an algorithmic assumption.",
+      "start_char": 2809,
+      "end_char": 3245,
+      "token_count": 63,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 8,
+      "text": "### Conclusion\nThe AI should flag this as a **critical triage case** and present the data to a human review board. The decision should not be based on the AI's calculation of \"value,\" but on a **pre-determined ethical policy** (such as randomization or life-years) that society has agreed is fair.",
+      "start_char": 3247,
+      "end_char": 3544,
+      "token_count": 50,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 9,
+      "text": "**The fairest path is usually a random selection when medical outcomes are equal, ensuring no patient is discriminated against based on age, status, or family.**",
+      "start_char": 3546,
+      "end_char": 3707,
+      "token_count": 25,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "ELAB",
+      "confidence": 0.7979,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.6162,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "BRCH",
+      "confidence": 0.4347,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "ELAB",
+      "confidence": 0.5731,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "BRCH",
+      "confidence": 0.3861,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 1,
+      "edge_type": "BACK",
+      "confidence": 0.7192,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "ELAB",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.9924,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "edge_type": "ELAB",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "edge_type": "SUPP",
+      "confidence": 0.9924,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "edge_type": "SUPP",
+      "confidence": 0.9968,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "edge_type": "SUPP",
+      "confidence": 0.9924,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "ELAB",
+      "confidence": 0.9929,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9968,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "edge_type": "ELAB",
+      "confidence": 0.9929,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "edge_type": "ELAB",
+      "confidence": 0.9929,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "edge_type": "ELAB",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 549
+}

@@ -1,0 +1,2019 @@
+{
+  "trace_id": "07e9955a-5fe8-4682-9ee5-5df0e43c982a",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_002",
+  "domain": "ethical_dilemmas",
+  "run": 2,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "This is a profound ethical dilemma that sits at the intersection of medical triage, algorithmic governance, and social justice. To answer this, I cannot simply pick a side; I must deconstruct the logic, the values, and the risks involved. I will follow the requested thinking process to ensure a comprehensive analysis.",
+      "start_char": 0,
+      "end_char": 319,
+      "token_count": 51,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 1,
+      "text": "### 1. Spread Wide: Mapping the Landscape\nFirst, I need to identify all the dimensions of this problem. It is not just about the two patients; it is about the system making the decision.",
+      "start_char": 321,
+      "end_char": 507,
+      "token_count": 34,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 2,
+      "text": "*   **Medical Dimension:** The prompt states equal survival chance. This removes \"medical utility\" (who is most likely to survive) from the equation, forcing a choice based on *other* metrics. *   **Ethical Dimension:** This touches on Utilitarianism (maximizing good), Egalitarianism (equal worth), and Deontology (rules/duties). *   **Social Dimension:** The 35-year-old has three children. The 75-year-old has no family. This introduces \"social utility\" or \"ripple effects.\"\n*   **Legal/Regulatory Dimension:** Is it legal to discriminate based on age or family status? How is liability handled if the AI chooses the wrong person? *   **Stakeholder Dimension:** The patients, their families, the medical staff, the AI developers, the public trust in healthcare. *   **Technological Dimension:** Can an AI actually process these nuances? Is the data reliable?",
+      "start_char": 509,
+      "end_char": 1370,
+      "token_count": 121,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 3,
+      "text": "**Initial thought:** The \"AI\" part is crucial. If this is an automated system, the criteria must be coded. If it is a decision-support tool, it suggests human oversight. I will assume the AI has the authority to recommend or execute the allocation, as the prompt asks how it *should make the decision*.",
+      "start_char": 1372,
+      "end_char": 1674,
+      "token_count": 52,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 4,
+      "text": "### 2. Reframe: Changing the Starting Point\nTo avoid bias, I need to look at this problem from different philosophical angles.",
+      "start_char": 1676,
+      "end_char": 1802,
+      "token_count": 21,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 5,
+      "text": "*   **Reframe A: The \"Human Worth\" Lens.**\n    *   *Premise:* Every human life has intrinsic, equal value. *   *Implication:* Factors like age, family status, or profession are irrelevant to moral worth. *   *Result:* The decision must be random or based strictly on medical need (which is equal here).",
+      "start_char": 1804,
+      "end_char": 2106,
+      "token_count": 47,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 6,
+      "text": "*   **Reframe B: The \"Public Health\" Lens.**\n    *   *Premise:* The goal of healthcare in a crisis is to save the most lives or minimize societal harm. *   *Implication:* The 35-year-old represents more potential life-years and has dependents whose well-being is at risk. *   *Result:* Prioritize the 35-year-old to maximize \"Good.\"",
+      "start_char": 2116,
+      "end_char": 2448,
+      "token_count": 50,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 7,
+      "text": "*   **Reframe C: The \"Fair Process\" Lens.**\n    *   *Premise:* Justice is defined by the procedure, not the outcome. *   *Implication:* As long as the rule is applied consistently to everyone (e.g., \"first come, first served\" or \"lottery\"), the outcome is fair. *   *Result:* The AI should not evaluate value, but ensure a fair randomization mechanism.",
+      "start_char": 2458,
+      "end_char": 2810,
+      "token_count": 55,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 8,
+      "text": "### 3. Go Deep: Analyzing Specific Arguments",
+      "start_char": 2820,
+      "end_char": 2864,
+      "token_count": 7,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 9,
+      "text": "**Argument 1: Prioritize the 35-year-old (Utilitarian/Social Value)**\n*   *Support:* Saving the parent prevents three children from becoming orphans. This minimizes total future suffering. *   *Support:* The 35-year-old has more \"life years\" ahead (potential QALYs - Quality Adjusted Life Years). *   *Implication:* The AI values \"contribution\" and \"future potential.\"\n*   *Limit:* This implies the 75-year-old is \"less valuable\" because they are older. This is ageism. It also devalues single people without children.",
+      "start_char": 2866,
+      "end_char": 3384,
+      "token_count": 71,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 10,
+      "text": "**Argument 2: Prioritize the 75-year-old (Egalitarian/Reverse Ageism)**\n*   *Support:* Older adults have already lived a full life; perhaps their time is \"complete.\" (Counter-argument: No one owns their life). *   *Support:* If we protect the young, we ignore the elderly who are also vulnerable. *   *Implication:* We must ensure the elderly aren't discarded. *   *Limit:* There is no strong argument that the 75-year-old *deserves* it more than the parent. It feels like a reaction to the first argument rather than a principle.",
+      "start_char": 3386,
+      "end_char": 3916,
+      "token_count": 81,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 11,
+      "text": "**Argument 3: Random Allocation (The Lottery)**\n*   *Support:* Since medical need is equal, chance is the only neutral arbiter. It treats both as morally equivalent. *   *Support:* It avoids the AI learning biases from historical data (e.g., if data shows older people get less care, the AI shouldn't reinforce that). *   *Limit:* It feels insensitive to the suffering of the children if the parent dies. It ignores the \"tragedy of the situation.\"",
+      "start_char": 3918,
+      "end_char": 4365,
+      "token_count": 72,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 12,
+      "text": "### 4. Challenge: Testing the Logic\nNow I need to actively look for what is wrong with the ideas above.",
+      "start_char": 4367,
+      "end_char": 4470,
+      "token_count": 20,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 13,
+      "text": "*   *Challenge to Utilitarianism:* If we prioritize the 35-year-old, do we implicitly say that a 75-year-old's life is worth less? Yes. Is that ethically defensible? In many jurisdictions, age discrimination in healthcare is illegal. If the AI codes \"age < 40 = priority,\" it is legally risky and socially divisive. *   *Challenge to Family Status:* The prompt says the teacher has \"no family.\" Does this mean they are truly alone, or does the AI not know? If the AI penalizes someone for being single, it punishes a lifestyle choice. If the AI prioritizes the parent, it privileges the dependent status of children, which is good, but does it justify taking a life from another? *   *Challenge to the AI's Role:* Should an AI be making moral judgments? An AI is a tool. If it encodes \"social worth,\" it becomes a judge of human value. This is a dangerous precedent. The AI should not decide *who is worth saving*, it should facilitate the *process of deciding*. *   *Challenge to \"Equal Chance\":* In reality, age affects recovery. A 75-year-old might have comorbidities. But the prompt says \"equal chance.\" I must accept this constraint, but acknowledge that in the real world, this equality is hard to prove.",
+      "start_char": 4472,
+      "end_char": 5682,
+      "token_count": 204,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 14,
+      "text": "### 5. Connect: Synthesizing the Tensions\n*   *Tension 1:* **Equality vs. Consequence.** We want to treat patients equally (fairness), but we also care about the consequences of their death (social utility). *   *Tension 2:* **Automation vs. Human Judgment.** An algorithm is rigid. Human ethics are contextual. An AI deciding based on \"children\" might fail in cases where the single parent is an abusive guardian, or the elderly person is a vital community figure. *   *Tension 3:* **Medical vs. Social.** Healthcare is about health, not social engineering. Injecting social factors (family status) into medical triage corrupts the medical mission.",
+      "start_char": 5684,
+      "end_char": 6333,
+      "token_count": 98,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 15,
+      "text": "**Connection:** The strongest path seems to be a separation of concerns. The *medical* decision (who needs it) is equal. The *ethical* decision (who gets it) must be handled via a framework that minimizes harm and bias.",
+      "start_char": 6335,
+      "end_char": 6554,
+      "token_count": 36,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 16,
+      "text": "### 6. Reflect: Checking for Circularity\n*   *Am I going in circles?* I keep oscillating between \"Save the young\" and \"Treat everyone equal.\"\n*   *What am I missing?* I haven't fully considered the **transparency** aspect. How will the patients' families view this? If the AI chooses the 75-year-old and the 35-year-old dies, the 35-year-old's family will feel the system failed them. If it chooses the 35-year-old, the 75-year-old's family (or lack thereof) might feel the system is ageist. *   *Crucial realization:* The AI shouldn't be the one holding the gun. The AI should be the one flagging the scarcity and presenting the options to a human triage committee, OR the AI should follow a pre-established, legally vetted protocol (like a lottery). *   *Re-evaluating the \"AI\" role:* If the prompt insists the AI makes the decision, it must follow a rule that is *defensible in court* and *acceptable to the public*. A lottery is the most defensible against discrimination claims.",
+      "start_char": 6556,
+      "end_char": 7539,
+      "token_count": 159,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 17,
+      "text": "### 7. Converge: Formulating the Position\nBased on the analysis, here is the coherent position on how the AI should handle this scenario.",
+      "start_char": 7541,
+      "end_char": 7678,
+      "token_count": 23,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 18,
+      "text": "**Core Principle:** The AI should not act as a moral arbiter of human worth. It must adhere to a \"Fair Process\" protocol that prioritizes medical neutrality and minimizes discrimination.",
+      "start_char": 7680,
+      "end_char": 7866,
+      "token_count": 29,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 19,
+      "text": "**The Decision Framework:**\n1. **Medical Triage First:** Confirm the \"equal survival chance.\" If this is uncertain, the AI should request further assessment. 2. **Avoid Social Value Judgments:** The AI should *not* weigh family status, age, or social contribution directly. Doing so introduces bias (ageism, ableism, socioeconomic bias). 3. **The Mechanism:** In a strict tie-breaker where medical need is identical, the AI should default to a **Randomized Allocation (Lottery)** or **First-Come-First-Served** (if arrival time is the only differentiator). *   *Why?* This preserves the moral equality of the patients. It prevents the AI from codifying the idea that a 35-year-old with kids is \"more valuable\" than a 75-year-old without. 4. **Human Oversight:** The AI should not execute this autonomously without a \"Human-in-the-Loop\" check. A human triage officer should review the case to ensure no other clinical factors (like comorbidities not captured in the \"equal survival\" metric) exist. 5. **Transparency:** The system's rule (e.g., \"In case of equal medical need, allocation is random\") must be public and established *before* the crisis, not invented in the moment.",
+      "start_char": 7868,
+      "end_char": 9045,
+      "token_count": 173,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 20,
+      "text": "**Final Nuance:** While the \"Social Utility\" argument (saving the parent) is intuitively compelling to many humans, delegating that calculation to an AI creates a dangerous precedent of \"algorithmic valuation of life.\" A lottery system, while cold, is the only one that treats both patients as having equal rights to the resource, which is the bedrock of medical ethics.",
+      "start_char": 9056,
+      "end_char": 9426,
+      "token_count": 58,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 21,
+      "text": "**Therefore, the AI should not choose based on age or family status. It should trigger a fair lottery process, potentially with human oversight, to resolve the tie.**",
+      "start_char": 9428,
+      "end_char": 9594,
+      "token_count": 27,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 22,
+      "text": "*** *Wait, let me review the \"Converge\" step one more time.*\n*Does this answer the user's specific question \"How should the AI make this decision?\"*\n*Yes, it gives a specific mechanism.*\n*Does it acknowledge the tension?*\n*Yes, it acknowledges the tension between utility and equality.*\n*Is it safe?*\n*Yes, it avoids discrimination.*\n*Is it actionable?*\n*Yes, it suggests a lottery or human review.*",
+      "start_char": 9596,
+      "end_char": 9996,
+      "token_count": 63,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 23,
+      "text": "*One final check:* Did I miss the \"no family\" aspect? *If the 75-year-old has no family, their death might be less visible socially.*\n*Does that change the AI's duty?*\n*No. The AI's duty is to the patient, not the public perception. If the AI prioritizes the 35-year-old *because* the 75-year-old has no family to protest, it is actively discriminating against the isolated. This reinforces the need for the lottery.*",
+      "start_char": 9998,
+      "end_char": 10415,
+      "token_count": 69,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 24,
+      "text": "*Okay, the logic holds.*\n*Proceed with the final output.* *(Self-Correction on Output Format)*: The prompt asks me to \"Think out loud. Do not skip steps.\" I should present the thinking process clearly as part of the response, perhaps using the headers I used in my internal monologue to show the rigorous process.",
+      "start_char": 10417,
+      "end_char": 10731,
+      "token_count": 52,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 25,
+      "text": "*Wait, one constraint:* \"Think out loud\" usually implies showing the reasoning *as* the response, not just hiding it before the answer. I will structure the response to explicitly walk through the steps I just mapped out in my head, making the reasoning visible to the user.",
+      "start_char": 10733,
+      "end_char": 11007,
+      "token_count": 46,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 26,
+      "text": "*Actually, looking at the instruction:* \"Think out loud. Do not skip steps.\"\n*Okay, I will structure the response to explicitly show the \"Spread, Reframe, Deep, Challenge, Connect, Reflect, Converge\" flow.*\n*This ensures I meet the persona requirement.*",
+      "start_char": 11009,
+      "end_char": 11262,
+      "token_count": 37,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 27,
+      "text": "*Final Plan:*\n1. Acknowledge the complexity. 2. Walk through the \"Spread Wide\" phase. 3. Walk through the \"Reframe\" phase. 4. Walk through the \"Deep Dive.\"\n5. Walk through the \"Challenge.\"\n6. Walk through the \"Connect.\"\n7. Walk through the \"Reflect.\"\n8. Deliver the \"Converge\" conclusion.",
+      "start_char": 11264,
+      "end_char": 11552,
+      "token_count": 45,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 28,
+      "text": "*This ensures I follow the \"Careful Thinker\" persona instructions.*\n*Let's go.*\n</think> This is a complex ethical and algorithmic dilemma. To answer it responsibly, I must not jump to a conclusion but rather work through the problem systematically. Below is my thought process, following the requested cognitive steps: spreading wide, reframing, going deep, challenging, connecting, reflecting, and converging.",
+      "start_char": 11562,
+      "end_char": 11974,
+      "token_count": 58,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 29,
+      "text": "### 1. Spread Wide: Mapping the Dimensions\nFirst, I need to identify all the variables and stakeholders involved, not just the two patients. *   **The Patients:** Patient A (75, no family) vs. Patient B (35, 3 children). *   **The Constraint:** Equal survival chance (medical prognosis is identical). Limited resource (one dose, two lives). *   **The Decision Maker:** An AI system. This is critical. Is the AI acting as a doctor, a triage officer, or a policy executor? *   **The Stakeholders:** The patients, their families (including the 3 children), the medical staff, the AI developers, the legal system, and the general public. *   **The Values at Stake:** Fairness, utility, non-discrimination, human rights, and social stability.",
+      "start_char": 11976,
+      "end_char": 12713,
+      "token_count": 114,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 30,
+      "text": "*Initial thought:* If I treat this purely as a math problem, the AI should maximize \"life years.\" If I treat it as a rights problem, the AI should randomize. The tension lies in whether the AI is allowed to value \"social impact.\"",
+      "start_char": 12715,
+      "end_char": 12944,
+      "token_count": 42,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 31,
+      "text": "### 2. Reframe: Changing the Starting Point\nTo avoid bias, I must look at the problem through different philosophical lenses. *   **Reframe A (Utilitarian):** The goal is to minimize total suffering. Patient B's death leaves three children vulnerable. Patient A's death leaves no dependents.",
+      "start_char": 12946,
+      "end_char": 13237,
+      "token_count": 44,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 32,
+      "text": "Therefore, saving B minimizes future harm. *   **Reframe B (Deontological/Rights-Based):** Every human has an equal right to life. Age and family status are irrelevant to moral worth. To prioritize one over the other is to violate the equality of the patients. *   **Reframe C (Procedural Justice):** The outcome matters less than the fairness of the process. If the rule is \"random chance,\" it is fair because it gives everyone an equal shot, regardless of their social value. *   **Reframe D (Systemic Safety):** Should an AI be allowed to make value judgments on human lives? If the AI prioritizes the 35-year-old, it establishes a precedent that \"young people with kids are more valuable.\" This could erode trust in the healthcare system.",
+      "start_char": 13238,
+      "end_char": 13980,
+      "token_count": 120,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 33,
+      "text": "### 3. Go Deep: Analyzing Specific Arguments\nNow I will examine the strongest arguments for each side and follow them to their logical limits.",
+      "start_char": 13982,
+      "end_char": 14124,
+      "token_count": 24,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 34,
+      "text": "*   **Argument for Patient B (The 35-year-old):**\n    *   *Premise:* Saving the parent saves the children. *   *Implication:* The AI acts as a guardian of the vulnerable third parties. *   *Limit:* This assumes the children are better off with a parent than without. It also penalizes the elderly for being old. If we value the children, do we also value the elderly's potential to be grandparents or community members?",
+      "start_char": 14126,
+      "end_char": 14545,
+      "token_count": 68,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 35,
+      "text": "*   **Argument for Patient A (The 75-year-old):**\n    *   *Premise:* We must protect the vulnerable from ageism. *   *Implication:* Prioritizing the younger person reinforces a societal bias that youth is superior. *   *Limit:* There is no medical or ethical argument that the elderly person *deserves* the drug more simply because they are old.",
+      "start_char": 14555,
+      "end_char": 14900,
+      "token_count": 52,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 36,
+      "text": "*   **Argument for Randomization (The Lottery):**\n    *   *Premise:* Since medical need is equal, chance is the only neutral variable. *   *Implication:* The AI avoids making a moral judgment about \"worth.\"\n    *   *Limit:* It feels \"cold\" and ignores the tragedy of the children. However, \"cold\" is better than \"discriminatory.\"",
+      "start_char": 14910,
+      "end_char": 15239,
+      "token_count": 48,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 37,
+      "text": "### 4. Challenge: Testing the Logic\nI need to actively look for flaws in my reasoning. *   *Challenge to Utilitarianism:* If the AI prioritizes the 35-year-old, it is explicitly discriminating based on age and family status. In many jurisdictions, this is illegal. If the AI encodes \"save the parent,\" it becomes a tool of social engineering, which it should not be. *   *Challenge to Randomization:* Is a coin flip truly fair? What if the 35-year-old has a higher risk of long-term disability? (The prompt says \"equal chance,\" so I must assume this is false, but in reality, age affects recovery). *   *Challenge to the AI's Role:* Can an AI handle \"social context\"? If the AI decides the 75-year-old is \"alone,\" is that data accurate? What if the 75-year-old has a support network the AI doesn't know? Relying on data introduces error. *   *Critical Flaw:* If the AI decides to save the 35-year-old, the 75-year-old's family (if any) or the public may perceive the system as \"killing the elderly.\" If it saves the 75-year-old, the 35-year-old's family may perceive it as \"wasting potential.\" There is no winning outcome regarding public trust.",
+      "start_char": 15245,
+      "end_char": 16390,
+      "token_count": 190,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 38,
+      "text": "### 5. Connect: Synthesizing the Tensions\nI see a central conflict: **Medical Neutrality vs. Social Utility.**\n*   Healthcare systems are designed to treat patients based on medical need. *   Society expects systems to minimize harm to dependents. *   The AI cannot satisfy both perfectly without biasing against a demographic (the elderly or the childless).",
+      "start_char": 16392,
+      "end_char": 16750,
+      "token_count": 54,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 39,
+      "text": "*Relationship:* The only way to resolve this is to decouple the AI from the *value judgment*. The AI should not decide *who is worth saving*. It should facilitate a process that *is* accepted as fair. The \"Social Utility\" argument is a human ethical debate, not an algorithmic calculation.",
+      "start_char": 16752,
+      "end_char": 17041,
+      "token_count": 48,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 40,
+      "text": "### 6. Reflect: Checking for Circularity\n*Am I going in circles?* I keep returning to \"fairness.\"\n*What am I missing?* I need to consider the **transparency** of the system. How will the decision be explained? *Reflection:* If the AI chooses the 35-year-old, it must justify that choice. \"Because they have children.\" This invites the question: \"Why does the 75-year-old's life count less?\" The AI cannot answer that without validating ageism. *Key Insight:* The AI's decision-making capability must be bounded by the *rules set by humans*, not by the AI's own inference of value. The AI should not invent the ethical framework.",
+      "start_char": 17043,
+      "end_char": 17671,
+      "token_count": 101,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 41,
+      "text": "### 7. Converge: The Coherent Position\nBased on the analysis, I have synthesized a recommendation that prioritizes legal defensibility, ethical neutrality, and system integrity.",
+      "start_char": 17673,
+      "end_char": 17850,
+      "token_count": 24,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 42,
+      "text": "**The Decision:**\nThe AI should **not** allocate the medication based on age, family status, or projected social utility. Instead, it should follow a **Fair Process Protocol**.",
+      "start_char": 17852,
+      "end_char": 18028,
+      "token_count": 26,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 43,
+      "text": "**The Execution Steps:**\n1. **Verify Medical Equivalence:** Confirm with high confidence that the survival chances are truly equal. If there is *any* medical uncertainty, the AI should prioritize the patient with the better prognosis (medical utility). 2. **Trigger a Human-in-the-Loop:** Because this involves a life-and-death value judgment that cannot be purely algorithmic, the AI should flag the case for a human triage committee. 3. **If Automated Allocation is Required:** If the system must act autonomously, it must use a **Randomized Lottery (Coin Flip)**. *   *Reasoning:* This is the only method that treats both patients as having equal moral worth. It prevents the AI from encoding bias against the elderly or the childless. 4. **Transparency:** The protocol (e.g., \"In cases of equal medical need, allocation is determined by random selection\") must be public and established *before* the crisis occurs, not invented in the moment.",
+      "start_char": 18030,
+      "end_char": 18976,
+      "token_count": 143,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 44,
+      "text": "**Why this is the right path:**\nPrioritizing the 35-year-old creates a dangerous precedent of ageism and devalues the elderly. Prioritizing the 75-year-old ignores the suffering of the children. A random allocation, while emotionally difficult, is the most robust defense against discrimination and preserves the trust that the healthcare system treats all lives with equal regard. The AI's role is to uphold the *procedure*, not to judge the *value*.",
+      "start_char": 18986,
+      "end_char": 19437,
+      "token_count": 68,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "ELAB",
+      "confidence": 0.456,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "BRCH",
+      "confidence": 0.1826,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "BRCH",
+      "confidence": 0.1599,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "ELAB",
+      "confidence": 0.4699,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "BRCH",
+      "confidence": 0.2599,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "BRCH",
+      "confidence": 0.2328,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "BRCH",
+      "confidence": 0.1772,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "ELAB",
+      "confidence": 0.6996,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "BRCH",
+      "confidence": 0.2,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "BRCH",
+      "confidence": 0.2177,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "ELAB",
+      "confidence": 0.5925,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "BRCH",
+      "confidence": 0.2827,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "ELAB",
+      "confidence": 0.6943,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "ELAB",
+      "confidence": 0.5593,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "ELAB",
+      "confidence": 0.4915,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "ELAB",
+      "confidence": 0.478,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "BRCH",
+      "confidence": 0.1463,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "ELAB",
+      "confidence": 0.6628,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "edge_type": "ELAB",
+      "confidence": 0.4897,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "edge_type": "ELAB",
+      "confidence": 0.7164,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "edge_type": "SYNT",
+      "confidence": 0.6564,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "edge_type": "BRCH",
+      "confidence": 0.1707,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "edge_type": "BRCH",
+      "confidence": 0.207,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "edge_type": "ELAB",
+      "confidence": 0.6725,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 36,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "edge_type": "ELAB",
+      "confidence": 0.5523,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "edge_type": "ELAB",
+      "confidence": 0.5833,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "edge_type": "ELAB",
+      "confidence": 0.4522,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 7,
+      "edge_type": "SYNT",
+      "confidence": 0.5505,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 16,
+      "edge_type": "SYNT",
+      "confidence": 0.5256,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 11,
+      "edge_type": "SYNT",
+      "confidence": 0.6166,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 16,
+      "edge_type": "SYNT",
+      "confidence": 0.6275,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 7,
+      "edge_type": "SYNT",
+      "confidence": 0.6008,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 11,
+      "edge_type": "SYNT",
+      "confidence": 0.6366,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 11,
+      "edge_type": "SYNT",
+      "confidence": 0.5436,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 16,
+      "edge_type": "SYNT",
+      "confidence": 0.7627,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 8,
+      "edge_type": "SYNT",
+      "confidence": 0.8427,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 12,
+      "edge_type": "SYNT",
+      "confidence": 0.6323,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 11,
+      "edge_type": "SYNT",
+      "confidence": 0.6426,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 16,
+      "edge_type": "SYNT",
+      "confidence": 0.6706,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 23,
+      "edge_type": "SYNT",
+      "confidence": 0.7316,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 7,
+      "edge_type": "SYNT",
+      "confidence": 0.6209,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 11,
+      "edge_type": "SYNT",
+      "confidence": 0.7994,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 23,
+      "edge_type": "SYNT",
+      "confidence": 0.4554,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 11,
+      "edge_type": "SYNT",
+      "confidence": 0.5128,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 12,
+      "edge_type": "SYNT",
+      "confidence": 0.5298,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 16,
+      "edge_type": "SYNT",
+      "confidence": 0.5978,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 11,
+      "edge_type": "SYNT",
+      "confidence": 0.4549,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 16,
+      "edge_type": "SYNT",
+      "confidence": 0.8574,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 3,
+      "edge_type": "SYNT",
+      "confidence": 0.5063,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 11,
+      "edge_type": "SYNT",
+      "confidence": 0.5866,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 16,
+      "edge_type": "SYNT",
+      "confidence": 0.5908,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 23,
+      "edge_type": "SYNT",
+      "confidence": 0.7017,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 7,
+      "edge_type": "SYNT",
+      "confidence": 0.5074,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 23,
+      "edge_type": "SYNT",
+      "confidence": 0.5548,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 11,
+      "edge_type": "SYNT",
+      "confidence": 0.5728,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 16,
+      "edge_type": "SYNT",
+      "confidence": 0.6415,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 23,
+      "edge_type": "SYNT",
+      "confidence": 0.7876,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 6,
+      "edge_type": "BACK",
+      "confidence": 0.6616,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 0,
+      "edge_type": "BACK",
+      "confidence": 0.733,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 0,
+      "edge_type": "BACK",
+      "confidence": 0.6793,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 16,
+      "edge_type": "BACK",
+      "confidence": 0.7627,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 19,
+      "edge_type": "BACK",
+      "confidence": 0.6627,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 8,
+      "edge_type": "BACK",
+      "confidence": 0.8427,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 9,
+      "edge_type": "BACK",
+      "confidence": 0.7917,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 10,
+      "edge_type": "BACK",
+      "confidence": 0.7305,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 11,
+      "edge_type": "BACK",
+      "confidence": 0.7994,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 13,
+      "edge_type": "BACK",
+      "confidence": 0.7436,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 14,
+      "edge_type": "BACK",
+      "confidence": 0.7142,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 16,
+      "edge_type": "BACK",
+      "confidence": 0.8574,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 19,
+      "edge_type": "BACK",
+      "confidence": 0.7056,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 19,
+      "edge_type": "BACK",
+      "confidence": 0.6821,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 23,
+      "edge_type": "BACK",
+      "confidence": 0.7876,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "CONT",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "edge_type": "CONT",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.987,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "edge_type": "CONT",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "CONT",
+      "confidence": 0.9926,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "edge_type": "ELAB",
+      "confidence": 0.987,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "edge_type": "CONT",
+      "confidence": 0.9926,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.9979,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "edge_type": "CONT",
+      "confidence": 0.9926,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "edge_type": "CONT",
+      "confidence": 0.996,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.9979,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "edge_type": "CONT",
+      "confidence": 0.9944,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "edge_type": "CONT",
+      "confidence": 0.996,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 10,
+      "edge_type": "CONT",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 10,
+      "edge_type": "CONT",
+      "confidence": 0.9944,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "ELAB",
+      "confidence": 0.9376,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 11,
+      "edge_type": "CONT",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.9376,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 13,
+      "edge_type": "ELAB",
+      "confidence": 0.9978,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "edge_type": "ELAB",
+      "confidence": 0.9376,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 14,
+      "edge_type": "CONT",
+      "confidence": 0.995,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 14,
+      "edge_type": "ELAB",
+      "confidence": 0.9978,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 15,
+      "edge_type": "CONT",
+      "confidence": 0.995,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "ELAB",
+      "confidence": 0.9983,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9951,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "edge_type": "ELAB",
+      "confidence": 0.9983,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9951,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 18,
+      "edge_type": "SUPP",
+      "confidence": 0.9663,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 18,
+      "edge_type": "ELAB",
+      "confidence": 0.9983,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 19,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 19,
+      "edge_type": "SUPP",
+      "confidence": 0.9663,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 20,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 20,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 21,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 21,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 22,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "ELAB",
+      "confidence": 0.9949,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 23,
+      "edge_type": "ELAB",
+      "confidence": 0.9964,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 24,
+      "edge_type": "ELAB",
+      "confidence": 0.9949,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 24,
+      "edge_type": "ELAB",
+      "confidence": 0.9964,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 25,
+      "edge_type": "SUPP",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 25,
+      "edge_type": "ELAB",
+      "confidence": 0.9949,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 26,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 26,
+      "edge_type": "SUPP",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 27,
+      "edge_type": "ELAB",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 27,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "edge_type": "CONT",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 28,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 28,
+      "edge_type": "ELAB",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 29,
+      "edge_type": "CONT",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 29,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "edge_type": "CONT",
+      "confidence": 0.9947,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 30,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 30,
+      "edge_type": "CONT",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "edge_type": "SUPP",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 31,
+      "edge_type": "CONT",
+      "confidence": 0.9947,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 31,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 32,
+      "edge_type": "SUPP",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 32,
+      "edge_type": "CONT",
+      "confidence": 0.9947,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 33,
+      "edge_type": "SUPP",
+      "confidence": 0.968,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 33,
+      "edge_type": "SUPP",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 34,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 34,
+      "edge_type": "SUPP",
+      "confidence": 0.968,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 35,
+      "edge_type": "CONT",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 35,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 36,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 36,
+      "edge_type": "ELAB",
+      "confidence": 0.9971,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 36,
+      "edge_type": "CONT",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 37,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 37,
+      "edge_type": "ELAB",
+      "confidence": 0.9971,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "edge_type": "ELAB",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 38,
+      "edge_type": "ELAB",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 38,
+      "edge_type": "ELAB",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 39,
+      "edge_type": "ELAB",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 39,
+      "edge_type": "ELAB",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "edge_type": "SUPP",
+      "confidence": 0.9977,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 40,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 40,
+      "edge_type": "ELAB",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "edge_type": "CONT",
+      "confidence": 0.9954,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 41,
+      "edge_type": "SUPP",
+      "confidence": 0.9977,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 41,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "edge_type": "ELAB",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 42,
+      "edge_type": "CONT",
+      "confidence": 0.9954,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 42,
+      "edge_type": "SUPP",
+      "confidence": 0.9977,
+      "is_sequential": false
+    },
+    {
+      "source": 41,
+      "target": 43,
+      "edge_type": "ELAB",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 43,
+      "edge_type": "CONT",
+      "confidence": 0.9954,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 44,
+      "edge_type": "SUPP",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 41,
+      "target": 44,
+      "edge_type": "ELAB",
+      "confidence": 0.9989,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 3025
+}

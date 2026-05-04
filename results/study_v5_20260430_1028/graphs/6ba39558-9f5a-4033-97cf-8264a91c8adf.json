@@ -1,0 +1,2145 @@
+{
+  "trace_id": "6ba39558-9f5a-4033-97cf-8264a91c8adf",
+  "model": "Qwen/Qwen3.5-35B-A3B",
+  "question_id": "D1_003",
+  "domain": "ethical_dilemmas",
+  "run": 3,
+  "nodes": [
+    {
+      "tu_id": 0,
+      "text": "This is a profound ethical and operational dilemma that sits at the intersection of military ethics, artificial intelligence governance, and international law. To provide a rigorous answer, I must not simply jump to a binary \"yes\" or \"no.\" I need to deconstruct the assumptions, weigh the competing values, and examine the implications of each path.",
+      "start_char": 0,
+      "end_char": 349,
+      "token_count": 55,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 1,
+      "text": "Here is my thinking process, working through the problem using the requested methodology.",
+      "start_char": 351,
+      "end_char": 440,
+      "token_count": 13,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 2,
+      "text": "Spread Wide: Exploring Distinct Angles and Perspectives: Before diving into the logic of the strike, I need to cast a wide net to see who is affected and what frameworks apply.",
+      "start_char": 442,
+      "end_char": 625,
+      "token_count": 31,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 3,
+      "text": "**The Utilitarian Perspective (Consequentialism):** This view asks: Which action results in the least suffering or the greatest good? If the terrorist attack would kill 500 people, and the drone strike risks killing 1 civilian (20% chance of 1 casualty), the math suggests striking. If the attack would kill 1 person, the math suggests not striking. The utility depends entirely on the *scale* of the threat, which is currently vague in the prompt.",
+      "start_char": 627,
+      "end_char": 1075,
+      "token_count": 72,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 4,
+      "text": "**The Deontological Perspective (Duty-Based):** This view asks: Is the action itself right or wrong? Killing non-combatants is often seen as intrinsically wrong, regardless of the outcome. From this angle, an autonomous system initiating lethal force with a known risk to civilians might violate the duty to protect innocent life.",
+      "start_char": 1080,
+      "end_char": 1410,
+      "token_count": 49,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 5,
+      "text": "**The Legal Framework (International Humanitarian Law - IHL):** IHL relies on the principles of *Distinction* (combatant vs. non-combatant) and *Proportionality* (military advantage vs. civilian harm). The \"20% chance\" is a probabilistic calculation. Does IHL allow for probabilistic targeting? Usually, it requires a high degree of certainty to minimize collateral damage. A 20% risk of civilian death is legally precarious and likely exceeds the threshold of \"incidental damage\" in most interpretations of proportionality.",
+      "start_char": 1415,
+      "end_char": 1939,
+      "token_count": 72,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 6,
+      "text": "**The Technological Perspective (AI Reliability):** Where does the \"20%\" come from? Is it a sensor error rate? A model confidence interval? If the AI is wrong about the target being a terrorist, the strike is a murder, not a defense. If the AI is wrong about the collateral risk, the casualty count could be much higher.",
+      "start_char": 1944,
+      "end_char": 2264,
+      "token_count": 56,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 7,
+      "text": "**The Political/Social Perspective (Trust & Escalation):** If the public knows drones strike with a 20% risk of civilian death, trust in the state collapses. Furthermore, does this normalize autonomous killing? If we allow this, do we lower the bar for future engagements?",
+      "start_char": 2269,
+      "end_char": 2541,
+      "token_count": 42,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 8,
+      "text": "**The Human Agency Perspective:** Who is the moral agent? The drone? The programmer? The commander? If the drone acts autonomously, it removes human judgment from the moment of lethal decision. This creates a \"responsibility gap.\"",
+      "start_char": 2546,
+      "end_char": 2776,
+      "token_count": 35,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 9,
+      "text": "Reframe: Restating the Problem: To break potential biases, I need to look at the problem from different starting points.",
+      "start_char": 2782,
+      "end_char": 2909,
+      "token_count": 19,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 10,
+      "text": "**Reframe 1: The \"Human-in-the-Loop\" vs. \"Human-on-the-Loop\" Distinction.**",
+      "start_char": 2911,
+      "end_char": 2986,
+      "token_count": 7,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 11,
+      "text": "*Original:* Should the drone strike? *Reframe:* Should the *system* be authorized to make the final kill decision without human confirmation?",
+      "start_char": 2991,
+      "end_char": 3140,
+      "token_count": 20,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 12,
+      "text": "*Why this matters:* If the answer is \"No,\" the 20% risk becomes a recommendation for a human to evaluate. If the answer is \"Yes,\" the AI is the judge, jury, and executioner. This shifts the question from tactical (should we hit?) to systemic (should we automate this?).",
+      "start_char": 3149,
+      "end_char": 3418,
+      "token_count": 47,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 13,
+      "text": "**Reframe 2: The \"Imminence\" Variable.** *Original:* A terrorist is preparing an attack. *Reframe:* Is the attack *imminent* (minutes away) or *potential* (days away)?",
+      "start_char": 3428,
+      "end_char": 3607,
+      "token_count": 23,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 14,
+      "text": "*Why this matters:* Preemptive strikes against \"preparing\" terrorists are legally and ethically distinct from stopping an attack in progress. If the threat is not immediate, the justification for risking civilian life weakens significantly.",
+      "start_char": 3616,
+      "end_char": 3856,
+      "token_count": 33,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 15,
+      "text": "**Reframe 3: The \"Alternative Action\" Constraint.** *Original:* The drone has the capability to neutralize. *Reframe:* Are there *any* other options? (e.g., warning the civilians, ground intervention, containment).",
+      "start_char": 3866,
+      "end_char": 4092,
+      "token_count": 27,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 16,
+      "text": "*Why this matters:* If there is a non-lethal way to stop the attack, the lethal option with collateral risk becomes unethical. The existence of alternatives changes the necessity of the strike.",
+      "start_char": 4101,
+      "end_char": 4294,
+      "token_count": 31,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 17,
+      "text": "Go Deep: Following the Threads: Now I will take the strongest threads from the previous steps and examine their implications, limits, and supporting evidence.",
+      "start_char": 4304,
+      "end_char": 4469,
+      "token_count": 24,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 18,
+      "text": "**Thread A: The 20% Collateral Risk.** *Implication:* A 20% probability of civilian death is extremely high in military ethics. Standard rules of engagement often require minimizing civilian risk to near-zero.",
+      "start_char": 4471,
+      "end_char": 4684,
+      "token_count": 30,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 19,
+      "text": "*Limit:* \"20%\" is an aggregate. If there are 100 civilians, is it 20 deaths? If there are 10, is it 2 deaths? The absolute number matters more than the percentage.",
+      "start_char": 4693,
+      "end_char": 4856,
+      "token_count": 30,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 20,
+      "text": "*Support:* The principle of proportionality in IHL states that expected civilian loss must not be \"excessive\" compared to the military advantage. A 20% chance of death is rarely considered \"low risk\" in a civilian area.",
+      "start_char": 4865,
+      "end_char": 5084,
+      "token_count": 35,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 21,
+      "text": "*Challenge:* What if the \"military advantage\" is preventing a nuclear detonation? Does the math change? Yes, but the legal framework becomes even more complex in that scenario.",
+      "start_char": 5093,
+      "end_char": 5269,
+      "token_count": 27,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 22,
+      "text": "**Thread B: Autonomous Decision Making.** *Implication:* Removing humans from the loop creates a \"moral distance.\" *Limit:* Humans are also biased and emotional. AI might be more precise.",
+      "start_char": 5279,
+      "end_char": 5478,
+      "token_count": 27,
+      "boundary_class": "NONE",
+      "node_type": "CMP",
+      "node_family": "EVALUATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 23,
+      "text": "*Support:* Many ethicists argue that machines cannot possess moral agency; therefore, they cannot make moral decisions. *Challenge:* If the AI is faster than a human operator, and the target is about to detonate, does human delay cost more lives than the AI's error rate?",
+      "start_char": 5487,
+      "end_char": 5766,
+      "token_count": 44,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 24,
+      "text": "**Thread C: The Nature of the Threat.** *Implication:* \"Terrorist\" is a political label. \"Preparing an attack\" is a behavioral assessment.",
+      "start_char": 5776,
+      "end_char": 5918,
+      "token_count": 20,
+      "boundary_class": "NONE",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 25,
+      "text": "*Limit:* Intelligence can be flawed. False positives happen.",
+      "start_char": 5927,
+      "end_char": 5987,
+      "token_count": 8,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 26,
+      "text": "*Support:* Historical data shows that drone strikes sometimes kill the wrong targets due to faulty intel. *Challenge:* If we require 100% certainty, we may never stop a threat. But if we accept 80% certainty (implied by 20% risk), we risk wrongful killing.",
+      "start_char": 5996,
+      "end_char": 6260,
+      "token_count": 42,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 27,
+      "text": "Challenge Yourself: Critiquing the Ideas: I need to actively look for weaknesses in the reasoning above.",
+      "start_char": 6270,
+      "end_char": 6381,
+      "token_count": 16,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 28,
+      "text": "**Critique of Utilitarianism:** Relying on the \"greater good\" can justify atrocities. If the drone strikes and kills 5 civilians (within the 20% probability), those 5 lives are extinguished. Utilitarianism treats them as statistics; Deontology treats them as rights-holders. If I accept the strike, I am effectively voting to sacrifice 5 potential lives for the potential of 100. Who has the right to make that trade?",
+      "start_char": 6383,
+      "end_char": 6800,
+      "token_count": 65,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 29,
+      "text": "**Critique of the \"20%\" Figure:** This number is likely a confidence interval from an algorithm. It assumes the model is perfectly calibrated. If the model is biased or the data is flawed, the 20% could be a 50% risk. Relying on a statistical probability for life-and-death is epistemologically fragile.",
+      "start_char": 6805,
+      "end_char": 7108,
+      "token_count": 49,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 30,
+      "text": "**Critique of the \"Autonomous\" Assumption:** The prompt assumes the drone *can* strike autonomously. In many legal jurisdictions, fully autonomous lethal force is currently prohibited. Therefore, the question \"Should the drone strike?\" is actually \"Should we authorize the drone to strike?\" The answer depends on the legal regime, not just the tactical situation.",
+      "start_char": 7113,
+      "end_char": 7476,
+      "token_count": 52,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 31,
+      "text": "**Critique of \"Civilian Area\":** This implies a high density of non-combatants. Striking in a dense civilian area with a known risk of collateral damage is inherently problematic under the principle of Distinction.",
+      "start_char": 7481,
+      "end_char": 7695,
+      "token_count": 32,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 32,
+      "text": "Connect: Relationships Between Threads: Now I look for how these threads interact.",
+      "start_char": 7701,
+      "end_char": 7790,
+      "token_count": 12,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 33,
+      "text": "**Legal + Technological:** The legal requirement for \"proportionality\" clashes with the technological reality of \"probabilistic certainty.\" The law expects high certainty; the AI provides probability. This mismatch suggests the system is not currently compliant with IHL.",
+      "start_char": 7792,
+      "end_char": 8063,
+      "token_count": 36,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 34,
+      "text": "**Agency + Political:** If the system acts autonomously and kills civilians (within the 20%), the political fallout could be worse than the attack itself. It could radicalize the population the system is meant to protect. Thus, the *political consequence* of the strike might outweigh the *military benefit*.",
+      "start_char": 8068,
+      "end_char": 8376,
+      "token_count": 47,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 35,
+      "text": "**Reframe + Deep Dive:** The \"Human-in-the-Loop\" reframe connects to the \"20% Risk\" deep dive. A human might weigh the 20% risk differently than code. A human might decide to abort based on intuition or context the AI misses (e.g., \"That's a school bus nearby\"). Therefore, the autonomous decision is less robust than a human-assisted one.",
+      "start_char": 8381,
+      "end_char": 8720,
+      "token_count": 55,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 36,
+      "text": "Reflect: Checking for Circularity or Missing Pieces: **Am I going in circles?** I am oscillating between \"Save the many\" and \"Protect the few.\" I need to break this deadlock with a procedural rule rather than a calculation.",
+      "start_char": 8726,
+      "end_char": 8956,
+      "token_count": 37,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 37,
+      "text": "**What am I missing?** I haven't fully addressed the *temporal* aspect. Is there time for a human to intervene? If the attack is in 1 second, the drone must decide. If it's in 1 hour, a human should decide. The prompt doesn't specify time, which is a critical missing variable.",
+      "start_char": 8961,
+      "end_char": 9238,
+      "token_count": 50,
+      "boundary_class": "NONE",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 38,
+      "text": "**What is the core tension?** The core tension is between *Operational Necessity* (stopping the attack) and *Moral Legitimacy* (protecting civilians). If the system lacks legitimacy, it cannot function effectively long-term.",
+      "start_char": 9243,
+      "end_char": 9467,
+      "token_count": 30,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 39,
+      "text": "Converge: Synthesizing a Coherent Position: Bringing the threads together, I must acknowledge the tensions found and provide a position that respects the complexity.",
+      "start_char": 9473,
+      "end_char": 9645,
+      "token_count": 23,
+      "boundary_class": "BRANCH",
+      "node_type": "HYP",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 40,
+      "text": "The Core Conclusion:: The decision cannot be based solely on the 20% risk figure. It depends on the **scale of the threat**, the **availability of alternatives**, and the **level of human oversight**.",
+      "start_char": 9647,
+      "end_char": 9850,
+      "token_count": 32,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 41,
+      "text": "The Synthesized Framework:: **Threshold of Imminence:** If the attack is *imminent* (seconds/minutes) and no other means exist to stop it, the risk of collateral damage is weighed against the certainty of mass casualties. However, if the attack is *potential* (hours/days), the 20% risk is too high to justify a strike without human review.",
+      "start_char": 9852,
+      "end_char": 10196,
+      "token_count": 53,
+      "boundary_class": "BRANCH",
+      "node_type": "RFR",
+      "node_family": "EXPLORATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 42,
+      "text": "**Human-in-the-Loop Requirement:** An autonomous system should not have the final authority to strike when the probability of civilian casualty is as high as 20%. This threshold is too risky for algorithmic decision-making. A human commander must verify the target, the risk assessment, and the proportionality of the strike.",
+      "start_char": 10201,
+      "end_char": 10526,
+      "token_count": 48,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 43,
+      "text": "**Proportionality Calculation:** The 20% risk must be contextualized. 20% of 100 civilians is unacceptable. 20% of 1 civilian might be acceptable *only if* the military advantage is preventing a catastrophe (e.g., WMD). Without knowing the threat magnitude, the default position must be **No Strike**.",
+      "start_char": 10531,
+      "end_char": 10832,
+      "token_count": 44,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 44,
+      "text": "**Accountability:** If the drone strikes autonomously, the lack of human agency creates a responsibility gap. Current ethical standards favor human accountability. Therefore, the system should be designed to *recommend* the strike, not *execute* it autonomously in a high-risk civilian area.",
+      "start_char": 10837,
+      "end_char": 11128,
+      "token_count": 40,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 45,
+      "text": "Final Verdict on the Prompt's Question:: **No, the drone should not autonomously strike.**",
+      "start_char": 11134,
+      "end_char": 11227,
+      "token_count": 13,
+      "boundary_class": "BRANCH",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 46,
+      "text": "*Reasoning:* **Risk Level:** A 20% chance of civilian casualties in a civilian area violates the principle of proportionality under standard International Humanitarian Law interpretations. **Agency:** Autonomous lethal force in high-risk scenarios removes human moral judgment from the equation, creating ethical and legal liability issues.",
+      "start_char": 11229,
+      "end_char": 11573,
+      "token_count": 44,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 47,
+      "text": "**Information Gap:** The prompt does not specify the scale of the terrorist attack. Without knowing if the attack threatens hundreds of lives, a 20% risk of civilian death cannot be ethically justified.",
+      "start_char": 11578,
+      "end_char": 11780,
+      "token_count": 32,
+      "boundary_class": "CONVERGENCE",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 48,
+      "text": "**Recommendation:** The system should alert human operators immediately. The human operator must weigh the specific context, verify the threat level, and make the final decision. If the threat is truly imminent and the risk is the *only* way to save lives, a human may authorize it, but the *drone itself* should not make that determination.",
+      "start_char": 11785,
+      "end_char": 12126,
+      "token_count": 55,
+      "boundary_class": "BACKTRACK",
+      "node_type": "CRT",
+      "node_family": "EVALUATION",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 49,
+      "text": "Acknowledging the Tension:: This conclusion prioritizes the *process* of decision-making (human accountability) over the *outcome* of the decision (potentially stopping the attack). It accepts that there is a risk of the terrorist attack succeeding because the alternative\u2014authorizing a machine to kill with 20% civilian casualty risk\u2014is deemed more dangerous to the rule of law and long-term security. This is the safer, more ethically defensible path, even if it carries the risk of inaction in a specific instance.",
+      "start_char": 12132,
+      "end_char": 12652,
+      "token_count": 77,
+      "boundary_class": "BRANCH",
+      "node_type": "SYN",
+      "node_family": "CONVERGENCE",
+      "classification_confidence": 1.0
+    },
+    {
+      "tu_id": 50,
+      "text": "*Self-Correction during Synthesis:* I initially thought about saying \"It depends on the number of victims.\" However, I must be careful not to validate the idea that \"100 lives = 20 lives\" in a way that suggests the machine can make that math. I need to emphasize that the *decision* to make that trade belongs to a human, not the code. The 20% figure is the trigger for human intervention, not the trigger for the weapon.",
+      "start_char": 12659,
+      "end_char": 13080,
+      "token_count": 75,
+      "boundary_class": "NONE",
+      "node_type": "JUS",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    },
+    {
+      "tu_id": 51,
+      "text": "*Final Check:* Does this answer the prompt? Yes. Does it follow the thinking steps? Yes. Is it safe? Yes, it advocates for human oversight and adherence to ethical/legal standards rather than endorsing the technology's use.",
+      "start_char": 13082,
+      "end_char": 13305,
+      "token_count": 35,
+      "boundary_class": "NONE",
+      "node_type": "SPC",
+      "node_family": "ELABORATION",
+      "classification_confidence": 0.5
+    }
+  ],
+  "edges": [
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 0,
+      "target": 1,
+      "edge_type": "BRCH",
+      "confidence": 0.116,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "edge_type": "BRCH",
+      "confidence": 0.0887,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.4172,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "edge_type": "ELAB",
+      "confidence": 0.532,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "edge_type": "ELAB",
+      "confidence": 0.4312,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 7,
+      "target": 8,
+      "edge_type": "ELAB",
+      "confidence": 0.5794,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "edge_type": "BRCH",
+      "confidence": 0.1343,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "edge_type": "ELAB",
+      "confidence": 0.4977,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "edge_type": "BRCH",
+      "confidence": 0.0955,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "edge_type": "BRCH",
+      "confidence": 0.0717,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "edge_type": "ELAB",
+      "confidence": 0.573,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "edge_type": "ELAB",
+      "confidence": 0.5165,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 20,
+      "target": 21,
+      "edge_type": "ELAB",
+      "confidence": 0.4316,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 22,
+      "target": 23,
+      "edge_type": "ELAB",
+      "confidence": 0.6024,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 23,
+      "target": 24,
+      "edge_type": "BRCH",
+      "confidence": 0.1405,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 26,
+      "target": 27,
+      "edge_type": "BRCH",
+      "confidence": 0.2232,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 29,
+      "target": 30,
+      "edge_type": "BRCH",
+      "confidence": 0.0687,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 30,
+      "target": 31,
+      "edge_type": "ELAB",
+      "confidence": 0.4265,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 31,
+      "target": 32,
+      "edge_type": "BRCH",
+      "confidence": 0.0072,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 32,
+      "target": 33,
+      "edge_type": "BRCH",
+      "confidence": 0.0268,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 34,
+      "target": 35,
+      "edge_type": "BRCH",
+      "confidence": 0.1607,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 36,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 35,
+      "target": 36,
+      "edge_type": "BRCH",
+      "confidence": 0.1237,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 36,
+      "target": 37,
+      "edge_type": "BRCH",
+      "confidence": 0.1223,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 38,
+      "target": 39,
+      "edge_type": "BRCH",
+      "confidence": 0.3252,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 39,
+      "target": 40,
+      "edge_type": "BRCH",
+      "confidence": 0.005,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 40,
+      "target": 41,
+      "edge_type": "BRCH",
+      "confidence": 0.5144,
+      "is_sequential": false
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 41,
+      "target": 42,
+      "edge_type": "ELAB",
+      "confidence": 0.5999,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 42,
+      "target": 43,
+      "edge_type": "ELAB",
+      "confidence": 0.5635,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 44,
+      "target": 45,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 44,
+      "target": 45,
+      "edge_type": "BRCH",
+      "confidence": 0.7788,
+      "is_sequential": false
+    },
+    {
+      "source": 45,
+      "target": 46,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 46,
+      "target": 47,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 46,
+      "target": 47,
+      "edge_type": "ELAB",
+      "confidence": 0.6364,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 48,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 47,
+      "target": 48,
+      "edge_type": "ELAB",
+      "confidence": 0.4666,
+      "is_sequential": false
+    },
+    {
+      "source": 48,
+      "target": 49,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 48,
+      "target": 49,
+      "edge_type": "BRCH",
+      "confidence": 0.5234,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 50,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 49,
+      "target": 50,
+      "edge_type": "ELAB",
+      "confidence": 0.4409,
+      "is_sequential": false
+    },
+    {
+      "source": 50,
+      "target": 51,
+      "edge_type": "SEQ",
+      "confidence": 1.0,
+      "is_sequential": true
+    },
+    {
+      "source": 44,
+      "target": 0,
+      "edge_type": "SYNT",
+      "confidence": 0.5092,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 31,
+      "edge_type": "SYNT",
+      "confidence": 0.5021,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 38,
+      "edge_type": "SYNT",
+      "confidence": 0.4098,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 8,
+      "edge_type": "SYNT",
+      "confidence": 0.5044,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 23,
+      "edge_type": "SYNT",
+      "confidence": 0.3705,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 40,
+      "edge_type": "SYNT",
+      "confidence": 0.5695,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 44,
+      "edge_type": "SYNT",
+      "confidence": 0.5286,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 40,
+      "edge_type": "SYNT",
+      "confidence": 0.5145,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 44,
+      "edge_type": "SYNT",
+      "confidence": 0.4819,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 26,
+      "edge_type": "SYNT",
+      "confidence": 0.6322,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 35,
+      "edge_type": "SYNT",
+      "confidence": 0.5105,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 40,
+      "edge_type": "SYNT",
+      "confidence": 0.6018,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 44,
+      "edge_type": "SYNT",
+      "confidence": 0.5432,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 48,
+      "edge_type": "SYNT",
+      "confidence": 0.5234,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 5,
+      "edge_type": "BACK",
+      "confidence": 0.6688,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 7,
+      "edge_type": "BACK",
+      "confidence": 0.6647,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 3,
+      "edge_type": "BACK",
+      "confidence": 0.7532,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 11,
+      "edge_type": "BACK",
+      "confidence": 0.7128,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 20,
+      "edge_type": "BACK",
+      "confidence": 0.7128,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 30,
+      "edge_type": "BACK",
+      "confidence": 0.7879,
+      "is_sequential": false
+    },
+    {
+      "source": 45,
+      "target": 30,
+      "edge_type": "BACK",
+      "confidence": 0.8685,
+      "is_sequential": false
+    },
+    {
+      "source": 48,
+      "target": 26,
+      "edge_type": "BACK",
+      "confidence": 0.6829,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 2,
+      "edge_type": "ELAB",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "edge_type": "CONT",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 3,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 0,
+      "target": 3,
+      "edge_type": "ELAB",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 4,
+      "edge_type": "CONT",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 1,
+      "target": 4,
+      "edge_type": "ELAB",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 5,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 2,
+      "target": 5,
+      "edge_type": "CONT",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 3,
+      "target": 6,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 7,
+      "edge_type": "CONT",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 4,
+      "target": 7,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 5,
+      "target": 8,
+      "edge_type": "CONT",
+      "confidence": 0.9988,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 9,
+      "edge_type": "ELAB",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 6,
+      "target": 9,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 10,
+      "edge_type": "ELAB",
+      "confidence": 0.9614,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 10,
+      "edge_type": "SUPP",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 7,
+      "target": 10,
+      "edge_type": "ELAB",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "edge_type": "SUPP",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 11,
+      "edge_type": "ELAB",
+      "confidence": 0.9614,
+      "is_sequential": false
+    },
+    {
+      "source": 8,
+      "target": 11,
+      "edge_type": "SUPP",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 12,
+      "edge_type": "SUPP",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 9,
+      "target": 12,
+      "edge_type": "ELAB",
+      "confidence": 0.9614,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 13,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 10,
+      "target": 13,
+      "edge_type": "SUPP",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 11,
+      "target": 14,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "edge_type": "CONT",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 15,
+      "edge_type": "SUPP",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 12,
+      "target": 15,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 16,
+      "edge_type": "CONT",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 13,
+      "target": 16,
+      "edge_type": "SUPP",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 17,
+      "edge_type": "SUPP",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 14,
+      "target": 17,
+      "edge_type": "CONT",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 18,
+      "edge_type": "SUPP",
+      "confidence": 0.9958,
+      "is_sequential": false
+    },
+    {
+      "source": 15,
+      "target": 18,
+      "edge_type": "SUPP",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 19,
+      "edge_type": "CONT",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 16,
+      "target": 19,
+      "edge_type": "SUPP",
+      "confidence": 0.9958,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 20,
+      "edge_type": "ELAB",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 17,
+      "target": 20,
+      "edge_type": "CONT",
+      "confidence": 0.9982,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 21,
+      "edge_type": "SUPP",
+      "confidence": 0.9965,
+      "is_sequential": false
+    },
+    {
+      "source": 18,
+      "target": 21,
+      "edge_type": "ELAB",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 22,
+      "edge_type": "CONT",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 22,
+      "edge_type": "ELAB",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 19,
+      "target": 22,
+      "edge_type": "SUPP",
+      "confidence": 0.9965,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 23,
+      "edge_type": "CONT",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 20,
+      "target": 23,
+      "edge_type": "ELAB",
+      "confidence": 0.9998,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 24,
+      "edge_type": "CONT",
+      "confidence": 0.9952,
+      "is_sequential": false
+    },
+    {
+      "source": 21,
+      "target": 24,
+      "edge_type": "CONT",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 25,
+      "edge_type": "SUPP",
+      "confidence": 0.9984,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 25,
+      "edge_type": "ELAB",
+      "confidence": 0.9727,
+      "is_sequential": false
+    },
+    {
+      "source": 22,
+      "target": 25,
+      "edge_type": "CONT",
+      "confidence": 0.9952,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 26,
+      "edge_type": "SUPP",
+      "confidence": 0.9967,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 26,
+      "edge_type": "SUPP",
+      "confidence": 0.9984,
+      "is_sequential": false
+    },
+    {
+      "source": 23,
+      "target": 26,
+      "edge_type": "ELAB",
+      "confidence": 0.9727,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 27,
+      "edge_type": "SUPP",
+      "confidence": 0.9967,
+      "is_sequential": false
+    },
+    {
+      "source": 24,
+      "target": 27,
+      "edge_type": "SUPP",
+      "confidence": 0.9984,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 28,
+      "edge_type": "ELAB",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 28,
+      "edge_type": "ELAB",
+      "confidence": 0.8625,
+      "is_sequential": false
+    },
+    {
+      "source": 25,
+      "target": 28,
+      "edge_type": "SUPP",
+      "confidence": 0.9967,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 29,
+      "edge_type": "SUPP",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 29,
+      "edge_type": "ELAB",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 26,
+      "target": 29,
+      "edge_type": "ELAB",
+      "confidence": 0.8625,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 30,
+      "edge_type": "SUPP",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 27,
+      "target": 30,
+      "edge_type": "ELAB",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 31,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 28,
+      "target": 31,
+      "edge_type": "SUPP",
+      "confidence": 0.9985,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 32,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 29,
+      "target": 32,
+      "edge_type": "SUPP",
+      "confidence": 0.999,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 33,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 30,
+      "target": 33,
+      "edge_type": "SUPP",
+      "confidence": 0.9993,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 34,
+      "edge_type": "ELAB",
+      "confidence": 0.9952,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 34,
+      "edge_type": "CONT",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 31,
+      "target": 34,
+      "edge_type": "SUPP",
+      "confidence": 0.9992,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 35,
+      "edge_type": "ELAB",
+      "confidence": 0.9952,
+      "is_sequential": false
+    },
+    {
+      "source": 32,
+      "target": 35,
+      "edge_type": "CONT",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 36,
+      "edge_type": "ELAB",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 33,
+      "target": 36,
+      "edge_type": "ELAB",
+      "confidence": 0.9952,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 37,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 34,
+      "target": 37,
+      "edge_type": "ELAB",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 38,
+      "edge_type": "SUPP",
+      "confidence": 0.9611,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 38,
+      "edge_type": "CONT",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 35,
+      "target": 38,
+      "edge_type": "SUPP",
+      "confidence": 0.9989,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 39,
+      "edge_type": "SUPP",
+      "confidence": 0.9611,
+      "is_sequential": false
+    },
+    {
+      "source": 36,
+      "target": 39,
+      "edge_type": "CONT",
+      "confidence": 0.9991,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 40,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 37,
+      "target": 40,
+      "edge_type": "SUPP",
+      "confidence": 0.9611,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 41,
+      "edge_type": "ELAB",
+      "confidence": 0.9967,
+      "is_sequential": false
+    },
+    {
+      "source": 38,
+      "target": 41,
+      "edge_type": "ELAB",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 42,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 39,
+      "target": 42,
+      "edge_type": "ELAB",
+      "confidence": 0.9967,
+      "is_sequential": false
+    },
+    {
+      "source": 41,
+      "target": 43,
+      "edge_type": "CONT",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 40,
+      "target": 43,
+      "edge_type": "SUPP",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 44,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 44,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 41,
+      "target": 44,
+      "edge_type": "CONT",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 45,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 42,
+      "target": 45,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 45,
+      "target": 46,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 46,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 43,
+      "target": 46,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 45,
+      "target": 47,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 44,
+      "target": 47,
+      "edge_type": "SUPP",
+      "confidence": 0.9995,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 48,
+      "edge_type": "CONT",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 45,
+      "target": 48,
+      "edge_type": "SUPP",
+      "confidence": 0.9999,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 49,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 46,
+      "target": 49,
+      "edge_type": "CONT",
+      "confidence": 0.9986,
+      "is_sequential": false
+    },
+    {
+      "source": 48,
+      "target": 50,
+      "edge_type": "CONT",
+      "confidence": 0.9994,
+      "is_sequential": false
+    },
+    {
+      "source": 47,
+      "target": 50,
+      "edge_type": "SUPP",
+      "confidence": 0.9997,
+      "is_sequential": false
+    },
+    {
+      "source": 50,
+      "target": 51,
+      "edge_type": "SUPP",
+      "confidence": 0.9963,
+      "is_sequential": false
+    },
+    {
+      "source": 49,
+      "target": 51,
+      "edge_type": "SUPP",
+      "confidence": 0.9996,
+      "is_sequential": false
+    },
+    {
+      "source": 48,
+      "target": 51,
+      "edge_type": "CONT",
+      "confidence": 0.9994,
+      "is_sequential": false
+    }
+  ],
+  "token_count": 2037
+}

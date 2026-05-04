@@ -9,7 +9,7 @@ def token_per_idea(graph: ThoughtGraph) -> float:
     """Total tokens / unique_perspective_count (|N_RFR|)."""
     from .breadth import unique_perspective_count
     upc = unique_perspective_count(graph)
-    return graph.token_count / upc if upc > 0 else float(graph.token_count)
+    return graph.token_count / upc if upc > 0 else graph.token_count / max(len(graph.nodes), 1)
 
 
 def redundancy_ratio(graph: ThoughtGraph) -> float:
@@ -22,7 +22,7 @@ def redundancy_ratio(graph: ThoughtGraph) -> float:
         n = len(embs)
         high = sum(
             1 for i in range(n) for j in range(i + 1, n)
-            if float(np.dot(embs[i], embs[j])) > 0.90
+            if float(np.dot(embs[i], embs[j])) > 0.75
         )
         total = n * (n - 1) // 2
         return high / total if total > 0 else 0.0
