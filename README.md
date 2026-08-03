@@ -1,10 +1,10 @@
-# ThinkBench
+# ThinkProb
 
-A framework for profiling LLM cognitive behavior through CoT trace analysis. ThinkBench extracts cognitive profiles from language model reasoning traces, characterizing how different models approach open-ended problems.
+A framework for profiling LLM cognitive behavior through CoT trace analysis. ThinkProb extracts cognitive profiles from language model reasoning traces, characterizing how different models approach open-ended problems.
 
-## What is ThinkBench?
+## What is ThinkProb?
 
-ThinkBench transforms raw Chain-of-Thought (CoT) reasoning traces into structured directed graphs, then computes a 22-dimensional cognitive profile vector that characterizes each model's thinking style.
+ThinkProb transforms raw Chain-of-Thought (CoT) reasoning traces into structured directed graphs, then computes a 22-dimensional cognitive profile vector that characterizes each model's thinking style.
 
 **Key capabilities:**
 - Collect reasoning traces from any OpenAI-compatible LLM endpoint (vLLM, OpenAI, etc.)
@@ -15,8 +15,8 @@ ThinkBench transforms raw Chain-of-Thought (CoT) reasoning traces into structure
 ## Installation
 
 ```bash
-git clone https://github.com/your-org/thinkbench.git
-cd thinkbench
+git clone https://github.com/your-org/ThinkProb.git
+cd ThinkProb
 pip install -e .
 ```
 
@@ -33,7 +33,7 @@ pip install -e .
 ## Quick Start
 
 ```bash
-python scripts/thinkbench_full.py \
+python scripts/ThinkProb_full.py \
     --questions data/questions/ethical_dilemmas.jsonl \
     --runs 3 \
     --output data
@@ -47,7 +47,7 @@ This will:
 
 ---
 
-# The ThinkBench Pipeline
+# The ThinkProb Pipeline
 
 ## Pipeline Architecture
 
@@ -240,7 +240,7 @@ Individual trace profiles are grouped by model and averaged across all numeric m
 ### Full Pipeline (Recommended)
 
 ```bash
-python scripts/thinkbench_full.py \
+python scripts/ThinkProb_full.py \
     --questions data/questions/ethical_dilemmas.jsonl \
     --runs 3 \
     --output data
@@ -269,7 +269,7 @@ export VLLM_ENDPOINT=http://localhost:8080
 export VLLM_MODEL=deepseek-r1
 export VLLM_API_KEY=your-key-here
 
-python scripts/thinkbench_full.py \
+python scripts/ThinkProb_full.py \
     --questions data/questions/your_questions.jsonl \
     --runs 5
 ```
@@ -279,8 +279,8 @@ python scripts/thinkbench_full.py \
 ## Directory Structure
 
 ```
-thinkbench/
-├── src/thinkbench/
+ThinkProb/
+├── src/ThinkProb/
 │   ├── collect/               # CoT collection (LLM calls here only)
 │   │   ├── models.py
 │   │   └── collector.py
@@ -299,7 +299,7 @@ thinkbench/
 │   └── utils/
 │       └── models.py          # Shared lazy singletons (embed + NLI models)
 ├── scripts/
-│   ├── thinkbench_full.py     # Standalone full pipeline
+│   ├── ThinkProb_full.py     # Standalone full pipeline
 │   ├── run_experiment.py      # Modular experiment runner
 │   ├── extract_graphs.py      # Batch extraction
 │   └── generate_report.py     # Visualization + report
@@ -349,5 +349,5 @@ Apache 2.0
 ## Citation
 
 ```
-ThinkBench: Profiling LLM Cognitive Behavior Through CoT Trace Analysis
+ThinkProb: Profiling LLM Cognitive Behavior Through CoT Trace Analysis
 ```
